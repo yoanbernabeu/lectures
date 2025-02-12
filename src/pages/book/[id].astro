@@ -83,7 +83,7 @@ const formatDate = (dateStr: string) => {
           {book.description && (
             <div class="prose prose-invert prose-gray max-w-none">
               <h2 class="text-xl font-semibold mb-3">Résumé</h2>
-              <p class="text-gray-300">{book.description}</p>
+              <p class="text-gray-300" set:html={book.description} />
             </div>
           )}
 

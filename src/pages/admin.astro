@@ -163,12 +163,27 @@ declare global {
           <textarea name="comment" class="textarea textarea-bordered w-full h-24"></textarea>
         </div>
 
+        <div class="grid grid-cols-1 gap-4 my-4">
+          <!-- Description -->
+          <div>
+            <label class="label">Description</label>
+            <div class="prose prose-sm prose-invert mb-2">
+              <div class="bg-base-300 p-4 rounded" x-html="selectedBook?.volumeInfo?.description || ''"></div>
+            </div>
+            <textarea 
+              class="textarea textarea-bordered w-full description" 
+              rows="4"
+              x-model="selectedBook?.volumeInfo?.description"
+            ></textarea>
+          </div>
+        </div>
+
         <button type="submit" class="btn btn-primary">Ajouter à ma bibliothèque</button>
       </form>
     </div>
 
-    <!-- Grille des livres existants -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="bookGrid">
+    <!-- Grille des livres existants (2 colonnes max) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="bookGrid">
       Chargement des livres...
     </div>
 
@@ -245,16 +260,16 @@ declare global {
   function renderBooks() {
     const html = booksData.books.map(book => `
       <div class="card bg-base-200 shadow-xl" data-id="${book.id}">
-        <figure class="px-4 pt-4">
+        <figure class="px-6 pt-6">
           <img 
             src="${book.imageUrl || '/placeholder.png'}" 
             alt="${book.title}"
-            class="h-40 object-cover rounded"
+            class="h-48 object-cover rounded"
           >
         </figure>
-        <div class="card-body">
+        <div class="card-body p-6">
           <div class="flex justify-between items-start">
-            <h3 class="card-title text-lg">${book.title || 'Chargement...'}</h3>
+            <h3 class="card-title text-xl">${book.title || 'Chargement...'}</h3>
             <div class="flex gap-2">
               ${book.favorite ? '<span class="badge badge-secondary">♥</span>' : ''}
               ${book.abandoned ? '<span class="badge badge-error">Abandonné</span>' : ''}
@@ -347,6 +362,7 @@ declare global {
           const progressEl = card.querySelector<HTMLInputElement>('.progress');
           const ratingEl = card.querySelector<HTMLInputElement>('.rating:checked');
           const commentEl = card.querySelector<HTMLTextAreaElement>('.comment');
+          const descriptionEl = card.querySelector<HTMLTextAreaElement>('.description');
           const favoriteEl = card.querySelector<HTMLInputElement>('.favorite');
           const abandonedEl = card.querySelector<HTMLInputElement>('.abandoned');
 
@@ -356,6 +372,7 @@ declare global {
           if (progressEl && book.status === 'reading') book.progress = Number(progressEl.value);
           if (ratingEl) book.rating = Number(ratingEl.value);
           if (commentEl) book.comment = commentEl.value || null;
+          if (descriptionEl) book.description = descriptionEl.value || undefined;
           if (favoriteEl) book.favorite = favoriteEl.checked;
           if (abandonedEl) book.abandoned = abandonedEl.checked;
 
