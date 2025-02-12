@@ -8,8 +8,12 @@ export interface Book {
   progress?: number;
   startDate?: string;
   endDate?: string;
-  rating: number | null;
-  comment: string | null;
+  rating?: number | null;
+  comment?: string | null;
   abandoned?: boolean;
   favorite?: boolean;
+  title: string;
+  authors: string[];
+  imageUrl?: string;
+  description?: string;
 } 

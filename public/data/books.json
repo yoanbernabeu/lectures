@@ -1,0 +1,587 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "googleBooksId": "6wmCEAAAQBAJ",
+      "status": "finished",
+      "genres": [
+        "tech",
+        "non-fiction"
+      ],
+      "progress": 45,
+      "startDate": "2024-03-01",
+      "rating": 5,
+      "comment": null,
+      "abandoned": false,
+      "title": "Une prière pour les cimes timides",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=6wmCEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73TS1p-3zfKIpHngkBhwNjvH2HyXBcl_DmzgkOfiZ703fDQj9KKGtPH0gXsLCYTuAE3OrFcXmCb2S-kq-ZoTV3tWIbsB2kEs4X5iiySN6Rrur1Yw4yeK2DhuSa-TGVqC5aJRvGo&source=gbs_api",
+      "authors": [
+        "Becky Chambers"
+      ],
+      "description": "<p>Omphale et Dex quittent la nature sauvage et arrivent sur les terres humaines.<b><br>À chaque étape, le robot prend conscience que sa tâche sera bien plus compliquée qu’il ne le pensait.</b><br><br>À sa question « de quoi avez-vous besoin ? », il y a tant de réponses, et souvent aucune.<br>Le simple fait de venir la poser ne change-t-il pas la paix que l’humanité a su trouver ?</p> <p>Au fil de cette déambulation, l’amitié entre Dex et Omphale ne faiblit pas, au point même de supplanter mission et frustrations.</p> <p>« La vision optimiste d’un monde fertile et beau qui s’est reconstruit après avoir frôlé la catastrophe. L’explorer aux côtés des deux personnages principaux est une expérience fascinante et délicieuse. » - <b>Martha Wells</b><br>« <i><b>Un psaume pour les recyclés sauvages</b></i> est un roman sur soi et sur les autres. Même lorsqu’on a vaincu des obstacles insurmontables, on peut manquer de quelque chose. » -<b> Lucie Ronfaut, <i>Numérama</i></b></p>"
+    },
+    {
+      "id": "2",
+      "googleBooksId": "26hsEAAAQBAJ",
+      "status": "finished",
+      "genres": [
+        "business",
+        "self-help"
+      ],
+      "startDate": "2024-01-15",
+      "endDate": "2024-02-28",
+      "rating": 5,
+      "comment": "",
+      "abandoned": false,
+      "title": "Un psaume pour les recyclés sauvages",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=26hsEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE727UKJWl6AM0HR_z7TmlHR_ZBIeh7eiMFvuafKF8osez1F8c8ULR_JMcDug36qrfDZajJ7cY9UZQgZhSkUorSfqHgxlrP_kJG-l9gixKCUjOCNsNS8JLnhOWIALSRG3MDDThEGV&source=gbs_api",
+      "authors": [
+        "Becky Chambers"
+      ],
+      "description": "<p> <b>Voilà des siècles, les robots de Panga ont accédé à la conscience et lâché leurs outils ; voilà des siècles, ils sont partis ensemble dans la forêt, et nul ne les a jamais revus ; voilà des siècles qu’ils se sont fondus dans les mythes de l’humanité.</b> </p> <p>Un jour, la vie de Dex, moine de thé, est bouleversée par l’arrivée d’un robot qui, fidèle à une très vieille promesse, vient prendre des nouvelles. Il a une question à poser, et ne rejoindra les siens qu’une fois satisfait de la réponse.<br><br><b>La question : « De quoi les gens ont-ils besoin ? »</b><br>Mais la réponse dépend de la personne à qui on parle et de comment on pose la question.<br><br>La nouvelle série de <b>Becky Chambers</b> s’interroge : Dans un monde où les gens ne manquent de rien, à quoi sert d’avoir toujours plus ?</p> <p>« La vision optimiste d’un monde fertile et beau qui s’est reconstruit après avoir frôlé la catastrophe. L’explorer aux côtés des deux personnages principaux est une expérience fascinante et délicieuse. » - <b>Martha Wells</b></p>"
+    },
+    {
+      "id": "3",
+      "googleBooksId": "yQjUEAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": null,
+      "title": "Le Ministère du futur",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=yQjUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71TQ3EdAzqmEN4j3unLpkKsA5ZVyihZmhu-BM3Oo7dLdhC6qrGP2QDjKKmFu2fqOBeT3kdNc7IwzfvJ9cptT5DxwneJh48ockIFROAwgQ1IrhU6XkramkVTlZnL1f2XYeGPra8y&source=gbs_api",
+      "authors": [
+        "Kim Stanley Robinson",
+        "Claude Mamier"
+      ],
+      "description": "<p>Lauréat du Grand Prix de l'Imaginaire, catégorie \"Roman étranger\" !<br><br>L'auteur de science-fiction légendaire Kim Stanley Robinson nous propose une vision du changement climatique pareille à nulle autre.</p><p>Établi en 2025, l'objectif de la nouvelle organisation était simple : plaider pour les générations à venir du monde et protéger toutes les créatures vivantes, présentes et futures. Il fut vite surnommé « le Ministère du Futur ».</p><p>Raconté entièrement sous forme des témoignages directs de ses personnages, Le Ministère du Futur est un chef-d'oeuvre de l'imaginaire, l'histoire de la façon dont le changement climatique nous affectera tous dans les décennies à venir.</p><p>Le décor n'est pas un monde postapocalyptique et désolé, mais un avenir qui nous fonce dessus... et où il nous reste une petite chance de surmonter les défis extraordinaires auxquels nous devons faire face.</p><p></p><p>« Robinson est l'un de nos meilleurs raconteurs d'histoires, l'un des plus courageux, nobles et optimistes. » New Yorker<br><br>« L'un des meilleurs écrivains du monde en activité, tous genres confondus. » Guardian<br><br>« Un portrait ambitieux et optimiste d'une humanité prête à coopérer pour éviter le désastre. La lecture de cet ouvrage vibrant, gorgé de science, est une lecture indispensable pour qui s'inquiète du futur de notre planète. » Publishers Weekly<br><br>« Si je devais désigner un écrivain dont le travail serait l'étalon de la science-fiction à venir, mon choix se porterait sur Kim Stanley Robinson. » New York Times<br><br>« Kim Stanley Robinson est l'un des maîtres de la science-fiction. » Sunday Times<br><br>« Le meilleur écrivain écologiste de notre époque. » Locus<br><br>« Kim Stanley Robinson est communément reconnu comme l'un des plus grands écrivains de science-fiction actuels... Mon porte-monnaie le considère aussi comme l'un des plus importants écrivains politiques en activité aux États-Unis. » New Yorker<br><br>« L'oeuvre de Robinson est intelligente et dotée d'une forte conscience sociale. » GQ<br><br>« Brillant, érudit, visionnaire. » Financial Times<br><br>« Chaque nouveau roman du grand Kim Stanley Robinson est par définition un événement. » Independent<br><br>« Le roman de SF le plus important de l'année. » Usbek et Rica<br><br>« Un texte aussi stimulant intellectuellement que bouleversant. Une oeuvre magistrale. » Mediapart</p>"
+    },
+    {
+      "id": "4",
+      "googleBooksId": "w_53EAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "Histoire intime et émouvante, une histoire de ma famille et des mes grands-parents.",
+      "title": "Il n'y a pas d'âge pour être petite",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=w_53EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72Aafnk5TmOVlm15KFaS2B6rNKy6XIZOF5FXfDyjZdCLk-mhPOmRGPYpHukjdBdP43-8Wiw9pOrTlc9JcXsol2-04fcDPpCPEwG3BhUSge5Voym_Xbn4Cpw-d-2FfUHZjHXN_-7&source=gbs_api",
+      "authors": [
+        "Maria Bernabeu"
+      ],
+      "description": "« ‘‘La maison adossée aux souvenirs’’, venait à nouveau se glisser dans mes rêves. Elle m’invitait à repenser à la petite fille de 5 ans. Car, quand on a mal à son âme, on redevient l’enfant qu’on était. Et ma mère, elle aussi, avait toujours eu mal à l’âme. »<br><br><br> <br>À PROPOS DE L'AUTEURE<br><br><br>Issue de parents immigrés espagnols, <b>Maria Bernabeu</b> née en 1966, revient sur les fragments marquants de son existence. <br>Un partage de ses rêves d’enfant, une invitation au voyage, un regard sur le temps qui passe et un cri d’amour à sa famille. Une narration qui fait écho et interpelle notre propre vécu.<br> <br>"
+    },
+    {
+      "id": "5",
+      "googleBooksId": "xvGnEAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": null,
+      "title": "Le cycle de Fondation (Tome 1) - Fondation",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=xvGnEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73EtW2BkfTL_5wR2rp38aws-qWrUL-DqrDH_l2t4llrM1vFH4Fw_5vxEtqeX-6RHeU4hz40sSP80DpRvqxALwa8-J_7n5f4-CjWyn-KZ5gz-WHvmVM_vhyUNdfxyoOoeMAoVfaL&source=gbs_api",
+      "authors": [
+        "Isaac Asimov"
+      ],
+      "description": "En ce début de treizième millénaire, l'Empire n'a jamais été aussi puissant, aussi étendu à travers toute la galaxie. Et c'est dans sa capitale, Trantor, que Hari Seldon invente la psychohistoire, une science nouvelle permettant de prédire l'avenir. Seldon prévoit l'effondrement de l'Empire d'ici cinq siècles, un effondrement qui sera suivi d'une période de ténèbres de trente mille ans, que l'on peut réduire à mille ans à condition de mener à terme son projet : la Fondation, chargée de rassembler toutes les connaissances humaines. Une entreprise visionnaire qui a de puissants détracteurs..."
+    },
+    {
+      "id": "6",
+      "googleBooksId": "yPGnEAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": null,
+      "title": "Le cycle de Fondation (Tome 2) - Fondation et Empire",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=yPGnEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73DZ9R7dD3AShSbIlL2M29iKdM44MKt_xVpLOVgkM7KWXNpRbTGOLoo_6BGSgdUOISaHnjNwPvzeFzXHlcGyWHYudghvGROFgb0pGp6evdJ0tZ5U3owTlARgkb42DEzX75_MVDL&source=gbs_api",
+      "authors": [
+        "Isaac Asimov"
+      ],
+      "description": "Tandis que les crises qui secouent l'Empire deviennent de plus en plus violentes et annoncent son effondrement, la Fondation créée par le psychohistorien Hari Seldon prospère, suscitant du même coup des visées annexionnistes. En tout premier lieu, celles de Bel Riose, jeune général qui voit dans les secrets détenus par la Fondation le moyen de se pousser sur le trône. Mais voilà qu'intervient un mystérieux conquérant aux pouvoirs paranormaux surnommé le Mulet..."
+    },
+    {
+      "id": "7",
+      "googleBooksId": "kPGnEAAAQBAJ",
+      "status": "finished",
+      "rating": 4,
+      "comment": null,
+      "title": "Le cycle de Fondation (Tome 3) - Seconde Fondation",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=kPGnEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71zbT9jCH4-xAmfEy0jQaAaKVOLt4hgNf28XIbnSZoUeriKBNfMg_DZMVP5EhhC5yfluM8Umy66M_HJSOp_gsnl4ht3ayFhYF7MDOBrpbRQGC8Uh1ODVH5mkkLnk2GefX7jxjjd&source=gbs_api",
+      "authors": [
+        "Isaac Asimov"
+      ],
+      "description": "Trois cents ans se sont écoulés depuis que le psychohistorien, Hari Seldon, prévoyant la chute de l'Empire, a établi la Fondation destinée à servir de point de départ à un Second Empire. Mais cette Fondation est désormais aux mains du Mulet, un mutant qui a le pouvoir d'entrer dans les esprits et de les manipuler. Et déjà une nouvelle légende prend forme : il existerait une autre Fondation, consacrée aux sciences mentales, qui de façon occulte continuerait de veiller au grain..."
+    },
+    {
+      "id": "8",
+      "googleBooksId": "BFZlEAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "1984, un classique de la science-fiction, étonnament (et terriblement) réaliste.",
+      "title": "1984",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=BFZlEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71hJoDrgFFATiVvbvL6f1wTQ9lc-Jp6aFuM66kI-aBe1vCr3rZ0jIcMqdC_iZsMZKK38a3xU_EzcBD7YmVMpIHoAemJQ1-v4itd5dClVQxggZPClABElkiVFBTlNdgX6c7m098V&source=gbs_api",
+      "authors": [
+        "George Orwell"
+      ],
+      "description": "Winston Smith, obscur tâcheron au ministère de la Vérité, réécrit le passé et envoie dûment dans le vide-mémoire les documents devenus obsolètes.<br>Le Parti a toujours raison et aucun fait ne doit le contredire.<br>Comment penser, aimer, savourer la beauté ou dire que deux et deux font quatre dans un État qui a pris le contrôle de la réalité, de votre mémoire, de votre langue même ?<br>La meilleure dystopie du XXe siècle, dans une nouvelle traduction illustrée."
+    },
+    {
+      "id": "9",
+      "googleBooksId": "2EoFCwAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "Un livre dur à lire, mais nécessaire !",
+      "title": "Il pleut des mains sur le Congo",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=2EoFCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71bMsKA-38YSyJeb9gto5PHA9Msp_DNptEULiHZ_7BQiDzO1jlbs-iNomVsW0jgGuj9RZqMCALTTrdGOj0v17FQE5IWpZWrlxNPFdEZpRYvYpjR7Cuevff3z4OJx8JNXjzsLbKL&source=gbs_api",
+      "authors": [
+        "Marc Wiltz"
+      ],
+      "description": "<p><b>Vivre ailleurs, s'installer durablement et changer de perspectives : des récits d’écrivains contemporains sur cette expérience fantasmée et vécue, faite d'émotions et de résonances.</b><br><br>Pourquoi tous ces morts au beau milieu de l’Afrique coloniale ? Pourquoi cet oubli incompréhensible ? Ce silence, que rien ou si peu ne vient troubler ? Les faits, pourtant historiques, se sont déroulés au vu et au su de tous, décidés en plein cœur de l’Europe consciente, documentée, active. Tout a été écrit, lu, dénoncé, prouvé, argumenté. À aucun moment, il n’a été possible de l’ignorer, même par courtoisie. Mais comme par un enchantement diabolique, les morts du Congo, victimes de Léopold II roi des Belges, ont disparu sans laisser de traces. Ils se sont littéralement volatilisés. Pas une ligne dans les livres d’histoire. Aucun souvenir dans la mémoire des peuples. Pas de résurgences en ces temps de repentance. À croire que l’existence même de ce crime de masse, qui a précédé tous les autres, est sujette à caution.<br>On parle aujourd’hui de dix millions de morts et disparus entre 1885 et 1908, soit le tiers de la population concernée. Sans compter les mutilés, impossibles à dénombrer. Dix millions, victimes de la cupidité d’un seul. A-t-on déjà vu cela dans notre époque « moderne » où pourtant les exemples ne manquent pas ?<br><br><b>« Le plus grand crime de tous les temps. » (Arthur Conan Doyle, 1909)</b><br><br>EXTRAIT<br><br>Le fleuve Congo, avec ses alentours impénétrables, est resté longtemps un mystère. Autour de lui s’étalait une large tache blanche sur les cartes du monde telles que les géographes les remplissaient de lignes et de contours de plus en plus précis. Et longtemps, cette grande région est restée inaccessible aux yeux des hommes, l’une des dernières, une de celles qui faisaient rêver le futur Joseph Conrad quand il était petit et qu’il pointait le doigt sur ces endroits supposés vierges en disant : « Quand je serai grand, j’irai là ! » Il a tenu parole. D’autres avant lui s’y sont risqués. Nombreux.<br>D’abord un Portugais, en 1680, Duarte Lopez, précurseur comme tous ses concitoyens de la découverte occidentale du monde ; un autre Portugais, encore, avait traîné dans les parages dès 1482, mais il ne s’était pas attardé, ce qui n’a pas empêché son pays de revendiquer une supposée antériorité de « propriété ».<br>Joseph Conrad, Mark Twain, Conan Doyle, Roger Casement, Edmund Dene Morel et beaucoup d’autres ont dénoncé ces forfaits à l’époque même où ils se déroulaient. Sur leurs pas, restituant le contexte et les témoignages, Marc Wiltz s’interroge sur cette disparition insensée...<br><br>A PROPOS DE L’AUTEUR<br><br>Né le 12 septembre 1961 à Saint-Mandé, Marc Wiltz a passé toute son enfance au Havre jusqu'à 22 ans. Diplômé de l'ESC du Havre 1983 (qui lui a appris à gérer des budgets), Marc Wiltz essaye le théâtre, la radio (Porte Océane au Havre), l'édition (Petit Futé en 1983) et un stage de deuxième année à la maison de la Culture (Le Volcan au Havre). Puis il travaille chez IBM, passe deux ans en Afrique, avant de devenir gestionnaire de studios de tournage de cinéma pendant 4 ans.<br>Marc Wiltz a toujours eu deux passions dans l'existence : les livres et les voyages, ce qui l'a amené à créer MAGELLAN & Cie en 1999 pour les conjuguer. Cette maison d'édition compte aujourd'hui 250 titres au catalogue, pour beaucoup d'entre eux basés sur un montage « cinéma » comme l'éditeur aime à le rappeler, c'est-à-dire en cherchant à trouver l'équivalent des avances sur recettes...</p>"
+    },
+    {
+      "id": "10",
+      "googleBooksId": "L-YbzgEACAAJ",
+      "status": "finished",
+      "rating": 3,
+      "comment": "Intéressant, mais pas simple",
+      "title": "L'Afrique des Grands Empires (7e-17e siècles)",
+      "imageUrl": "http://books.google.com/books/content?id=L-YbzgEACAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE73-VczSzLL_K2o98J1v90gOcoBMPDCX3TFQk-UQafNZ4LFhx5lY_fsW1iRpwiBzrsBNq0jiz2QCxXr1BsTgvV9yuqjOhpNnSc6tWkGd5z_adikH_E8j5i9nihgQSiRvMnIeQIeI&source=gbs_api",
+      "authors": [
+        "Amadou Ba"
+      ],
+      "description": "Ce livre revisite une histoire très peu enseignée et vulgarisée en Afrique et dans le reste du monde, celle des Grands empires qui ont marqué le continent africain entre les 7e et 17e siècles. Durant cette longue période de mille ans, l'Afrique a connu de grandes entités politiques, une prospérité économique, de grandes aires culturelles et une cohésion sociale à travers de grands États. L'Afrique contemporaine morcelée en 54 pays ne représente même pas 1% de l'économie mondiale. Elle est politiquement instable, socialement divisée et fait face à de nombreux défis. Cette triste réalité n'a pas toujours été celle que nos ancêtres ont connue. Ce livre retrace, analyse, décortique et propose une autre Afrique, aux antipodes de celle que nous connaissons aujourd'hui, héritée de la domination des conquérants arabo-musulmans et surtout des impérialistes européens. C'est cette Afrique d'hier examinée dans ce livre qui sera l'Afrique de demain si nous voulons et devons sortir de cette situation mortifère dans laquelle les populations africaines sont plongées depuis des siècles maintenant. La seule et unique solution, c'est de mettre en place de grands espaces politique, économique et social puis aller vers la création d'un État fédéral continental, bien structuré, démocratique, respectueux des droits et libertés des populations."
+    },
+    {
+      "id": "11",
+      "googleBooksId": "RbO5EAAAQBAJ",
+      "status": "finished",
+      "rating": 2,
+      "comment": "Un classique de la SF, mais je n'ai pas accroché.",
+      "title": "H. P. Lovecraft: L'Appel de Cthulhu",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=RbO5EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70gSBAEw9tmzQ8PGYKlF4AIbVn062_WmYrQQUUA3sYawcbfumGTBGkbEJPDcRWd6ji1c-JALAzcRo3UMLVBFfUg_3Ejk7Jxy6uwLWc9ru7JkyWRhMRNg6VHWaU1Yv5zPENkx5bD&source=gbs_api",
+      "authors": [
+        "H. P. Lovecraft"
+      ],
+      "description": "Le best-seller de la littérature d'horreur ! <br>Dans l'héritage du professeur Angell se trouvent trois documents clés suggérant l'existence d'un culte ancien et universel. Le protagoniste tente de les exploiter, même si son bagage scientifique l'empêche de croire à l'existence du culte et à ses implications surnaturelles - encore que ce doute s'estompe au fil de ses recherches. Pendant quelques semaines, d'étranges cauchemars, des suicides et des éruptions de folie collective se succèdent dans le monde entier. Tous sont liés à la même vision fantomatique d'un démon terrifiant. Plus les recherches avancent, plus les doutes sur l'existence du culte et sa portée se dissipent. <br>Avec <b>L'Appel de Cthulhu</b>, <b>H. P. Lovecraft</b> pose les bases du mythe de <b>Cthulhu</b>, lequel a captivé d'innombrables lecteurs depuis un siècle et qui a été entre-temps repris par de nombreux auteurs. <b>Lovecraft</b> est l'auteur de plusieurs <b>best-sellers de la littérature d'horreur</b> du 20e siècle."
+    },
+    {
+      "id": "12",
+      "googleBooksId": "0ptFDwAAQBAJ",
+      "status": "finished",
+      "rating": 2,
+      "comment": "L'idée etait bonne, mais j'ai trouvé que les ficelles étaient un peu trop grosses.",
+      "title": "Le Pouvoir",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=0ptFDwAAQBAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE72Ygnok7aQ-AeSBYB56xZJ66Z5y3zv2Q_GYwSPL8TR-KfsD5a2EIR_lLIjnDGIqfTvlP15I799qXH7r8bftTxmGl047CAfbjVY9431bm5tqRqKstaZBdZVcZO0pkIFqapiyYcQz&source=gbs_api",
+      "authors": [
+        "Naomi Alderman"
+      ],
+      "description": "ET SI LES FEMMES PRENAIENT ENFIN LE<br>POUVOIR DANS LE MONDE ENTIER ?<br> Aux quatre coins du monde, les femmes<br>découvrent qu'elles détiennent le \"pouvoir\".<br><br>Du bout des doigts, elles peuvent infliger<br>une douleur fulgurante - et même la mort.<br><br>Soudain, les hommes comprennent <br>qu'ils deviennent le \"sexe faible\".<br><br>Mais jusqu'où iront les femmes<br>pour imposer ce nouvel ordre ?<br> « Électrisant ! Choquant ! Décoiffant ! Vous ne regarderez<br>plus jamais les choses de la même façon... » Margaret Atwood, auteur de La Servante écarlate<br><br>« Mettre en lumière les travers des humains<br>et continuer d’éveiller les consciences :<br>c’est là que réside le pouvoir de ce livre. »<br>Aurélie Janssens, librairie Page et Plume, Limoges<br><br>« Une écriture électrique. Un rythme endiablé. Si le pouvoir<br>change de camp, pour le meilleur comme pour le pire,<br>ne passez pas à côté : Lisez ce livre ! »<br>Charlotte Desmousseaux, librairie La vie devant soi, Nantes<br><br><br>"
+    },
+    {
+      "id": "13",
+      "googleBooksId": "KLMgEAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "Un classique de la littérature, qui donne envie de prendre un sac à dos et de partir en voyage.",
+      "title": "Voyage avec un âne dans les Cévennes",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=KLMgEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72mHVlugf4DolCtkT2I5K-e4_1_7tiFAJWwnSZsAw1yj2RYRnosXHRvSPT-WtPuplxtg_ausUGDkoXQOaasGv9PLXwT5TfWd9FAVlAvf5BDRI5Z4lpxc6778TxJPuW3UxIUgOnQ&source=gbs_api",
+      "authors": [
+        "Robert Louis Stevenson"
+      ],
+      "description": "À l'automne 1878, le jeune écrivain part avec une ânesse, Modestine, pendant douze jours et traverse les Cévennes depuis Monastier jusqu'à St Jean du Gard. Il nous décrit agréablement cette région de montagnes, et nous relate en même temps l'histoire de ces contrées, en particulier la révolte des Camisards. De nos jours, un sentier de grande randonnée a été créé sur ces traces: le GR70."
+    },
+    {
+      "id": "14",
+      "googleBooksId": "89LuLAKdUKkC",
+      "status": "finished",
+      "rating": 5,
+      "comment": null,
+      "title": "Swastika Night",
+      "imageUrl": "http://books.google.com/books/content?id=89LuLAKdUKkC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE70L0tdgUyrn8y55XFCMZaKT9IXtTygBiNxl-3Rx4JZ28GuNEEIr_v9pBg5hGDdj2J4XtXUWgHCyFlLhQAG-Fj_acPRwefUwXh3nkCiUnMl1hlk238Y5Xdhr4AXBY05qsKpF842j&source=gbs_api",
+      "authors": [
+        "Katharine Burdekin"
+      ],
+      "description": "   Published in 1937, twelve years before Orwell's <i>1984</i>, this novel projects a totally male-controlled fascist world that has eliminated women as we know them. They are breeders, kept as cattle, while men in this post-Hitlerian world are embittered automatons, fearful of all feelings, having abolished all history, education, creativity, books, and art. Not even the memory of culture remains. The plot centers on a \"misfit\" who asks, as readers must, \"How could this have happenned?\" <b>Ann J. Lane</b> calls the novel a \"brilliant, chilling dystopia.\" \"This is a powerful, haunting vision of the inner and outer worlds of male violence.\"-<b>Blanche Wiesen Cook</b>, author of <i>Eleanor Roosevelt: Volume One, 1884-1933</i>"
+    },
+    {
+      "id": "15",
+      "googleBooksId": "_3AlDwAAQBAJ",
+      "status": "finished",
+      "rating": 3,
+      "comment": "Un livre passionnant, et une source de connaissances inestimable.",
+      "title": "Africa Unite !",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=_3AlDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72Humd5S3Evjx8RAdGf4Zz7D5G3PyHJef31ekNLPb4Ry6ol8MDpxsF2qDcTIVUFUKh64DoG3-uEWlO3838wBDvA9ayrvM17_1ymv4Y15f9Xi5luR6cp2HG-xlv5L2_8XfShV5hU&source=gbs_api",
+      "authors": [
+        "Amzat Boukari-Yabara"
+      ],
+      "description": "<p>Sommes-nous africains ? Qu'est-ce que l'Afrique ? De cette double interrogation, née au XVIIIe siècle dans la diaspora africaine déportée aux Amériques, a émergé un vaste mouvement intellectuel, politique et culturel qui a pris le nom de panafricanisme au tournant du XXe siècle. Ce mouvement a constitué, pour les Africains des deux rives de l'Atlantique, un espace privilégié de rencontres et de mobilisations. <br> De la révolution haïtienne de 1791 à l'élection du premier président noir des États-Unis en 2008 en passant par les indépendances des États africains, Amzat Boukari-Yabara retrace, dans cette ambitieuse fresque historique, l'itinéraire singulier de ces personnalités qui, à l'image de W.E.B. Du Bois, Marcus Garvey, George Padmore, C.L.R. James, Kwame Nkrumah ou Cheikh Anta Diop, ont mis leur vie au service de la libération de l'Afrique et de l'émancipation des Noirs à travers le monde. Mêlant les voix de ces acteurs de premier plan, bientôt rejoints par quantité d'artistes, d'écrivains et de musiciens, comme Bob Marley ou Miriam Makeba, la polyphonie panafricaine s'est mise à résonner aux quatre coins du \" monde noir \", de New York à Monrovia, de Londres à Accra, de Kingston à Addis-Abeba. <br> Les mots d'ordre popularisés par les militants panafricains n'ont pas tous porté les fruits espérés. Mais, à l'heure où l'Afrique est confrontée à de nouveaux défis, le panafricanisme reste un chantier d'avenir. Tôt ou tard, les Africains briseront les frontières géographiques et mentales qui brident encore leur liberté.</p>"
+    },
+    {
+      "id": "16",
+      "googleBooksId": "cB9sDAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": null,
+      "title": "Station eleven",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=cB9sDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72KEQkWzs4UIt2-1RLT5E6WUNK1F1YNM7uEuTNHHLTGNdzm8l8OEJ1Lhr8wDF8xh4bfyZ3bxK6ES-pOPLYgUUSO6H2bV8Cb3ZRHPNBtusIaqWjSN9LmhLWV_tFl_tKAKaBumtpj&source=gbs_api",
+      "authors": [
+        "Emily St. John Mandel"
+      ],
+      "description": "<p>Dans un monde où la civilisation s’est effondrée suite à une pandémie foudroyante, une troupe d’acteurs et de musiciens nomadise entre de petites communautés de survivants pour leur jouer du Shakespeare. Un répertoire qui en est venu à représenter l’espoir et l’humanité au milieu de la désolation.</p> <p>Le roman évènement de la rentrée littéraire, finaliste du National Book Award aux Etats-Unis, qui fera date dans l'histoire de la littérature d'anticipation.<br><br>500 000 exemplaires vendus en Amérique du Nord, 150 000 dans les îles Britanniques.<br><br>« Profondément mélancolique, mais magnifiquement écrit, et merveilleusement élégiaque. » George R. R. Martin <br><br> « Mandel est capable de faire ressentir l’intense émotion d’existences fauchées par une époque terrible. » The New York Times</p>"
+    },
+    {
+      "id": "17",
+      "googleBooksId": "1F6oEAAAQBAJ",
+      "status": "finished",
+      "rating": 2,
+      "comment": "Un classique, mais je complètement passé à côté.",
+      "title": "H2G2 (Tome 1) - Le Guide du voyageur galactique",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=1F6oEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71HYOgwZik3fyLi7DzWEfxlaiK4mBEbSwWi8N4-QomkjOUsNnekxrrxtm1QZ4O6Icpn1veTSr6RX6IILrYygLweDsERFP1hXcWlKW8Hs98-XJ0LbrC536hXkbkWEzzwKs9TZ779&source=gbs_api",
+      "authors": [
+        "Douglas Adams"
+      ],
+      "description": "Comment garder tout son flegme quand on apprend dans la même journée : que sa maison va être abattue dans la minute pour laisser place à une déviation d'autoroute ; que la Terre va être détruite d'ici deux minutes, se trouvant, coïncidence malheureuse, sur le tracé d'une future voie express intergalactique ; que son meilleur ami, certes délicieusement décalé, est en fait un astrostoppeur natif de Bételgeuse, et s'apprête à vous entraîner aux confins de la galaxie ? Pas de panique ! Car Arthur Dent, un Anglais extraordinairement moyen, pourra compter sur le fabuleux Guide du voyageur galactique pour l'accompagner dans ses extraordinaires dérapages spatiaux moyennement contrôlés."
+    },
+    {
+      "id": "18",
+      "googleBooksId": "9JQ2EAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "Incroyable, j'ai pas décroché du livre. Coup de cœur.",
+      "favorite": true,
+      "title": "Projet Dernière Chance",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=9JQ2EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70Qvl8Zph-u4UBRGki9iRlxZVZ8IErC9HBWreUT_ZFCk7ML63lK2i8JBhMIOMHPXkP9YD58GK7cLyMfG1ejDuQH27C839ptCA2YBeaU1Uf0VBy-RJwNogpeP9Uh-cf5Esf1Qyih&source=gbs_api",
+      "authors": [
+        "Andy Weir",
+        "Nenad Savic"
+      ],
+      "description": "<p>La nouvelle passionnante aventure spatiale de l'auteur du best-seller Seul sur Mars, bientôt portée à l'écran avec Ryan Gosling.</p><p>Ryland Grace est le seul survivant d'une expédition spatiale de la dernière chance. S'il échoue, c'est le sort de l'humanité et la Terre tout entière qui sera en péril.</p><p>Mais pour l'instant, il ignore tout de cela. Il ne se souvient même pas de son propre nom, et encore moins des objectifs de sa mission. Il sait seulement qu'il est resté en sommeil très, très longtemps. Et il vient de se réveiller pour découvrir qu'il se trouve à des millions de kilomètres de chez lui, avec deux cadavres pour toute compagnie.</p><p>Ryland se rend compte peu à peu qu'il doit faire face à une tâche impossible. Filant à travers l'espace, il lui faut trouver la clé d'un mystère scientifique insondable... et combattre un fléau qui laisse présager l'extinction de notre espèce.</p><p>Alors que chaque minute compte et que des années-lumière le séparent de l'être humain le plus proche, il est seul pour relever cet incroyable défi...</p><p>Mais l'est-il vraiment ?<br> </p><p>« Un livre qui aurait ravi Robert A. Heinlein et Isaac Asimov. » George R.R. Martin</p><p>« Le meilleur roman d'Andy Weir à ce jour... et le seul de tout ce que j'ai lu récemment que je suis certain de pouvoir recommander à tout lecteur en sachant qu'ils vont se régaler. » Brandon Sanderson</p>"
+    },
+    {
+      "id": "19",
+      "googleBooksId": "2UqGAQAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "Sombre, angoissant, mais terriblement addictif.",
+      "title": "Métro 2033 - Édition augmentée",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=2UqGAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71lEvhHJhgLRsz6YmMPkpCEnSWuWdGky0YuMwKzhAnaQfcBVz_rlM1XF6iWS4a4_QjP0zWQzkBqkPVlejh3vvWzIQuV7dVp9IyQGcupaE0SbZDuqFOmgicUKkaPR_5fxLRzsO0w&source=gbs_api",
+      "authors": [
+        "Dmitry Glukhovsky"
+      ],
+      "description": "<p> <b>2033.</b> </p> <p>Une guerre a décimé la planète. La surface, inhabitable, est désormais livrée à des monstruosités mutantes. Moscou est une ville abandonnée. Les survivants se sont réfugiés dans les profondeurs du métropolitain, où ils ont tant bien que mal organisé des microsociétés de la pénurie.</p> <p>Dans ce monde réduit à des stations en déliquescence reliées par des tunnels où rôdent les dangers les plus insolites, le jeune Artyom entreprend une mission qui pourrait le conduire à sauver les derniers hommes d'une menace obscure... mais aussi à se découvrir lui-même à travers les rencontres improbables qui l'attendent.</p> <p>Nombre de mythes accompagnent l'univers du métro dans toutes les grandes villes.</p> <p> <b>Dmitry Glukhovsky en fait un thriller fantastique inoubliable, traduit dans le monde entier, qui s'est vendu à plus de 2 millions d'exemplaires.</b> </p>"
+    },
+    {
+      "id": "20",
+      "googleBooksId": "7V8InwEACAAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "Un classique de SF que je recommande très fortement, surtout dans nos époques ou le fachisme refait surface...",
+      "title": "Fahrenheit 451 [quatre cent cinquante et un] : roman",
+      "imageUrl": "http://books.google.com/books/content?id=7V8InwEACAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE727FWtvb070tx4Ivx9de1FCFDnGhBoIYYO1mv2jZI7KZMWNxR8vtXzKbuKCS5BUEeJZ-gMNXE30PJPgN70F2lk9dh7dRA-9ir6BubPuvLp1jCgClapE4c0VDD7zbikz1ADtaB-1&source=gbs_api",
+      "authors": [
+        "Ray Bradbury",
+        "Jacques Chambon",
+        "Henri Robillot"
+      ],
+      "description": "451 degrés Fahrenheit représentent la température à laquelle un livre s'enflamme et se consume. Dans cette société future où la lecture, source de questionnement et de réflexion, est considérée comme un acte antisocial, un corps spécial de pompiers est chargé de brûler tous les livres dont la détention est interdite pour le bien collectif. Montag, le pompier pyromane, se met pourtant à rêver d'un monde différent, qui ne bannirait pas la littérature et l'imaginaire au profit d'un bonheur immédiatement consommable. Il devient dès lors un dangereux criminel, impitoyablement pourchassé par une société qui désavoue son passé."
+    },
+    {
+      "id": "21",
+      "googleBooksId": "Tvt9DwAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "Géniallissime, une lecture inoubliable.",
+      "title": "Outresable",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=Tvt9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71bEzUoaIhh9-JO_wxRz3hzPQvHUzeoTG4uy2ufDxvp6TPMtvu8VQNy8BDM_1p5uMBYTa2KMpLkA7fgUfKbIU9mwtZrDCj631nyqfh7Ox0fUZTjlFKAld0qq4NqJBCx2FRv5lsr&source=gbs_api",
+      "authors": [
+        "Hugh Howey"
+      ],
+      "description": "<p>Depuis des siècles le sable a englouti le monde. Un autre s’est créé tant bien que mal parmi les dunes mouvantes, et les plongeurs des sables descendent à de grandes profondeurs pour remonter des ruines figées de l’ancien monde les trésors enfouis dont le troc permet la survie de tous à la surface. Ici, dans cette contrée constamment balayée par le vent, trois frères et une sœur se retrouvent loin les uns des autres. Leur père, qui appartenait à l’élite des plongeurs des sables, a disparu un jour sans aucune explication vers le No Man’s Land, en les abandonnant. Et leur monde semble s'apprêter à en faire autant. Bienvenue dans Outresable, le nouveau roman de Hugh Howey, l’auteur de la trilogie Silo.</p>"
+    },
+    {
+      "id": "22",
+      "googleBooksId": "tObNEAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "La suite de Outresable, mais aussi bonne que la première partie.",
+      "title": "Outredune",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=tObNEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70l4V7Kv-z2HktaMLPcABJVhrS0unD-jgSfCiQeUcAo1wpJh1LsPFit1OXGuAPcvEvkB9hgrhfcBf6vOr5vbIk9sUiXykNF315mkkx5K_n3lmvX4OirB6kybT_IVYDIx0abK9Ma&source=gbs_api",
+      "authors": [
+        "Hugh Howey"
+      ],
+      "description": "Premier roman de Hugh Howey en six ans, \"Outredune\" nous ramène dans le monde d’\"Outresable\", dans un futur lointain, maintes générations après qu’un désastre a détruit la civilisation telle que nous la connaissons. Quatre frères et sœurs tentent désespérément de s’y forger un avenir parmi les étendues désolées d’un désert sans fin. Une suite haletante."
+    },
+    {
+      "id": "23",
+      "googleBooksId": "6mlRDwAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "En tant que Geek, ce livre est une véritable pépite.",
+      "title": "Nous sommes Bob, T1 : Nous sommes Légion (Nous sommes Bob)",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=6mlRDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE700az0l7QN3DU9JIwl8TG8HsOrOtYo7PODAMaofszLc61HPui2hjkWewc5FvzuJ13-gvX8i0iBPUUD7MN-J4XMvDD87pbpao3ttHtIZaegS6T8Z3STOAbt7EemS0kCco7CBsgcO&source=gbs_api",
+      "authors": [
+        "Dennis E. Taylor",
+        "Sébastien Baert"
+      ],
+      "description": "<p>Bob Johansson vient de vendre son entreprise d'informatique et a hâte de pouvoir enfin profiter de la vie. Tant de lieux à visiter, de livres à lire et de films à voir... Il est donc un peu injuste qu'il se fasse écraser en traversant la rue.</p><p>Lorsque Bob revient à lui, un siècle plus tard, c'est pour découvrir que les « congelés » n'ont aucun droit, et qu'il appartient désormais au gouvernement. Téléchargé dans un ordinateur, il est pressenti pour devenir l'IA aux commandes d'une sonde interstellaire destinée à la recherche de planètes habitables. Les enjeux sont considérables. S'il refuse cet honneur, on l'éteindra, et un autre prendra sa place. S'il accepte, il deviendra une cible de choix. Au moins trois autres puissances tentent d'être les premières à envoyer leur sonde, et tous les coups sont permis. Pour Bob, l'endroit le plus sûr, c'est dans l'espace, le plus loin possible de la Terre. C'est du moins ce qu'il croit. Parce que l'univers regorge de mauvaises surprises, et les intrus sont mal vus. Très mal vus...</p><p>« Sans fard et pleine d'autodérision, la voix de Bob est l'âme de ce palpitant récit, qui rappelle celui de Mark Watney dans Seul sur Mars. Un trait d'esprit à chaque occasion, un cerveau d'ingénieur super-rationnel et créatif et un optimisme increvable en toutes circonstances. Un héros que le lecteur aura envie de soutenir jusqu'au bout ! »</p><p>Fantasy Literature</p><p>« Un livre conçu pour plaire à tous les amateurs de science-fiction, avec une intrigue qui présente une série de problèmes techniques à résoudre comme Seul sur Mars d'Andy Weir et une multitude de références à la culture geek comme Ready Player One d'Ernest Cline. »</p><p>BookRiot</p><p>« Un roman au point de départ original, qui tient ses promesses avec brio. Taylor a fait un travail fantastique en imaginant des situations passionnantes qui mettent en scène des personnages formidables, entre Bob et toutes ses copies. Hautement recommandé. »</p><p>Walker of Worlds</p><p>« Dennis E. Taylor a transformé ce qui aurait pu être l'histoire tragique d'un explorateur spatial solitaire en une expérience hilarante et divertissante, dotée d'une galerie de personnalités variées. Car chacune des versions de Bob est un individu bien distinct, qui présente un aspect différent de l'original. »</p><p>The BiblioSanctum</p>"
+    },
+    {
+      "id": "24",
+      "googleBooksId": "KMVaDwAAQBAJ",
+      "status": "finished",
+      "rating": 3,
+      "comment": "Pas aussi bon que le 1er tome, mais j'avais envie de connaitre la suite.",
+      "title": "Nous sommes Bob, T2 : Nous sommes nombreux",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=KMVaDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70Sv-IX2mZYGob31bCVP25z8Bze-7nxxfr4i-JSuR0ZiBe9hd7gLjUKmF-gGAtu4_a9k3O_wiVgbM8V8TSIEVpUvvzgCVZHYVtI-eINCKv4ppnJLrZ-Osdg-jVLCuzhijeWts95&source=gbs_api",
+      "authors": [
+        "Dennis E. Taylor",
+        "Sébastien Baert"
+      ],
+      "description": "<p>Bob Johansson et ses copies ont désormais quitté la Terre depuis quarante ans, et sont à la recherche de nouvelles planètes habitables. Mais c'est la seule partie du plan encore viable. Une guerre globale a éclaté, éliminant 99,9% de l'espèce humaine. Un hiver nucléaire rend progressivement la Terre inhabitable. Un groupe d'extrémistes souhaite finir le travail et supprimer ce qui reste de l'humanité. Les sondes brésiliennes sont encore en activité et continuent à vouloir écarter toute concurrence. Et les Bob ont découvert une espèce capable de voyager dans l'espace qui considère toute forme de vie comme de la nourriture...</p><p>« Sans fard et pleine d'autodérision, la voix de Bob est l'âme de ce palpitant récit, qui rappelle celui de Mark Watney dans Seul sur Mars. Un trait d'esprit à chaque occasion, un cerveau d'ingénieur super-rationnel et créatif et un optimisme increvable en toutes circonstances. Un héros que le lecteur aura envie de soutenir jusqu'au bout ! »</p><p>Fantasy Literature</p><p>« Un livre conçu pour plaire à tous les amateurs de science-fiction, avec une intrigue qui présente une série de problèmes techniques à résoudre comme Seul sur Mars d'Andy Weir et une multitude de références à la culture geek comme Ready Player One d'Ernest Cline. »</p><p>BookRiot</p><p>« Un roman au point de départ original, qui tient ses promesses avec brio. Taylor a fait un travail fantastique en imaginant des situations passionnantes qui mettent en scène des personnages formidables, entre Bob et toutes ses copies. Hautement recommandé. »</p><p>Walker of Worlds</p><p></p><p>« Dennis E. Taylor a transformé ce qui aurait pu être l'histoire tragique d'un explorateur spatial solitaire en une expérience hilarante et divertissante, dotée d'une galerie de personnalités variées. Car chacune des versions de Bob est un individu bien distinct, qui présente un aspect différent de l'original. »</p><p>The BiblioSanctum</p>"
+    },
+    {
+      "id": "25",
+      "googleBooksId": "GxaCDwAAQBAJ",
+      "status": "finished",
+      "rating": 1,
+      "comment": "3eme tome, celui de trop. j'ai trouvé que l'histoire trainait en longueur. j'ai abandonné.",
+      "abandoned": true,
+      "title": "Nous sommes Bob, T3 : Tous ces mondes",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=GxaCDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE7288aRxnSrJY5HGYfmLf8RqDUrNcPQf8rmzdvscKg8FsFwOCNjq-rIH_uvlv0bBMwkxiW_dztXxdJFGQhdQWLQUkxYpLkjCeRzOkkUmtLiudb18uIxC75l5IAWzwwDJvu36NC-9&source=gbs_api",
+      "authors": [
+        "Dennis E. Taylor",
+        "Sébastien Baert"
+      ],
+      "description": "<p>Le quotidien d'un vaisseau interstellaire intelligent devrait vraiment être plus fun. Pourtant, depuis qu'ils se sont éparpillés dans l'espace, Bob et ses clones ont toujours des ennuis.</p><p>Certes, ils ont établi assez de colonies extrasolaires pour empêcher l'extinction de l'humanité. Mais les querelles politiques ont la vie dure, et des sondes brésiliennes essaient encore d'éliminer toute concurrence. Sans parler du conflit avec une espèce extraterrestre technologiquement plus avancée, dotée d'un grand appétit et d'un caractère explosif.</p><p>Désormais les Bob doivent se préparer à une bataille décisive pour défendre les leurs. Ils vont avoir besoin de toute l'aide possible... or deux Bobs de la huitième génération ont fait une trouvaille dans l'espace profond. Une découverte qui pourrait sauver la Terre et peut-être l'humanité tout entière...<br> </p><p>« Un livre conçu pour plaire à tous les amateurs de science-fiction, avec une intrigue qui présente une série de problèmes techniques à résoudre comme Seul sur Mars d'Andy Weir et une multitude de références à la culture geek comme Ready Player One d'Ernest Cline. » BookRiot</p><p>« Dennis E. Taylor a transformé ce qui aurait pu être l'histoire tragique d'un explorateur spatial solitaire en une expérience hilarante et divertissante, dotée d'une galerie de personnalités variées. Car chacune des versions de Bob est un individu bien distinct, qui présente un aspect différent de l'original. » The BiblioSanctum</p><p>« Sans fard et pleine d'autodérision, la voix de Bob est l'âme de ce palpitant récit, qui rappelle celui de Mark Watney dans Seul sur Mars. Un trait d'esprit à chaque occasion, un cerveau d'ingénieur super-rationnel et créatif et un optimisme increvable en toutes circonstances. Un héros que le lecteur aura envie de soutenir jusqu'au bout ! » Fantasy Literature</p>"
+    },
+    {
+      "id": "26",
+      "googleBooksId": "BmLwEAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "une lecture importante pour ne pas oublier d'ou vient le RN",
+      "title": "Le Pen et la torture",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=BmLwEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE711676Be89MGKeWUyV7CocVKU26welqjn0vxs0J7-sXeXNoltSa8JV5id79CIRR4l7A6nlww2gSirhJSykhJouBMNywlrHoaxZefNj6cM_or7WuBQmnyQVFISDAPtFrS8T87PJu&source=gbs_api",
+      "authors": [
+        "Fabrice RICEPUTI"
+      ],
+      "description": "Jean-Marie Le Pen a-t-il pratiqué la torture, quand, jeune député, il s'engagea volontairement comme parachutiste dans la « bataille d’Alger » ? Avec rigueur et clarté, Fabrice Riceputi réunit pour la première fois dans ce livre l’ensemble du dossier historique relatif à cette question. Il montre d'abord comment et pourquoi, des années 1980 aux années 2000, Le Pen fut, malgré ses dénégations, rattrapé par ce passé dans la presse française. Exploitant toutes les sources disponibles (archives, témoignages, enquêtes), il fait ensuite la micro-histoire du court séjour de Le Pen à Alger en 1957. Enfin, il s’interroge sur les fondements du déni persistant des crimes coloniaux de l’armée française alors qu’est prônée une histoire officielle « apaisée » du passé colonial de la France en Algérie. Fabrice Riceputi est historien. Il enseignait l’histoire-géographie dans un collège d’un quartier populaire de Besançon et anime les sites histoirecoloniale.net et 1000autres.org consacrés à l’actualité des questions coloniales et postcoloniales, et à la guerre d’Algérie. Il est également l'auteur de Ici on noya les Algériens (le passager clandestin, 2021)."
+    },
+    {
+      "id": "27",
+      "googleBooksId": "or1HPAAACAAJ",
+      "status": "finished",
+      "rating": 3,
+      "comment": "Lecture et intrigue intéressante, le style est très agréable, mais pas forcément dans un style qui me plait complètement.",
+      "title": "Les Depossedes",
+      "imageUrl": "http://books.google.com/books/content?id=or1HPAAACAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE73TuvJGJ6p-YWei41UDwXI-sUGHPv2v3hQuFLt026P_Uv2WXTHcNDuXbL1Prr1VqqHWAYBfOAztJEiRywhynvW_C-KvUDg5uO5FiwH7zN32zp_ajptkUjQP1r-PkPGDcW0vxTR3&source=gbs_api",
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "description": "Deux mondes se font face : Anarres, peuplé deux siècles plus tôt par des dissidents soucieux de créer enfin une société utopique vraiment libre, même si le prix à payer est la pauvreté. Et Urras qui a, pour les habitants d'Anarres, conservé la réputation d'un enfer, en proie à la tyrannie, à la corruption et à la violence. Shevek, physicien hors normes, a conscience que l'isolement d'Anarres condamne son monde à la sclérose. Et, fort de son invention, l'ansible, qui permettra une communication instantanée entre tous les peuples de l'Ekumène, il choisit de s'exiler sur Urras en espérant y trouver une solution. Ce roman, qui a obtenu les prix Hugo, Nebula et Locus, n'a rien perdu aujourd'hui de sa virulence politique ni de sa charge d'aventures. Avec La Main gauche de la nuit, précédemment paru dans la même collection, c'est un des chefs-d'oeuvre d'Ursula Le Guin."
+    },
+    {
+      "id": "28",
+      "googleBooksId": "jEP5sgEACAAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "Efficace, brutale, et très efficace. J'adore.",
+      "title": "FUTU.RE",
+      "imageUrl": null,
+      "authors": [
+        "Dmitry Glukhovsky"
+      ],
+      "description": "L'action de FUTU.RE se déroule dans un avenir lointain où l'humanité a su manipuler son génome pour stopper le processus de vieillissement et jouir d'une forme d'immortalité.<br>L'Europe, devenue une gigapole hérissée de gratte-ciel où s'entasse une population qui avoisine le trillion de personnes, fait figure d'utopie car la vie y est sacrée et la politique de contrôle démographique raisonnée.<br>La loi du Choix prône que tout couple qui souhaite procréer doit déclarer la grossesse à l'État et désigner le parent qui recevra l'injection d'un accélérateur métabolique destiné à provoquer son décès à plus ou moins brève échéance. <br>Une mort pour une vie, c'est le prix de l'État providence européen.<br>La Phalange, entité paramilitaire à l'existence et aux méthodes controversées, veille au strict respect de la loi. Matricule 717, le protagoniste principal du roman, est un homme du rang. Mais sa vie miteuse va basculer le jour où un sénateur lui propose d'éliminer en sous-main un activiste de l'opposition.<br>Brillant, trash et émouvant !<br>"
+    },
+    {
+      "id": "29",
+      "googleBooksId": "P4jcEAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "Quel livre ! Une véritable pépite et un enorme plaisir à lire.",
+      "title": "Babel (e-book)",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=P4jcEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE736Txl0S4sGk7QBij4GoPcl_zUMuHCQ-IFIuEyf_aEe691n9qEMaKWcDkT5hZIa2TREeeSbeqgDFiAfMOGILMFvl7wKexya7lEXGcxJtxeGpyOkC-q144NJUiOegU7nDGVar2oy&source=gbs_api",
+      "authors": [
+        "Rebecca F. Kuang"
+      ],
+      "description": "<p><b>Un acte de traduction est toujours un acte de trahison.</b><br>1828. Un jeune orphelin chinois est recueilli à Canton par un professeur et conduit à Londres. Rebaptisé Robin Swift, le jeune garçon consacre ses journées à l'étude des langues dans l'optique d'intégrer le prestigieux Institut royal de traduction de l'Université d'Oxford, plus connu sous le nom de <b>Babel</b>. Berceau de l'argentogravure, les étudiants y exploitent le sens perdu des mots à l'aide de barres d'argent enchantées. <br><br>Dès ses premiers jours à Oxford, Robin prend conscience que ces travaux confèrent à l'Empire britannique une puissance inégalée et servent sa soif de colonisation, au détriment des classes défavorisées de la société et de ses territoires. Servir <b>Babel</b> revient donc à trahir sa patrie d'origine. <br>Peut-il espérer changer <b>Babel</b> de l'intérieur ? Ou devra-t-il sacrifier ses rêves pour faire tomber cette institution ? <br><br><i>Traduit de l'anglais par Michel Pagel<br><br>\"</i>Un chef-d'œuvre qui confronte le pouvoir et le savoir. <i><b>Babel </b></i>est un roman saisissant sur la cruauté de l'Empire et sur la face sombre des sociétés académiques et un mélange extraordinaire de fantasy et fiction historique. Une réalisation monumentale !' <br>Samantha Shannon, autrice du <i> Prieuré de l'oranger</i>, d' <i>Un jour de nuit tombée </i>et de la saga <i> The Bone Season. </i><br><br>\"Absolument phénoménal ! C'est l'un des livres les plus brillants et les plus incisifs que j'ai eu le plaisir de lire. Il ne s'agit pas seulement d'une histoire fantastique, mais d'un récit qui interroge, qui s'empare de l'histoire coloniale et de la révolution industrielle et les remet en cause.' <br>Shannon Chakraborty, autrice de la saga <i> Daevabad.</i><br><br></p>"
+    },
+    {
+      "id": "30",
+      "googleBooksId": "rnJ_EAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "Incroyable ! À lire absolument !",
+      "favorite": true,
+      "abandoned": false,
+      "title": "Les Cantos d'Hypérion - Tome 1 : Hypérion - préface de Bernard Minier et postface de Fabrice Chemla",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=rnJ_EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE718CcxJ6OsfPRanDL99gSFacKmr2X4pUS6cntvzSs5cA0wSuOm4VfkDxBOGLfB_JvbGfUuQ37va_I75UYJlrgHv52lQiBuh2R6L1emKmBr7S-3wE6JeM0S-LnP4SdbaL8tyCRT_&source=gbs_api",
+      "authors": [
+        "Dan Simmons"
+      ],
+      "description": "<p><b>Le premier titre des <i>Cantos d'Hypérion</i> enfin en édition collector, avec une préface inédite de Bernard Minier et une postface de Fabrice Chemla.</b><br>Sept pèlerins ont été choisis par l'Hégémonie pour aller à la rencontre du mythique gritche dans la vallée des Tombeaux du Temps. <br> En cheminant à travers les étendues hostiles de la planète Hypérion, chacun d'entre eux se raconte...</p>"
+    },
+    {
+      "id": "31",
+      "googleBooksId": "pZTDGCIkdcEC",
+      "title": "La Chute d'Hypérion",
+      "imageUrl": "http://books.google.com/books/content?id=pZTDGCIkdcEC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE731B9hppA6LWlxJfw0-qcMfaKLXytKq5ur-r8wgaAel1RNdMATE8Nt62Dm_4YuMeuYYyDlEFlgV4AudHApODddicqGcb-D91g2iUoryG71ZTxuYOkxagsDrI-KkXww7EhWCDiuW&source=gbs_api",
+      "status": "finished",
+      "rating": null,
+      "comment": "Incroyable comme toute la saga !",
+      "favorite": true,
+      "abandoned": false,
+      "authors": [
+        "Dan Simmons"
+      ],
+      "description": "<p><i>La Chute d'Hypérion</i> prolonge <i>Hypérion</i>.<br> Tous les secrets d'Hypérion seront dévoilés, toutes les énigmes résolues, dans un style à nouveau différent qui démontre une fois encore l'exceptionnel talent de Dan Simmons.<br> Vous saurez pourquoi les sept pèlerins se sont retrouvés sur la planète mystérieuse qui abrite les Tombeaux du Temps. Vous découvrirez les véritables ressorts de la guerre qui fait rage autour d'elle et qui menace d'embraser toute la galaxie humaine, tout le Retz.<br> Vous comprendrez le rôle unique du cybride de John Keats, le poète ressuscité, et celui du gritche.<br> Ici s'affrontent des dieux, créés par les humains ou descendant d'eux.<br><b>Cette édition numérique comprend :<br> - une préface de Gérard Klein<br> - une préface aux <i>Cantos d'Hypérion</i> de Dan Simmons<br> - un extrait d'<i>Endymion</i>, tome 3 du cycle<br> - le poème <i>La Chute d'Hypérion</i>, de John Keats<br> - la bibliographie complète des oeuvres de Dan Simmons<br> - un dossier sur la collection : Ailleurs & Demain, quarante ans de science-fiction</b>.<br><br><b>Le cycle d'Hypérion: </b><br> 1. <i>Hypérion </i><br> 2. <i>La Chute d'Hypérion </i><br> 3. <i>Endymion </i><br> 4. <i>L'Éveil d'Endymion</i><br><br></p>"
+    },
+    {
+      "id": "32",
+      "googleBooksId": "u-2Tj5X1LAQC",
+      "title": "Endymion",
+      "imageUrl": "http://books.google.com/books/content?id=u-2Tj5X1LAQC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70vhTXevrWdg7lBdX5f8OQlPQzgcTVeNVsvmEp6HEQhxL4YL0eONcGfxcVQedN_qZdOBAjJM5luabDHeeNS3yhyTravHp0lU3MMv3QvElDVZOBIlgcGwbVmUAugsJ_9pyxf6eQg&source=gbs_api",
+      "status": "finished",
+      "rating": null,
+      "comment": null,
+      "favorite": true,
+      "abandoned": false,
+      "authors": [
+        "Dan Simmons"
+      ],
+      "description": "<p><i>Endymion</i> est la suite d'<i>Hypérion</i> (Prix Hugo 1991) et de <i>La Chute d'Hypérion</i>. Bien des énigmes demeuraient, qu'<i>Endymion</i> ranime.<br> La saga d'<i>Hypérion</i>, ainsi augmentée par Dan Simmons, est probablement la seule, dans toute l'histoire de la Science-Fiction, qui puisse rivaliser avec <i>Dune</i>.<br> Sur Hypérion, 274 ans après la rupture entre la civilisation humaine et les Intelligences Artificielles, une petite fille, Énée, surgit du labyrinthe du Sphinx. Elle est porteuse d'une prophétie qui en fait un enjeu de pouvoir.<br> Fille de Keats, le cybride issu des Machines, et de l'humaine Brawne Lamia, elle serait, aux yeux de l'Église devenue toute-puissante, une créature des machines, et doit être neutralisée. Mais pour Martin Silenus, le très vieux poète des Cantos et l'un des héros d'Hypérion, Énée doit sauver l'humanité et retrouver la Vieille Terre.<br> Silenus charge donc Raul Endymion de l'enlever, au nez et à la barbe de la redoutable Garde Vaticane, vers une destination mystérieuse. Contre toute attente, il réussit. Sur l'ancien navire interstellaire du Consul, Énée, Endymion et l'androïde, A. Bettik, fuient le père capitaine de Soya lancé à leurs trousses.<br> Suivant le trajet de l'ancienne rivière Théthys qui, du temps des portes distrans, sillonnait l'hyperespace, ils traversent une série de mondes plus dangereux les uns que les autres.<br><b>Cette édition numérique comprend :<br> - une préface de Gérard Klein<br> - une préface aux <i>Cantos d'Hypérion</i> de Dan Simmons<br> - un extrait de <i>La Chute d'Endymion</i>, tome 4 du cycle<br> - le poème <i>Endymion</i> de John Keats<br> - la bibliographie complète des oeuvres de Dan Simmons<br> - un dossier sur la collection: Ailleurs & Demain, quarante ans de science-fiction.</b><br><br><b>Le cycle d'Hypérion:</b><br> 1. <i>Hypérion</i><br> 2. <i>La Chute d'Hypérion</i><br> 3. <i>Endymion</i><br> 4. <i>L'Éveil d'Endymion</i><br><br></p>"
+    },
+    {
+      "id": "33",
+      "googleBooksId": "kn9IRRdzG5IC",
+      "title": "L'Éveil d'Endymion",
+      "imageUrl": "http://books.google.com/books/content?id=kn9IRRdzG5IC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE737k-Yh8zZP1RxCXhAzzHfgFTeUcXjVCSis3E8ggJMTRoqPeBz2DGUfN_UcEHq2oggoacy-QvemQBnfXDkjggvrz2PyIFQrnqLoYkbrQ0-WZmHbMtb8qbMmkcc_2um4QKNgJaND&source=gbs_api",
+      "status": "finished",
+      "rating": null,
+      "comment": null,
+      "favorite": true,
+      "abandoned": false,
+      "authors": [
+        "Dan Simmons"
+      ],
+      "description": "<p>Après <i>Hypérion</i> (Prix Hugo 1991), <i>La Chute d'Hypérion</i> puis <i>Endymion</i>, voici enfin venir <i>L'Éveil d'Endymion</i>, quatrième et dernier volet d'une des plus fameuses sagas de la Science-Fiction contemporaine.<br> Toutes les énigmes trouveront leurs solutions, toutes les questions sans réponses, tous les fils seront enfin noués. Mais seulement après qu'Énée, la fille prophète surgie du labyrinthe du sphinx sur la planète Hypérion, aura accompli son destin avec l'aide et l'amour de Raul Endymion. À travers mille dangers, à travers mille voyages, à travers mille mondes.<br> Dan Simmons a pris place avec le cycle d'<i>Hypérion</i> dans le panthéon de la Science-Fiction contemporaine, aux côtés du Frank Herbert de <i>Dune</i>, du Philip K. Dick de <i>Ubik</i>, du Philip José Farmer du Monde du fleuve, ou de l'Isaac Asimov des <i>Fondations</i>.<br><b>Cette édition numérique comprend :<br> - une préface de Gérard Klein<br> - une préface aux <i>Cantos d'Hypérion</i> de Dan Simmons<br> - le poème <i>Endymion</i> de John Keats<br> - la bibliographie complète des oeuvres de Dan Simmons<br> - un dossier sur la collection: Ailleurs & Demain, quarante ans de science-fiction.</b><br><br><b>Le cycle d'Hypérion: </b><br> 1. <i>Hypérion </i><br> 2. <i>La Chute d'Hypérion </i><br> 3. <i>Endymion </i><br> 4. <i>L'Éveil d'Endymio</i>n<br><br></p>"
+    },
+    {
+      "id": "34",
+      "googleBooksId": "5ZuhDAAAQBAJ",
+      "title": "L'Espace d'un an",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=5ZuhDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72q6h-6kuuN8RPMhAUasswFZ7c7wDL4dL80QZgTtI4juMUmOWENqfoVW8Ecihj7njiqv8jG0Oo9kAwjfbGj59pwAPlJSM-z8FlOi8huJBthP5Nh2fXjeh4QfnDIr1T9RcYsteoP&source=gbs_api",
+      "status": "finished",
+      "rating": null,
+      "comment": null,
+      "favorite": true,
+      "abandoned": false,
+      "authors": [
+        "Becky Chambers"
+      ],
+      "description": "<p> <b>Premier volume des « Voyageurs », série lauréate du prestigieux prix Hugo, L’Espace d’un an signe les débuts de Becky Chambers, dont la plume et les récits ont bouleversé la science-fiction.</b> </p> <p>Rosemary, jeune humaine inexpérimentée, fuit sa famille de richissimes escrocs. Elle est engagée comme greffière à bord du Voyageur, un vaisseau qui creuse des tunnels dans l’espace, où elle apprend à vivre et à travailler avec des représentants de différentes espèces de la galaxie : des reptiles, des amphibiens et, plus étranges encore, d’autres humains.<br> <br>La pilote, couverte d’écailles et de plumes multicolores, a choisi de se couper de ses semblables ; le médecin et cuistot occupe ses six mains à réconforter les gens pour oublier la tragédie qui a condamné son espèce à mort ; le capitaine humain, pacifiste, aime une alien dont le vaisseau approvisionne les militaires en zone de combat ; l’IA du bord hésite à se transférer dans un corps de chair et de sang...</p> <p>Les tribulations du Voyageur, parti pour un trajet d’un an jusqu’à une planète lointaine, composent la tapisserie chaleureuse d’une famille unie par des liens plus fondamentaux que le sang ou les lois : l’amour sous toutes ses formes.</p> <p>« Un tour de force humain d’une profonde douceur, qui s’attaque aux questions de genre et de politique sans se départir de son délicieux optimisme. » -<b> The Guardian</b></p>"
+    },
+    {
+      "id": "35",
+      "googleBooksId": "WKsL0AEACAAJ",
+      "title": "Les voyageurs",
+      "imageUrl": null,
+      "status": "finished",
+      "rating": null,
+      "comment": null,
+      "favorite": true,
+      "abandoned": false,
+      "authors": [
+        "Becky Chambers"
+      ],
+      "description": "Lovelace, intelligence artificielle née à bord du Voyageur à la fin de L'Espace d'un an, accepte de se transférer à bord d'un corps synthétique. Devenir humaine, une chance ? Pas pour elle : les limitations de la chair l'étouffent. Champ de vision ridiculement restreint, pas d'accès au réseau, réactions physiologiques incontrôlables...À ses côtés, Poivre, mécano, l'aide de son mieux. Ancienne enfant esclave libérée par miracle, grandie seule sur une planète ravagée, elle aussi a dû lutter pour accéder pleinement à l'humanité et se construire une vie, sinon ordinaire, du moins normale.Libration - nom d'un point de l'espace en équilibre entre deux astres, zone de stabilité mouvante qui accompagne les planètes dans leur danse - raconte l'histoire de ces deux femmes. Chacune à sa façon s'arrache à une vie liminale pour se tailler une identité, conquérir l'indispensable : la dignité."
+    },
+    {
+      "id": "36",
+      "googleBooksId": "kpGwDwAAQBAJ",
+      "title": "Archives de l'exode",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=kpGwDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70ZKVwoSn62HreOnubdSRV1piZsLdCLYZ3JQdqETuqSQIdp9tQSEbbKkt5WHd93Oa3gD0Iqhl4cUXShQTI5MF-rw6YPBRz-3yZlXNJdtvumcwpE7I8JXlCy2l7YurdIaujnNA7K&source=gbs_api",
+      "status": "finished",
+      "rating": null,
+      "comment": null,
+      "favorite": true,
+      "abandoned": false,
+      "authors": [
+        "Becky Chambers"
+      ],
+      "description": "<p> <b>Troisième volume des « Voyageurs », série lauréate du prestigieux prix Hugo, Archives de l’exode confirme Becky Chambers à l’avant-garde d’un renouveau de la science-fiction, intimiste et pleine d’espoir.</b> </p> <p>La Flotte d’exode est un trésor vieillissant, témoin de la volonté humaine de disséminer ses enfants et sa culture à travers les étoiles. Singulière au sein de la communauté galactique, peu la rejoignent et beaucoup la quittent. Dans les couloirs de ces vaisseaux naissent, vivent et meurent les spatiaux.</p> <p>Une ethnologue à tentacules, un homme rêvant d’intégrer la Flotte, un adolescent de s’en aller, une archiviste qui a connu l’époque où les Humains étaient des parias, une soignante affectée aux soins des morts, et Tessa, sœur d’Ashby, le capitaine humaniste de L’Espace d’un an.</p> <p>Autant de voix qui, humaines ou non, nous racontent le sentiment d’appartenance à un groupe, le besoin central de trouver une place, dans la galaxie ou dans les cœurs. Des gens ordinaires ; des vies ordinaires : uniques et précieuses.</p> <p>« Un space opera intimiste, tout en humanisme et en empathie. Il n’est pas nécessaire d’avoir lu les précédents pour apprécier ce roman, mais on aurait bien tort de s’en priver. » - <b>Bifrost</b></p>"
+    },
+    {
+      "id": "37",
+      "googleBooksId": "epDtEAAAQBAJ",
+      "title": "Révélation",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=epDtEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70N-dPhoXVgLdAvQL38_KbRQPkPDp-uh1Pwcwy1VnpbBlLx_0Xtlti_6LEZiDXem2WX8uiJPu1SNtU-MkWTqGyyZyAEihtqeZTofITIZeRMLVUvEpCp_CP41wjNx44GI_WvypW6&source=gbs_api",
+      "status": "finished",
+      "rating": null,
+      "comment": null,
+      "favorite": true,
+      "abandoned": false,
+      "authors": [
+        "Blake Crouch",
+        "Patrick Imbert"
+      ],
+      "description": "Une série entre suspense, action et thriller dans un univers aux frontières du fantastique, mais qui plonge dans une effrayante réalité.<br><br>L'agent fédéral Ethan Burke reprend conscience, seul et blessé, en pleine rue à Wayward Pines, petite bourgade tranquille de l'Idaho.<br>Partiellement amnésique, il se souvient être à la recherche de deux autres agents mystérieusement disparus dans la région. Il se rend vite compte qu'il n'a plus de papiers, ni de téléphone et, en dépit de ses efforts, il ne parvient à joindre ni sa femme, ni son supérieur, ni personne du monde extérieur.<br><br>Il y a vraiment quelque chose de bizarre à Wayward Pines, comme chez ses habitants.<br>Lorsqu'Ethan découvre le cadavre horriblement mutilé de l'un des agents qu'il recherchait, l'étrangeté cède la place à un danger mortel.<br><br>C'est maintenant sûr, il y a quelque chose de pourri à Wayward Pines.<br><br>« Une fois plongé dedans, impossible de reposer les volumes. C'est un très bon thriller de science-fiction. » - France Culture<br>«À mi-chemin entre la science-fiction et le polar, Wayward Pines est fascinant. » - Jean-Mars Pinson, Ouest France<br>« II y a là un goût de thriller, mais sur fond de tension psycho, le genre file assez vite vers la science fiction. Avis aux amateurs. » - Julien Dodon, Centre France"
+    },
+    {
+      "id": "38",
+      "googleBooksId": "-a_ZCgAAQBAJ",
+      "title": "Wayward Pines (Livre 2)",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=-a_ZCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70jYCYmTvOWUK99EqTcbNV2BbSc8sToZXu520BpmcyliqcsHwgQgLBXz88E9S4JGe26P8N7faTXpxkt_A6FiAz-mldfBwQ-ZTcL6wnshprTaqTcGD4fzRjPSK3i5yaAVZ5FDT01&source=gbs_api",
+      "status": "finished",
+      "rating": null,
+      "comment": null,
+      "favorite": true,
+      "abandoned": false,
+      "authors": [
+        "Blake Crouch"
+      ],
+      "description": "Nichée au coeur d’un paysage de carte postale, Wayward Pines apparaît comme une petite bourgade idyllique où la vie s’écoule paisiblement – à condition de faire abstraction de la clôture électrifiée qui en barre totalement l’accès et de la surveillance implacable des autorités. Les quelques fous à avoir tenté de quitter la ville l’ont payé de leur vie. Sauf Ethan Burke. Il a vu le monde au-delà de Wayward Pines, découvert l’insoutenable vérité. Et il est revenu. Parviendra-t-il à ouvrir les yeux de ses concitoyens sur la terrible réalité qui les entoure, sans éveiller les soupçons de leurs geôliers ?"
+    },
+    {
+      "id": "39",
+      "googleBooksId": "wCDuEAAAQBAJ",
+      "title": "Destruction",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=wCDuEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70ygYEp6QX2JXxIkMkiHODCTF9Jqsczsp9W94LJ8rsVB0qbCgNQiKEdfRVBIabZ87R7wrgTzcIyP4ZG-X2GUkF9W4U0TKSwdE7_DIkct1n3Dbb00CNnXrtnAzZX53XUbo4PMQG-&source=gbs_api",
+      "status": "finished",
+      "rating": null,
+      "comment": null,
+      "favorite": true,
+      "abandoned": false,
+      "authors": [
+        "Blake Crouch",
+        "Patrick Imbert"
+      ],
+      "description": "Une série entre suspense, action et thriller dans un univers aux frontières du fantastique, mais qui plonge dans une effrayante réalité.<br><br>Voilà trois semaines que l'agent Ethan Burke est arrivé à Wayward Pines, Idaho. Dans cette ville les habitants se voient assigner un logement, un travail et parfois même une personne pour partager leur vie pendant qu'à l'école, on apprend à leurs enfants que David Pilcher, le fondateur de la ville, est leur Dieu.<br><br>Bien entendu, personne n'est autorisé à quitter la ville, cernée par une immense clôture électrifiée. Ethan, lui, a découvert ce qui rôde au-delà de l'enceinte qui isole Wayward Pines du monde extérieur. C'est précisément cette menace qui est maintenant sur le point de submerger la ville et peut-être même d'annihiler l'humanité toute entière.<br><br>« Les fans de Stephen King, Peter Straub ou F. Paul Wilson vont adorer ce thriller complètement captivant qui mêle suspense, horreur et science-fiction à une dystopie cauchemardesque pour donner un livre absolument impossible à lâcher. » - Booklist"
+    },
+    {
+      "id": "40",
+      "googleBooksId": "AQdIAQAAQBAJ",
+      "title": "Le Monde de Narnia (Tome 1) - Le Neveu du magicien",
+      "imageUrl": "http://books.google.com/books/publisher/content?id=AQdIAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73UspXrju2Yxntb6MLqxKnf1BW8nwwNexGjUULrU-CQrFXKkuZDxVdspq2lJX4ihzFfNgwgQPrtd8vHHqK-zdOBA37eoJ1Ek1_0nfCHQ8RDHioRik9Iobp-RjSWEgtFXNxbT2L1&source=gbs_api",
+      "status": "finished",
+      "rating": 3,
+      "comment": "Écouter avec les enfants en livre audio.",
+      "favorite": false,
+      "abandoned": false,
+      "authors": [
+        "Clives Staples Lewis"
+      ],
+      "description": "Polly trouve parfois que la vie à Londres n'est guère passionnante... jusqu'au jour où elle rencontre son nouveau voisin, Digory. Il vit avec sa mère, gravement malade, et un vieil oncle au comportement étrange. Celui-ci force les deux enfants à essayer des bagues magiques qui les transportent dans un monde inconnu. Commence alors la plus extraordinaire des aventures..."
+    },
+    {
+      "id": "dae8be4c-24f0-4295-b8db-87f3a8f7c949",
+      "googleBooksId": "MJNi0uU8kdoC",
+      "status": "reading",
+      "progress": 80,
+      "rating": null,
+      "comment": null,
+      "abandoned": false,
+      "favorite": false,
+      "title": "11/22/63",
+      "authors": [
+        "Stephen King"
+      ],
+      "description": "<b>One of the Ten Best Books of <i>The New York Times Book Review</i><br> Winner of the <i>Los Angeles Times</i> Book Prize</b><br><br>ON NOVEMBER 22, 1963, THREE SHOTS RANG OUT IN DALLAS, PRESIDENT KENNEDY DIED, AND THE WORLD CHANGED. WHAT IF YOU COULD CHANGE IT BACK?<br> <br>In this brilliantly conceived tour de force, Stephen King—who has absorbed the social, political, and popular culture of his generation more imaginatively and thoroughly than any other writer—takes readers on an incredible journey into the past and the possibility of altering it.<br> <br>It begins with Jake Epping, a thirty-five-year-old English teacher in Lisbon Falls, Maine, who makes extra money teaching GED classes. He asks his students to write about an event that changed their lives, and one essay blows him away—a gruesome, harrowing story about the night more than fifty years ago when Harry Dunning’s father came home and killed his mother, his sister, and his brother with a sledgehammer. Reading the essay is a watershed moment for Jake, his life—like Harry’s, like America’s in 1963—turning on a dime. Not much later his friend Al, who owns the local diner, divulges a secret: his storeroom is a portal to the past, a particular day in 1958. And Al enlists Jake to take over the mission that has become his obsession—to prevent the Kennedy assassination.<br> <br>So begins Jake’s new life as George Amberson, in a different world of Ike and JFK and Elvis, of big American cars and sock hops and cigarette smoke everywhere. From the dank little city of Derry, Maine (where there’s Dunning business to conduct), to the warmhearted small town of Jodie, Texas, where Jake falls dangerously in love, every turn is leading eventually, of course, to a troubled loner named Lee Harvey Oswald and to Dallas, where the past becomes heart-stoppingly suspenseful, and where history might not be history anymore. Time-travel has never been so believable. Or so terrifying.",
+      "imageUrl": "http://books.google.com/books/content?id=MJNi0uU8kdoC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71D3grLEyAiqUKFcvlw3BUnOdRlOF0WAHXWsNpamgP60E8BTNCB28zqsJrIopwKaYmscsjxORh2jspg97eZvbOkock584rt7A3q7O6Wn9ZXmIPHk1z43KYj4gmJ1oy76ie_50mc&source=gbs_api"
+    }
+  ]
+}

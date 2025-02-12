@@ -1,20 +1,60 @@
-const GOOGLE_BOOKS_API_URL = 'https://www.googleapis.com/books/v1/volumes';
+declare global {
+  interface Window {
+    googleBooksStore?: {
+      cache: Map<string, any>;
+      addToCache: (id: string, data: any) => void;
+      getFromCache: (id: string) => any;
+    };
+  }
+}
 
-export async function fetchGoogleBooksData(googleBooksId: string) {
+const GOOGLE_BOOKS_API_URL = 'https://www.googleapis.com/books/v1/volumes';
+const MAX_RETRIES = 10;
+const RETRY_DELAY = 1000;
+
+const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
+export async function fetchGoogleBooksData(id: string, retryCount = 0) {
+  // Vérifier le cache
+  if (typeof window !== 'undefined' && window.googleBooksStore?.getFromCache(id)) {
+    return window.googleBooksStore.getFromCache(id);
+  }
+
   try {
-    const response = await fetch(`${GOOGLE_BOOKS_API_URL}/${googleBooksId}`);
+    await delay(100 * (retryCount + 1));
+    const response = await fetch(`${GOOGLE_BOOKS_API_URL}/${id}`);
+    
     if (!response.ok) {
-      throw new Error('Failed to fetch book data');
+      if (retryCount < MAX_RETRIES) {
+        console.warn(`Retry ${retryCount + 1}/${MAX_RETRIES} for book ${id}`);
+        return fetchGoogleBooksData(id, retryCount + 1);
+      }
+      
+      console.warn(`Failed to fetch book ${id} after ${MAX_RETRIES} retries`);
+      return null;
     }
+
     const data = await response.json();
-    return {
+    const result = {
       title: data.volumeInfo.title || '',
       authors: data.volumeInfo.authors as string[],
       description: data.volumeInfo.description,
       imageLinks: data.volumeInfo.imageLinks,
     };
+
+    // Mettre en cache avec persistance
+    if (typeof window !== 'undefined' && window.googleBooksStore) {
+      window.googleBooksStore.addToCache(id, result);
+    }
+    return result;
+
   } catch (error) {
-    console.error(`Error fetching data for book ${googleBooksId}:`, error);
-    return undefined;
+    if (retryCount < MAX_RETRIES) {
+      console.warn(`Retry ${retryCount + 1}/${MAX_RETRIES} for book ${id}`);
+      return fetchGoogleBooksData(id, retryCount + 1);
+    }
+    
+    console.warn(`Failed to fetch book ${id} after ${MAX_RETRIES} retries`);
+    return null;
   }
 } 

@@ -1,7 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { fetchGoogleBooksData } from '../../utils/googleBooks';
-import booksData from '../../data/books.json';
+import booksData from '@data/books.json';
 import type { Book } from '../../types/book';
 
 export async function getStaticPaths() {
@@ -13,7 +12,11 @@ export async function getStaticPaths() {
 }
 
 const { book } = Astro.props;
-const googleData = await fetchGoogleBooksData(book.googleBooksId);
+
+// Rediriger vers la page 404 si on ne peut pas récupérer les données
+if (!book) {
+  return Astro.redirect('/404');
+}
 
 const formatDate = (dateStr: string) => {
   return new Date(dateStr).toLocaleDateString('fr-FR', {
@@ -25,8 +28,8 @@ const formatDate = (dateStr: string) => {
 ---
 
 <Layout 
-  title={`${googleData.title} - YoanDev Lectures`}
-  description={googleData.description}
+  title={`${book.title} - YoanDev Lectures`}
+  description={book.description}
   type="book"
 >
   <div class="max-w-4xl mx-auto">
@@ -40,10 +43,10 @@ const formatDate = (dateStr: string) => {
     <div class="bg-dark-light rounded-xl p-6 md:p-8">
       <div class="grid md:grid-cols-[300px,1fr] gap-8">
         <div class="aspect-[2/3] rounded-lg overflow-hidden bg-dark-lighter">
-          {googleData?.imageLinks?.thumbnail ? (
+          {book.imageUrl ? (
             <img
-              src={googleData.imageLinks.thumbnail}
-              alt={`Couverture de ${googleData.title}`}
+              src={book.imageUrl}
+              alt={`Couverture de ${book.title}`}
               class="w-full h-full object-cover"
             />
           ) : (
@@ -56,11 +59,11 @@ const formatDate = (dateStr: string) => {
         <div class="space-y-6">
           <div>
             <h1 class="text-3xl font-bold text-gray-100 mb-2">
-              {googleData?.title || 'Titre inconnu'}
+              {book.title}
             </h1>
-            {googleData?.authors && (
+            {book.authors && (
               <p class="text-xl text-gray-400">
-                {googleData.authors.join(', ')}
+                {book.authors.join(', ')}
               </p>
             )}
           </div>
@@ -77,10 +80,10 @@ const formatDate = (dateStr: string) => {
             </div>
           )}
 
-          {googleData?.description && (
+          {book.description && (
             <div class="prose prose-invert prose-gray max-w-none">
               <h2 class="text-xl font-semibold mb-3">Résumé</h2>
-              <p class="text-gray-300">{googleData.description}</p>
+              <p class="text-gray-300">{book.description}</p>
             </div>
           )}
 

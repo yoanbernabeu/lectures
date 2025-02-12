@@ -2,23 +2,16 @@
 import Layout from '../layouts/Layout.astro';
 import FilterBar from '../components/FilterBar.astro';
 import BookCard from '../components/BookCard.astro';
-import { fetchGoogleBooksData } from '../utils/googleBooks';
-import booksData from '../data/books.json';
+import booksData from '@data/books.json';
 import type { Book } from '../types/book';
 
 const books = booksData.books as Book[];
-const booksWithGoogleData = await Promise.all(
-  books.map(async (book) => {
-    const googleData = await fetchGoogleBooksData(book.googleBooksId);
-    return { book, googleData };
-  })
-);
 
 // Mélanger le tableau de livres
-const shuffledBooks = [...booksWithGoogleData].sort(() => Math.random() - 0.5);
+const shuffledBooks = [...books].sort(() => Math.random() - 0.5);
 
 const getBooksByStatus = (status: string) => {
-  return shuffledBooks.filter(({ book }) => book.status === status);
+  return shuffledBooks.filter((book) => book.status === status);
 };
 
 const title = "YoanDev - Mes lectures";
@@ -44,13 +37,13 @@ const description = "Explorez ma bibliothèque personnelle : découvrez les livr
   <FilterBar />
 
   <div class="grid gap-6 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
-    {shuffledBooks.map(({ book, googleData }) => (
+    {shuffledBooks.map((book) => (
       <div 
         data-book-status={book.status}
-        data-book-title={googleData?.title}
+        data-book-title={book.title}
         class="animate-fade-in"
       >
-        <BookCard book={book} googleData={googleData} compact={true} />
+        <BookCard book={book} compact={true} />
       </div>
     ))}
   </div>
