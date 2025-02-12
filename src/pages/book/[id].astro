@@ -1,0 +1,119 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { fetchGoogleBooksData } from '../../utils/googleBooks';
+import booksData from '../../data/books.json';
+import type { Book } from '../../types/book';
+
+export async function getStaticPaths() {
+  const books = booksData.books as Book[];
+  return books.map((book) => ({
+    params: { id: book.id },
+    props: { book },
+  }));
+}
+
+const { book } = Astro.props;
+const googleData = await fetchGoogleBooksData(book.googleBooksId);
+
+const formatDate = (dateStr: string) => {
+  return new Date(dateStr).toLocaleDateString('fr-FR', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+};
+---
+
+<Layout 
+  title={`${googleData.title} - YoanDev Lectures`}
+  description={googleData.description}
+  type="book"
+>
+  <div class="max-w-4xl mx-auto">
+    <a href="/" class="inline-flex items-center gap-2 text-gray-400 hover:text-primary mb-8 transition-colors">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+      </svg>
+      Retour à la liste
+    </a>
+
+    <div class="bg-dark-light rounded-xl p-6 md:p-8">
+      <div class="grid md:grid-cols-[300px,1fr] gap-8">
+        <div class="aspect-[2/3] rounded-lg overflow-hidden bg-dark-lighter">
+          {googleData?.imageLinks?.thumbnail ? (
+            <img
+              src={googleData.imageLinks.thumbnail}
+              alt={`Couverture de ${googleData.title}`}
+              class="w-full h-full object-cover"
+            />
+          ) : (
+            <div class="w-full h-full flex items-center justify-center text-gray-500">
+              Image non disponible
+            </div>
+          )}
+        </div>
+
+        <div class="space-y-6">
+          <div>
+            <h1 class="text-3xl font-bold text-gray-100 mb-2">
+              {googleData?.title || 'Titre inconnu'}
+            </h1>
+            {googleData?.authors && (
+              <p class="text-xl text-gray-400">
+                {googleData.authors.join(', ')}
+              </p>
+            )}
+          </div>
+
+          {book.status === 'reading' && book.progress && (
+            <div class="bg-dark rounded-lg p-4">
+              <div class="w-full bg-dark-lighter rounded-full h-3 mb-2">
+                <div
+                  class="bg-gradient-to-r from-primary to-accent h-3 rounded-full transition-all duration-300"
+                  style={`width: ${book.progress}%`}
+                />
+              </div>
+              <p class="text-gray-400">{book.progress}% lu</p>
+            </div>
+          )}
+
+          {googleData?.description && (
+            <div class="prose prose-invert prose-gray max-w-none">
+              <h2 class="text-xl font-semibold mb-3">Résumé</h2>
+              <p class="text-gray-300">{googleData.description}</p>
+            </div>
+          )}
+
+          {book.comment && (
+            <div class="bg-dark rounded-lg p-6 border-l-4 border-primary">
+              <h2 class="text-xl font-semibold mb-3">Mon avis</h2>
+              <p class="text-gray-300 italic">"{book.comment}"</p>
+              {book.rating && (
+                <div class="flex items-center gap-1 mt-4">
+                  {[...Array(5)].map((_, i) => (
+                    <svg
+                      class={`w-6 h-6 ${i < (book.rating ?? 0) ? 'text-primary' : 'text-dark-lighter'}`}
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+
+          <div class="flex flex-wrap gap-4 text-sm text-gray-400">
+            {book.startDate && (
+              <p>Commencé le {formatDate(book.startDate)}</p>
+            )}
+            {book.endDate && (
+              <p>Terminé le {formatDate(book.endDate)}</p>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout> 

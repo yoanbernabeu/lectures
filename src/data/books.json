@@ -1,0 +1,33 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "googleBooksId": "zyTCAlFPjgYC",
+      "status": "reading",
+      "genres": ["tech", "non-fiction"],
+      "progress": 45,
+      "startDate": "2024-03-01",
+      "rating": null,
+      "comment": null,
+      "abandoned": false
+    },
+    {
+      "id": "2",
+      "googleBooksId": "wrOQLV6xB-wC",
+      "status": "finished",
+      "genres": ["business", "self-help"],
+      "startDate": "2024-01-15",
+      "endDate": "2024-02-28",
+      "rating": 4,
+      "comment": "Une lecture passionnante qui m'a beaucoup appris",
+      "abandoned": false
+    },
+    {
+      "id": "3",
+      "googleBooksId": "yZ1APgAACAAJ",
+      "status": "to-read",
+      "rating": null,
+      "comment": null
+    }
+  ]
+} 

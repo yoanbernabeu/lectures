@@ -1,11 +1,77 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import FilterBar from '../components/FilterBar.astro';
+import BookCard from '../components/BookCard.astro';
+import { fetchGoogleBooksData } from '../utils/googleBooks';
+import booksData from '../data/books.json';
+import type { Book } from '../types/book';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const books = booksData.books as Book[];
+const booksWithGoogleData = await Promise.all(
+  books.map(async (book) => {
+    const googleData = await fetchGoogleBooksData(book.googleBooksId);
+    return { book, googleData };
+  })
+);
+
+const getBooksByStatus = (status: string) => {
+  return booksWithGoogleData.filter(({ book }) => book.status === status);
+};
+
+const title = "YoanDev - Mes lectures";
+const description = "Explorez ma bibliothèque personnelle : découvrez les livres que je lis actuellement, ceux que j'ai terminés et ma liste de lecture à venir.";
 ---
 
-<Layout>
-	<Welcome />
+<Layout 
+  title={title}
+  description={description}
+  type="index"
+>
+  <header class="mb-16 text-center relative">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></div>
+    <h1 class="text-6xl font-bold mb-6 tracking-tight">
+      <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">YoanDev</span>
+      <span class="text-base-content/80">Lectures</span>
+    </h1>
+    <p class="text-lg text-base-content/60 max-w-2xl mx-auto leading-relaxed">
+      {description}
+    </p>
+  </header>
+
+  <FilterBar />
+
+  <div class="grid gap-6 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+    {booksWithGoogleData.map(({ book, googleData }) => (
+      <div 
+        data-book-status={book.status}
+        data-book-title={googleData?.title}
+        class="animate-fade-in"
+      >
+        <BookCard book={book} googleData={googleData} compact={true} />
+      </div>
+    ))}
+  </div>
 </Layout>
+
+<style>
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Décalage de l'animation pour chaque carte */
+  .animate-fade-in:nth-child(n) {
+    animation-delay: calc(n * 0.05s);
+  }
+</style>

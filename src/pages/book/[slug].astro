@@ -1,0 +1,29 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { fetchGoogleBooksData } from '../../utils/googleBooks';
+import booksData from '../../data/books.json';
+import type { Book } from '../../types/book';
+import { slugify } from '../../utils/slugify';
+
+export async function getStaticPaths() {
+  const books = booksData.books as Book[];
+  const booksWithData = await Promise.all(
+    books.map(async (book) => {
+      const googleData = await fetchGoogleBooksData(book.googleBooksId);
+      return { book, googleData };
+    })
+  );
+
+  return booksWithData.map(({ book, googleData }) => ({
+    params: { 
+      slug: googleData?.title ? slugify(googleData.title) : book.id 
+    },
+    props: { book, googleData },
+  }));
+}
+
+const { book, googleData } = Astro.props;
+// ... reste du code inchangé ...
+---
+
+<!-- ... reste du template inchangé ... --> 

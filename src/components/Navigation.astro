@@ -1,0 +1,25 @@
+---
+const categories = [
+  { id: 'reading', label: 'En cours de lecture' },
+  { id: 'to-read', label: 'À lire' },
+  { id: 'finished', label: 'Déjà lus' }
+];
+---
+
+<nav class="mb-12">
+  <ul class="flex flex-wrap gap-4">
+    {
+      categories.map(({ id, label }) => (
+        <li>
+          <a
+            href={`#${id}`}
+            class="px-6 py-3 rounded-lg bg-dark-light border border-dark-lighter hover:border-primary/50 text-gray-300 hover:text-primary transition-all duration-300 flex items-center gap-2"
+          >
+            <span class="w-2 h-2 rounded-full bg-primary/50"></span>
+            {label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav> 
