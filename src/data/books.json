@@ -2,32 +2,216 @@
   "books": [
     {
       "id": "1",
-      "googleBooksId": "zyTCAlFPjgYC",
-      "status": "reading",
+      "googleBooksId": "6wmCEAAAQBAJ",
+      "status": "finished",
       "genres": ["tech", "non-fiction"],
       "progress": 45,
       "startDate": "2024-03-01",
-      "rating": null,
+      "rating": 5,
       "comment": null,
       "abandoned": false
     },
     {
       "id": "2",
-      "googleBooksId": "wrOQLV6xB-wC",
+      "googleBooksId": "26hsEAAAQBAJ",
       "status": "finished",
       "genres": ["business", "self-help"],
       "startDate": "2024-01-15",
       "endDate": "2024-02-28",
-      "rating": 4,
-      "comment": "Une lecture passionnante qui m'a beaucoup appris",
+      "rating": 5,
+      "comment": "",
       "abandoned": false
     },
     {
       "id": "3",
-      "googleBooksId": "yZ1APgAACAAJ",
-      "status": "to-read",
-      "rating": null,
+      "googleBooksId": "yQjUEAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
       "comment": null
+    },
+    {
+      "id": "4",
+      "googleBooksId": "w_53EAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "Histoire intime et émouvante, une histoire de ma famille et des mes grands-parents."
+    },
+    {
+      "id": "5",
+      "googleBooksId": "xvGnEAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": null
+    },
+    {
+      "id": "6",
+      "googleBooksId": "yPGnEAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": null
+    },
+    {
+      "id": "7",
+      "googleBooksId": "kPGnEAAAQBAJ",
+      "status": "finished",
+      "rating": 4,
+      "comment": null
+    },
+    {
+      "id": "8",
+      "googleBooksId": "BFZlEAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "1984, un classique de la science-fiction, étonnament (et terriblement) réaliste."
+    },
+    {
+      "id": "9",
+      "googleBooksId": "2EoFCwAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "Un livre dur à lire, mais nécessaire !"
+    },
+    {
+      "id": "10",
+      "googleBooksId": "L-YbzgEACAAJ",
+      "status": "finished",
+      "rating": 3,
+      "comment": "Intéressant, mais pas simple"
+    },
+    {
+      "id": "11",
+      "googleBooksId": "RbO5EAAAQBAJ",
+      "status": "finished",
+      "rating": 2,
+      "comment": "Un classique de la SF, mais je n'ai pas accroché."
+    },
+    {
+      "id": "12",
+      "googleBooksId": "0ptFDwAAQBAJ",
+      "status": "finished",
+      "rating": 2,
+      "comment": "L'idée etait bonne, mais j'ai trouvé que les ficelles étaient un peu trop grosses."
+    },
+    {
+      "id": "13",
+      "googleBooksId": "KLMgEAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "Un classique de la littérature, qui donne envie de prendre un sac à dos et de partir en voyage."
+    },
+    {
+      "id": "14",
+      "googleBooksId": "89LuLAKdUKkC",
+      "status": "finished",
+      "rating": 5,
+      "comment": null
+    },
+    {
+      "id": "15",
+      "googleBooksId": "_3AlDwAAQBAJ",
+      "status": "finished",
+      "rating": 3,
+      "comment": "Un livre passionnant, et une source de connaissances inestimable."
+    },
+    {
+      "id": "16",
+      "googleBooksId": "cB9sDAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": null
+    },
+    {
+      "id": "17",
+      "googleBooksId": "1F6oEAAAQBAJ",
+      "status": "finished",
+      "rating": 2,
+      "comment": "Un classique, mais je complètement passé à côté."
+    },
+    {
+      "id": "18",
+      "googleBooksId": "9JQ2EAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "Incroyable, j'ai pas décroché du livre. Coup de cœur.",
+      "favorite": true
+    },
+    {
+      "id": "19",
+      "googleBooksId": "2UqGAQAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "Sombre, angoissant, mais terriblement addictif."
+    },
+    {
+      "id": "20",
+      "googleBooksId": "7V8InwEACAAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "Un classique de SF que je recommande très fortement, surtout dans nos époques ou le fachisme refait surface..."
+    },
+    {
+      "id": "21",
+      "googleBooksId": "Tvt9DwAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "Géniallissime, une lecture inoubliable."
+    },
+    {
+      "id": "22",
+      "googleBooksId": "tObNEAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "La suite de Outresable, mais aussi bonne que la première partie."
+    },
+    {
+      "id": "23",
+      "googleBooksId": "6mlRDwAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "En tant que Geek, ce livre est une véritable pépite."
+    },
+    {
+      "id": "24",
+      "googleBooksId": "KMVaDwAAQBAJ",
+      "status": "finished",
+      "rating": 3,
+      "comment": "Pas aussi bon que le 1er tome, mais j'avais envie de connaitre la suite."
+    },
+    {
+      "id": "25",
+      "googleBooksId": "GxaCDwAAQBAJ",
+      "status": "finished",
+      "rating": 1,
+      "comment": "3eme tome, celui de trop. j'ai trouvé que l'histoire trainait en longueur. j'ai abandonné.",
+      "abandoned": true
+    },
+    {
+      "id": "26",
+      "googleBooksId": "BmLwEAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "une lecture importante pour ne pas oublier d'ou vient le RN"
+    },
+    {
+      "id": "27",
+      "googleBooksId": "or1HPAAACAAJ",
+      "status": "finished",
+      "rating": 3,
+      "comment": "Lecture et intrigue intéressante, le style est très agréable, mais pas forcément dans un style qui me plait complètement."
+    },
+    {
+      "id": "28",
+      "googleBooksId": "jEP5sgEACAAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "Efficace, brutale, et très efficace. J'adore."
+    },
+    {
+      "id": "29",
+      "googleBooksId": "P4jcEAAAQBAJ",
+      "status": "finished",
+      "rating": 5,
+      "comment": "Quel livre ! Une véritable pépite et un enorme plaisir à lire."
     }
   ]
 } 

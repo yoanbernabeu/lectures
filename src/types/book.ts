@@ -11,4 +11,5 @@ export interface Book {
   rating: number | null;
   comment: string | null;
   abandoned?: boolean;
+  favorite?: boolean;
 } 
