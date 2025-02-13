@@ -35,11 +35,37 @@ export async function fetchGoogleBooksData(id: string, retryCount = 0) {
     }
 
     const data = await response.json();
+    
+    // Récupérer la meilleure qualité d'image disponible
+    let bestQualityImage = null;
+    const allImages: Record<string, string> = {};
+    if (data.volumeInfo.imageLinks) {
+      const imageLinks = data.volumeInfo.imageLinks;
+      // Traiter chaque taille d'image disponible
+      Object.entries(imageLinks).forEach(([size, url]) => {
+        if (typeof url === 'string') {
+          allImages[size] = url
+            .replace('http://', 'https://')
+            .replace(/&zoom=\d/, '&zoom=3')  // Force la meilleure qualité
+            .replace(/&img=\d/, '&img=1');   // Force la meilleure qualité
+        }
+      });
+      
+      // Sélectionner la meilleure qualité pour l'aperçu par défaut
+      bestQualityImage = allImages.extraLarge || 
+                        allImages.large || 
+                        allImages.medium || 
+                        allImages.small || 
+                        allImages.thumbnail;
+    }
+
     const result = {
       title: data.volumeInfo.title || '',
       authors: data.volumeInfo.authors as string[],
       description: data.volumeInfo.description,
-      imageLinks: data.volumeInfo.imageLinks,
+      imageLinks: {
+        ...allImages
+      },
     };
 
     // Mettre en cache avec persistance

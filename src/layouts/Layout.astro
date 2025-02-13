@@ -13,7 +13,52 @@ const {
 	type = 'index',
 } = Astro.props;
 const { url, site } = Astro;
-const openGraphImageUrl = new URL('/og.png', site);
+const ogImage = 'https://lectures.yoandev.co/og.png';
+
+const seoConfig = {
+	title,
+	description,
+	openGraph: {
+		basic: {
+			title,
+			type: type === 'book' ? 'article' : 'website',
+			image: ogImage,
+			url: url.href,
+		},
+		image: {
+			alt: "YoanDev Lectures - Bibliothèque personnelle",
+			width: 1200,
+			height: 630,
+			type: "image/png",
+		},
+		optional: {
+			siteName: "YoanDev Lectures",
+			locale: "fr_FR",
+			description,
+		},
+	},
+	twitter: {
+		card: "summary_large_image",
+		site: "@yOyO38",
+		creator: "@yOyO38",
+		title,
+		description,
+		image: ogImage,
+		imageAlt: "YoanDev Lectures - Bibliothèque personnelle"
+	},
+	extend: {
+		meta: [
+			{ name: "theme-color", content: "#570DF8" },
+			{ name: "apple-mobile-web-app-title", content: "YoanDev Lectures" },
+			{ name: "application-name", content: "YoanDev Lectures" },
+			{ name: "msapplication-TileColor", content: "#570DF8" },
+		],
+		link: [
+			{ rel: "icon", href: "/favicon.ico" },
+			{ rel: "canonical", href: url.href }
+		]
+	}
+};
 ---
 
 <!doctype html>
@@ -34,24 +79,42 @@ const openGraphImageUrl = new URL('/og.png', site);
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-		<meta property="og:image" content={openGraphImageUrl} />
+		<meta property="og:image" content={ogImage} />
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
-		<meta name="twitter:image" content={openGraphImageUrl} />
-		<SEO
+		<meta name="twitter:image" content={ogImage} />
+		<SEO 
 			title={title}
 			description={description}
 			openGraph={{
 				basic: {
 					title,
-					type: 'website',
-					image: openGraphImageUrl,
+					type: type === 'book' ? 'article' : 'website',
+					image: ogImage,
 					url: url.href,
 				},
 				optional: {
+					siteName: "YoanDev Lectures",
+					locale: "fr_FR",
 					description,
 				},
+				image: {
+					alt: "YoanDev Lectures - Bibliothèque personnelle",
+					width: 1200,
+					height: 630,
+					type: "image/png",
+				},
 			}}
+			twitter={{
+				card: "summary_large_image",
+				site: "@yOyO38",
+				creator: "@yOyO38",
+				title,
+				description,
+				image: ogImage,
+				imageAlt: "YoanDev Lectures - Bibliothèque personnelle"
+			}}
+			extend={seoConfig.extend}
 		/>
 	</head>
 	<body class="min-h-screen bg-base-100 font-['Inter']">
