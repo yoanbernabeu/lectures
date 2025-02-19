@@ -716,6 +716,39 @@
       ],
       "description": "The basis of three bestselling computer games Metro 2033 and Metro Last Light, and Metro: Exodus. The Metro books have put Dmitry Glukhovsky in the vanguard of Russian speculative fiction alongside the creator of Night Watch, Sergei Lukyanenko. A year after the events of METRO 2033 the last few survivors of the apocalypse, surrounded by mutants and monsters, face a terrifying new danger as they hang on for survival in the tunnels of the Moscow Metro. Featuring blistering action, vivid and tough characters, claustrophobic tension and dark satire the Metro books have become bestsellers across Europe. Readers can't get enough of the Metro series: 'What can I say - once you pick up this book and start reading, it's just amazingly hard to actually put it down until you finish. And after that, you just want MORE!!' Goodreads reviewer, ⭐ ⭐ ⭐ ⭐ 'This does everything right in its additions to the metro world. A great story with super fleshed out characters, who have all been warped by the new life humanity leads underground' Goodreads reviewer, ⭐ ⭐ ⭐ ⭐ ⭐ 'The author is particularly good at character development and world building. I've read a lot of dystopian novels but nothing like [Metro 2033] and [Metro 2034]' Goodreads reviewer, ⭐ ⭐ ⭐ ⭐ 'What a sequel! From page 1 on you get soaked into this dark, creepy and yet beautiful universe' Goodreads reviewer, ⭐ ⭐ ⭐ ⭐ ⭐ 'Metro 2034 is an amazing book, it shows tremendous amount of thought. The post-apocalyptic/sci-fi feel of the book makes it very exciting' Goodreads reviewer, ⭐ ⭐ ⭐ ⭐ ⭐",
       "imageUrl": "https://books.google.com/books/publisher/content?id=ZezVAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE709dzeZEE1DX4RLdSLTEEfQ-0DVAcn7lmWNWXOUlTnq0BKgr-IlLE8nCjJETp7dQfCJTXbqSXFSc8uG9Z03CCygfyV3p2CGWjetg7oE31gm3quYArNQ7wru-y4BsS9DPTMv3oPg&source=gbs_api"
+    },
+    {
+      "id": "b439ec01-7084-4147-a6e9-ab61af349836",
+      "googleBooksId": "Hkk7EQAAQBAJ",
+      "status": "to-read",
+      "rating": null,
+      "comment": null,
+      "abandoned": false,
+      "favorite": false,
+      "title": "Le Temps d'Après",
+      "authors": [
+        "Jean Hegland"
+      ],
+      "description": "Quinze ans après l'effondrement, le jeune Burl vit isolé avec ses deux mères, Eva et Nell. Pour éviter d'attirer l'attention, elles ont brûlé leur maison et se sont installées au coeur de la forêt. Non loin d'une grande souche, elles se sont construite une vie bien réglée. Pour se nourrir, Burl et ses mères chassent et cueillent. La danse, la musique et les récits qu'ils inventent au coin du feu rythment leurs journées. Protégées par leur chère forêt, Eva et Nell refusent tout contact avec le monde d'Avant. Mais Burl, lui, brûle de curiosité pour ces humains qu'il ne connaît que par leurs histoires. Une nuit de solstice, depuis le haut d'une montagne, il aperçoit une lumière qui pourrait être un feu d'origine humaine. En dépit du danger, il se met en tête d'aller à leur rencontre. La suite du chef-d'œuvre absolu de Jean Hegland, d'une maîtrise et d'une profondeur plus impressionnante encore. Si Nell et Eva ont marqué toute une génération, Burl sera le héros inoubliable de celle qui vient.",
+      "imageUrl": "https://books.google.com/books/publisher/content?id=Hkk7EQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70bywK9skGo86dCFIqRbahIA-9kiWZoZXY2JEcIgZ1pJn4SE9qIJSM0EWHiVx6qdUkKssBSccWR9SrE0L3jSK4pxKd5R7mRw7lwBJ0MgtsYYJXCflZl_EHpZmYPgRXBt-4A_mBA&source=gbs_api"
+    },
+    {
+      "id": "f6295c2c-7575-48a1-b41f-530e2e777410",
+      "googleBooksId": "ygSmDQAAQBAJ",
+      "status": "reading",
+      "progress": 2,
+      "startDate": "2025-02-19",
+      "rating": null,
+      "comment": null,
+      "abandoned": false,
+      "favorite": false,
+      "title": "Dans la forêt",
+      "authors": [
+        "Jean Hegland",
+        "Josette Chicheportiche"
+      ],
+      "description": "Rien n'est plus comme avant : le monde tel qu'on le connaît semble avoir vacillé, plus d'électricité ni d'essence, les trains et les avions ne circulent plus. Des rumeurs courent, les gens fuient. Nell et Eva, dix-sept et dix-huit ans, vivent depuis toujours dans leur maison familiale, au cœur de la forêt. Quand la civilisation s'effondre et que leurs parents disparaissent, elles demeurent seules, bien décidées à survivre. Il leur reste, toujours vivantes, leurs passions de la danse et de la lecture, mais face à l'inconnu, il va falloir apprendre à grandir autrement, à se battre et à faire confiance à la forêt qui les entoure, emplie d'inépuisables richesses. Considéré comme un véritable choc littéraire aux États-Unis, ce roman sensuel et puissant met en scène deux jeunes femmes qui entraînent le lecteur vers une vie nouvelle.",
+      "imageUrl": "https://books.google.com/books/publisher/content?id=ygSmDQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73-NuSWAxVuHbpL5ii3Y_q-QOh4b9X81SMpXosPRaXzakxR5HtI07A8tceuKm4ErwN-RaxDBk8aobIRCz7St6KHPEtlnDz6Vq4c9pe6PTHMhokL-PWM2jDiGmybUxbsJpkjq_nb&source=gbs_api"
     }
   ]
 }
