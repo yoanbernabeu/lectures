@@ -661,7 +661,7 @@
       "id": "fb954ca5-303c-4fef-a57d-e5c036e2b92f",
       "googleBooksId": "5ZuhDAAAQBAJ",
       "status": "finished",
-      "rating": null,
+      "rating": 5,
       "comment": null,
       "abandoned": false,
       "favorite": true,
@@ -676,7 +676,7 @@
       "id": "76dd3e25-d936-4d80-9b8b-012a7ac6e77b",
       "googleBooksId": "Tvt9DwAAQBAJ",
       "status": "finished",
-      "rating": null,
+      "rating": 5,
       "comment": "Géniallissime, une lecture inoubliable.",
       "abandoned": false,
       "favorite": true,
@@ -691,7 +691,7 @@
       "id": "e594d3aa-6be3-440e-9bf3-8e509c18f4ae",
       "googleBooksId": "or1HPAAACAAJ",
       "status": "finished",
-      "rating": null,
+      "rating": 4,
       "comment": "Lecture et intrigue intéressante, le style est très agréable, mais pas forcément dans un style qui me plait complètement.",
       "abandoned": false,
       "favorite": false,
@@ -706,7 +706,7 @@
       "id": "b4b3c19e-286e-4cae-a988-ae4af00bff4e",
       "googleBooksId": "ZezVAQAAQBAJ",
       "status": "finished",
-      "rating": null,
+      "rating": 5,
       "comment": null,
       "abandoned": false,
       "favorite": true,
@@ -720,8 +720,8 @@
     {
       "id": "b439ec01-7084-4147-a6e9-ab61af349836",
       "googleBooksId": "Hkk7EQAAQBAJ",
-      "status": "to-read",
-      "rating": null,
+      "status": "finished",
+      "rating": 3,
       "comment": null,
       "abandoned": false,
       "favorite": false,
@@ -730,16 +730,18 @@
         "Jean Hegland"
       ],
       "description": "Quinze ans après l'effondrement, le jeune Burl vit isolé avec ses deux mères, Eva et Nell. Pour éviter d'attirer l'attention, elles ont brûlé leur maison et se sont installées au coeur de la forêt. Non loin d'une grande souche, elles se sont construite une vie bien réglée. Pour se nourrir, Burl et ses mères chassent et cueillent. La danse, la musique et les récits qu'ils inventent au coin du feu rythment leurs journées. Protégées par leur chère forêt, Eva et Nell refusent tout contact avec le monde d'Avant. Mais Burl, lui, brûle de curiosité pour ces humains qu'il ne connaît que par leurs histoires. Une nuit de solstice, depuis le haut d'une montagne, il aperçoit une lumière qui pourrait être un feu d'origine humaine. En dépit du danger, il se met en tête d'aller à leur rencontre. La suite du chef-d'œuvre absolu de Jean Hegland, d'une maîtrise et d'une profondeur plus impressionnante encore. Si Nell et Eva ont marqué toute une génération, Burl sera le héros inoubliable de celle qui vient.",
-      "imageUrl": "https://books.google.com/books/publisher/content?id=Hkk7EQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70bywK9skGo86dCFIqRbahIA-9kiWZoZXY2JEcIgZ1pJn4SE9qIJSM0EWHiVx6qdUkKssBSccWR9SrE0L3jSK4pxKd5R7mRw7lwBJ0MgtsYYJXCflZl_EHpZmYPgRXBt-4A_mBA&source=gbs_api"
+      "imageUrl": "https://books.google.com/books/publisher/content?id=Hkk7EQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70bywK9skGo86dCFIqRbahIA-9kiWZoZXY2JEcIgZ1pJn4SE9qIJSM0EWHiVx6qdUkKssBSccWR9SrE0L3jSK4pxKd5R7mRw7lwBJ0MgtsYYJXCflZl_EHpZmYPgRXBt-4A_mBA&source=gbs_api",
+      "startDate": "2025-02-22",
+      "endDate": "2025-02-24"
     },
     {
       "id": "f6295c2c-7575-48a1-b41f-530e2e777410",
       "googleBooksId": "ygSmDQAAQBAJ",
-      "status": "reading",
+      "status": "finished",
       "progress": 2,
       "startDate": "2025-02-19",
-      "rating": null,
-      "comment": null,
+      "rating": 3,
+      "comment": "Un livre agréable à lire avec une intrigue captivante et des personnages intéressants qui se développent au fil des pages... Cependant, une scène au milieu de l'histoire m'a semblé particulièrement problématique, voire légèrement inappropriée, ce qui a malheureusement gâché le reste de ma lecture. Cette scène a créé une rupture dans le récit qui a été difficile à surmonter pour réellement apprécier la suite du livre de manière aussi fluide qu'au début.",
       "abandoned": false,
       "favorite": false,
       "title": "Dans la forêt",
@@ -748,7 +750,25 @@
         "Josette Chicheportiche"
       ],
       "description": "Rien n'est plus comme avant : le monde tel qu'on le connaît semble avoir vacillé, plus d'électricité ni d'essence, les trains et les avions ne circulent plus. Des rumeurs courent, les gens fuient. Nell et Eva, dix-sept et dix-huit ans, vivent depuis toujours dans leur maison familiale, au cœur de la forêt. Quand la civilisation s'effondre et que leurs parents disparaissent, elles demeurent seules, bien décidées à survivre. Il leur reste, toujours vivantes, leurs passions de la danse et de la lecture, mais face à l'inconnu, il va falloir apprendre à grandir autrement, à se battre et à faire confiance à la forêt qui les entoure, emplie d'inépuisables richesses. Considéré comme un véritable choc littéraire aux États-Unis, ce roman sensuel et puissant met en scène deux jeunes femmes qui entraînent le lecteur vers une vie nouvelle.",
-      "imageUrl": "https://books.google.com/books/publisher/content?id=ygSmDQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73-NuSWAxVuHbpL5ii3Y_q-QOh4b9X81SMpXosPRaXzakxR5HtI07A8tceuKm4ErwN-RaxDBk8aobIRCz7St6KHPEtlnDz6Vq4c9pe6PTHMhokL-PWM2jDiGmybUxbsJpkjq_nb&source=gbs_api"
+      "imageUrl": "https://books.google.com/books/publisher/content?id=ygSmDQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73-NuSWAxVuHbpL5ii3Y_q-QOh4b9X81SMpXosPRaXzakxR5HtI07A8tceuKm4ErwN-RaxDBk8aobIRCz7St6KHPEtlnDz6Vq4c9pe6PTHMhokL-PWM2jDiGmybUxbsJpkjq_nb&source=gbs_api",
+      "endDate": "2025-02-22"
+    },
+    {
+      "id": "a99f8b6d-059f-4d19-ac3d-0d68238cab1f",
+      "googleBooksId": "YagyEQAAQBAJ",
+      "status": "reading",
+      "progress": 6,
+      "startDate": "2025-02-24",
+      "rating": null,
+      "comment": null,
+      "abandoned": false,
+      "favorite": false,
+      "title": "Pyramides",
+      "authors": [
+        "Romain Benassaya"
+      ],
+      "description": "2182. Les humains, petit à petit, fuient une Terre troublée et sur le déclin. Leur destination ? Sinisyys, une autre planète bleue découverte aux confins du système Eridani. Parmi ceux qui rêvent de rejoindre ce nouvel espace, Éric et Johanna. Éric est d'ailleurs le second sur le Sterne III, l'immense vaisseau qui les emporte à travers les étoiles, plongés en biostase pendant deux cents ans. Pourtant, le voyage ne se déroule pas comme prévu. Le commandant, Samuel Hassani et Éric sortent du sommeil artificiel avant d'être parvenus à destination. Comble de malheur, le Sterne III semble sujet à une panne mystérieuse. Plus étrange encore, leur gigantesque vaisseau, incapable d'une telle prouesse, s'est posé. Mais où ? Et dans quelle inimaginable structure ? Romain Benassaya est né à Nice en 1984. Après des études de linguistique menées à Paris et l'obtention d'un master, il commence à enseigner le français à l'étranger, au Canada puis en Ouganda, jusqu'à ce qu'il pose ses valises à Bangkok. Depuis toujours passionné de science-fiction, il se lance dans l'écriture de nouvelles et romans. Après le succès d'Arca, il signe un nouveau space opera de premier plan.",
+      "imageUrl": "https://books.google.com/books/publisher/content?id=YagyEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72k4GZpSyvakmq7CO-RrzyeXivxoNMZIQHWh53AWqvhyDN2YVOIR0AB4Tq0VNxX4VDAa5a8KuTnXi809irMWcIwdwlRXsZ4oOdID0_0rrZKg6lri--KObsXMjrKdRM5fnpCX_pz&source=gbs_api"
     }
   ]
 }
