@@ -756,11 +756,11 @@
     {
       "id": "a99f8b6d-059f-4d19-ac3d-0d68238cab1f",
       "googleBooksId": "YagyEQAAQBAJ",
-      "status": "reading",
+      "status": "finished",
       "progress": 54,
       "startDate": "2025-02-24",
-      "rating": null,
-      "comment": null,
+      "rating": 5,
+      "comment": "Un space opéra absolument génial, j'ai adoré. Facile à lire, avec un bon rythme qui maintient le lecteur en haleine du début à la fin sans jamais faiblir, et de nombreux rebondissements qui surprennent à chaque page. Les personnages sont particulièrement bien développés et attachants, ce qui rend l'histoire encore plus immersive. Je recommande très vivement ce livre à tous les amateurs du genre, et même à ceux qui ne le sont pas, tant l'intrigue est prenante et bien ficelée !",
       "abandoned": false,
       "favorite": false,
       "title": "Pyramides",
@@ -768,7 +768,25 @@
         "Romain Benassaya"
       ],
       "description": "2182. Les humains, petit à petit, fuient une Terre troublée et sur le déclin. Leur destination ? Sinisyys, une autre planète bleue découverte aux confins du système Eridani. Parmi ceux qui rêvent de rejoindre ce nouvel espace, Éric et Johanna. Éric est d'ailleurs le second sur le Sterne III, l'immense vaisseau qui les emporte à travers les étoiles, plongés en biostase pendant deux cents ans. Pourtant, le voyage ne se déroule pas comme prévu. Le commandant, Samuel Hassani et Éric sortent du sommeil artificiel avant d'être parvenus à destination. Comble de malheur, le Sterne III semble sujet à une panne mystérieuse. Plus étrange encore, leur gigantesque vaisseau, incapable d'une telle prouesse, s'est posé. Mais où ? Et dans quelle inimaginable structure ? Romain Benassaya est né à Nice en 1984. Après des études de linguistique menées à Paris et l'obtention d'un master, il commence à enseigner le français à l'étranger, au Canada puis en Ouganda, jusqu'à ce qu'il pose ses valises à Bangkok. Depuis toujours passionné de science-fiction, il se lance dans l'écriture de nouvelles et romans. Après le succès d'Arca, il signe un nouveau space opera de premier plan.",
-      "imageUrl": "https://books.google.com/books/publisher/content?id=YagyEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72k4GZpSyvakmq7CO-RrzyeXivxoNMZIQHWh53AWqvhyDN2YVOIR0AB4Tq0VNxX4VDAa5a8KuTnXi809irMWcIwdwlRXsZ4oOdID0_0rrZKg6lri--KObsXMjrKdRM5fnpCX_pz&source=gbs_api"
+      "imageUrl": "https://books.google.com/books/publisher/content?id=YagyEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72k4GZpSyvakmq7CO-RrzyeXivxoNMZIQHWh53AWqvhyDN2YVOIR0AB4Tq0VNxX4VDAa5a8KuTnXi809irMWcIwdwlRXsZ4oOdID0_0rrZKg6lri--KObsXMjrKdRM5fnpCX_pz&source=gbs_api",
+      "endDate": "2025-03-09"
+    },
+    {
+      "id": "78e58626-b14e-46dd-b41f-6a493f8d848d",
+      "googleBooksId": "m6gyEQAAQBAJ",
+      "status": "reading",
+      "progress": 1,
+      "startDate": "2025-03-09",
+      "rating": null,
+      "comment": null,
+      "abandoned": false,
+      "favorite": false,
+      "title": "La Dernière arche",
+      "authors": [
+        "Romain Benassaya"
+      ],
+      "description": "Dans la Mésopotamie des premiers âges, Shory, une jeune esclave, est vendue à un mystérieux individu nommé Atim, qui lui propose un marché : l'envoyer dans un fort, qu'elle devra protéger, en échange de sa liberté. Elle accepte et rejoint une étrange construction, entourée d'une forêt profonde. Elle y grandit, en compagnie d'autres rescapés, originaires de différentes périodes de l'histoire humaine. Tous ont rencontré Atim et se sont vu confier la mission de protéger le Fort. Ils se surnomment les Vigiles. Quatorze ans plus tard, Lena, une jeune femme originaire du XXIIème siècle, rejoint elle aussi le Fort. Contrairement aux autres Vigiles, elle n'a pas rencontré Atim, et veut à tout prix rentrer chez elle. Quand Shory décide de l'aider, elle n'imagine pas les embûches qui l'attendent. Au fil de ses découvertes, elle va pourtant comprendre que sa mission est plus cruciale encore qu'elle ne le croyait. Romain Benassaya est né à Nice en 1984. Après des études de linguistique menées à Paris et l'obtention d'un master, il commence à enseigner le français à l'étranger, au Canada puis en Ouganda, jusqu'à ce qu'il pose ses valises à Bangkok.Depuis toujours passionné de science-fiction, il se lance dans l'écriture de nouvelles et romans.",
+      "imageUrl": "https://books.google.com/books/publisher/content?id=m6gyEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72vCxjgYk3uQx729YLQO2wHHsmu02h2CJ50t6qgP9Pgyp9mfmCFi-XoCxflIdIptytYn61Qbae-eKfMmtD5jxbbcvDW8rtL6G-UTdVZmTGUullV6S9-15bo7aaS9BlBk93JuWB0&source=gbs_api"
     }
   ]
 }
