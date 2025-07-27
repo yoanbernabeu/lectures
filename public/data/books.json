@@ -506,11 +506,11 @@
     {
       "id": "2d9152dd-c123-417b-a6b2-2142f1002cdc",
       "googleBooksId": "yKBXEAAAQBAJ",
-      "status": "reading",
+      "status": "finished",
       "progress": 10,
       "rating": 4,
       "comment": null,
-      "abandoned": false,
+      "abandoned": true,
       "favorite": false,
       "title": "Lune rouge",
       "authors": [
@@ -774,7 +774,7 @@
     {
       "id": "78e58626-b14e-46dd-b41f-6a493f8d848d",
       "googleBooksId": "m6gyEQAAQBAJ",
-      "status": "reading",
+      "status": "finished",
       "progress": 1,
       "startDate": "2025-03-09",
       "rating": null,
@@ -786,7 +786,43 @@
         "Romain Benassaya"
       ],
       "description": "Dans la Mésopotamie des premiers âges, Shory, une jeune esclave, est vendue à un mystérieux individu nommé Atim, qui lui propose un marché : l'envoyer dans un fort, qu'elle devra protéger, en échange de sa liberté. Elle accepte et rejoint une étrange construction, entourée d'une forêt profonde. Elle y grandit, en compagnie d'autres rescapés, originaires de différentes périodes de l'histoire humaine. Tous ont rencontré Atim et se sont vu confier la mission de protéger le Fort. Ils se surnomment les Vigiles. Quatorze ans plus tard, Lena, une jeune femme originaire du XXIIème siècle, rejoint elle aussi le Fort. Contrairement aux autres Vigiles, elle n'a pas rencontré Atim, et veut à tout prix rentrer chez elle. Quand Shory décide de l'aider, elle n'imagine pas les embûches qui l'attendent. Au fil de ses découvertes, elle va pourtant comprendre que sa mission est plus cruciale encore qu'elle ne le croyait. Romain Benassaya est né à Nice en 1984. Après des études de linguistique menées à Paris et l'obtention d'un master, il commence à enseigner le français à l'étranger, au Canada puis en Ouganda, jusqu'à ce qu'il pose ses valises à Bangkok.Depuis toujours passionné de science-fiction, il se lance dans l'écriture de nouvelles et romans.",
-      "imageUrl": "https://books.google.com/books/publisher/content?id=m6gyEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72vCxjgYk3uQx729YLQO2wHHsmu02h2CJ50t6qgP9Pgyp9mfmCFi-XoCxflIdIptytYn61Qbae-eKfMmtD5jxbbcvDW8rtL6G-UTdVZmTGUullV6S9-15bo7aaS9BlBk93JuWB0&source=gbs_api"
+      "imageUrl": "https://books.google.com/books/publisher/content?id=m6gyEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72vCxjgYk3uQx729YLQO2wHHsmu02h2CJ50t6qgP9Pgyp9mfmCFi-XoCxflIdIptytYn61Qbae-eKfMmtD5jxbbcvDW8rtL6G-UTdVZmTGUullV6S9-15bo7aaS9BlBk93JuWB0&source=gbs_api",
+      "endDate": "2025-04-06"
+    },
+    {
+      "id": "b1de57c0-d210-4580-8b05-557ccea27536",
+      "googleBooksId": "y6gyEQAAQBAJ",
+      "status": "finished",
+      "progress": 5,
+      "startDate": "2025-04-07",
+      "rating": null,
+      "comment": null,
+      "abandoned": false,
+      "favorite": false,
+      "title": "Terrariums",
+      "authors": [
+        "Romain Benassaya"
+      ],
+      "description": "Quand Cora revient à elle, seule et amnésique, dans une vallée cernée par quatre murs réfléchissants infranchissables, elle comprend qu'elle est prisonnière. Elle découvre bientôt que d'autres humains survivent dans ce terrarium, ignorants comme elle de la manière dont ils y sont arrivés. Tandis que tous cherchent à comprendre leur situation, des souvenirs commencent à ressurgir. Les prisonniers du terrarium ont participé à une mission de validation de l'habitabilité d'une planète, Kerana, sur laquelle ils ont, par accident, déclenché un mécanisme alien extrêmement dangereux, et qui pourrait être lié à leur situation présente. Les questions se multiplient : où sont-ils ? Qui les détient ? Et depuis combien de temps ? Pour Cora, une seule chose est sûre : des réponses l'attendent hors du terrarium. Romain Benassaya est né à Nice en 1984. Après des études de linguistique menées à Paris et l'obtention d'un master, il commence à enseigner le français à l'étranger, au Canada puis en Ouganda, jusqu'à ce qu'il pose ses valises à Bangkok. Depuis toujours passionné de science-fiction, il se lance dans l'écriture de nouvelles et romans. Après le succès de Pyramides, il signe un nouveau space opera de premier plan.",
+      "imageUrl": "https://books.google.com/books/publisher/content?id=y6gyEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72mmQ0W1RDn3ttRVraGJYb26NWQ5zLCEDzntx1NrBnMoukqAa1fiY60108j3UlTAn5QMtfb8RG9y1yEsw-fkFsNCSPDh_qqdkbgUs0J9TI5Ju8U4Bz4zhG_WQprY3KUp9e87HzX&source=gbs_api",
+      "endDate": "2025-07-27"
+    },
+    {
+      "id": "aed7914e-616d-456c-b288-e21fa0a542cb",
+      "googleBooksId": "2lBBEAAAQBAJ",
+      "status": "reading",
+      "progress": 1,
+      "startDate": "2025-07-27",
+      "rating": null,
+      "comment": null,
+      "abandoned": false,
+      "favorite": false,
+      "title": "Récursion",
+      "authors": [
+        "Blake Crouch"
+      ],
+      "description": "La réalité n’est qu’un souvenir. Barry Sutton, flic désabusé de la police new-yorkaise, enquête sur une vague de suicides engendrée par le Syndrome des Faux Souvenirs, une maladie neurologique inexpliquée dont les victimes se remémorent une vie qu’ils n’ont jamais vécue. Parallèlement, Helena Smith, une neurologue travaillant sur la mémoire, est recrutée par le richissime Marcus Slade pour développer un dispositif permettant d’enregistrer les souvenirs, officiellement pour lutter contre la maladie d’Alzheimer. Mais Slade comprend bientôt que cette invention peut faire bien plus que cela, et ses ambitions font peser sur la réalité elle-même un danger inouï. Seuls Helena et Barry, en joignant leurs forces, ont une chance de l’arrêter...",
+      "imageUrl": "https://books.google.com/books/publisher/content?id=2lBBEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70an0SZUFCtA-vDKkoNhi5k_ujHzUOff1o_QDXzlVdK8lMI13Gz6ommY4U4ki6RHO2P8BYGeVT6eOR5WRXdEsWhbMmVfgInBcWraeE7mS5HPFgMaeyWvSHVj-o00htO-3WNbXUm&source=gbs_api"
     }
   ]
 }
