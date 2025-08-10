@@ -810,19 +810,54 @@
     {
       "id": "aed7914e-616d-456c-b288-e21fa0a542cb",
       "googleBooksId": "2lBBEAAAQBAJ",
-      "status": "reading",
+      "status": "finished",
       "progress": 1,
       "startDate": "2025-07-27",
-      "rating": null,
+      "rating": 5,
       "comment": null,
       "abandoned": false,
-      "favorite": false,
+      "favorite": true,
       "title": "Récursion",
       "authors": [
         "Blake Crouch"
       ],
       "description": "La réalité n’est qu’un souvenir. Barry Sutton, flic désabusé de la police new-yorkaise, enquête sur une vague de suicides engendrée par le Syndrome des Faux Souvenirs, une maladie neurologique inexpliquée dont les victimes se remémorent une vie qu’ils n’ont jamais vécue. Parallèlement, Helena Smith, une neurologue travaillant sur la mémoire, est recrutée par le richissime Marcus Slade pour développer un dispositif permettant d’enregistrer les souvenirs, officiellement pour lutter contre la maladie d’Alzheimer. Mais Slade comprend bientôt que cette invention peut faire bien plus que cela, et ses ambitions font peser sur la réalité elle-même un danger inouï. Seuls Helena et Barry, en joignant leurs forces, ont une chance de l’arrêter...",
-      "imageUrl": "https://books.google.com/books/publisher/content?id=2lBBEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70an0SZUFCtA-vDKkoNhi5k_ujHzUOff1o_QDXzlVdK8lMI13Gz6ommY4U4ki6RHO2P8BYGeVT6eOR5WRXdEsWhbMmVfgInBcWraeE7mS5HPFgMaeyWvSHVj-o00htO-3WNbXUm&source=gbs_api"
+      "imageUrl": "https://books.google.com/books/publisher/content?id=2lBBEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70an0SZUFCtA-vDKkoNhi5k_ujHzUOff1o_QDXzlVdK8lMI13Gz6ommY4U4ki6RHO2P8BYGeVT6eOR5WRXdEsWhbMmVfgInBcWraeE7mS5HPFgMaeyWvSHVj-o00htO-3WNbXUm&source=gbs_api",
+      "endDate": "2025-08-03"
+    },
+    {
+      "id": "7260d4de-d095-41bb-9370-48820158be79",
+      "googleBooksId": "8tRvDwAAQBAJ",
+      "status": "finished",
+      "startDate": "2025-08-03",
+      "endDate": "2025-08-10",
+      "rating": 3,
+      "comment": "J’ai refermé La Nuit des temps avec un sentiment amer. Annoncé comme un grand classique de la SF française, le roman m’a séduit par son intrigue captivante, l’écriture fluide et l’atmosphère prenante de l’expédition polaire. Mais cette lecture est entachée par une vision des femmes terriblement rétrograde : la « femme parfaite » y est invariablement fluette, blanche et belle, réduite à un rôle décoratif ou sacrificiel. Les personnages non blancs sont relégués à l’arrière-plan, parfois désignés par des termes aujourd’hui inacceptables, et l’imaginaire du roman reflète une hiérarchie raciale implicite. Je suis en colère : j’ai aimé l’histoire, mais son idéologie sent la naphtaline, au point que j’aurais peut-être dû arrêter ma lecture.",
+      "abandoned": false,
+      "favorite": false,
+      "title": "La Nuit des temps (Nouvelle édition)",
+      "authors": [
+        "René Barjavel"
+      ],
+      "description": "Dans les steppesglacées de l'Antarctique, le mythe des amants légendaires revisité par Barjavel. Un grand classique dela littérature, toujours en tête de liste des romans préférés des Français. Dans le grand silence blanc de l'Antarctique, les membres d'une mission des Expéditions polaires françaises s'activent à prélever des carottes de glace. L'épaisseur de la banquise atteint plus de 1 000 mètres, les couches les plus profondes remontant à 900 000 ans... C'est alors que l'incroyable intervient : les appareils sondeurs enregistrent un signal provenant du niveau du sol. Il y a un émetteur sous la glace. La nouvelle éclate comme une bombe et les journaux du monde entier rivalisent de gros titres : \" Une ville sous la glace \", \" Un cœur sous la banquise \", etc. Que vont découvrir les savants et les techniciens qui, venus du monde entier, forent la glace à la rencontre du mystère ? Reportage, épopée et chant d'amour passionné, La Nuit des temps est tout cela à la fois.",
+      "imageUrl": "https://books.google.com/books/publisher/content?id=8tRvDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72Qk7G0ZArXw0doahJO25OhZ18JFfbvJnWyNayKFPWOs7TEcjcJOVLPOyMqiiZSvp1TZIFBKvkshoDsBgJWNQttAGQazFwhfVOeyImVtZz57KdEPECZ4sebe8LZpYW-x4Sfri8t&source=gbs_api"
+    },
+    {
+      "id": "04d7335f-8696-429e-a951-4947b371c513",
+      "googleBooksId": "9c7vAQAAQBAJ",
+      "status": "reading",
+      "progress": 1,
+      "startDate": "2025-08-10",
+      "rating": null,
+      "comment": null,
+      "abandoned": false,
+      "favorite": false,
+      "title": "Qui a peur de la mort ?",
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "description": "World Fantasy Awards 2011. Afrique, après l’apocalypse. Le monde a changé de bien des façons, mais il est une région où les génocides intertribaux continuent d’ensanglanter la terre. Une femme survit à l’anéantissement de son village. Elle erre dans le désert dans l’espoir d’y mourir, mais donne naissance à une petite fille dont la peau et les cheveux ont la couleur du sable. Persuadée que son enfant est différente, extraordinaire, elle la nomme « Onyesonwu », ce qui signifie, dans une langue ancienne : « Qui a peur de la mort ? » À mesure qu’Onye grandit, elle comprend peu à peu qu'elle porte les stigmates physiques et sociaux de sa violente conception. Des pouvoirs magiques aussi insolites que remarquables commencent à se manifester chez elle alors qu’elle est encore enfant. Sa destinée mystique et sa nature rebelle la poussent à quitter son foyer pour se lancer dans un voyage qui la forcera à affronter sa nature, la tradition, l’histoire, l’amour, les mystères spirituels de sa culture, et à apprendre enfin pourquoi elle a reçu le nom qu’elle porte : Qui a Peur de la Mort.",
+      "imageUrl": "https://books.google.com/books/publisher/content?id=9c7vAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70uxB-B9NH9Fg-H3RlFcRNPdLsHG9MBHvBKKGwpgUy3UfeKNDzG_4Vd9vNX1zN-JtMqtqk-V4tOEoL7ikBgjxTC-v-9Th1i7Q1IRBzbEcREtleH4gyKm969nW6eGeIcqhobDuQ7&source=gbs_api"
     }
   ]
 }
