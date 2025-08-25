@@ -845,7 +845,7 @@
     {
       "id": "04d7335f-8696-429e-a951-4947b371c513",
       "googleBooksId": "9c7vAQAAQBAJ",
-      "status": "reading",
+      "status": "finished",
       "progress": 1,
       "startDate": "2025-08-10",
       "rating": null,
@@ -857,7 +857,60 @@
         "Nnedi Okorafor"
       ],
       "description": "World Fantasy Awards 2011. Afrique, après l’apocalypse. Le monde a changé de bien des façons, mais il est une région où les génocides intertribaux continuent d’ensanglanter la terre. Une femme survit à l’anéantissement de son village. Elle erre dans le désert dans l’espoir d’y mourir, mais donne naissance à une petite fille dont la peau et les cheveux ont la couleur du sable. Persuadée que son enfant est différente, extraordinaire, elle la nomme « Onyesonwu », ce qui signifie, dans une langue ancienne : « Qui a peur de la mort ? » À mesure qu’Onye grandit, elle comprend peu à peu qu'elle porte les stigmates physiques et sociaux de sa violente conception. Des pouvoirs magiques aussi insolites que remarquables commencent à se manifester chez elle alors qu’elle est encore enfant. Sa destinée mystique et sa nature rebelle la poussent à quitter son foyer pour se lancer dans un voyage qui la forcera à affronter sa nature, la tradition, l’histoire, l’amour, les mystères spirituels de sa culture, et à apprendre enfin pourquoi elle a reçu le nom qu’elle porte : Qui a Peur de la Mort.",
-      "imageUrl": "https://books.google.com/books/publisher/content?id=9c7vAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70uxB-B9NH9Fg-H3RlFcRNPdLsHG9MBHvBKKGwpgUy3UfeKNDzG_4Vd9vNX1zN-JtMqtqk-V4tOEoL7ikBgjxTC-v-9Th1i7Q1IRBzbEcREtleH4gyKm969nW6eGeIcqhobDuQ7&source=gbs_api"
+      "imageUrl": "https://books.google.com/books/publisher/content?id=9c7vAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70uxB-B9NH9Fg-H3RlFcRNPdLsHG9MBHvBKKGwpgUy3UfeKNDzG_4Vd9vNX1zN-JtMqtqk-V4tOEoL7ikBgjxTC-v-9Th1i7Q1IRBzbEcREtleH4gyKm969nW6eGeIcqhobDuQ7&source=gbs_api",
+      "endDate": "2025-08-13"
+    },
+    {
+      "id": "45c0feed-4084-4ba9-93d6-f31065c9f77d",
+      "googleBooksId": "QTD7DwAAQBAJ",
+      "status": "finished",
+      "startDate": "2025-08-13",
+      "endDate": "2025-08-17",
+      "rating": 5,
+      "comment": null,
+      "abandoned": false,
+      "favorite": true,
+      "title": "La Parabole du semeur",
+      "authors": [
+        "Octavia E. Butler"
+      ],
+      "description": "2024. Le nouveau président des États-Unis provoque une crise sans précédent. Dérèglement social et climatique, épidémies, pauvreté, violences... Dans ce décor post-apocalyptique, la barbarie règne, les murs s’élèvent. La fille d’un pasteur noir atteinte d’hyper-empathie entame la rédaction d’une Bible d’espoir et d’humanité, Le Livre des Vivants. UNE ANTICIPATION VISIONNAIRE « Une grande dame de la SF, auteure américaine majeure ayant écrit sur la question noire et dont l’œuvre foisonnante déconstruit les mythes de la technologie, de la conquête et du pouvoir. » Léa Mormin-Chauvac – Libération",
+      "imageUrl": "https://books.google.com/books/publisher/content?id=QTD7DwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE711piH_bOlBbyAPNKgGjaUKR_FM8101FgdvkQI7332u-s48qz4EB1x3e7FUPK9Lq4vdOX6qaavKDdzPpvyg3kjyAZn6FZw3y4IdXwVudoZs_qaYT6TAXsE6L9LGI7X9NUMp1Z1P&source=gbs_api"
+    },
+    {
+      "id": "1628e5aa-5a31-4b0d-8145-c3d2ae8656c2",
+      "googleBooksId": "qnsSEAAAQBAJ",
+      "status": "finished",
+      "startDate": "2025-08-17",
+      "endDate": "2025-08-25",
+      "rating": null,
+      "comment": null,
+      "abandoned": false,
+      "favorite": true,
+      "title": "La Parabole des talents",
+      "authors": [
+        "Octavia E. Butler"
+      ],
+      "description": "2032. Célèbre créatrice de jeux virtuels, Asha découvre le journal dans lequel sa mère Lauren a posé les bases de sa philosophie humaniste et pacifiste. Dans une Amérique au comble du chaos qui renoue avec l’esclavagisme, Asha entre en résistance à son tour... PRIX NEBULA 1999 « Les visions dystopiques d’Octavia E. Butler, célèbre auteure afro-américaine de science-fiction, prennent toujours plus de sens. » Les Inrockuptibles",
+      "imageUrl": "https://books.google.com/books/publisher/content?id=qnsSEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE7312IEjDn6xZuduhqBFgvZfORJYgBZOi8eVPQhM8rtO_CzVMLJcMLcIuRMkXB10ypWxHtqazn_wlqCoHW4LZTsNg2owLuOPenH1SgXrM2-JRzlZUkjjAGDwqtddLUjHiO-8cf-7&source=gbs_api"
+    },
+    {
+      "id": "97b63d3e-3ecc-439e-affe-7f5e66d779c4",
+      "googleBooksId": "V14FEQAAQBAJ",
+      "status": "reading",
+      "progress": 3,
+      "startDate": "2025-08-25",
+      "rating": null,
+      "comment": null,
+      "abandoned": false,
+      "favorite": false,
+      "title": "Dark Matter",
+      "authors": [
+        "Blake Crouch",
+        "Patrick Imbert"
+      ],
+      "description": "À mi-chemin entre Philip K. Dick et Michael Crichton. Quand Jason Dessen se réveille, il se trouve dans un monde qui n'est pas le sien. Son épouse n'est plus son épouse, son fils n'est jamais né, un complet inconnu se prétend son ami de toujours. Et Jason n'est ici pas un simple professeur de physique, mais un véritable génie à l'origine d'une découverte époustouflante. La seule chose dont il se souvient, c'est qu'un soir, en rentrant chez lui, il a été kidnappé par un inconnu masqué auquel il a été impossible d'arracher la moindre explication. De toute manière, ce dernier lui a dit que même s'il lui expliquait tout, Jason refuserait d'y croire. Dark Matter est le chef-d'œuvre de Blake Crouch. Un best-seller disponible sur les écrans, dans une adaptation qu'il a lui-même scénarisé.",
+      "imageUrl": "https://books.google.com/books/publisher/content?id=V14FEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71PaaZk-1-yDgNYmOLJAIXHJT3chqYTl03vJ0Ym4aZrj73GLfjw0minQ_u7RSLSICZyhxn0ZG49tm0Ic5oAM3XPzsXpLkpp8Egrcxb1PmJzNZYYNh6xbMbkEYx9nxrhBPQs44WK&source=gbs_api"
     }
   ]
 }
