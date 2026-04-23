@@ -125,7 +125,7 @@ const filters = [
             type="search"
             inputmode="search"
             autocomplete="off"
-            placeholder="Chercher un titre, un auteur…"
+            placeholder="Chercher un titre, un auteur, un genre…"
             class="w-full rounded-full border border-ink-600/60 bg-ink-800/70 py-2.5 pl-10 pr-14 text-sm text-ink-50 placeholder:text-ink-400 outline-none transition-all duration-300 focus:border-amber/60 focus:bg-ink-800 focus:ring-2 focus:ring-amber/20"
             x-model="search"
             @input="apply()"
@@ -215,14 +215,26 @@ const filters = [
         this.apply();
       },
 
+      normalize(s) {
+        return (s || '')
+          .toString()
+          .toLowerCase()
+          .normalize('NFD')
+          .replace(/[̀-ͯ]/g, ''); // remove accents
+      },
+
       apply() {
         const books = document.querySelectorAll('[data-book-status]');
-        const q = (this.search || '').toLowerCase().trim();
+        const q = this.normalize(this.search).trim();
         let visible = 0;
 
         books.forEach((book) => {
           const status = book.getAttribute('data-book-status');
-          const title = (book.getAttribute('data-book-title') || '').toLowerCase();
+          const haystack = this.normalize(
+            (book.getAttribute('data-book-title') || '') + ' ' +
+            (book.getAttribute('data-book-authors') || '') + ' ' +
+            (book.getAttribute('data-book-genres') || '')
+          );
           const isFav = book.getAttribute('data-favorite') === 'true';
 
           let matchFilter = false;
@@ -230,7 +242,7 @@ const filters = [
           else if (this.activeFilter === 'favorites') matchFilter = isFav;
           else matchFilter = status === this.activeFilter;
 
-          const matchSearch = !q || title.includes(q);
+          const matchSearch = !q || haystack.includes(q);
           const show = matchFilter && matchSearch;
 
           book.classList.toggle('hidden', !show);

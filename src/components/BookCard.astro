@@ -42,6 +42,8 @@ const hasCover = Boolean(book.imageUrl);
   style={`transition-delay:${Math.min(index * 35, 600)}ms`}
   data-book-status={book.status}
   data-book-title={book.title}
+  data-book-authors={(book.authors || []).join(' · ')}
+  data-book-genres={(book.genres || []).join(' · ')}
   data-favorite={book.favorite ? 'true' : 'false'}
 >
   <a
