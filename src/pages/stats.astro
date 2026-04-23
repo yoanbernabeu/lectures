@@ -372,26 +372,34 @@ const description = `Visualisation de ${totals.all} livres : timeline, auteurs, 
     <!-- === SECTION 6 : Distribution des notes === -->
     <section class="mb-20 reveal">
       <h2 class="font-display text-2xl text-ink-200 italic mb-8">Distribution des notes</h2>
-      <div class="paper-card rounded-sm p-6 md:p-8">
-        <div class="flex items-stretch justify-center gap-4 md:gap-8" style="height: 220px">
+      <div class="paper-card rounded-sm p-4 sm:p-6 md:p-8">
+        <div class="flex items-stretch justify-between gap-1.5 sm:gap-4 md:gap-8 md:justify-center" style="height: 220px">
           {[1, 2, 3, 4, 5].map(star => {
             const count = ratingDist[star];
             const h = (count / maxRatingDist) * 100;
             return (
-              <div class="flex-1 max-w-24 flex flex-col items-center h-full group">
+              <div class="flex-1 md:max-w-24 flex flex-col items-center h-full group min-w-0">
                 <div class="flex-1 w-full flex flex-col items-center justify-end">
-                  <span class="font-display text-lg tabular-nums text-ink-100 mb-2 group-hover:text-amber transition-colors">{count}</span>
+                  <span class="font-display text-base md:text-lg tabular-nums text-ink-100 mb-2 group-hover:text-amber transition-colors">{count}</span>
                   <div
                     class="w-full rounded-t-sm bg-gradient-to-t from-amber/50 to-amber transition-all duration-500 group-hover:from-amber/70"
                     style={`height:${h}%; min-height: 6px`}
                   ></div>
                 </div>
-                <div class="flex mt-3 gap-0.5">
+                <!-- Étoiles desktop -->
+                <div class="hidden sm:flex mt-3 gap-0.5">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <svg class={`h-3 w-3 ${i < star ? 'text-amber' : 'text-ink-600'}`} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                       <path d="M12 17.3 5.82 21l1.64-7.03L2 9.24l7.19-.62L12 2l2.81 6.62 7.19 .62-5.46 4.73L18.18 21z"/>
                     </svg>
                   ))}
+                </div>
+                <!-- Label compact mobile : chiffre + une étoile -->
+                <div class="sm:hidden mt-2 flex items-center gap-0.5 text-[11px] font-display text-amber tabular-nums">
+                  <span>{star}</span>
+                  <svg class="h-2.5 w-2.5 text-amber" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 17.3 5.82 21l1.64-7.03L2 9.24l7.19-.62L12 2l2.81 6.62 7.19 .62-5.46 4.73L18.18 21z"/>
+                  </svg>
                 </div>
               </div>
             );
