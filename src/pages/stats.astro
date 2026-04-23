@@ -223,22 +223,26 @@ const description = `Visualisation de ${totals.all} livres : timeline, auteurs, 
 
         <!-- Bar chart -->
         <div class="paper-card rounded-sm p-6 md:p-8">
-          <div class="flex items-end gap-1.5 md:gap-3" style="height: 280px">
+          <div class="flex gap-1.5 md:gap-3 items-stretch" style="height: 280px">
             {yearsData.map(({ year, count }) => {
               const h = (count / maxYearCount) * 100;
               const isThisYear = year === currentYear;
               return (
-                <div class="flex-1 flex flex-col items-center justify-end group min-w-0">
-                  <span class={`font-display text-xs md:text-sm tabular-nums mb-2 transition-colors ${isThisYear ? 'text-amber' : 'text-ink-100 group-hover:text-amber'}`}>
-                    {count}
-                  </span>
-                  <div
-                    class={`w-full rounded-t-sm transition-all duration-500 ${isThisYear
-                      ? 'bg-gradient-to-t from-amber to-amber/70 shadow-[0_0_20px_rgba(224,161,104,0.25)]'
-                      : 'bg-gradient-to-t from-amber/40 to-amber/15 group-hover:from-amber/70 group-hover:to-amber/40'}`}
-                    style={`height: ${h}%; min-height: 6px`}
-                    title={`${count} livre${count > 1 ? 's' : ''} en ${year}`}
-                  ></div>
+                <div class="flex-1 flex flex-col items-center min-w-0 h-full group">
+                  <!-- Zone de la barre : prend tout l'espace vertical disponible, barre alignée en bas -->
+                  <div class="flex-1 w-full flex flex-col items-center justify-end">
+                    <span class={`font-display text-xs md:text-sm tabular-nums mb-2 transition-colors ${isThisYear ? 'text-amber' : 'text-ink-100 group-hover:text-amber'}`}>
+                      {count}
+                    </span>
+                    <div
+                      class={`w-full rounded-t-sm transition-all duration-500 ${isThisYear
+                        ? 'bg-gradient-to-t from-amber to-amber/70 shadow-[0_0_20px_rgba(224,161,104,0.25)]'
+                        : 'bg-gradient-to-t from-amber/45 to-amber/15 group-hover:from-amber/70 group-hover:to-amber/40'}`}
+                      style={`height: ${h}%; min-height: 6px`}
+                      title={`${count} livre${count > 1 ? 's' : ''} en ${year}`}
+                    ></div>
+                  </div>
+                  <!-- Étiquette année : en dehors de la zone barre pour ne pas fausser l'échelle -->
                   <span class={`mt-2 text-[9px] md:text-[10px] uppercase tracking-[0.1em] tabular-nums ${isThisYear ? 'text-amber' : 'text-ink-300'}`}>
                     {String(year).slice(-2)}
                   </span>
@@ -369,17 +373,19 @@ const description = `Visualisation de ${totals.all} livres : timeline, auteurs, 
     <section class="mb-20 reveal">
       <h2 class="font-display text-2xl text-ink-200 italic mb-8">Distribution des notes</h2>
       <div class="paper-card rounded-sm p-6 md:p-8">
-        <div class="flex items-end justify-center gap-4 md:gap-8" style="height: 200px">
+        <div class="flex items-stretch justify-center gap-4 md:gap-8" style="height: 220px">
           {[1, 2, 3, 4, 5].map(star => {
             const count = ratingDist[star];
-            const h = Math.max((count / maxRatingDist) * 100, 2);
+            const h = (count / maxRatingDist) * 100;
             return (
-              <div class="flex-1 max-w-24 flex flex-col items-center justify-end group">
-                <span class="font-display text-lg tabular-nums text-ink-200 mb-2 group-hover:text-amber transition-colors">{count}</span>
-                <div
-                  class="w-full rounded-t-sm bg-gradient-to-t from-amber/60 to-amber transition-all duration-500"
-                  style={`height:${h}%`}
-                ></div>
+              <div class="flex-1 max-w-24 flex flex-col items-center h-full group">
+                <div class="flex-1 w-full flex flex-col items-center justify-end">
+                  <span class="font-display text-lg tabular-nums text-ink-100 mb-2 group-hover:text-amber transition-colors">{count}</span>
+                  <div
+                    class="w-full rounded-t-sm bg-gradient-to-t from-amber/50 to-amber transition-all duration-500 group-hover:from-amber/70"
+                    style={`height:${h}%; min-height: 6px`}
+                  ></div>
+                </div>
                 <div class="flex mt-3 gap-0.5">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <svg class={`h-3 w-3 ${i < star ? 'text-amber' : 'text-ink-600'}`} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
