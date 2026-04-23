@@ -1,65 +1,53 @@
 ---
-interface Props {
-  /** Si true, masque le nom du site (utile sur l'index où le hero suffit). */
-  minimal?: boolean;
-}
-
-const { minimal = false } = Astro.props;
 const pathname = Astro.url.pathname;
 
 const navItems = [
-  { href: '/', label: 'Accueil', match: (p: string) => p === '/' },
-  { href: '/auteurs/', label: 'Auteurs', match: (p: string) => p.startsWith('/auteur') },
-  { href: '/genres/', label: 'Genres', match: (p: string) => p.startsWith('/genre') },
-  { href: '/editeurs/', label: 'Éditeurs', match: (p: string) => p.startsWith('/editeur') },
+  { href: '/', label: 'Accueil', short: 'Accueil', match: (p: string) => p === '/' },
+  { href: '/auteurs/', label: 'Auteurs', short: 'Auteurs', match: (p: string) => p.startsWith('/auteur') },
+  { href: '/genres/', label: 'Genres', short: 'Genres', match: (p: string) => p.startsWith('/genre') },
+  { href: '/editeurs/', label: 'Éditeurs', short: 'Édit.', match: (p: string) => p.startsWith('/editeur') },
 ];
 ---
 
 <header
-  class="relative z-30 border-b border-ink-700/40 bg-ink-900/70 backdrop-blur-md"
+  class="relative z-30 border-b border-ink-700/40 bg-ink-900/80 backdrop-blur-md"
   transition:persist
 >
-  <div class="mx-auto max-w-7xl px-4 md:px-6">
-    <div class="flex h-14 items-center justify-between gap-4">
+  <div class="mx-auto max-w-7xl px-3 md:px-6">
+    <div class="flex h-14 items-center justify-between gap-2">
       <!-- Logo / nom du site → accueil -->
       <a
         href="/"
         class="group inline-flex items-baseline gap-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-ink-900 rounded-sm"
         aria-label="Retour à l'accueil"
       >
-        <span class="font-display italic text-lg text-amber leading-none group-hover:text-amber/90 transition-colors" aria-hidden={minimal}>
+        <span class="font-display italic text-base md:text-lg text-amber leading-none group-hover:text-amber/90 transition-colors">
           Lectures
         </span>
-        <span class="text-[10px] uppercase tracking-[0.22em] text-ink-400 group-hover:text-ink-200 transition-colors">
+        <span class="hidden sm:inline text-[10px] uppercase tracking-[0.22em] text-ink-400 group-hover:text-ink-200 transition-colors">
           · YoanDev
         </span>
       </a>
 
-      <!-- Nav compacte -->
-      <nav aria-label="Navigation principale" class="flex items-center gap-1">
-        {navItems.map(({ href, label, match }) => {
+      <!-- Nav compacte — labels lisibles aussi sur mobile -->
+      <nav aria-label="Navigation principale" class="flex items-center gap-0.5 md:gap-1">
+        {navItems.map(({ href, label, short, match }) => {
           const isActive = match(pathname);
           return (
             <a
               href={href}
               data-astro-prefetch="hover"
               aria-current={isActive ? 'page' : undefined}
-              class={`relative rounded-full px-3 py-1.5 text-[10px] uppercase tracking-[0.22em] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber/60 ${
+              class={`relative rounded-full px-2 md:px-3 py-1.5 text-[9px] md:text-[10px] uppercase tracking-[0.14em] md:tracking-[0.22em] transition-colors whitespace-nowrap focus:outline-none focus-visible:ring-2 focus-visible:ring-amber/60 ${
                 isActive
                   ? 'text-amber'
                   : 'text-ink-300 hover:text-ink-50'
               }`}
             >
-              <span class="hidden sm:inline">{label}</span>
-              <span class="sm:hidden">
-                {label === 'Accueil' ? (
-                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M3 11l9-8 9 8v10a2 2 0 01-2 2h-4v-6h-6v6H5a2 2 0 01-2-2z"/>
-                  </svg>
-                ) : label.charAt(0)}
-              </span>
+              <span class="md:hidden">{short}</span>
+              <span class="hidden md:inline">{label}</span>
               {isActive && (
-                <span class="absolute -bottom-px left-1/2 h-px w-6 -translate-x-1/2 bg-amber"></span>
+                <span class="absolute -bottom-px left-1/2 h-px w-5 md:w-6 -translate-x-1/2 bg-amber"></span>
               )}
             </a>
           );
