@@ -1,0 +1,451 @@
+---
+import Layout from '../layouts/Layout.astro';
+import booksData from '@data/books.json';
+import type { Book } from '../types/book';
+import { slugify } from '../utils/slugify';
+import { getPublishers } from '../utils/taxonomies';
+
+const books = booksData.books as Book[];
+
+// Filtre utile : uniquement les livres avec une date de fin (pour les stats temporelles)
+const finishedWithDate = books.filter(b => b.status === 'finished' && b.endDate);
+
+// === 1. Totaux ===
+const totals = {
+  all: books.length,
+  finished: books.filter(b => b.status === 'finished').length,
+  reading: books.filter(b => b.status === 'reading').length,
+  toRead: books.filter(b => b.status === 'to-read').length,
+  abandoned: books.filter(b => b.abandoned).length,
+  favorites: books.filter(b => b.favorite).length,
+  rated: books.filter(b => typeof b.rating === 'number' && b.rating > 0),
+};
+
+const ratedBooks = totals.rated;
+const avgRating = ratedBooks.length > 0
+  ? (ratedBooks.reduce((acc, b) => acc + (b.rating || 0), 0) / ratedBooks.length)
+  : 0;
+
+// === 2. Timeline annuelle ===
+// Compter les livres terminés par année
+const perYear = new Map<number, Book[]>();
+for (const b of finishedWithDate) {
+  const year = new Date(b.endDate!).getFullYear();
+  if (!perYear.has(year)) perYear.set(year, []);
+  perYear.get(year)!.push(b);
+}
+const years = [...perYear.keys()].sort((a, b) => a - b);
+const maxYearCount = Math.max(...[...perYear.values()].map(v => v.length), 1);
+const yearsData = years.map(y => ({ year: y, count: perYear.get(y)!.length, books: perYear.get(y)! }));
+
+const currentYear = new Date().getFullYear();
+const thisYearCount = perYear.get(currentYear)?.length ?? 0;
+const lastYearCount = perYear.get(currentYear - 1)?.length ?? 0;
+
+// === 3. Heatmap mensuelle ===
+// Compte par (année, mois), mois 0-11
+const perMonth = new Map<string, number>();
+for (const b of finishedWithDate) {
+  const d = new Date(b.endDate!);
+  const key = `${d.getFullYear()}-${d.getMonth()}`;
+  perMonth.set(key, (perMonth.get(key) ?? 0) + 1);
+}
+const maxMonthCount = Math.max(...[...perMonth.values()], 1);
+
+const monthNames = ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sept', 'Oct', 'Nov', 'Déc'];
+
+// === 4. Top auteurs ===
+const authorCount = new Map<string, { count: number; books: Book[] }>();
+for (const b of books) {
+  for (const a of (b.authors || [])) {
+    const key = a.trim();
+    if (!key) continue;
+    const existing = authorCount.get(key) ?? { count: 0, books: [] };
+    existing.count++;
+    existing.books.push(b);
+    authorCount.set(key, existing);
+  }
+}
+const topAuthors = [...authorCount.entries()]
+  .map(([name, v]) => ({ name, ...v }))
+  .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'fr'))
+  .slice(0, 10);
+
+// === 5. Top genres ===
+const genreCount = new Map<string, number>();
+for (const b of books) {
+  for (const g of (b.genres || [])) {
+    genreCount.set(g, (genreCount.get(g) ?? 0) + 1);
+  }
+}
+const topGenres = [...genreCount.entries()]
+  .map(([name, count]) => ({ name, count }))
+  .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'fr'))
+  .slice(0, 10);
+const maxGenreCount = Math.max(...topGenres.map(g => g.count), 1);
+
+// === 6. Top éditeurs ===
+const publishers = await getPublishers();
+const topPublishers = publishers.slice(0, 10);
+const maxPublisherCount = Math.max(...topPublishers.map(p => p.count), 1);
+
+// === 7. Distribution des notes ===
+const ratingDist: Record<number, number> = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
+for (const b of books) {
+  if (typeof b.rating === 'number' && b.rating >= 1 && b.rating <= 5) {
+    ratingDist[b.rating]++;
+  }
+}
+const maxRatingDist = Math.max(...Object.values(ratingDist), 1);
+
+// === 8. Records ===
+// Livre le plus ancien terminé (par endDate)
+const oldest = [...finishedWithDate].sort((a, b) => new Date(a.endDate!).getTime() - new Date(b.endDate!).getTime())[0];
+const newest = [...finishedWithDate].sort((a, b) => new Date(b.endDate!).getTime() - new Date(a.endDate!).getTime())[0];
+
+// Meilleur mois
+let bestMonth: { key: string; count: number; label: string } | null = null;
+for (const [key, count] of perMonth) {
+  if (!bestMonth || count > bestMonth.count) {
+    const [y, m] = key.split('-').map(Number);
+    bestMonth = { key, count, label: `${monthNames[m]} ${y}` };
+  }
+}
+
+// Livres favoris avec leurs données
+const favoriteBooks = books.filter(b => b.favorite).slice(0, 6);
+
+// Pourcentage de progression cette année vs l'an dernier
+const yearEvolution = lastYearCount > 0
+  ? Math.round(((thisYearCount - lastYearCount) / lastYearCount) * 100)
+  : null;
+
+const title = 'Statistiques · Lectures · YoanDev';
+const description = `Visualisation de ${totals.all} livres : timeline, auteurs, genres, notes et évolution de la lecture.`;
+---
+
+<Layout title={title} description={description} type="index">
+  <div class="mx-auto max-w-6xl px-4 pb-24 md:px-6">
+
+    <!-- Hero -->
+    <header class="pt-12 pb-12 md:pt-20">
+      <p class="mb-6 flex items-center gap-3 text-[11px] uppercase tracking-[0.35em] text-amber/80">
+        <span class="h-px w-8 bg-amber/50"></span>
+        Statistiques
+      </p>
+      <h1 class="font-display text-5xl leading-[0.95] tracking-tightest text-ink-50 md:text-7xl lg:text-8xl">
+        <span class="block">La lecture,</span>
+        <span class="block italic text-amber font-display-wonk">en chiffres.</span>
+      </h1>
+      <p class="mt-8 max-w-2xl font-sans text-lg text-ink-200 leading-relaxed">
+        Tenir un journal de lecture, c'est aussi laisser parler la donnée. Voici ce que racontent les {totals.all} entrées de la bibliothèque.
+      </p>
+      <div class="hairline-divider mt-12"></div>
+    </header>
+
+    <!-- === SECTION 1 : Chiffres clés === -->
+    <section class="mb-20 reveal">
+      <h2 class="font-display text-2xl text-ink-200 mb-8 italic">Tableau de bord</h2>
+      <dl class="grid grid-cols-2 md:grid-cols-4 gap-px bg-ink-700/30 rounded-sm overflow-hidden">
+        <div class="bg-ink-900/60 p-5 md:p-6">
+          <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400 mb-2">Au total</dt>
+          <dd class="font-display text-5xl md:text-6xl tabular-nums text-ink-50 leading-none">{totals.all}</dd>
+          <p class="mt-2 text-[11px] uppercase tracking-[0.18em] text-ink-500">livres</p>
+        </div>
+        <div class="bg-ink-900/60 p-5 md:p-6">
+          <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400 mb-2">Terminés</dt>
+          <dd class="font-display text-5xl md:text-6xl tabular-nums text-amber leading-none">{totals.finished}</dd>
+          <p class="mt-2 text-[11px] uppercase tracking-[0.18em] text-ink-500">
+            {Math.round((totals.finished / totals.all) * 100)}% de la pile
+          </p>
+        </div>
+        <div class="bg-ink-900/60 p-5 md:p-6">
+          <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400 mb-2">Note moyenne</dt>
+          <dd class="font-display text-5xl md:text-6xl tabular-nums text-inkblue leading-none">
+            {avgRating > 0 ? avgRating.toFixed(1) : '—'}
+            {avgRating > 0 && <span class="text-2xl text-ink-400">/5</span>}
+          </dd>
+          <p class="mt-2 text-[11px] uppercase tracking-[0.18em] text-ink-500">
+            sur {ratedBooks.length} notés
+          </p>
+        </div>
+        <div class="bg-ink-900/60 p-5 md:p-6">
+          <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400 mb-2">Cette année</dt>
+          <dd class="font-display text-5xl md:text-6xl tabular-nums text-ink-50 leading-none">{thisYearCount}</dd>
+          <p class="mt-2 text-[11px] uppercase tracking-[0.18em]">
+            {yearEvolution !== null ? (
+              yearEvolution >= 0 ? (
+                <span class="text-amber">↑ {yearEvolution}% vs {currentYear - 1}</span>
+              ) : (
+                <span class="text-terracotta">↓ {Math.abs(yearEvolution)}% vs {currentYear - 1}</span>
+              )
+            ) : (
+              <span class="text-ink-500">livres en {currentYear}</span>
+            )}
+          </p>
+        </div>
+        <div class="bg-ink-900/60 p-5 md:p-6">
+          <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400 mb-2">Abandonnés</dt>
+          <dd class="font-display text-5xl md:text-6xl tabular-nums text-terracotta leading-none">{totals.abandoned}</dd>
+          <p class="mt-2 text-[11px] uppercase tracking-[0.18em] text-ink-500">
+            {totals.abandoned > 0 ? `${Math.round((totals.abandoned / totals.finished) * 100)}% des lus` : 'aucun'}
+          </p>
+        </div>
+        <div class="bg-ink-900/60 p-5 md:p-6">
+          <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400 mb-2">Coups de cœur</dt>
+          <dd class="font-display text-5xl md:text-6xl tabular-nums text-amber leading-none">{totals.favorites}</dd>
+          <p class="mt-2 text-[11px] uppercase tracking-[0.18em] text-ink-500">livres marquants</p>
+        </div>
+        <div class="bg-ink-900/60 p-5 md:p-6">
+          <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400 mb-2">En lecture</dt>
+          <dd class="font-display text-5xl md:text-6xl tabular-nums text-inkblue leading-none">{totals.reading}</dd>
+          <p class="mt-2 text-[11px] uppercase tracking-[0.18em] text-ink-500">actuellement</p>
+        </div>
+        <div class="bg-ink-900/60 p-5 md:p-6">
+          <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400 mb-2">À lire</dt>
+          <dd class="font-display text-5xl md:text-6xl tabular-nums text-ink-100 leading-none">{totals.toRead}</dd>
+          <p class="mt-2 text-[11px] uppercase tracking-[0.18em] text-ink-500">
+            {totals.reading > 0 ? `~${Math.ceil(totals.toRead / Math.max(thisYearCount, 1))} ans de pile` : 'empilés'}
+          </p>
+        </div>
+      </dl>
+    </section>
+
+    <!-- === SECTION 2 : Timeline annuelle === -->
+    {yearsData.length > 0 && (
+      <section class="mb-20 reveal">
+        <div class="flex items-baseline justify-between mb-8 gap-4 flex-wrap">
+          <h2 class="font-display text-2xl text-ink-200 italic">Livres terminés par année</h2>
+          <p class="text-[10px] uppercase tracking-[0.22em] text-ink-500">
+            {yearsData[0].year} → {yearsData[yearsData.length - 1].year}
+          </p>
+        </div>
+
+        <!-- Bar chart SVG -->
+        <div class="paper-card rounded-sm p-6 md:p-8">
+          <div class="flex items-end gap-1.5 md:gap-3" style={`height: 280px`}>
+            {yearsData.map(({ year, count }) => {
+              const h = Math.max((count / maxYearCount) * 100, 3);
+              const isThisYear = year === currentYear;
+              return (
+                <div class="flex-1 flex flex-col items-center justify-end group min-w-0">
+                  <span class={`font-display text-xs md:text-sm tabular-nums mb-2 transition-colors ${isThisYear ? 'text-amber' : 'text-ink-200 group-hover:text-amber'}`}>
+                    {count}
+                  </span>
+                  <div
+                    class={`w-full rounded-t-sm transition-all duration-500 ${isThisYear ? 'bg-gradient-to-t from-amber to-amber/70' : 'bg-gradient-to-t from-ink-600 to-ink-500 group-hover:from-amber/60 group-hover:to-amber/40'}`}
+                    style={`height: ${h}%`}
+                    title={`${count} livre${count > 1 ? 's' : ''} en ${year}`}
+                  ></div>
+                  <span class={`mt-2 text-[9px] md:text-[10px] uppercase tracking-[0.1em] tabular-nums ${isThisYear ? 'text-amber' : 'text-ink-400'}`}>
+                    {String(year).slice(-2)}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- === SECTION 3 : Heatmap mensuelle === -->
+    {years.length > 0 && (
+      <section class="mb-20 reveal">
+        <div class="flex items-baseline justify-between mb-8 gap-4 flex-wrap">
+          <h2 class="font-display text-2xl text-ink-200 italic">Carte de chaleur mensuelle</h2>
+          <p class="text-[10px] uppercase tracking-[0.22em] text-ink-500">un carré = un mois</p>
+        </div>
+
+        <div class="paper-card rounded-sm p-6 md:p-8 overflow-x-auto">
+          <div class="min-w-[600px]">
+            <!-- Header mois -->
+            <div class="grid grid-cols-[60px_repeat(12,1fr)] gap-1 mb-2">
+              <div></div>
+              {monthNames.map(m => (
+                <div class="text-center text-[9px] uppercase tracking-[0.1em] text-ink-500">{m}</div>
+              ))}
+            </div>
+            <!-- Rows par année -->
+            {years.slice().reverse().map((y) => (
+              <div class="grid grid-cols-[60px_repeat(12,1fr)] gap-1 mb-1">
+                <div class="font-display text-sm tabular-nums text-ink-300 text-right pr-2 self-center">{y}</div>
+                {monthNames.map((_, m) => {
+                  const count = perMonth.get(`${y}-${m}`) ?? 0;
+                  const intensity = count / maxMonthCount;
+                  const bg = count === 0
+                    ? 'rgba(245,241,232,0.04)'
+                    : `rgba(224,161,104,${0.15 + intensity * 0.75})`;
+                  return (
+                    <div
+                      class="aspect-square rounded-sm transition-all hover:ring-2 hover:ring-amber/60"
+                      style={`background:${bg}`}
+                      title={count > 0 ? `${count} livre${count > 1 ? 's' : ''} en ${monthNames[m]} ${y}` : `Aucun livre en ${monthNames[m]} ${y}`}
+                    ></div>
+                  );
+                })}
+              </div>
+            ))}
+            <!-- Légende -->
+            <div class="mt-6 flex items-center gap-2 text-[10px] uppercase tracking-[0.15em] text-ink-400">
+              <span>Moins</span>
+              {[0, 0.25, 0.5, 0.75, 1].map(i => (
+                <div class="h-3 w-3 rounded-sm" style={i === 0 ? 'background:rgba(245,241,232,0.04)' : `background:rgba(224,161,104,${0.15 + i * 0.75})`}></div>
+              ))}
+              <span>Plus ({maxMonthCount})</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- === SECTION 4 : Top auteurs / Top éditeurs === -->
+    <section class="mb-20 grid gap-10 md:grid-cols-2 reveal">
+      <!-- Top auteurs -->
+      <div>
+        <h2 class="font-display text-2xl text-ink-200 italic mb-8">Auteurs les plus lus</h2>
+        <ol class="space-y-2">
+          {topAuthors.map((a, i) => (
+            <li>
+              <a href={`/auteur/${slugify(a.name)}/`} class="flex items-baseline gap-4 py-2 border-b border-ink-700/40 hover:border-amber/40 group transition-colors">
+                <span class="font-display text-xs tabular-nums text-ink-500 group-hover:text-amber w-5">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <span class="font-display text-lg text-ink-50 group-hover:text-amber transition-colors flex-1 truncate">{a.name}</span>
+                <span class="text-[11px] uppercase tracking-[0.18em] text-amber tabular-nums">{a.count}</span>
+              </a>
+            </li>
+          ))}
+        </ol>
+      </div>
+
+      <!-- Top éditeurs -->
+      <div>
+        <h2 class="font-display text-2xl text-ink-200 italic mb-8">Éditeurs les plus présents</h2>
+        <ol class="space-y-2">
+          {topPublishers.map((p, i) => (
+            <li>
+              <a href={`/editeur/${p.slug}/`} class="flex items-baseline gap-4 py-2 border-b border-ink-700/40 hover:border-inkblue/40 group transition-colors">
+                <span class="font-display text-xs tabular-nums text-ink-500 group-hover:text-inkblue w-5">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <span class="font-display text-lg text-ink-50 group-hover:text-inkblue transition-colors flex-1 truncate">{p.name}</span>
+                <span class="text-[11px] uppercase tracking-[0.18em] text-inkblue tabular-nums">{p.count}</span>
+              </a>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+
+    <!-- === SECTION 5 : Top genres en barres horizontales === -->
+    <section class="mb-20 reveal">
+      <h2 class="font-display text-2xl text-ink-200 italic mb-8">Répartition par genre</h2>
+      <div class="paper-card rounded-sm p-6 md:p-8">
+        <div class="space-y-3">
+          {topGenres.map(g => {
+            const ratio = g.count / maxGenreCount;
+            return (
+              <a href={`/genre/${slugify(g.name)}/`} class="block group">
+                <div class="flex items-baseline justify-between mb-1">
+                  <span class="font-display italic text-base md:text-lg text-ink-100 group-hover:text-terracotta transition-colors">{g.name}</span>
+                  <span class="text-[11px] uppercase tracking-[0.18em] text-ink-400 group-hover:text-terracotta tabular-nums">{g.count}</span>
+                </div>
+                <div class="h-1.5 bg-ink-800 rounded-full overflow-hidden">
+                  <div
+                    class="h-full bg-gradient-to-r from-terracotta/80 to-terracotta transition-all duration-700 group-hover:from-terracotta group-hover:to-amber"
+                    style={`width:${ratio * 100}%`}
+                  ></div>
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <!-- === SECTION 6 : Distribution des notes === -->
+    <section class="mb-20 reveal">
+      <h2 class="font-display text-2xl text-ink-200 italic mb-8">Distribution des notes</h2>
+      <div class="paper-card rounded-sm p-6 md:p-8">
+        <div class="flex items-end justify-center gap-4 md:gap-8" style="height: 200px">
+          {[1, 2, 3, 4, 5].map(star => {
+            const count = ratingDist[star];
+            const h = Math.max((count / maxRatingDist) * 100, 2);
+            return (
+              <div class="flex-1 max-w-24 flex flex-col items-center justify-end group">
+                <span class="font-display text-lg tabular-nums text-ink-200 mb-2 group-hover:text-amber transition-colors">{count}</span>
+                <div
+                  class="w-full rounded-t-sm bg-gradient-to-t from-amber/60 to-amber transition-all duration-500"
+                  style={`height:${h}%`}
+                ></div>
+                <div class="flex mt-3 gap-0.5">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <svg class={`h-3 w-3 ${i < star ? 'text-amber' : 'text-ink-600'}`} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M12 17.3 5.82 21l1.64-7.03L2 9.24l7.19-.62L12 2l2.81 6.62 7.19 .62-5.46 4.73L18.18 21z"/>
+                    </svg>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <!-- === SECTION 7 : Records === -->
+    <section class="mb-20 reveal">
+      <h2 class="font-display text-2xl text-ink-200 italic mb-8">Records</h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        {bestMonth && (
+          <div class="paper-card rounded-sm p-6">
+            <p class="text-[10px] uppercase tracking-[0.22em] text-amber/80 mb-3">Mois le plus prolifique</p>
+            <p class="font-display text-3xl text-ink-50 leading-tight">{bestMonth.label}</p>
+            <p class="mt-2 text-sm text-ink-300"><span class="text-amber tabular-nums">{bestMonth.count}</span> livres terminés</p>
+          </div>
+        )}
+        {oldest && (
+          <div class="paper-card rounded-sm p-6">
+            <p class="text-[10px] uppercase tracking-[0.22em] text-inkblue/90 mb-3">Le plus ancien dans le journal</p>
+            <a href={`/book/${slugify(oldest.title)}/`} class="font-display text-xl text-ink-50 leading-tight hover:text-amber transition-colors block line-clamp-2">{oldest.title}</a>
+            <p class="mt-2 text-sm text-ink-300">Terminé en {new Date(oldest.endDate!).toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' })}</p>
+          </div>
+        )}
+        {newest && newest !== oldest && (
+          <div class="paper-card rounded-sm p-6">
+            <p class="text-[10px] uppercase tracking-[0.22em] text-terracotta/90 mb-3">La dernière lecture</p>
+            <a href={`/book/${slugify(newest.title)}/`} class="font-display text-xl text-ink-50 leading-tight hover:text-amber transition-colors block line-clamp-2">{newest.title}</a>
+            <p class="mt-2 text-sm text-ink-300">Terminé en {new Date(newest.endDate!).toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' })}</p>
+          </div>
+        )}
+      </div>
+    </section>
+
+    <!-- === SECTION 8 : Coups de cœur === -->
+    {favoriteBooks.length > 0 && (
+      <section class="reveal">
+        <h2 class="font-display text-2xl text-ink-200 italic mb-8">Coups de cœur</h2>
+        <div class="grid grid-cols-3 md:grid-cols-6 gap-3">
+          {favoriteBooks.map(book => (
+            <a href={`/book/${slugify(book.title)}/`} data-astro-prefetch="hover" class="group block">
+              <div class="relative overflow-hidden shadow-book group-hover:shadow-book-hover transition-all" style="aspect-ratio:2/3">
+                {book.imageUrl ? (
+                  <img src={book.imageUrl} alt={book.title} loading="lazy" decoding="async" width="200" height="300" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                ) : (
+                  <div class="h-full w-full flex items-center justify-center bg-ink-800 p-3">
+                    <span class="font-display italic text-sm text-amber/60">{book.title.slice(0,1)}</span>
+                  </div>
+                )}
+                <div class="absolute top-1 right-1 z-10 flex h-5 w-5 items-center justify-center rounded-full bg-ink-900/80 backdrop-blur-sm">
+                  <svg class="h-2.5 w-2.5 text-amber" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.5 1 5.5 3.5C14 6 15.5 5 17.5 5c3.5 0 6 3.5 4 7.5C19 16.65 12 21 12 21z"/>
+                  </svg>
+                </div>
+              </div>
+              <p class="mt-2 font-display text-xs leading-tight text-ink-200 line-clamp-2 group-hover:text-amber transition-colors">{book.title}</p>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+</Layout>
