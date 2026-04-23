@@ -3,6 +3,7 @@ export type BookStatus = 'reading' | 'finished' | 'to-read';
 export interface Book {
   id: string;
   googleBooksId: string;
+  babelioBookId?: string;
   status: BookStatus;
   genres?: string[];
   progress?: number;

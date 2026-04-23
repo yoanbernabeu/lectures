@@ -1,0 +1,65 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TaxonomyIndexLink from '../components/TaxonomyIndexLink.astro';
+import { getGenres } from '../utils/taxonomies';
+
+const genres = getGenres();
+const maxCount = Math.max(...genres.map(g => g.count), 1);
+
+const title = 'Genres · Lectures · YoanDev';
+const description = `${genres.length} genres littéraires parcourus.`;
+---
+
+<Layout title={title} description={description} type="index">
+  <div class="mx-auto max-w-5xl px-4 pb-24 md:px-6">
+    <header class="pt-12 pb-16 md:pt-20">
+      <a href="/" class="group inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-ink-300 hover:text-amber transition-colors">
+        <span class="inline-block transition-transform group-hover:-translate-x-1">←</span>
+        <span>Bibliothèque</span>
+      </a>
+      <p class="mt-10 mb-6 flex items-center gap-3 text-[11px] uppercase tracking-[0.35em] text-terracotta/90">
+        <span class="h-px w-8 bg-terracotta/60"></span>
+        Index des genres
+      </p>
+      <h1 class="font-display text-5xl leading-[0.95] tracking-tightest text-ink-50 md:text-7xl">
+        <span class="block">Le rayon,</span>
+        <span class="block italic text-terracotta font-display-wonk">le sujet,</span>
+        <span class="block">le genre.</span>
+      </h1>
+      <p class="mt-8 max-w-xl text-lg text-ink-200 leading-relaxed">
+        <span class="tabular-nums text-terracotta">{genres.length}</span> étiquettes qui traversent la pile — de la dystopie au business book.
+      </p>
+      <div class="hairline-divider mt-12"></div>
+    </header>
+
+    <!-- Tag cloud : les genres les plus représentés en grand -->
+    <div class="flex flex-wrap items-baseline gap-x-6 gap-y-4 mb-16">
+      {genres.map((g, i) => {
+        const ratio = g.count / maxCount;
+        const size = Math.max(1, Math.round(ratio * 4));
+        const sizeClass = ['text-base','text-xl','text-2xl','text-3xl','text-5xl'][size] ?? 'text-base';
+        const opacity = 0.55 + ratio * 0.45;
+        return (
+          <a
+            href={`/genre/${g.slug}/`}
+            data-astro-prefetch="hover"
+            class={`reveal font-display italic transition-colors hover:text-terracotta focus:outline-none focus-visible:text-terracotta ${sizeClass}`}
+            style={`color:rgba(245,241,232,${opacity});transition-delay:${Math.min(i * 25, 500)}ms`}
+          >
+            {g.name}<sup class="not-italic text-[10px] tracking-[0.2em] uppercase text-ink-400 ml-1">{g.count}</sup>
+          </a>
+        );
+      })}
+    </div>
+
+    <div class="hairline-divider mb-10"></div>
+
+    <!-- Liste structurée -->
+    <h2 class="font-display text-2xl text-ink-200 mb-6">Tous les genres, par fréquence</h2>
+    <div>
+      {genres.map((g, i) => (
+        <TaxonomyIndexLink href={`/genre/${g.slug}/`} name={g.name} count={g.count} kind="genre" index={i} />
+      ))}
+    </div>
+  </div>
+</Layout>

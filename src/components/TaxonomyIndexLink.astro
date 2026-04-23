@@ -1,0 +1,36 @@
+---
+interface Props {
+  href: string;
+  name: string;
+  count: number;
+  kind?: 'auteur' | 'genre' | 'editeur';
+  index?: number;
+}
+
+const { href, name, count, kind = 'auteur', index = 0 } = Astro.props;
+
+const kindAccent: Record<string, string> = {
+  auteur: 'text-amber',
+  genre: 'text-terracotta',
+  editeur: 'text-inkblue',
+};
+
+const accent = kindAccent[kind] ?? 'text-amber';
+---
+
+<a
+  href={href}
+  data-astro-prefetch="hover"
+  class="reveal group flex items-baseline justify-between gap-4 border-b border-ink-700/40 py-3 transition-colors hover:border-amber/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber"
+  style={`transition-delay:${Math.min(index * 18, 500)}ms`}
+>
+  <span class="font-display text-xl leading-tight tracking-tight text-ink-50 transition-colors group-hover:text-amber md:text-2xl">
+    {name}
+  </span>
+  <span class="flex items-baseline gap-3 flex-shrink-0">
+    <span class="hidden md:block h-px w-16 bg-ink-700/60 group-hover:bg-amber/40 transition-colors"></span>
+    <span class={`text-[11px] uppercase tracking-[0.2em] tabular-nums ${accent}`}>
+      {count} {count > 1 ? 'livres' : 'livre'}
+    </span>
+  </span>
+</a>

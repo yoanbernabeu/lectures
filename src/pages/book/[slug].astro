@@ -4,6 +4,7 @@ import { fetchGoogleBooksData } from '../../utils/googleBooks';
 import booksData from '@data/books.json';
 import type { Book } from '../../types/book';
 import { slugify } from '../../utils/slugify';
+import { getPublishers } from '../../utils/taxonomies';
 
 export async function getStaticPaths() {
   const books = booksData.books as Book[];
@@ -15,15 +16,285 @@ export async function getStaticPaths() {
   );
 
   return booksWithData.map(({ book, googleData }) => ({
-    params: { 
-      slug: googleData?.title ? slugify(googleData.title) : book.id 
+    params: {
+      slug: book.title
+        ? slugify(book.title)
+        : googleData?.title
+          ? slugify(googleData.title)
+          : book.id,
     },
     props: { book, googleData },
   }));
 }
 
 const { book, googleData } = Astro.props;
-// ... reste du code inchangé ...
+
+// Trouve le slug éditeur si le publisher Google Books matche un des éditeurs indexés
+let publisherSlug: string | null = null;
+if (googleData?.publisher) {
+  const publishers = await getPublishers();
+  const match = publishers.find(p => p.books.some(b => b.id === book.id));
+  publisherSlug = match?.slug ?? null;
+}
+
+const title = `${book.title} — Lectures · YoanDev`;
+const description = book.comment
+  ? stripHtml(book.comment).slice(0, 160)
+  : (book.description ? stripHtml(book.description).slice(0, 160) : `Mon avis sur ${book.title}${book.authors?.length ? ', de ' + book.authors.join(', ') : ''}.`);
+
+function stripHtml(s?: string | null) {
+  if (!s) return '';
+  return s.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+const statusLabel: Record<string, string> = {
+  reading: 'En lecture',
+  finished: 'Terminé',
+  'to-read': 'À lire',
+};
+
+const coverUrl = book.imageUrl
+  || (googleData?.imageLinks?.extraLarge ?? googleData?.imageLinks?.large ?? googleData?.imageLinks?.medium ?? googleData?.imageLinks?.thumbnail ?? '');
+
+function fmt(dateStr?: string) {
+  if (!dateStr) return null;
+  return new Date(dateStr).toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+
+const ratingStars = typeof book.rating === 'number' ? Math.max(0, Math.min(5, book.rating)) : 0;
+
+// JSON-LD Book schema
+const jsonLd: any = {
+  '@context': 'https://schema.org',
+  '@type': 'Book',
+  name: book.title,
+  author: (book.authors || []).map(name => ({ '@type': 'Person', name })),
+  inLanguage: 'fr',
+};
+if (coverUrl) jsonLd.image = coverUrl;
+if (book.description) jsonLd.description = stripHtml(book.description).slice(0, 500);
+if (ratingStars > 0) {
+  jsonLd.review = {
+    '@type': 'Review',
+    author: { '@type': 'Person', name: 'Yoan Bernabeu' },
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: ratingStars,
+      bestRating: 5,
+      worstRating: 1,
+    },
+    ...(book.comment ? { reviewBody: stripHtml(book.comment).slice(0, 1000) } : {}),
+  };
+}
 ---
 
-<!-- ... reste du template inchangé ... --> 
+<Layout title={title} description={description} type="book" image={coverUrl || undefined}>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <article class="relative mx-auto max-w-6xl px-4 pt-10 pb-24 md:px-6">
+
+    <!-- Back link -->
+    <a
+      href="/"
+      class="group inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-ink-300 hover:text-amber transition-colors"
+    >
+      <span class="inline-block transition-transform group-hover:-translate-x-1">←</span>
+      <span>Retour à la bibliothèque</span>
+    </a>
+
+    <!-- Hero -->
+    <header class="mt-8 grid gap-10 lg:grid-cols-[minmax(0,300px)_1fr] lg:gap-16 lg:items-start">
+      <!-- Cover column -->
+      <div class="reveal">
+        <div class="relative" style="aspect-ratio: 2 / 3">
+          <!-- Decorative shadow mat -->
+          <div class="absolute -inset-3 bg-gradient-to-br from-amber/15 via-transparent to-terracotta/10 blur-2xl" aria-hidden="true"></div>
+          <div transition:name={`cover-${book.id}`} class="relative h-full w-full overflow-hidden shadow-book">
+            {coverUrl ? (
+              <>
+                <div class="skeleton-shimmer absolute inset-0" aria-hidden="true"></div>
+                <img
+                  src={coverUrl}
+                  alt={`Couverture de ${book.title}`}
+                  width="400"
+                  height="600"
+                  loading="eager"
+                  decoding="async"
+                  fetchpriority="high"
+                  onload="this.previousElementSibling && this.previousElementSibling.remove(); this.style.opacity='1';"
+                  style="opacity:0;transition:opacity 0.6s ease"
+                  class="relative z-10 h-full w-full object-cover"
+                />
+              </>
+            ) : (
+              <div class="flex h-full w-full items-center justify-center bg-ink-800 p-8">
+                <span class="font-display italic text-6xl text-amber/60">{book.title.slice(0,1)}</span>
+              </div>
+            )}
+          </div>
+        </div>
+
+        <!-- Sidebar metadata -->
+        <dl class="mt-8 space-y-4 text-sm">
+          <div>
+            <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400">Statut</dt>
+            <dd class="mt-1 font-display text-lg text-amber">
+              {statusLabel[book.status]}{book.abandoned ? ' · abandonné' : ''}
+            </dd>
+          </div>
+
+          {ratingStars > 0 && (
+            <div>
+              <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400">Note</dt>
+              <dd class="mt-1 flex items-center gap-0.5">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <svg class={`h-4 w-4 ${i < ratingStars ? 'text-amber' : 'text-ink-600'}`} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 17.3 5.82 21l1.64-7.03L2 9.24l7.19-.62L12 2l2.81 6.62 7.19 .62-5.46 4.73L18.18 21z"/>
+                  </svg>
+                ))}
+                <span class="ml-2 text-ink-200 tabular-nums">{ratingStars}/5</span>
+              </dd>
+            </div>
+          )}
+
+          {book.startDate && (
+            <div>
+              <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400">Commencé</dt>
+              <dd class="mt-1 text-ink-100"><time datetime={book.startDate}>{fmt(book.startDate)}</time></dd>
+            </div>
+          )}
+
+          {book.endDate && (
+            <div>
+              <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400">Terminé</dt>
+              <dd class="mt-1 text-ink-100"><time datetime={book.endDate}>{fmt(book.endDate)}</time></dd>
+            </div>
+          )}
+
+          {book.genres && book.genres.length > 0 && (
+            <div>
+              <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400">Genres</dt>
+              <dd class="mt-2 flex flex-wrap gap-1.5">
+                {book.genres.map(g => (
+                  <a
+                    href={`/genre/${slugify(g)}/`}
+                    data-astro-prefetch="hover"
+                    class="rounded-full border border-ink-600/60 px-2.5 py-0.5 text-[10px] uppercase tracking-[0.14em] text-ink-200 hover:border-terracotta/60 hover:text-terracotta transition-colors"
+                  >
+                    {g}
+                  </a>
+                ))}
+              </dd>
+            </div>
+          )}
+
+          {book.googleBooksId && !book.googleBooksId.startsWith('local:') && (
+            <div>
+              <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400">Liens</dt>
+              <dd class="mt-2 space-y-1">
+                <a
+                  href={`https://books.google.fr/books?id=${book.googleBooksId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="block text-sm text-ink-200 underline-offset-4 hover:text-amber hover:underline"
+                >
+                  Fiche Google Books →
+                </a>
+                {book.babelioBookId && (
+                  <a
+                    href={`https://www.babelio.com/livres/_/${book.babelioBookId}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="block text-sm text-ink-200 underline-offset-4 hover:text-amber hover:underline"
+                  >
+                    Fiche Babelio →
+                  </a>
+                )}
+              </dd>
+            </div>
+          )}
+        </dl>
+      </div>
+
+      <!-- Text column -->
+      <div class="reveal space-y-10" style="transition-delay:120ms">
+        {book.favorite && (
+          <p class="inline-flex items-center gap-2 rounded-full border border-amber/40 bg-amber/10 px-3 py-1 text-[10px] uppercase tracking-[0.22em] text-amber">
+            <svg class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.5 1 5.5 3.5C14 6 15.5 5 17.5 5c3.5 0 6 3.5 4 7.5C19 16.65 12 21 12 21z"/>
+            </svg>
+            Coup de cœur
+          </p>
+        )}
+
+        <div>
+          <p class="mb-3 text-[11px] uppercase tracking-[0.22em] text-ink-400">
+            {(book.authors || []).map((a, i) => (
+              <>
+                {i > 0 && <span class="text-ink-600"> · </span>}
+                <a href={`/auteur/${slugify(a)}/`} data-astro-prefetch="hover" class="hover:text-amber transition-colors">{a}</a>
+              </>
+            ))}
+            {(!book.authors || book.authors.length === 0) && 'Auteur inconnu'}
+          </p>
+          <h1 class="font-display text-4xl leading-[1.05] tracking-tight text-ink-50 md:text-5xl lg:text-6xl">
+            {book.title}
+          </h1>
+          {googleData?.publisher && (
+            <p class="mt-4 font-display italic text-lg text-ink-300">
+              {publisherSlug ? (
+                <a href={`/editeur/${publisherSlug}/`} data-astro-prefetch="hover" class="hover:text-inkblue transition-colors underline underline-offset-4 decoration-ink-600 hover:decoration-inkblue">{googleData.publisher}</a>
+              ) : (
+                <span>{googleData.publisher}</span>
+              )}{googleData.publishedDate ? ` · ${new Date(googleData.publishedDate).getFullYear()}` : ''}
+            </p>
+          )}
+        </div>
+
+        {book.comment && (
+          <section class="paper-card rounded-sm p-6 md:p-8">
+            <p class="mb-3 text-[11px] uppercase tracking-[0.22em] text-amber">Mon avis</p>
+            <div
+              class="prose prose-invert max-w-none font-display text-[17px] leading-[1.7] text-ink-100"
+              set:html={book.comment}
+            />
+          </section>
+        )}
+
+        {book.description && (
+          <section>
+            <p class="mb-3 text-[11px] uppercase tracking-[0.22em] text-ink-400">Résumé de l'éditeur</p>
+            <div
+              class="prose prose-invert max-w-none text-[15px] leading-[1.7] text-ink-200"
+              set:html={book.description}
+            />
+          </section>
+        )}
+
+        {!book.description && !book.comment && (
+          <p class="font-display italic text-ink-400">Pas encore d'avis ni de résumé sur ce livre.</p>
+        )}
+      </div>
+    </header>
+  </article>
+</Layout>
+
+<style>
+  .prose :global(p) {
+    margin-bottom: 1em;
+  }
+  .prose :global(a) {
+    color: #E0A168;
+    text-decoration: underline;
+    text-decoration-color: rgba(224, 161, 104, 0.4);
+    text-underline-offset: 4px;
+  }
+  .prose :global(a:hover) {
+    text-decoration-color: #E0A168;
+  }
+  .prose :global(b),
+  .prose :global(strong) {
+    color: #F5F1E8;
+    font-weight: 500;
+  }
+</style>

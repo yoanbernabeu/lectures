@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TaxonomyIndexLink from '../components/TaxonomyIndexLink.astro';
+import { getAuthors } from '../utils/taxonomies';
+
+const authors = getAuthors();
+
+// Index alphabétique (A, B, C…)
+const byInitial = new Map<string, typeof authors>();
+for (const a of authors) {
+  const initial = (a.name[0] || '#').toUpperCase().normalize('NFD')[0];
+  const list = byInitial.get(initial) ?? [];
+  list.push(a);
+  byInitial.set(initial, list);
+}
+const initials = [...byInitial.keys()].sort();
+
+const title = 'Auteurs · Lectures · YoanDev';
+const description = `${authors.length} auteurs explorés dans ma bibliothèque.`;
+---
+
+<Layout title={title} description={description} type="index">
+  <div class="mx-auto max-w-5xl px-4 pb-24 md:px-6">
+    <header class="pt-12 pb-16 md:pt-20">
+      <a href="/" class="group inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-ink-300 hover:text-amber transition-colors">
+        <span class="inline-block transition-transform group-hover:-translate-x-1">←</span>
+        <span>Bibliothèque</span>
+      </a>
+      <p class="mt-10 mb-6 flex items-center gap-3 text-[11px] uppercase tracking-[0.35em] text-amber/80">
+        <span class="h-px w-8 bg-amber/50"></span>
+        Index des auteurs
+      </p>
+      <h1 class="font-display text-5xl leading-[0.95] tracking-tightest text-ink-50 md:text-7xl">
+        <span class="block">Celles</span>
+        <span class="block italic text-amber font-display-wonk">& ceux</span>
+        <span class="block">qui écrivent.</span>
+      </h1>
+      <p class="mt-8 max-w-xl text-lg text-ink-200 leading-relaxed">
+        <span class="tabular-nums text-amber">{authors.length}</span> auteurs et autrices traversés, certains plus souvent que d'autres.
+      </p>
+      <div class="hairline-divider mt-12"></div>
+    </header>
+
+    <!-- Alphabet quick nav -->
+    <nav aria-label="Initiales" class="flex flex-wrap gap-2 mb-12 sticky top-0 bg-ink-900/85 backdrop-blur-xl -mx-4 px-4 py-4 z-30">
+      {initials.map((letter) => (
+        <a href={`#letter-${letter}`} class="flex h-8 w-8 items-center justify-center rounded-full border border-ink-600/60 text-xs font-medium text-ink-200 hover:border-amber hover:text-amber transition-colors">
+          {letter}
+        </a>
+      ))}
+    </nav>
+
+    <div class="space-y-14">
+      {initials.map((letter) => (
+        <section id={`letter-${letter}`}>
+          <h2 class="font-display text-6xl italic text-amber/40 mb-2 select-none">{letter}</h2>
+          <div>
+            {byInitial.get(letter)!.map((a, i) => (
+              <TaxonomyIndexLink href={`/auteur/${a.slug}/`} name={a.name} count={a.count} kind="auteur" index={i} />
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  </div>
+</Layout>

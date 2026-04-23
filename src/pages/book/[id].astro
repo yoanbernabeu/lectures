@@ -1,8 +1,7 @@
 ---
-declare const google: any;
-import Layout from '../../layouts/Layout.astro';
 import booksData from '@data/books.json';
 import type { Book } from '../../types/book';
+import { slugify } from '../../utils/slugify';
 
 export async function getStaticPaths() {
   const books = booksData.books as Book[];
@@ -12,157 +11,22 @@ export async function getStaticPaths() {
   }));
 }
 
-const { book } = Astro.props;
-const googleBooksPreviewUrl = `https://books.google.fr/books?id=${book.googleBooksId}&printsec=frontcover`;
-
-// Rediriger vers la page 404 si on ne peut pas récupérer les données
-if (!book) {
-  return Astro.redirect('/404');
-}
-
-const formatDate = (dateStr: string) => {
-  return new Date(dateStr).toLocaleDateString('fr-FR', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  });
-};
+const { book } = Astro.props as { book: Book };
+const slug = book.title ? slugify(book.title) : book.id;
+const canonical = `https://lectures.yoandev.co/book/${slug}/`;
 ---
 
-<Layout 
-  title={`${book.title} - YoanDev Lectures`}
-  description={book.description}
-  type="book"
->
-  <div class="max-w-4xl mx-auto">
-    <a href="/" class="inline-flex items-center gap-2 text-gray-400 hover:text-primary mb-8 transition-colors">
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-      </svg>
-      Retour à la liste
-    </a>
-
-    <div class="bg-dark-light rounded-xl p-6 md:p-8">
-      <div class="grid md:grid-cols-[300px,1fr] gap-8">
-        <div class="aspect-[2/3] rounded-lg overflow-hidden bg-dark-lighter">
-          {book.imageUrl ? (
-            <img
-              src={book.imageUrl}
-              alt={`Couverture de ${book.title}`}
-              class="w-full h-full object-cover"
-            />
-          ) : (
-            <div class="w-full h-full flex items-center justify-center text-gray-500">
-              Image non disponible
-            </div>
-          )}
-        </div>
-
-        <div class="space-y-6">
-          <div>
-            <h1 class="text-3xl font-bold text-gray-100 mb-2">
-              {book.title}
-              {book.favorite && (
-                <span class="inline-flex items-center text-primary ml-2" title="Coup de cœur">
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                </span>
-              )}
-            </h1>
-            {book.authors && (
-              <p class="text-xl text-gray-400">
-                par {book.authors.join(', ')}
-              </p>
-            )}
-          </div>
-
-          <div class="flex flex-wrap gap-2">
-            {book.status && (
-              <span class={`px-3 py-1 rounded-full text-sm ${
-                book.status === 'reading' ? 'bg-primary/20 text-primary' :
-                book.status === 'finished' ? 'bg-success/20 text-success' :
-                'bg-warning/20 text-warning'
-              }`}>
-                {book.status === 'reading' ? 'En lecture' :
-                 book.status === 'finished' ? 'Terminé' :
-                 'À lire'}
-              </span>
-            )}
-            {book.abandoned && (
-              <span class="px-3 py-1 rounded-full text-sm bg-error/20 text-error">
-                Abandonné
-              </span>
-            )}
-          </div>
-
-          {book.status === 'reading' && book.progress && (
-            <div class="bg-dark rounded-lg p-4">
-              <div class="w-full bg-dark-lighter rounded-full h-3 mb-2">
-                <div
-                  class="bg-gradient-to-r from-primary to-accent h-3 rounded-full transition-all duration-300"
-                  style={`width: ${book.progress}%`}
-                />
-              </div>
-              <p class="text-gray-400">{book.progress}% lu</p>
-            </div>
-          )}
-
-          {book.description && (
-            <div class="prose prose-invert prose-gray max-w-none">
-              <h2 class="text-xl font-semibold mb-3">Résumé</h2>
-              <p class="text-gray-300" set:html={book.description} />
-            </div>
-          )}
-
-          {(book.rating || book.comment) && (
-            <div class="bg-dark rounded-lg p-6 border-l-4 border-primary">
-              <h2 class="text-xl font-semibold mb-3">Mon avis</h2>
-              {book.comment && (
-                <p class="text-gray-300 italic mb-4">"{book.comment}"</p>
-              )}
-              {book.rating && (
-                <div class="flex items-center gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <svg
-                      class={`w-6 h-6 ${i < (book.rating ?? 0) ? 'text-primary' : 'text-dark-lighter'}`}
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-              )}
-            </div>
-          )}
-
-          <div class="flex flex-wrap gap-4 text-sm text-gray-400">
-            {book.startDate && (
-              <p>Commencé le {formatDate(book.startDate)}</p>
-            )}
-            {book.endDate && (
-              <p>Terminé le {formatDate(book.endDate)}</p>
-            )}
-          </div>
-        </div>
-      </div>
-    </div>
-
-    {book.googleBooksId && (
-      <div class="mt-8">
-        <a 
-          href={googleBooksPreviewUrl}
-          target="_blank"
-          rel="noopener noreferrer" 
-          class="btn btn-primary w-full md:w-auto"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" viewBox="0 0 488 512">
-            <path fill="currentColor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/>
-          </svg>
-          Voir sur Google Books
-        </a>
-      </div>
-    )}
-  </div>
-</Layout> 
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex,follow" />
+    <link rel="canonical" href={canonical} />
+    <meta http-equiv="refresh" content={`0; url=/book/${slug}/`} />
+    <title>Redirection…</title>
+  </head>
+  <body>
+    <p>Cette page a été déplacée — <a href={`/book/${slug}/`}>ouvrir la nouvelle page</a>.</p>
+    <script is:inline set:html={`window.location.replace('/book/${slug}/');`}></script>
+  </body>
+</html>

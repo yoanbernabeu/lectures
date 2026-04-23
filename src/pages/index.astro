@@ -7,68 +7,146 @@ import type { Book } from '../types/book';
 
 const books = booksData.books as Book[];
 
-// Mélanger le tableau de livres
-const shuffledBooks = [...books].sort(() => Math.random() - 0.5);
+// Tri déterministe : en lecture d'abord, puis terminés par date desc, puis à lire
+const statusOrder: Record<string, number> = { reading: 0, finished: 1, 'to-read': 2 };
+const sorted = [...books].sort((a, b) => {
+  const diff = (statusOrder[a.status] ?? 3) - (statusOrder[b.status] ?? 3);
+  if (diff !== 0) return diff;
+  if (a.status === 'finished' && b.status === 'finished') {
+    const da = a.endDate ? new Date(a.endDate).getTime() : 0;
+    const db = b.endDate ? new Date(b.endDate).getTime() : 0;
+    return db - da;
+  }
+  return a.title.localeCompare(b.title, 'fr');
+});
 
-const getBooksByStatus = (status: string) => {
-  return shuffledBooks.filter((book) => book.status === status);
+const stats = {
+  total: books.length,
+  finished: books.filter(b => b.status === 'finished').length,
+  reading: books.filter(b => b.status === 'reading').length,
+  toRead: books.filter(b => b.status === 'to-read').length,
 };
 
-const title = "YoanDev - Mes lectures";
-const description = "Explorez ma bibliothèque personnelle : découvrez les livres que je lis actuellement, ceux que j'ai terminés et ma liste de lecture à venir.";
+const title = 'Lectures · YoanDev';
+const description = `Journal de lecture personnel — ${stats.finished} livres terminés, ${stats.reading} en cours, ${stats.toRead} dans la pile à lire.`;
+
+// JSON-LD CollectionPage
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Lectures · YoanDev',
+  description,
+  url: 'https://lectures.yoandev.co/',
+  inLanguage: 'fr-FR',
+  author: {
+    '@type': 'Person',
+    name: 'Yoan Bernabeu',
+    url: 'https://yoandev.co',
+  },
+  numberOfItems: stats.total,
+};
 ---
 
-<Layout 
-  title={title}
-  description={description}
-  type="index"
->
-  <header class="mb-16 text-center relative">
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></div>
-    <h1 class="text-6xl font-bold mb-6 tracking-tight">
-      <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">YoanDev</span>
-      <span class="text-base-content/80">Lectures</span>
-    </h1>
-    <p class="text-lg text-base-content/60 max-w-2xl mx-auto leading-relaxed">
-      {description}
-    </p>
-  </header>
+<Layout title={title} description={description} type="index">
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
-  <FilterBar />
+  <div class="mx-auto max-w-7xl px-4 pb-24 md:px-6">
+    <!-- HERO -->
+    <header class="relative pt-16 pb-12 md:pt-24 md:pb-20">
+      <!-- Category label -->
+      <p class="mb-6 flex items-center gap-3 text-[11px] uppercase tracking-[0.35em] text-amber/80">
+        <span class="h-px w-8 bg-amber/50"></span>
+        Journal de lecture · {new Date().getFullYear()}
+      </p>
 
-  <div class="grid gap-4 sm:gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 max-w-[1800px] mx-auto px-4">
-    {shuffledBooks.map((book) => (
-      <div 
-        data-book-status={book.status}
-        data-book-title={book.title}
-        data-favorite={book.favorite ? 'true' : 'false'}
-        class="animate-fade-in"
-      >
-        <BookCard book={book} compact={true} />
+      <!-- Title -->
+      <h1 class="font-display text-[12vw] leading-[0.92] tracking-tightest text-ink-50 md:text-[88px] lg:text-[104px]">
+        <span class="block">Des pages,</span>
+        <span class="block italic text-amber font-display-wonk">
+          des traces,
+        </span>
+        <span class="block">
+          une <span class="relative inline-block">
+            bibliothèque
+            <svg class="absolute -bottom-1 left-0 h-2 w-full text-amber/70" viewBox="0 0 300 10" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M0,6 Q75,1 150,5 T300,4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </span>.
+        </span>
+      </h1>
+
+      <!-- Lede paragraph + stats -->
+      <div class="mt-10 grid gap-10 md:grid-cols-[1fr,auto] md:items-end">
+        <p class="max-w-xl font-sans text-lg leading-relaxed text-ink-200">
+          {stats.finished} ouvrages lus, {stats.reading} en cours, {stats.toRead} qui attendent leur tour. Ici je consigne, avec plus de sincérité que de méthode, ce que je traverse — romans, essais, SF, brûlots politiques.
+        </p>
+
+        <dl class="flex flex-wrap items-end gap-x-8 gap-y-4 text-ink-100">
+          <div class="flex flex-col">
+            <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400">Terminés</dt>
+            <dd class="font-display text-4xl tabular-nums text-amber">{stats.finished}</dd>
+          </div>
+          <div class="flex flex-col">
+            <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400">En cours</dt>
+            <dd class="font-display text-4xl tabular-nums text-inkblue">{stats.reading}</dd>
+          </div>
+          <div class="flex flex-col">
+            <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400">À lire</dt>
+            <dd class="font-display text-4xl tabular-nums text-ink-100">{stats.toRead}</dd>
+          </div>
+        </dl>
       </div>
-    ))}
+
+      <!-- Explore by taxonomy -->
+      <nav aria-label="Explorer" class="mt-14 flex flex-wrap items-center gap-6 text-[11px] uppercase tracking-[0.22em] text-ink-300">
+        <span class="text-ink-500">Explorer →</span>
+        <a href="/auteurs/" data-astro-prefetch="hover" class="group inline-flex items-center gap-2 hover:text-amber transition-colors">
+          <span class="h-1 w-1 rounded-full bg-amber/70 group-hover:bg-amber transition-colors"></span>
+          Auteurs
+        </a>
+        <a href="/genres/" data-astro-prefetch="hover" class="group inline-flex items-center gap-2 hover:text-terracotta transition-colors">
+          <span class="h-1 w-1 rounded-full bg-terracotta/70 group-hover:bg-terracotta transition-colors"></span>
+          Genres
+        </a>
+        <a href="/editeurs/" data-astro-prefetch="hover" class="group inline-flex items-center gap-2 hover:text-inkblue transition-colors">
+          <span class="h-1 w-1 rounded-full bg-inkblue/70 group-hover:bg-inkblue transition-colors"></span>
+          Éditeurs
+        </a>
+      </nav>
+
+      <div class="hairline-divider mt-10"></div>
+    </header>
+
+    <!-- FILTER -->
+    <FilterBar />
+
+    <!-- GRID -->
+    <section
+      aria-label="Liste des livres"
+      class="grid gap-x-5 gap-y-10 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 pt-10"
+    >
+      {sorted.map((book, i) => (
+        <BookCard book={book} index={i} priority={i < 6} />
+      ))}
+    </section>
+
+    <!-- Footer signature -->
+    <footer class="mt-24 pt-10 border-t border-ink-700/60 space-y-6">
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-[11px] uppercase tracking-[0.22em] text-ink-300">
+        <a href="/auteurs/" class="hover:text-amber transition-colors">Auteurs</a>
+        <a href="/genres/" class="hover:text-terracotta transition-colors">Genres</a>
+        <a href="/editeurs/" class="hover:text-inkblue transition-colors">Éditeurs</a>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <p class="font-display italic text-ink-300">
+          <span class="text-amber">—</span> Ceci n'est pas une critique, c'est un journal.
+        </p>
+        <p class="text-[11px] uppercase tracking-[0.2em] text-ink-400">
+          <a href="https://yoandev.co" class="hover:text-amber transition-colors">yoandev.co</a>
+          <span class="mx-2 text-ink-600">·</span>
+          <a href="https://www.babelio.com/monprofil.php?id_user=1747636" class="hover:text-amber transition-colors">Babelio</a>
+        </p>
+      </div>
+    </footer>
   </div>
 </Layout>
-
-<style>
-  .animate-fade-in {
-    animation: fadeIn 0.5s ease-out forwards;
-    opacity: 0;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Décalage de l'animation pour chaque carte */
-  .animate-fade-in:nth-child(n) {
-    animation-delay: calc(n * 0.05s);
-  }
-</style>

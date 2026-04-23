@@ -4,48 +4,82 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        display: ['"Fraunces"', 'ui-serif', 'Georgia', 'serif'],
+        sans: ['"Inter Tight"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       colors: {
-        primary: {
-          DEFAULT: '#6366f1', // Indigo vif
-          dark: '#4f46e5'
+        ink: {
+          50: '#F5F1E8',
+          100: '#EDE7D6',
+          200: '#D9D0B8',
+          300: '#B8AB8A',
+          400: '#8A7D5C',
+          500: '#5C5340',
+          600: '#3A3426',
+          700: '#24201A',
+          800: '#17140F',
+          900: '#0D0C0B',
         },
-        accent: {
-          DEFAULT: '#8b5cf6', // Violet
-          dark: '#7c3aed'
+        amber: {
+          DEFAULT: '#E0A168',
+          soft: '#C88A54',
+          deep: '#A66E3E',
         },
-        dark: {
-          DEFAULT: '#0f172a', // Slate 900
-          light: '#1e293b', // Slate 800
-          lighter: '#334155' // Slate 700
-        }
-      }
+        terracotta: '#C0553C',
+        inkblue: '#3F5B8A',
+      },
+      letterSpacing: {
+        tightest: '-0.035em',
+        display: '-0.02em',
+      },
+      boxShadow: {
+        'book': '0 30px 60px -20px rgba(0,0,0,0.6), 0 12px 20px -15px rgba(0,0,0,0.5)',
+        'book-hover': '0 45px 80px -20px rgba(0,0,0,0.7), 0 18px 28px -15px rgba(0,0,0,0.6)',
+      },
+      animation: {
+        'fade-up': 'fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        'shimmer': 'shimmer 2s linear infinite',
+      },
+      keyframes: {
+        fadeUp: {
+          '0%': { opacity: '0', transform: 'translateY(18px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        shimmer: {
+          '0%': { backgroundPosition: '-400px 0' },
+          '100%': { backgroundPosition: '400px 0' },
+        },
+      },
     },
   },
   plugins: [
     require('@tailwindcss/line-clamp'),
-    require('daisyui')
+    require('daisyui'),
   ],
   daisyui: {
     themes: [
       {
         mytheme: {
-          "primary": "#6366f1",
-          "secondary": "#8b5cf6",
-          "accent": "#1FB2A5",
-          "neutral": "#191D24",
-          "base-100": "#0B1121",
-          "base-200": "#131B2E",
-          "base-300": "#1C2439",
-          "base-content": "#E2E8F0",
-          "info": "#3ABFF8",
-          "success": "#36D399",
-          "warning": "#FBBD23",
-          "error": "#F87272",
+          primary: '#E0A168',
+          'primary-content': '#0D0C0B',
+          secondary: '#C0553C',
+          'secondary-content': '#F5F1E8',
+          accent: '#3F5B8A',
+          'accent-content': '#F5F1E8',
+          neutral: '#17140F',
+          'neutral-content': '#F5F1E8',
+          'base-100': '#0D0C0B',
+          'base-200': '#17140F',
+          'base-300': '#24201A',
+          'base-content': '#F5F1E8',
+          info: '#3F5B8A',
+          success: '#7A8F5C',
+          warning: '#E0A168',
+          error: '#C0553C',
         },
       },
     ],
-    darkTheme: "mytheme",
-  }
-} 
+    darkTheme: 'mytheme',
+    logs: false,
+  },
+};

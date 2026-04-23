@@ -1,0 +1,61 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BookCard from '../../components/BookCard.astro';
+import { getGenres } from '../../utils/taxonomies';
+
+export async function getStaticPaths() {
+  return getGenres().map((genre) => ({
+    params: { slug: genre.slug },
+    props: { genre },
+  }));
+}
+
+const { genre } = Astro.props;
+
+const statusOrder: Record<string, number> = { reading: 0, finished: 1, 'to-read': 2 };
+const sortedBooks = [...genre.books].sort((a, b) => {
+  const d = (statusOrder[a.status] ?? 3) - (statusOrder[b.status] ?? 3);
+  if (d !== 0) return d;
+  if (a.status === 'finished' && b.status === 'finished') {
+    const da = a.endDate ? new Date(a.endDate).getTime() : 0;
+    const db = b.endDate ? new Date(b.endDate).getTime() : 0;
+    return db - da;
+  }
+  return a.title.localeCompare(b.title, 'fr');
+});
+
+const title = `${genre.name} · Lectures · YoanDev`;
+const description = `${genre.count} livre${genre.count > 1 ? 's' : ''} dans le genre « ${genre.name} ».`;
+---
+
+<Layout title={title} description={description} type="index">
+  <div class="mx-auto max-w-7xl px-4 pb-24 md:px-6">
+    <header class="pt-12 pb-12 md:pt-20">
+      <a href="/genres/" class="group inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-ink-300 hover:text-terracotta transition-colors">
+        <span class="inline-block transition-transform group-hover:-translate-x-1">←</span>
+        <span>Tous les genres</span>
+      </a>
+
+      <p class="mt-10 mb-6 flex items-center gap-3 text-[11px] uppercase tracking-[0.35em] text-terracotta/90">
+        <span class="h-px w-8 bg-terracotta/60"></span>
+        Genre
+      </p>
+
+      <h1 class="font-display italic text-6xl leading-[0.95] tracking-tightest text-ink-50 md:text-8xl">
+        {genre.name}
+      </h1>
+
+      <p class="mt-8 font-display italic text-lg text-ink-300">
+        <span class="tabular-nums text-terracotta">{genre.count}</span> {genre.count > 1 ? 'livres classés' : 'livre classé'} sous cette étiquette.
+      </p>
+
+      <div class="hairline-divider mt-12"></div>
+    </header>
+
+    <section class="grid gap-x-5 gap-y-10 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+      {sortedBooks.map((book, i) => (
+        <BookCard book={book} index={i} priority={i < 4} />
+      ))}
+    </section>
+  </div>
+</Layout>

@@ -1,0 +1,81 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BookCard from '../../components/BookCard.astro';
+import { getAuthors } from '../../utils/taxonomies';
+
+export async function getStaticPaths() {
+  return getAuthors().map((author) => ({
+    params: { slug: author.slug },
+    props: { author },
+  }));
+}
+
+const { author } = Astro.props;
+
+// Tri : reading > finished (par endDate desc) > to-read
+const statusOrder: Record<string, number> = { reading: 0, finished: 1, 'to-read': 2 };
+const sortedBooks = [...author.books].sort((a, b) => {
+  const d = (statusOrder[a.status] ?? 3) - (statusOrder[b.status] ?? 3);
+  if (d !== 0) return d;
+  if (a.status === 'finished' && b.status === 'finished') {
+    const da = a.endDate ? new Date(a.endDate).getTime() : 0;
+    const db = b.endDate ? new Date(b.endDate).getTime() : 0;
+    return db - da;
+  }
+  return a.title.localeCompare(b.title, 'fr');
+});
+
+const finished = author.books.filter(b => b.status === 'finished');
+const rated = finished.filter(b => typeof b.rating === 'number' && b.rating! > 0);
+const avgRating = rated.length > 0
+  ? (rated.reduce((acc, b) => acc + (b.rating || 0), 0) / rated.length).toFixed(1)
+  : null;
+
+const title = `${author.name} · Lectures · YoanDev`;
+const description = `${author.count} ouvrage${author.count > 1 ? 's' : ''} de ${author.name} dans ma bibliothèque.`;
+---
+
+<Layout title={title} description={description} type="index">
+  <div class="mx-auto max-w-7xl px-4 pb-24 md:px-6">
+    <header class="pt-12 pb-12 md:pt-20">
+      <a href="/auteurs/" class="group inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-ink-300 hover:text-amber transition-colors">
+        <span class="inline-block transition-transform group-hover:-translate-x-1">←</span>
+        <span>Tous les auteurs</span>
+      </a>
+
+      <p class="mt-10 mb-6 flex items-center gap-3 text-[11px] uppercase tracking-[0.35em] text-amber/80">
+        <span class="h-px w-8 bg-amber/50"></span>
+        Auteur
+      </p>
+
+      <h1 class="font-display text-5xl leading-[0.95] tracking-tightest text-ink-50 md:text-7xl lg:text-8xl">
+        {author.name}
+      </h1>
+
+      <dl class="mt-10 flex flex-wrap gap-x-10 gap-y-4">
+        <div class="flex flex-col">
+          <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400">Titres</dt>
+          <dd class="font-display text-4xl tabular-nums text-amber">{author.count}</dd>
+        </div>
+        <div class="flex flex-col">
+          <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400">Terminés</dt>
+          <dd class="font-display text-4xl tabular-nums text-ink-100">{finished.length}</dd>
+        </div>
+        {avgRating && (
+          <div class="flex flex-col">
+            <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400">Note moyenne</dt>
+            <dd class="font-display text-4xl tabular-nums text-inkblue">{avgRating}<span class="text-lg text-ink-400">/5</span></dd>
+          </div>
+        )}
+      </dl>
+
+      <div class="hairline-divider mt-12"></div>
+    </header>
+
+    <section class="grid gap-x-5 gap-y-10 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+      {sortedBooks.map((book, i) => (
+        <BookCard book={book} index={i} priority={i < 4} />
+      ))}
+    </section>
+  </div>
+</Layout>

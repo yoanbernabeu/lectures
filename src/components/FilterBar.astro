@@ -1,231 +1,246 @@
 ---
 const filters = [
-  { id: 'all', label: 'Tous', icon: 'M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z' },
-  { id: 'reading', label: 'En cours', icon: 'M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25' },
-  { id: 'to-read', label: 'À lire', icon: 'M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z' },
-  { id: 'finished', label: 'Terminés', icon: 'M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z' },
-  { id: 'favorites', label: 'Coups de cœur', icon: 'M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z' },
+  { id: 'all', label: 'Tout' },
+  { id: 'reading', label: 'En lecture' },
+  { id: 'to-read', label: 'À lire' },
+  { id: 'finished', label: 'Terminés' },
+  { id: 'favorites', label: 'Coups de cœur' },
 ];
-
-const shortcutKey = '⌘/Ctrl';
 ---
 
-<div x-data="{ 
-  activeFilter: 'all',
-  search: '',
-  searchFocused: false,
-  mobileMenuOpen: false,
-  filterBooks() {
-    const books = document.querySelectorAll('[data-book-status]');
-    const searchTerm = this.search.toLowerCase();
+<div
+  x-data="filterBar()"
+  x-init="init()"
+  class="sticky top-0 z-40 -mx-4 px-4 md:-mx-6 md:px-6 transition-all duration-500"
+  :class="scrolled ? 'backdrop-blur-2xl bg-ink-900/85 border-b border-ink-700/60' : 'bg-transparent'"
+>
+  <div class="mx-auto max-w-7xl">
+    <div class="flex flex-col gap-3 py-4 md:flex-row md:items-center md:justify-between">
 
-    books.forEach((book) => {
-      const status = book.getAttribute('data-book-status');
-      const title = book.getAttribute('data-book-title')?.toLowerCase();
-      const isFavorite = book.getAttribute('data-favorite') === 'true';
-      
-      let matchesFilter = false;
-      if (this.activeFilter === 'favorites') {
-        matchesFilter = isFavorite;
-      } else {
-        matchesFilter = this.activeFilter === 'all' || status === this.activeFilter;
-      }
-      
-      const matchesSearch = !searchTerm || title?.includes(searchTerm);
-      
-      book.classList.toggle('hidden', !(matchesFilter && matchesSearch));
-    });
-  }
-}" class="sticky top-0 z-10"
-x-init="
-  $store.filters = {
-    activeFilter: 'all',
-    search: '',
-    searchFocused: false,
-    mobileMenuOpen: false,
-    filterBooks() {
-      const books = document.querySelectorAll('[data-book-status]');
-      const searchTerm = this.search.toLowerCase();
-
-      books.forEach((book) => {
-        const status = book.getAttribute('data-book-status');
-        const title = book.getAttribute('data-book-title')?.toLowerCase();
-        const isFavorite = book.getAttribute('data-favorite') === 'true';
-        
-        let matchesFilter = false;
-        if (this.activeFilter === 'favorites') {
-          matchesFilter = isFavorite;
-        } else {
-          matchesFilter = this.activeFilter === 'all' || status === this.activeFilter;
-        }
-        
-        const matchesSearch = !searchTerm || title?.includes(searchTerm);
-        
-        book.classList.toggle('hidden', !(matchesFilter && matchesSearch));
-      });
-    }
-  }
-">
-  <div class="bg-base-200/95 backdrop-blur-xl border-b border-base-300 shadow-lg py-4 px-4 md:px-6 mb-8">
-    <div class="flex flex-col md:flex-row gap-4 items-stretch md:items-center">
-      <!-- Filtres -->
-      <div class="flex-1 flex items-center gap-2">
-        <div class="md:hidden">
-          <button 
-            @click="mobileMenuOpen = !mobileMenuOpen" 
-            class="btn btn-ghost btn-sm"
-            :class="mobileMenuOpen ? 'btn-active' : ''"
+      <!-- === DESKTOP : chips horizontaux === -->
+      <nav class="hidden md:flex items-center gap-1.5" aria-label="Filtres">
+        {filters.map(({ id, label }) => (
+          <button
+            type="button"
+            @click={`setFilter('${id}')`}
+            :class={`activeFilter === '${id}' ? 'text-ink-900 bg-amber border-amber' : 'text-ink-200 bg-transparent border-ink-600/60 hover:border-amber/60 hover:text-ink-50'`}
+            class="group relative shrink-0 rounded-full border px-4 py-1.5 text-xs font-medium uppercase tracking-[0.16em] transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-ink-900"
+            data-filter={id}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-            <span class="ml-2">Filtres</span>
+            <span>{label}</span>
+            <span
+              class="ml-2 text-[10px] tabular-nums opacity-60"
+              x-text={`counts['${id}'] ?? ''`}
+            ></span>
           </button>
-        </div>
-        
-        <!-- Menu mobile -->
-        <div 
-          x-show="mobileMenuOpen"
-          x-transition
-          class="absolute top-full left-0 right-0 mt-2 p-4 bg-base-200 shadow-xl md:hidden"
-          @click.away="mobileMenuOpen = false"
-        >
-          <div class="flex flex-col gap-2">
-            {filters.map(({ id, label, icon }) => (
-              <button
-                class="btn btn-ghost justify-start gap-3 h-auto py-3"
-                :class=`activeFilter === '${id}' ? 'btn-active' : ''`
-                @click=`activeFilter = '${id}'; filterBooks(); mobileMenuOpen = false`
-              >
-                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d={icon}/>
-                </svg>
-                {label}
-              </button>
-            ))}
-          </div>
-        </div>
+        ))}
+      </nav>
 
-        <!-- Menu desktop -->
-        <div class="hidden md:flex gap-2">
-          {filters.map(({ id, label, icon }) => (
-            <button
-              class="btn btn-ghost gap-2 min-h-0 h-auto py-2"
-              :class=`activeFilter === '${id}' ? 'btn-active' : ''`
-              @click=`activeFilter = '${id}'; filterBooks()`
-            >
-              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d={icon}/>
-              </svg>
-              {label}
-            </button>
-          ))}
+      <!-- === MOBILE : dropdown (bouton full-width → liste) === -->
+      <div class="md:hidden relative" @click.away="open = false">
+        <button
+          type="button"
+          @click="open = !open"
+          :aria-expanded="open"
+          aria-controls="filter-dropdown"
+          class="group flex w-full items-center justify-between rounded-full border border-ink-600/60 bg-ink-800/70 px-5 py-3 text-left text-sm text-ink-50 transition-colors hover:border-amber/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber/50"
+        >
+          <span class="flex items-center gap-3">
+            <span class="h-2 w-2 rounded-full bg-amber"></span>
+            <span class="font-display text-base leading-none" x-text="activeLabel()"></span>
+            <span class="rounded-full bg-ink-700/70 px-2 py-0.5 text-[11px] tabular-nums text-ink-200" x-text="counts[activeFilter] ?? 0"></span>
+          </span>
+          <svg
+            class="h-4 w-4 text-ink-300 transition-transform duration-300"
+            :class="open ? 'rotate-180 text-amber' : ''"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+
+        <div
+          id="filter-dropdown"
+          x-show="open"
+          x-transition:enter="transition ease-out duration-200"
+          x-transition:enter-start="opacity-0 -translate-y-2"
+          x-transition:enter-end="opacity-100 translate-y-0"
+          x-transition:leave="transition ease-in duration-150"
+          x-transition:leave-start="opacity-100 translate-y-0"
+          x-transition:leave-end="opacity-0 -translate-y-2"
+          class="absolute left-0 right-0 top-full z-50 mt-2 overflow-hidden rounded-2xl border border-ink-600/70 bg-ink-900/95 backdrop-blur-2xl shadow-2xl"
+          style="display: none;"
+          role="listbox"
+        >
+          <ul class="py-1">
+            {filters.map(({ id, label }) => (
+              <li>
+                <button
+                  type="button"
+                  @click={`setFilter('${id}'); open = false`}
+                  :class={`activeFilter === '${id}' ? 'bg-amber/15 text-amber' : 'text-ink-100 hover:bg-ink-800/60'`}
+                  class="flex w-full items-center justify-between px-5 py-3.5 text-left text-base transition-colors"
+                  role="option"
+                  :aria-selected={`activeFilter === '${id}'`}
+                >
+                  <span class="flex items-center gap-3">
+                    <span
+                      class="h-1.5 w-1.5 rounded-full transition-colors"
+                      :class={`activeFilter === '${id}' ? 'bg-amber' : 'bg-ink-500'`}
+                    ></span>
+                    <span class="font-display leading-none">{label}</span>
+                  </span>
+                  <span
+                    class="text-[11px] tabular-nums"
+                    :class={`activeFilter === '${id}' ? 'text-amber/80' : 'text-ink-400'`}
+                    x-text={`counts['${id}'] ?? 0`}
+                  ></span>
+                </button>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
-      <!-- Recherche -->
-      <div 
-        class="relative"
-        @keydown.window.prevent.cmd.k.exact="$refs.searchInput.focus()"
-        @keydown.window.prevent.ctrl.k.exact="$refs.searchInput.focus()"
-        @keydown.window.escape="search = ''; $refs.searchInput.blur()"
-      >
+      <!-- === Search === -->
+      <div class="relative flex-shrink-0 w-full md:w-72">
         <div class="relative">
+          <svg
+            class="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-400"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
           <input
             x-ref="searchInput"
-            type="text"
-            placeholder="Rechercher un livre..."
-            class="input input-bordered w-full md:w-80 pl-10 pr-16 h-auto py-2 bg-base-300/50"
+            type="search"
+            inputmode="search"
+            autocomplete="off"
+            placeholder="Chercher un titre, un auteur…"
+            class="w-full rounded-full border border-ink-600/60 bg-ink-800/70 py-2.5 pl-10 pr-14 text-sm text-ink-50 placeholder:text-ink-400 outline-none transition-all duration-300 focus:border-amber/60 focus:bg-ink-800 focus:ring-2 focus:ring-amber/20"
             x-model="search"
-            @input="filterBooks()"
-            @focus="searchFocused = true"
-            @blur="searchFocused = false"
+            @input="apply()"
+            @keydown.escape="clearSearch()"
           />
-          <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-            <svg 
-              class="w-4 h-4 text-base-content/50"
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-            </svg>
-          </div>
-          <kbd 
-            class="absolute right-3 top-1/2 -translate-y-1/2 hidden md:inline-flex items-center gap-1 px-1.5 py-0.5 text-xs font-mono text-base-content/50 bg-base-300/50 rounded border border-base-content/10"
-            :class="searchFocused ? 'opacity-0' : 'opacity-100'"
+          <kbd
+            x-show="!search"
+            class="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 hidden md:inline-flex rounded border border-ink-600/50 bg-ink-800 px-1.5 py-0.5 text-[10px] font-medium text-ink-400"
           >
-            <span class="text-[10px]">{shortcutKey}</span>
-            <span class="text-[10px]">K</span>
+            ⌘K
           </kbd>
-        </div>
-
-        <!-- Résultats de recherche -->
-        <div 
-          x-show="search.length > 0"
-          x-transition
-          class="absolute mt-2 right-0 bg-base-200 rounded-lg shadow-xl p-4 w-full border border-base-300"
-        >
-          <div class="flex items-center justify-between text-sm">
-            <span class="text-base-content/70">
-              Résultats pour "<span x-text="search"></span>"
-            </span>
-            <button 
-              @click="search = ''; $refs.searchInput.blur()"
-              class="btn btn-ghost btn-xs"
-            >
-              Effacer
-            </button>
-          </div>
+          <button
+            type="button"
+            x-show="search"
+            @click="clearSearch()"
+            class="absolute right-2 top-1/2 -translate-y-1/2 rounded-full p-1 text-ink-400 hover:text-amber transition-colors"
+            aria-label="Effacer la recherche"
+          >
+            <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+            </svg>
+          </button>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<script>
-  import Alpine from 'alpinejs';
+<!-- Empty state that lives at the end of the page -->
+<div
+  id="filter-empty-state"
+  class="hidden col-span-full text-center py-20"
+>
+  <p class="font-display italic text-3xl text-amber/80 mb-2">Aucun livre ne correspond</p>
+  <p class="text-sm text-ink-300">Essayez un autre filtre ou une autre recherche.</p>
+</div>
 
-  document.addEventListener('keydown', (e) => {
-    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-      e.preventDefault();
-      const searchInput = document.querySelector('input[type="text"]') as HTMLInputElement;
-      if (searchInput) {
-        searchInput.focus();
-      }
-    }
-  });
+<script is:inline define:vars={{ filters }}>
+  function filterBar() {
+    return {
+      activeFilter: 'all',
+      search: '',
+      scrolled: false,
+      counts: {},
+      open: false,
+      _filters: filters,
 
-  function filterBooks() {
-    const books = document.querySelectorAll('[data-book-status]');
-    const activeFilter = Alpine.store('filters').activeFilter;
-    const searchTerm = Alpine.store('filters').search?.toLowerCase();
+      init() {
+        this.computeCounts();
+        this.apply();
+        window.addEventListener('scroll', () => {
+          this.scrolled = window.scrollY > 16;
+        }, { passive: true });
+        window.addEventListener('keydown', (e) => {
+          if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+            e.preventDefault();
+            this.$refs.searchInput?.focus();
+          }
+        });
+      },
 
-    books.forEach((book) => {
-      const status = book.getAttribute('data-book-status');
-      const title = book.getAttribute('data-book-title')?.toLowerCase();
-      const isFavorite = book.getAttribute('data-favorite') === 'true';
-      
-      let matchesFilter = false;
-      if (activeFilter === 'favorites') {
-        matchesFilter = isFavorite;
-      } else {
-        matchesFilter = activeFilter === 'all' || status === activeFilter;
-      }
-      
-      const matchesSearch = !searchTerm || title?.includes(searchTerm);
-      
-      book.classList.toggle('hidden', !(matchesFilter && matchesSearch));
-    });
+      computeCounts() {
+        const books = document.querySelectorAll('[data-book-status]');
+        const counts = { all: 0, reading: 0, 'to-read': 0, finished: 0, favorites: 0 };
+        books.forEach((b) => {
+          counts.all++;
+          const st = b.getAttribute('data-book-status');
+          if (st && counts[st] !== undefined) counts[st]++;
+          if (b.getAttribute('data-favorite') === 'true') counts.favorites++;
+        });
+        this.counts = counts;
+      },
+
+      activeLabel() {
+        const f = this._filters.find(x => x.id === this.activeFilter);
+        return f ? f.label : 'Tout';
+      },
+
+      setFilter(id) {
+        this.activeFilter = id;
+        this.apply();
+      },
+
+      clearSearch() {
+        this.search = '';
+        this.$refs.searchInput?.blur();
+        this.apply();
+      },
+
+      apply() {
+        const books = document.querySelectorAll('[data-book-status]');
+        const q = (this.search || '').toLowerCase().trim();
+        let visible = 0;
+
+        books.forEach((book) => {
+          const status = book.getAttribute('data-book-status');
+          const title = (book.getAttribute('data-book-title') || '').toLowerCase();
+          const isFav = book.getAttribute('data-favorite') === 'true';
+
+          let matchFilter = false;
+          if (this.activeFilter === 'all') matchFilter = true;
+          else if (this.activeFilter === 'favorites') matchFilter = isFav;
+          else matchFilter = status === this.activeFilter;
+
+          const matchSearch = !q || title.includes(q);
+          const show = matchFilter && matchSearch;
+
+          book.classList.toggle('hidden', !show);
+          if (show) visible++;
+        });
+
+        const empty = document.getElementById('filter-empty-state');
+        if (empty) empty.classList.toggle('hidden', visible > 0);
+      },
+    };
   }
+  window.filterBar = filterBar;
 </script>
-
-<style>
-  .input:focus {
-    @apply ring-2 ring-primary/20 ring-offset-0;
-  }
-
-  .input:focus + div svg {
-    @apply text-primary;
-  }
-</style> 

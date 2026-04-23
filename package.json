@@ -6,11 +6,14 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "cache:refresh": "node scripts/refresh-cache.mjs",
+    "cache:refresh:force": "node scripts/refresh-cache.mjs --force"
   },
   "dependencies": {
     "@alpinejs/collapse": "^3.14.8",
     "@astrojs/react": "^4.2.0",
+    "@astrojs/sitemap": "^3.7.2",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource/inter": "^5.1.1",
     "alpinejs": "^3.14.8",

@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TaxonomyIndexLink from '../components/TaxonomyIndexLink.astro';
+import { getPublishers } from '../utils/taxonomies';
+
+const publishers = await getPublishers();
+
+const title = 'Éditeurs · Lectures · YoanDev';
+const description = `${publishers.length} maisons d'édition représentées.`;
+---
+
+<Layout title={title} description={description} type="index">
+  <div class="mx-auto max-w-5xl px-4 pb-24 md:px-6">
+    <header class="pt-12 pb-16 md:pt-20">
+      <a href="/" class="group inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-ink-300 hover:text-amber transition-colors">
+        <span class="inline-block transition-transform group-hover:-translate-x-1">←</span>
+        <span>Bibliothèque</span>
+      </a>
+      <p class="mt-10 mb-6 flex items-center gap-3 text-[11px] uppercase tracking-[0.35em] text-inkblue/90">
+        <span class="h-px w-8 bg-inkblue/60"></span>
+        Index des éditeurs
+      </p>
+      <h1 class="font-display text-5xl leading-[0.95] tracking-tightest text-ink-50 md:text-7xl">
+        <span class="block">Les maisons,</span>
+        <span class="block italic text-inkblue font-display-wonk">les catalogues,</span>
+        <span class="block">les relieurs.</span>
+      </h1>
+      <p class="mt-8 max-w-xl text-lg text-ink-200 leading-relaxed">
+        <span class="tabular-nums text-inkblue">{publishers.length}</span> maisons d'édition représentées dans la pile. Classées par nombre de titres, puis alphabétiquement.
+      </p>
+      <div class="hairline-divider mt-12"></div>
+    </header>
+
+    {publishers.length === 0 ? (
+      <p class="font-display italic text-ink-400 text-center py-20">
+        Données d'éditeur indisponibles pour le moment (Google Books a rate-limité le build).
+      </p>
+    ) : (
+      <div>
+        {publishers.map((p, i) => (
+          <TaxonomyIndexLink href={`/editeur/${p.slug}/`} name={p.name} count={p.count} kind="editeur" index={i} />
+        ))}
+      </div>
+    )}
+  </div>
+</Layout>

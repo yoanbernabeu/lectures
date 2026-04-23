@@ -1,128 +1,169 @@
 ---
 import { slugify } from '../utils/slugify';
+import type { Book } from '../types/book';
 
 interface Props {
-  book: {
-    id: string;
-    googleBooksId: string;
-    status: 'reading' | 'finished' | 'to-read';
-    progress?: number;
-    startDate?: string;
-    endDate?: string;
-    rating?: number | null;
-    comment?: string | null;
-    abandoned?: boolean;
-    genres?: string[];
-    favorite?: boolean;
-    title: string;
-    authors: string[];
-    imageUrl?: string;
-  };
+  book: Book;
   compact?: boolean;
+  priority?: boolean;
+  index?: number;
 }
 
-const { book, compact = false } = Astro.props;
+const { book, compact = false, priority = false, index = 0 } = Astro.props;
 
-const formatDate = (dateStr: string) => {
-  return new Date(dateStr).toLocaleDateString('fr-FR', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  });
+const slug = book.title ? slugify(book.title) : book.id;
+const href = `/book/${slug}`;
+
+const statusMeta: Record<string, { label: string; toneClass: string; dotClass: string }> = {
+  reading: {
+    label: 'En lecture',
+    toneClass: 'text-inkblue bg-inkblue/10 border-inkblue/30',
+    dotClass: 'bg-inkblue',
+  },
+  finished: {
+    label: 'Terminé',
+    toneClass: 'text-amber bg-amber/10 border-amber/30',
+    dotClass: 'bg-amber',
+  },
+  'to-read': {
+    label: 'À lire',
+    toneClass: 'text-ink-200 bg-ink-700/60 border-ink-500/40',
+    dotClass: 'bg-ink-300',
+  },
 };
 
-const getStatusBadgeClass = (status: string) => {
-  const baseClasses = "text-sm px-3 py-1 rounded-full font-medium";
-  switch (status) {
-    case 'reading':
-      return `${baseClasses} bg-primary/20 text-primary border border-primary/30`;
-    case 'finished':
-      return `${baseClasses} bg-green-500/20 text-green-400 border border-green-500/30`;
-    case 'to-read':
-      return `${baseClasses} bg-dark-lighter text-gray-300 border border-gray-600`;
-    default:
-      return baseClasses;
-  }
-};
-
-const getStatusLabel = (status: string) => {
-  switch (status) {
-    case 'reading': return 'En cours';
-    case 'finished': return 'Terminé';
-    case 'to-read': return 'À lire';
-    default: return status;
-  }
-};
+const status = statusMeta[book.status] ?? statusMeta['to-read'];
+const rating = typeof book.rating === 'number' ? Math.max(0, Math.min(5, book.rating)) : null;
+const hasCover = Boolean(book.imageUrl);
 ---
 
-<div 
-  class="card bg-base-200 shadow-xl h-full hover:shadow-2xl transition-all duration-300 group"
-  data-favorite={book.favorite ? "true" : "false"}
+<article
+  class="reveal group relative h-full"
+  style={`transition-delay:${Math.min(index * 35, 600)}ms`}
+  data-book-status={book.status}
+  data-book-title={book.title}
+  data-favorite={book.favorite ? 'true' : 'false'}
 >
-  <a href={`/book/${book.id}`} class="h-full flex flex-col">
-    <figure class="relative w-full overflow-hidden">
-      {book.imageUrl ? (
-        <div class="w-full h-[280px] sm:h-[320px] lg:h-[360px]">
+  <a
+    href={href}
+    data-astro-prefetch="hover"
+    class="relative flex h-full flex-col focus:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-ink-900 rounded-sm"
+  >
+    <!-- Cover -->
+    <div
+      transition:name={`cover-${book.id}`}
+      class="relative w-full overflow-hidden bg-ink-800 shadow-book transition-all duration-500 ease-out group-hover:shadow-book-hover group-hover:-translate-y-1"
+      style="aspect-ratio: 2 / 3"
+    >
+      {hasCover ? (
+        <>
+          <div class="skeleton-shimmer absolute inset-0" aria-hidden="true"></div>
           <img
             src={book.imageUrl}
-            alt={`Couverture du livre ${book.title}`}
-            class="w-full h-full object-cover bg-base-300 transition-transform duration-300 group-hover:scale-105"
-            loading="lazy"
+            alt={`Couverture de ${book.title}`}
+            width="400"
+            height="600"
+            loading={priority ? 'eager' : 'lazy'}
+            decoding="async"
+            fetchpriority={priority ? 'high' : 'auto'}
+            onload="this.previousElementSibling && this.previousElementSibling.remove(); this.style.opacity='1';"
+            onerror="this.style.opacity='0'"
+            style="opacity:0;transition:opacity 0.6s ease"
+            class="relative z-10 h-full w-full object-cover transition-transform duration-700 ease-out will-change-transform group-hover:scale-[1.04]"
           />
-        </div>
+        </>
       ) : (
-        <div class="w-full h-[280px] sm:h-[320px] lg:h-[360px] bg-base-300 flex items-center justify-center">
-          <span class="text-base-content/50">Image non disponible</span>
+        <div class="flex h-full w-full flex-col items-center justify-center gap-3 p-6 text-center">
+          <span class="font-display italic text-2xl leading-none text-amber/70">{book.title.slice(0, 1)}</span>
+          <span class="text-[10px] uppercase tracking-[0.2em] text-ink-400">Sans couverture</span>
         </div>
       )}
-      <div class="absolute top-2 left-2 flex gap-1 flex-wrap max-w-[calc(100%-1rem)]">
-        <span class="badge badge-sm md:badge-md badge-primary shadow-lg">{getStatusLabel(book.status)}</span>
-        {book.abandoned && <span class="badge badge-sm md:badge-md badge-error shadow-lg">Abandonné</span>}
-        {book.favorite && (
-          <span class="badge badge-sm md:badge-md badge-secondary shadow-lg">
-            <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-            </svg>
-            Coup de cœur
+
+      <!-- Gradient overlay on hover -->
+      <div
+        class="absolute inset-0 z-20 bg-gradient-to-t from-ink-900/90 via-ink-900/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+        aria-hidden="true"
+      ></div>
+
+      <!-- Status badge -->
+      <div class="absolute left-3 top-3 z-30 flex flex-wrap gap-1.5">
+        <span class={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.12em] backdrop-blur-md ${status.toneClass}`}>
+          <span class={`h-1.5 w-1.5 rounded-full ${status.dotClass}`}></span>
+          {status.label}
+        </span>
+        {book.abandoned && (
+          <span class="inline-flex items-center rounded-full border border-terracotta/40 bg-terracotta/10 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-terracotta backdrop-blur-md">
+            Abandonné
           </span>
         )}
       </div>
-    </figure>
-    
-    <div class="card-body p-3 sm:p-4">
-      <h2 class="card-title text-sm sm:text-base line-clamp-2 group-hover:text-primary transition-colors">
+
+      <!-- Favorite heart (top right) -->
+      {book.favorite && (
+        <div class="absolute right-3 top-3 z-30">
+          <span class="flex h-8 w-8 items-center justify-center rounded-full border border-amber/40 bg-ink-900/60 backdrop-blur-md" title="Coup de cœur">
+            <svg class="h-4 w-4 text-amber" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.5 1 5.5 3.5C14 6 15.5 5 17.5 5c3.5 0 6 3.5 4 7.5C19 16.65 12 21 12 21z"/>
+            </svg>
+          </span>
+        </div>
+      )}
+
+      <!-- Caption on hover -->
+      <div class="absolute inset-x-0 bottom-0 z-30 p-4 opacity-0 transition-all duration-500 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0">
+        {book.genres && book.genres.length > 0 && (
+          <div class="flex flex-wrap items-center gap-x-1.5 gap-y-0.5">
+            {book.genres.slice(0, 3).map((g, i) => (
+              <>
+                {i > 0 && <span class="text-amber/40" aria-hidden="true">·</span>}
+                <span class="text-[10px] uppercase tracking-[0.15em] text-amber/90">{g}</span>
+              </>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+
+    <!-- Text block -->
+    <div class="pt-4 pb-2 flex flex-col gap-1.5">
+      <h3 class="font-display text-[17px] leading-snug tracking-display text-ink-50 line-clamp-2 group-hover:text-amber transition-colors duration-300">
         {book.title}
-      </h2>
-      
-      {book.authors && (
-        <p class="text-xs sm:text-sm opacity-70 line-clamp-1">
-          par {book.authors.join(', ')}
+      </h3>
+
+      {book.authors && book.authors.length > 0 && (
+        <p class="text-[11px] uppercase tracking-[0.18em] text-ink-300 line-clamp-1">
+          {book.authors.join(' · ')}
         </p>
       )}
 
-      {book.status === 'reading' && book.progress && (
-        <div class="mt-2">
-          <progress 
-            class="progress progress-primary w-full" 
-            value={book.progress} 
-            max="100"
-          ></progress>
-          <p class="text-xs opacity-70 mt-1">{book.progress}% lu</p>
-        </div>
-      )}
+      <div class="flex items-center justify-between pt-1 text-ink-400">
+        {rating !== null && rating > 0 ? (
+          <div class="flex items-center gap-0.5" aria-label={`Note : ${rating} sur 5`}>
+            {Array.from({ length: 5 }).map((_, i) => (
+              <svg
+                class={`h-3 w-3 ${i < rating ? 'text-amber' : 'text-ink-600'}`}
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M12 17.3 5.82 21l1.64-7.03L2 9.24l7.19-.62L12 2l2.81 6.62 7.19 .62-5.46 4.73L18.18 21z"/>
+              </svg>
+            ))}
+          </div>
+        ) : (
+          <span class="text-[10px] uppercase tracking-[0.18em] text-ink-500">Non noté</span>
+        )}
 
-      {book.rating && (
-        <div class="rating rating-xs sm:rating-sm mt-2">
-          {[...Array(5)].map((_, i) => (
-            <input
-              type="radio"
-              class="mask mask-star-2 bg-primary"
-              disabled
-              checked={i + 1 === book.rating}
-            />
-          ))}
-        </div>
-      )}
+        {book.status === 'reading' && typeof book.progress === 'number' && (
+          <span class="text-[10px] uppercase tracking-[0.18em] text-inkblue">{book.progress}%</span>
+        )}
+
+        {book.endDate && book.status === 'finished' && (
+          <time datetime={book.endDate} class="text-[10px] uppercase tracking-[0.18em] text-ink-500">
+            {new Date(book.endDate).toLocaleDateString('fr-FR', { month: 'short', year: 'numeric' })}
+          </time>
+        )}
+      </div>
     </div>
   </a>
-</div> 
+</article>

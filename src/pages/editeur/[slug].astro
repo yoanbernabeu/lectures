@@ -1,0 +1,62 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BookCard from '../../components/BookCard.astro';
+import { getPublishers } from '../../utils/taxonomies';
+
+export async function getStaticPaths() {
+  const publishers = await getPublishers();
+  return publishers.map((publisher) => ({
+    params: { slug: publisher.slug },
+    props: { publisher },
+  }));
+}
+
+const { publisher } = Astro.props;
+
+const statusOrder: Record<string, number> = { reading: 0, finished: 1, 'to-read': 2 };
+const sortedBooks = [...publisher.books].sort((a, b) => {
+  const d = (statusOrder[a.status] ?? 3) - (statusOrder[b.status] ?? 3);
+  if (d !== 0) return d;
+  if (a.status === 'finished' && b.status === 'finished') {
+    const da = a.endDate ? new Date(a.endDate).getTime() : 0;
+    const db = b.endDate ? new Date(b.endDate).getTime() : 0;
+    return db - da;
+  }
+  return a.title.localeCompare(b.title, 'fr');
+});
+
+const title = `${publisher.name} · Lectures · YoanDev`;
+const description = `${publisher.count} livre${publisher.count > 1 ? 's' : ''} édité${publisher.count > 1 ? 's' : ''} par ${publisher.name}.`;
+---
+
+<Layout title={title} description={description} type="index">
+  <div class="mx-auto max-w-7xl px-4 pb-24 md:px-6">
+    <header class="pt-12 pb-12 md:pt-20">
+      <a href="/editeurs/" class="group inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-ink-300 hover:text-inkblue transition-colors">
+        <span class="inline-block transition-transform group-hover:-translate-x-1">←</span>
+        <span>Tous les éditeurs</span>
+      </a>
+
+      <p class="mt-10 mb-6 flex items-center gap-3 text-[11px] uppercase tracking-[0.35em] text-inkblue/90">
+        <span class="h-px w-8 bg-inkblue/60"></span>
+        Éditeur
+      </p>
+
+      <h1 class="font-display text-5xl leading-[0.95] tracking-tightest text-ink-50 md:text-7xl lg:text-8xl">
+        {publisher.name}
+      </h1>
+
+      <p class="mt-8 font-display italic text-lg text-ink-300">
+        <span class="tabular-nums text-inkblue">{publisher.count}</span> {publisher.count > 1 ? 'titres présents' : 'titre présent'} dans la pile.
+      </p>
+
+      <div class="hairline-divider mt-12"></div>
+    </header>
+
+    <section class="grid gap-x-5 gap-y-10 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+      {sortedBooks.map((book, i) => (
+        <BookCard book={book} index={i} priority={i < 4} />
+      ))}
+    </section>
+  </div>
+</Layout>

@@ -1,86 +1,41 @@
-declare global {
-  interface Window {
-    googleBooksStore?: {
-      cache: Map<string, any>;
-      addToCache: (id: string, data: any) => void;
-      getFromCache: (id: string) => any;
-    };
-  }
+import cacheFile from '../data/google-books-cache.json';
+
+export interface GoogleBookData {
+  title: string;
+  authors: string[];
+  description?: string | null;
+  publisher?: string | null;
+  publishedDate?: string | null;
+  pageCount?: number | null;
+  imageLinks: Record<string, string>;
 }
 
-const GOOGLE_BOOKS_API_URL = 'https://www.googleapis.com/books/v1/volumes';
-const MAX_RETRIES = 10;
-const RETRY_DELAY = 1000;
+type CacheFile = {
+  _meta?: unknown;
+  entries: Record<string, { data: GoogleBookData | null; fetchedAt?: string; reason?: string }>;
+};
 
-const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+const CACHE = (cacheFile as unknown as CacheFile).entries || {};
 
-export async function fetchGoogleBooksData(id: string, retryCount = 0) {
-  // Vérifier le cache
-  if (typeof window !== 'undefined' && window.googleBooksStore?.getFromCache(id)) {
-    return window.googleBooksStore.getFromCache(id);
+/**
+ * Récupère les métadonnées Google Books d'un livre depuis le cache local commité.
+ *
+ * Ne fait AUCUN appel réseau : on utilise uniquement src/data/google-books-cache.json.
+ * Pour rafraîchir le cache, lancer `npm run cache:refresh`.
+ *
+ * - `id` = Google Books ID classique → lookup dans le cache
+ * - `id` commence par `local:` → pas de metadata (fiche construite à la main)
+ * - `id` absent du cache → null (on loggue un warn pour signaler qu'il faut refresh)
+ */
+export async function fetchGoogleBooksData(id: string): Promise<GoogleBookData | null> {
+  if (!id || id.startsWith('local:')) return null;
+
+  const hit = CACHE[id];
+  if (hit) return hit.data ?? null;
+
+  // Pas en cache → signaler sans bloquer le build
+  if (typeof process !== 'undefined' && process.env.NODE_ENV !== 'test') {
+    console.warn(`[google-books-cache] Miss pour "${id}". Lance \`npm run cache:refresh\` pour mettre à jour.`);
   }
-
-  try {
-    await delay(100 * (retryCount + 1));
-    const response = await fetch(`${GOOGLE_BOOKS_API_URL}/${id}`);
-    
-    if (!response.ok) {
-      if (retryCount < MAX_RETRIES) {
-        console.warn(`Retry ${retryCount + 1}/${MAX_RETRIES} for book ${id}`);
-        return fetchGoogleBooksData(id, retryCount + 1);
-      }
-      
-      console.warn(`Failed to fetch book ${id} after ${MAX_RETRIES} retries`);
-      return null;
-    }
-
-    const data = await response.json();
-    
-    // Récupérer la meilleure qualité d'image disponible
-    let bestQualityImage = null;
-    const allImages: Record<string, string> = {};
-    if (data.volumeInfo.imageLinks) {
-      const imageLinks = data.volumeInfo.imageLinks;
-      // Traiter chaque taille d'image disponible
-      Object.entries(imageLinks).forEach(([size, url]) => {
-        if (typeof url === 'string') {
-          allImages[size] = url
-            .replace('http://', 'https://')
-            .replace(/&zoom=\d/, '&zoom=3')  // Force la meilleure qualité
-            .replace(/&img=\d/, '&img=1');   // Force la meilleure qualité
-        }
-      });
-      
-      // Sélectionner la meilleure qualité pour l'aperçu par défaut
-      bestQualityImage = allImages.extraLarge || 
-                        allImages.large || 
-                        allImages.medium || 
-                        allImages.small || 
-                        allImages.thumbnail;
-    }
-
-    const result = {
-      title: data.volumeInfo.title || '',
-      authors: data.volumeInfo.authors as string[],
-      description: data.volumeInfo.description,
-      imageLinks: {
-        ...allImages
-      },
-    };
-
-    // Mettre en cache avec persistance
-    if (typeof window !== 'undefined' && window.googleBooksStore) {
-      window.googleBooksStore.addToCache(id, result);
-    }
-    return result;
-
-  } catch (error) {
-    if (retryCount < MAX_RETRIES) {
-      console.warn(`Retry ${retryCount + 1}/${MAX_RETRIES} for book ${id}`);
-      return fetchGoogleBooksData(id, retryCount + 1);
-    }
-    
-    console.warn(`Failed to fetch book ${id} after ${MAX_RETRIES} retries`);
-    return null;
-  }
-} 
+  return null;
+}
