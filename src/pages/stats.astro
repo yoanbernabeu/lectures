@@ -221,23 +221,25 @@ const description = `Visualisation de ${totals.all} livres : timeline, auteurs, 
           </p>
         </div>
 
-        <!-- Bar chart SVG -->
+        <!-- Bar chart -->
         <div class="paper-card rounded-sm p-6 md:p-8">
-          <div class="flex items-end gap-1.5 md:gap-3" style={`height: 280px`}>
+          <div class="flex items-end gap-1.5 md:gap-3" style="height: 280px">
             {yearsData.map(({ year, count }) => {
-              const h = Math.max((count / maxYearCount) * 100, 3);
+              const h = (count / maxYearCount) * 100;
               const isThisYear = year === currentYear;
               return (
                 <div class="flex-1 flex flex-col items-center justify-end group min-w-0">
-                  <span class={`font-display text-xs md:text-sm tabular-nums mb-2 transition-colors ${isThisYear ? 'text-amber' : 'text-ink-200 group-hover:text-amber'}`}>
+                  <span class={`font-display text-xs md:text-sm tabular-nums mb-2 transition-colors ${isThisYear ? 'text-amber' : 'text-ink-100 group-hover:text-amber'}`}>
                     {count}
                   </span>
                   <div
-                    class={`w-full rounded-t-sm transition-all duration-500 ${isThisYear ? 'bg-gradient-to-t from-amber to-amber/70' : 'bg-gradient-to-t from-ink-600 to-ink-500 group-hover:from-amber/60 group-hover:to-amber/40'}`}
-                    style={`height: ${h}%`}
+                    class={`w-full rounded-t-sm transition-all duration-500 ${isThisYear
+                      ? 'bg-gradient-to-t from-amber to-amber/70 shadow-[0_0_20px_rgba(224,161,104,0.25)]'
+                      : 'bg-gradient-to-t from-amber/40 to-amber/15 group-hover:from-amber/70 group-hover:to-amber/40'}`}
+                    style={`height: ${h}%; min-height: 6px`}
                     title={`${count} livre${count > 1 ? 's' : ''} en ${year}`}
                   ></div>
-                  <span class={`mt-2 text-[9px] md:text-[10px] uppercase tracking-[0.1em] tabular-nums ${isThisYear ? 'text-amber' : 'text-ink-400'}`}>
+                  <span class={`mt-2 text-[9px] md:text-[10px] uppercase tracking-[0.1em] tabular-nums ${isThisYear ? 'text-amber' : 'text-ink-300'}`}>
                     {String(year).slice(-2)}
                   </span>
                 </div>
