@@ -1,6 +1,7 @@
 ---
 import { SEO } from 'astro-seo';
 import { ClientRouter } from 'astro:transitions';
+import SiteHeader from '../components/SiteHeader.astro';
 
 interface Props {
   title: string;
@@ -113,6 +114,7 @@ const canonical = new URL(url.pathname, 'https://lectures.yoandev.co').href;
     ></div>
 
     <div class="relative z-10">
+      <SiteHeader />
       <slot />
     </div>
 
