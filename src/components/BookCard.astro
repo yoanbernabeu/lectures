@@ -7,9 +7,14 @@ interface Props {
   compact?: boolean;
   priority?: boolean;
   index?: number;
+  featured?: boolean;
 }
 
-const { book, compact = false, priority = false, index = 0 } = Astro.props;
+const { book, compact = false, priority = false, index = 0, featured = false } = Astro.props;
+
+const featuredFrame = featured
+  ? 'rounded-md border border-amber/60 bg-amber/15 p-2 shadow-[0_0_40px_-10px_rgba(224,161,104,0.4)]'
+  : '';
 
 const slug = book.title ? slugify(book.title) : book.id;
 const href = `/book/${slug}`;
@@ -38,7 +43,7 @@ const hasCover = Boolean(book.imageUrl);
 ---
 
 <article
-  class="reveal group relative h-full"
+  class={`reveal group relative h-full ${featuredFrame}`}
   style={`transition-delay:${Math.min(index * 35, 600)}ms`}
   data-book-status={book.status}
   data-book-title={book.title}
