@@ -2365,7 +2365,7 @@
       "id": "df436e9d-1f4d-44e3-9482-c894e058adee",
       "googleBooksId": "2Bj_EAAAQBAJ",
       "babelioBookId": "5608",
-      "status": "reading",
+      "status": "finished",
       "genres": [
         "sci-fi",
         "roman",
@@ -2378,7 +2378,10 @@
         "Daniel Keyes"
       ],
       "imageUrl": "https://books.google.com/books/publisher/content?id=2Bj_EAAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE73Wo8o8nhuI7vobZ4cIXinOyo181ZTkoN7CU6QwFlw7rgLy1GklOMxr7d1wBNjfIB8AXfcCTpZeWDkPYRGM9k6Ec_dy4jVpZ1jqoNOyTXI86kK4B6F3pniz62WxLebrceGheTPa&source=gbs_api",
-      "description": "Algernon est une souris dont le traitement du Pr. Nemur et du Dr. Strauss vient de décupler l'intelligence. Enhardis par cette réussite, les savants tentent, avec l'assistance de la psychologue Alice Kinnian, d'appliquer leur découverte à Charlie Gordon, un simple d'esprit. C'est bientôt l'extraordinaire éveil de l'intelligence pour le jeune homme. Il découvre un monde dont il avait toujours été exclu, et l'amour qui naît entre Alice et lui achève de le métamorphoser. Mais un jour, les facultés supérieures d'Algernon commencent à décliner... Cette édition augmentée contient, en plus du roman, la nouvelle originale \"Des fleurs pour Algernon\", ainsi que l'essai autobiographique \"Algernon, Charlie et moi\"."
+      "description": "Algernon est une souris dont le traitement du Pr. Nemur et du Dr. Strauss vient de décupler l'intelligence. Enhardis par cette réussite, les savants tentent, avec l'assistance de la psychologue Alice Kinnian, d'appliquer leur découverte à Charlie Gordon, un simple d'esprit. C'est bientôt l'extraordinaire éveil de l'intelligence pour le jeune homme. Il découvre un monde dont il avait toujours été exclu, et l'amour qui naît entre Alice et lui achève de le métamorphoser. Mais un jour, les facultés supérieures d'Algernon commencent à décliner... Cette édition augmentée contient, en plus du roman, la nouvelle originale \"Des fleurs pour Algernon\", ainsi que l'essai autobiographique \"Algernon, Charlie et moi\".",
+      "rating": 5,
+      "endDate": "2026-05-02",
+      "comment": "Touchant et émouvant. La forme journal porte tout : à mesure que l'écriture de Charlie se transforme, on sent venir la fin terrible, et c'est cette lente bascule qui crée l'attachement. Difficile de refermer le livre sans avoir le cœur serré."
     },
     {
       "id": "b44c799b-257a-4df0-9dfe-15fc584e82f4",
@@ -2418,6 +2421,46 @@
       ],
       "imageUrl": "",
       "description": "Quand la science crée un monstre, qui peut l'arrêter ? Soumi, onze ans, n'aurait jamais dû épier le laboratoire NeuroGen. Mais la curiosité est plus forte que la prudence, et ce qu'il découvre derrière cette grille de ventilation va changer Lyon à jamais. Dans un bocal, une masse organique attend. Une expérience qui ne devrait pas exister. Et quand l'orage éclate, elle s'éveille. Krott Topus est né. Une créature qui dévore la foudre. Des ..."
+    },
+    {
+      "id": "5443786e-75dc-4008-96ab-072452155e09",
+      "googleBooksId": "28VfEAAAQBAJ",
+      "babelioBookId": "1394161",
+      "status": "reading",
+      "genres": [
+        "sci-fi",
+        "cyberpunk"
+      ],
+      "rating": null,
+      "comment": null,
+      "abandoned": false,
+      "favorite": false,
+      "title": "Tè mawon",
+      "authors": [
+        "Michael Roch"
+      ],
+      "imageUrl": "http://books.google.com/books/publisher/content?id=28VfEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70PMcnmf5EI4N9p6sHcmLZU1NGiZDferICgYO6nN6kRBRdfKx3aPNbRPhTuRO4wjQ4U2yesphVdEIzY5qH_5RjYyfjnHwc2ngxu4itvWGmhrPI_lM6sdzu8_IwC0Kmmwr7_621O&source=gbs_api",
+      "description": "Alors que l’Europe est le jouet des extrêmes droites, les Canétasunis victimes de pandémies, et l’Asie du Sud affaiblie par les sécheresses, Lanvil a su devenir un modèle international. La mégalopole caribéenne ne cesse de s’élever vers le ciel, démocratie triomphante, vitrine des diversités culturelles, accueillant les migrants de toutes les zones. Cependant cette modernité, tissée de nouvelles technologies et constellée d’écrans, se paie au prix fort, c’est pourquoi les laissés-pour-compte d’anba veulent en découdre. Pat et ses frères mawon ont certes posé les fondations de cette ville, mais ils veulent désormais retrouver la terre de leurs ancêtres ensevelie quelque part sous Lanvil et faire revivre le Tout-Monde ; pour cela, il faudra faire tomber les murs entre l’anba et l’anwo, et renverser cette société de privilèges. En trois jours et trois nuits, les trajectoires des protagonistes vont se croiser, se heurter pour tenter de faire advenir quelque chose d’autre. Leurs noms sont à eux seuls des programmes, ou des poèmes : Joe et Patson, compagnons d’infortune qui enchaînent les galères, Pat et ses solda, l’exemplaire président Kossoré et les sœurs ennemies Sézé, ses enquêtrices, la prophétesse Man Pitak, et Papiyon le désorganiqué."
+    },
+    {
+      "id": "74978fa7-b999-437e-b451-6591ac25edb4",
+      "googleBooksId": "p13KEQAAQBAJ",
+      "babelioBookId": "1960966",
+      "status": "to-read",
+      "genres": [
+        "sci-fi",
+        "cyberpunk"
+      ],
+      "rating": null,
+      "comment": null,
+      "abandoned": false,
+      "favorite": false,
+      "title": "Ko mawon",
+      "authors": [
+        "Michael Roch"
+      ],
+      "imageUrl": "http://books.google.com/books/publisher/content?id=p13KEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71ecqiTIKBa6scnR5XOHODMTFF64CDZUmLiXlqBWg986CWfUC4HAgcutZJwEhDq_CWHCYpjpWwiSVBGtKmEbsN27DDyHLjJkrnRSa4ErPbTWGNraU7J1wgfxSacVSRfMvrtMLrC&source=gbs_api",
+      "description": "<p>2074 : une série d'explosions secoue Lanvil.<br>La mégalopole se désarticule, l'utopie caribéenne vacille. Dans les méandres de la ville-monde, l'enquête piétine et les flics courent après leurs propres drames. Dani arpente des souvenirs familiaux à la recherche d'une militante disparue, sa mère. Perro, lui, a déjà perdu la mémoire. C'est maintenant l'amie artificielle logée dans son crâne qui l'abandonne. Des explosions mais pas de bombes, des disparitions sans cadavres, et des spectres têtus... krkrkr. Les voix qui guident Perro grincent plus que jamais.</p><p>là où je me tiens, tout tremble, mais rien ne tombe.</p><p>Michael Roch tresse un labyrinthe mémoriel et urbain grand comme l’humanité, déstabilisée par les crimes enfouis dans ses fondations. Alliant philosophie décoloniale, cyberpunk et rituels, Kò mawon engage le monde sur les voies de sa guérison, et inscrit l’espoir à l’échelle du cosmos.</p><p><i>tout ce que tu </i><i>prends pour des crimes,<br></i><i>ça n’était pas des crimes,<br></i><i>mais notre processus de réparation.</i></p>"
     }
   ]
 }
