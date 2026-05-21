@@ -2714,6 +2714,40 @@
       },
       "fetchedAt": "2026-05-03T10:48:53.904Z",
       "source": "google"
+    },
+    "local:babelio:1657429": {
+      "data": {
+        "title": "Les Champs de la Lune",
+        "authors": [
+          "Catherine Dufour"
+        ],
+        "description": "Seule employée d'une ferme sur la Lune, l'humanoïde El Jarnine doit nourrir les hommes et les soigner, avec l'aide d'un chat augmenté. Son quotidien est bouleversé par l'arrivée d'une petite fille douée pour l'horticulture. Les deux êtres s'apprivoisent grâce à leur amour des plantes. Lorsque l'enfant meurt d'une maladie incurable, El Jarnine entame une quête vers plus de liberté.",
+        "publisher": "Le Livre de Poche",
+        "publishedDate": null,
+        "pageCount": 352,
+        "imageLinks": {}
+      },
+      "fetchedAt": "2026-05-21T08:42:39.757Z",
+      "source": "babelio"
+    },
+    "local:openlibrary:OL2885572W": {
+      "data": {
+        "title": "Niourk",
+        "authors": [
+          "Stefan Wul"
+        ],
+        "description": null,
+        "publisher": null,
+        "publishedDate": "1986",
+        "pageCount": null,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/968888-M.jpg",
+          "large": "https://covers.openlibrary.org/b/id/968888-L.jpg",
+          "extraLarge": "https://covers.openlibrary.org/b/id/968888-L.jpg"
+        }
+      },
+      "fetchedAt": "2026-05-21T08:42:39.968Z",
+      "source": "openlibrary"
     }
   }
 }

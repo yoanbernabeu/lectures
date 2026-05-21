@@ -2426,12 +2426,12 @@
       "id": "5443786e-75dc-4008-96ab-072452155e09",
       "googleBooksId": "28VfEAAAQBAJ",
       "babelioBookId": "1394161",
-      "status": "reading",
+      "status": "finished",
       "genres": [
         "sci-fi",
         "cyberpunk"
       ],
-      "rating": null,
+      "rating": 3,
       "comment": null,
       "abandoned": false,
       "favorite": false,
@@ -2440,7 +2440,8 @@
         "Michael Roch"
       ],
       "imageUrl": "http://books.google.com/books/publisher/content?id=28VfEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70PMcnmf5EI4N9p6sHcmLZU1NGiZDferICgYO6nN6kRBRdfKx3aPNbRPhTuRO4wjQ4U2yesphVdEIzY5qH_5RjYyfjnHwc2ngxu4itvWGmhrPI_lM6sdzu8_IwC0Kmmwr7_621O&source=gbs_api",
-      "description": "Alors que l’Europe est le jouet des extrêmes droites, les Canétasunis victimes de pandémies, et l’Asie du Sud affaiblie par les sécheresses, Lanvil a su devenir un modèle international. La mégalopole caribéenne ne cesse de s’élever vers le ciel, démocratie triomphante, vitrine des diversités culturelles, accueillant les migrants de toutes les zones. Cependant cette modernité, tissée de nouvelles technologies et constellée d’écrans, se paie au prix fort, c’est pourquoi les laissés-pour-compte d’anba veulent en découdre. Pat et ses frères mawon ont certes posé les fondations de cette ville, mais ils veulent désormais retrouver la terre de leurs ancêtres ensevelie quelque part sous Lanvil et faire revivre le Tout-Monde ; pour cela, il faudra faire tomber les murs entre l’anba et l’anwo, et renverser cette société de privilèges. En trois jours et trois nuits, les trajectoires des protagonistes vont se croiser, se heurter pour tenter de faire advenir quelque chose d’autre. Leurs noms sont à eux seuls des programmes, ou des poèmes : Joe et Patson, compagnons d’infortune qui enchaînent les galères, Pat et ses solda, l’exemplaire président Kossoré et les sœurs ennemies Sézé, ses enquêtrices, la prophétesse Man Pitak, et Papiyon le désorganiqué."
+      "description": "Alors que l’Europe est le jouet des extrêmes droites, les Canétasunis victimes de pandémies, et l’Asie du Sud affaiblie par les sécheresses, Lanvil a su devenir un modèle international. La mégalopole caribéenne ne cesse de s’élever vers le ciel, démocratie triomphante, vitrine des diversités culturelles, accueillant les migrants de toutes les zones. Cependant cette modernité, tissée de nouvelles technologies et constellée d’écrans, se paie au prix fort, c’est pourquoi les laissés-pour-compte d’anba veulent en découdre. Pat et ses frères mawon ont certes posé les fondations de cette ville, mais ils veulent désormais retrouver la terre de leurs ancêtres ensevelie quelque part sous Lanvil et faire revivre le Tout-Monde ; pour cela, il faudra faire tomber les murs entre l’anba et l’anwo, et renverser cette société de privilèges. En trois jours et trois nuits, les trajectoires des protagonistes vont se croiser, se heurter pour tenter de faire advenir quelque chose d’autre. Leurs noms sont à eux seuls des programmes, ou des poèmes : Joe et Patson, compagnons d’infortune qui enchaînent les galères, Pat et ses solda, l’exemplaire président Kossoré et les sœurs ennemies Sézé, ses enquêtrices, la prophétesse Man Pitak, et Papiyon le désorganiqué.",
+      "endDate": "2026-05-21"
     },
     {
       "id": "74978fa7-b999-437e-b451-6591ac25edb4",
@@ -2461,6 +2462,48 @@
       ],
       "imageUrl": "http://books.google.com/books/publisher/content?id=p13KEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71ecqiTIKBa6scnR5XOHODMTFF64CDZUmLiXlqBWg986CWfUC4HAgcutZJwEhDq_CWHCYpjpWwiSVBGtKmEbsN27DDyHLjJkrnRSa4ErPbTWGNraU7J1wgfxSacVSRfMvrtMLrC&source=gbs_api",
       "description": "<p>2074 : une série d'explosions secoue Lanvil.<br>La mégalopole se désarticule, l'utopie caribéenne vacille. Dans les méandres de la ville-monde, l'enquête piétine et les flics courent après leurs propres drames. Dani arpente des souvenirs familiaux à la recherche d'une militante disparue, sa mère. Perro, lui, a déjà perdu la mémoire. C'est maintenant l'amie artificielle logée dans son crâne qui l'abandonne. Des explosions mais pas de bombes, des disparitions sans cadavres, et des spectres têtus... krkrkr. Les voix qui guident Perro grincent plus que jamais.</p><p>là où je me tiens, tout tremble, mais rien ne tombe.</p><p>Michael Roch tresse un labyrinthe mémoriel et urbain grand comme l’humanité, déstabilisée par les crimes enfouis dans ses fondations. Alliant philosophie décoloniale, cyberpunk et rituels, Kò mawon engage le monde sur les voies de sa guérison, et inscrit l’espoir à l’échelle du cosmos.</p><p><i>tout ce que tu </i><i>prends pour des crimes,<br></i><i>ça n’était pas des crimes,<br></i><i>mais notre processus de réparation.</i></p>"
+    },
+    {
+      "id": "907e3692-cee0-48c9-9365-1bb57696d8f9",
+      "googleBooksId": "local:openlibrary:OL2885572W",
+      "babelioBookId": "8633",
+      "status": "to-read",
+      "genres": [
+        "sci-fi",
+        "post-apo",
+        "roman"
+      ],
+      "rating": null,
+      "comment": null,
+      "abandoned": false,
+      "favorite": false,
+      "title": "Niourk",
+      "authors": [
+        "Stefan Wul"
+      ],
+      "imageUrl": "https://covers.openlibrary.org/b/id/968888-L.jpg",
+      "description": "La Terre n'est plus qu'un vaste désert. Des monstres engendrés par d'antiques technologies radioactives hantent ce qu'il reste des océans - quelques lacs d'eau saumâtre, rien de plus. Dans ce monde âpre, un enfant noir, rejeté par tous les membres de sa tribu, se met en route vers Niourk, la ville mythique, peuplée de fantômes. Au bout de cette quête se trouve peut-être le moyen de redonner vie à notre Terre assassinée."
+    },
+    {
+      "id": "9770ae65-d1db-47e7-bfdb-fc1ff8ed3f16",
+      "googleBooksId": "local:babelio:1657429",
+      "babelioBookId": "1657429",
+      "status": "reading",
+      "genres": [
+        "sci-fi",
+        "space-opera",
+        "roman"
+      ],
+      "rating": null,
+      "comment": null,
+      "abandoned": false,
+      "favorite": false,
+      "title": "Les Champs de la Lune",
+      "authors": [
+        "Catherine Dufour"
+      ],
+      "imageUrl": "",
+      "description": "Seule employée d'une ferme sur la Lune, l'humanoïde El Jarnine doit nourrir les hommes et les soigner, avec l'aide d'un chat augmenté. Son quotidien est bouleversé par l'arrivée d'une petite fille douée pour l'horticulture. Les deux êtres s'apprivoisent grâce à leur amour des plantes. Lorsque l'enfant meurt d'une maladie incurable, El Jarnine entame une quête vers plus de liberté."
     }
   ]
 }
