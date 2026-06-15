@@ -22,6 +22,10 @@ const BOOKS_PATH = path.join(ROOT, 'public/data/books.json');
 const CACHE_PATH = path.join(ROOT, 'src/data/google-books-cache.json');
 
 const GOOGLE_API = 'https://www.googleapis.com/books/v1/volumes';
+// Clé API Google Books optionnelle : sans clé, les requêtes anonymes partagent
+// un quota journalier global vite épuisé. Définir GOOGLE_BOOKS_API_KEY donne un
+// quota dédié (gratuit). Le script reste fonctionnel si la variable est absente.
+const GOOGLE_API_KEY = process.env.GOOGLE_BOOKS_API_KEY || '';
 const OPENLIB_API = 'https://openlibrary.org';
 const OPENLIB_COVERS = 'https://covers.openlibrary.org/b/id';
 
@@ -90,7 +94,8 @@ async function fetchWithRetry(url, attempt = 0) {
 }
 
 async function fetchFromGoogle(id) {
-  const r = await fetchWithRetry(`${GOOGLE_API}/${id}`);
+  const suffix = GOOGLE_API_KEY ? `?key=${encodeURIComponent(GOOGLE_API_KEY)}` : '';
+  const r = await fetchWithRetry(`${GOOGLE_API}/${id}${suffix}`);
   if (!r.ok) return null;
   return extractGoogleVolume(r.json);
 }
