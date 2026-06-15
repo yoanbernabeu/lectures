@@ -1985,7 +1985,7 @@
       "id": "1067da21-9055-47a4-9280-f9db8167f855",
       "googleBooksId": "7fKIAQAAQBAJ",
       "babelioBookId": "416522",
-      "status": "to-read",
+      "status": "reading",
       "genres": [
         "sci-fi",
         "post-apo",
@@ -2488,13 +2488,13 @@
       "id": "9770ae65-d1db-47e7-bfdb-fc1ff8ed3f16",
       "googleBooksId": "local:babelio:1657429",
       "babelioBookId": "1657429",
-      "status": "reading",
+      "status": "finished",
       "genres": [
         "sci-fi",
         "space-opera",
         "roman"
       ],
-      "rating": null,
+      "rating": 5,
       "comment": null,
       "abandoned": false,
       "favorite": false,
@@ -2503,7 +2503,49 @@
         "Catherine Dufour"
       ],
       "imageUrl": "https://books.google.com/books/content?id=R3YfEQAAQBAJ&printsec=frontcover&img=1&zoom=3",
-      "description": "Seule employée d'une ferme sur la Lune, l'humanoïde El Jarnine doit nourrir les hommes et les soigner, avec l'aide d'un chat augmenté. Son quotidien est bouleversé par l'arrivée d'une petite fille douée pour l'horticulture. Les deux êtres s'apprivoisent grâce à leur amour des plantes. Lorsque l'enfant meurt d'une maladie incurable, El Jarnine entame une quête vers plus de liberté."
+      "description": "Seule employée d'une ferme sur la Lune, l'humanoïde El Jarnine doit nourrir les hommes et les soigner, avec l'aide d'un chat augmenté. Son quotidien est bouleversé par l'arrivée d'une petite fille douée pour l'horticulture. Les deux êtres s'apprivoisent grâce à leur amour des plantes. Lorsque l'enfant meurt d'une maladie incurable, El Jarnine entame une quête vers plus de liberté.",
+      "endDate": "2026-06-15"
+    },
+    {
+      "id": "d3b0c852-422f-4f33-a91a-c4c77080b84e",
+      "googleBooksId": "dabNEQAAQBAJ",
+      "status": "to-read",
+      "rating": null,
+      "comment": null,
+      "abandoned": false,
+      "favorite": false,
+      "genres": [
+        "sci-fi",
+        "space-opera"
+      ],
+      "title": "Les Dieux lents",
+      "authors": [
+        "Claire North"
+      ],
+      "description": "Au cœur du gouffre enténébré qui sépare les étoiles, sanglé dans son siège de pilote, Mawukana na-Vdnaze est mort là où d’autres ont trouvé la folie. Avant de revenir à la vie — plus tout à fait humain, mais susceptible de parler à l’obscurité infinie...<br>Voici l’histoire de Mawukana na-Vdnaze, de ses nombreuses vies et de ses morts toutes aussi nombreuses. L’histoire de sa vengeance contre l’empire de l’Éclat. Et d’une supernova à même de vitrifier n’importe quelle civilisation sur des dizaines d’années-lumière. Un absolu désastre pour certains. Une opportunité pour d’autres. Tandis que dans l’abîme, hors du temps, d’étranges entités tissent leurs desseins impensables...<br>",
+      "imageUrl": "https://books.google.com/books/publisher/content?id=dabNEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72tgmn4hJIlQs7athu1iki5HN8p0LD7wDyHorRCDw4UFY-FxPVEXVJ33riPv60j3dByeUC8TzyBiLxPktEks91WpzNkmPG0usM0s7Z-Vh1KgiE_Xj2rV6J87vtrY-vYFjd6W0XL&source=gbs_api",
+      "babelioBookId": "1963939"
+    },
+    {
+      "id": "2575ecee-b996-4245-9207-388ba5101def",
+      "googleBooksId": "TXKGAQAAQBAJ",
+      "status": "to-read",
+      "rating": null,
+      "comment": null,
+      "abandoned": false,
+      "favorite": false,
+      "genres": [
+        "sci-fi",
+        "post-apo",
+        "roman"
+      ],
+      "title": "Univers Métro 2033, tome 2 : Vers les ténèbres",
+      "authors": [
+        "Andreï Dyakov"
+      ],
+      "description": "<p>2033. Golfe de Finlande. Alors qu'ils quittent leur île pour une mission de ravitaillement, les membres d'équipage du Babel assistent, à la destruction de leur havre de paix. <br>Barricadés dans une station inoccupée, les survivants lancent un ultimatum aux stations du métropolitain : ils donnent une semaine pour livrer les responsables de l'éradication de l'île Moshchny ou un gaz mortel sera libéré dans l'ensemble du réseau. <br>Le Conseil du métro décide de confier l'enquête à Taran, un stalker à la réputation sans tâche. Le compte à rebours pour la survie est lancé.</p>",
+      "imageUrl": "https://books.google.com/books/publisher/content?id=TXKGAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73TPYgkIDmGjNmZkRVWHy-u8nFJdaGCbHP72obi3K9VsD8qQi3fyJbFcTXKnvWDSvsqnMVkcdjwTmy8uS8AU-cws3Qj3YainPx71jg3u4qYz3MS7WUqI412LHIFMkibwZfGwpGb&source=gbs_api",
+      "babelioBookId": "500828"
     }
   ]
 }
