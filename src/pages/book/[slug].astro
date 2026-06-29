@@ -188,18 +188,20 @@ if (ratingStars > 0) {
             </div>
           )}
 
-          {book.googleBooksId && !book.googleBooksId.startsWith('local:') && (
+          {((book.googleBooksId && !book.googleBooksId.startsWith('local:')) || book.babelioBookId) && (
             <div>
               <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400">Liens</dt>
               <dd class="mt-2 space-y-1">
-                <a
-                  href={`https://books.google.fr/books?id=${book.googleBooksId}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="block text-sm text-ink-200 underline-offset-4 hover:text-amber hover:underline"
-                >
-                  Fiche Google Books →
-                </a>
+                {book.googleBooksId && !book.googleBooksId.startsWith('local:') && (
+                  <a
+                    href={`https://books.google.fr/books?id=${book.googleBooksId}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="block text-sm text-ink-200 underline-offset-4 hover:text-amber hover:underline"
+                  >
+                    Fiche Google Books →
+                  </a>
+                )}
                 {book.babelioBookId && (
                   <a
                     href={`https://www.babelio.com/livres/_/${book.babelioBookId}`}
