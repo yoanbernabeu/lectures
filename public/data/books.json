@@ -2495,7 +2495,7 @@
         "roman"
       ],
       "rating": 5,
-      "comment": null,
+      "comment": "Catherine Dufour pose sa fermière, El-Jarline, à la surface d'une Lune colonisée, sous un dôme, pendant que les Soulunaires s'entassent dans d'anciens tunnels de lave. Tout passe par ses rapports, et c'est un régal : son agacement d'alerter encore et encore sans réponse, sa tendresse pour le vivant, et son duo plein d'humour avec Trym, son chat qui parle. Le vrai trouble, c'est elle : une humaine au fonctionnement un peu à part, une humanoïde qui s'éveille aux émotions au contact de la petite Sileqi ? On ne sait jamais vraiment, et j'ai adoré garder ce doute jusqu'au bout. J'ai aimé la première partie contemplative autant que la bascule vers l'aventure et l'exploration de la Lune. Et derrière la douceur, un fond écolo et politique que j'ai trouvé génial : une humanité qui a ruiné une planète et n'a toujours rien retenu.",
       "abandoned": false,
       "favorite": false,
       "title": "Les Champs de la Lune",
@@ -2546,6 +2546,26 @@
       "description": "<p>2033. Golfe de Finlande. Alors qu'ils quittent leur île pour une mission de ravitaillement, les membres d'équipage du Babel assistent, à la destruction de leur havre de paix. <br>Barricadés dans une station inoccupée, les survivants lancent un ultimatum aux stations du métropolitain : ils donnent une semaine pour livrer les responsables de l'éradication de l'île Moshchny ou un gaz mortel sera libéré dans l'ensemble du réseau. <br>Le Conseil du métro décide de confier l'enquête à Taran, un stalker à la réputation sans tâche. Le compte à rebours pour la survie est lancé.</p>",
       "imageUrl": "https://books.google.com/books/publisher/content?id=TXKGAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73TPYgkIDmGjNmZkRVWHy-u8nFJdaGCbHP72obi3K9VsD8qQi3fyJbFcTXKnvWDSvsqnMVkcdjwTmy8uS8AU-cws3Qj3YainPx71jg3u4qYz3MS7WUqI412LHIFMkibwZfGwpGb&source=gbs_api",
       "babelioBookId": "500828"
+    },
+    {
+      "id": "c1b9369b-2eb5-4549-84e7-389fda198bc3",
+      "googleBooksId": "tN7AEQAAQBAJ",
+      "babelioBookId": "1903150",
+      "status": "to-read",
+      "genres": [
+        "sci-fi",
+        "dystopie"
+      ],
+      "rating": null,
+      "comment": null,
+      "abandoned": false,
+      "favorite": false,
+      "title": "Où repose la hache",
+      "authors": [
+        "Ray Nayler"
+      ],
+      "imageUrl": "http://books.google.com/books/publisher/content?id=tN7AEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70oyTgIrtMCulUn3jIZylftXKOcor9E1XquaIAdG058Nx06gJMeFN3-RUEJ4PCRAQcbdw0nSop7oHCRQcY0a-KLrm-sa1MG6aWuLdnjYuhgozdCXoQZXHyUSyd8PvAyt6tdjFfz&source=gbs_api",
+      "description": "Demain, ici et ailleurs.<br>L’Occident, en quête de repères dans un contexte géopolitique sans horizon, est en passe d’abandonner le champ politique au profit d’intelligences artificielles toutes-puissantes. À l’Est, face à ce monde en déréliction, le despote vieillissant d’une Fédération écrasée par un totalitarisme nourri de technologie prépare son upload dans un corps plus jeune — une nouvelle fois...<br>Il y a Nikolaï, le médecin de la tyrannie ; Nurlan, un parlementaire témoin du renoncement ; Lilia, à l’origine d’une de ces technologies de rupture susceptibles de rebattre les cartes ; Zoïa, dont l’œuvre est pour beaucoup l’unique espoir... Et bien sûr ceux qui souffrent, la masse anonyme qui, broyée, meurt en silence. Mais au cœur de la taïga, caché à tout regard numérique, quelque chose se trame...<br> <br>"
     }
   ]
 }
