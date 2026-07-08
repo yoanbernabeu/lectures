@@ -1985,7 +1985,7 @@
       "id": "1067da21-9055-47a4-9280-f9db8167f855",
       "googleBooksId": "7fKIAQAAQBAJ",
       "babelioBookId": "416522",
-      "status": "reading",
+      "status": "finished",
       "genres": [
         "sci-fi",
         "post-apo",
@@ -1998,7 +1998,10 @@
         "Andreï Dyakov"
       ],
       "imageUrl": "https://books.google.com/books/publisher/content?id=7fKIAQAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE712fCzkEUoSoSw9ySU8NfR0wRD705go2WkTdngAhayQrkdOys7w1SSIw-to1l6qcUD4bVMpfwEYgr3ZA1GzK8TXyVviVJvczzTI4FaZTa8O51jKYDuxxZDNByuu9oLhMnGtogrO&source=gbs_api",
-      "description": "<p>Dans les profondeurs du métro de Saint-Pétersbourg, où la mort revêt tant de visages, la puissante Alliance littorale arme une expédition en surface. Des stalkers ont aperçu une lumière qui aurait sa source sur l’île de Kotline, dans la baie de la Neva. Serait-ce le signal de cette Arche de salut qu’espèrent les fidèles de l’Exode, une secte qui prolifère à travers le métropolitain ? Gleb, un jeune adolescent de la station Moskovskaïa, sera du voyage. <br>Mais quels périls guettent les audacieux ? Et quelles révélations les attendent au bout de leur périple ?</p> <p>Vers la lumière appartient à la série « L’univers de Métro 2033 » initiée par Dmitry Glukhovsky suite au succès de Métro 2033 et Métro 2034. Son ambition est d’enrichir le monde imaginé par l’auteur en y faisant participer des romanciers de tous les pays. Andreï Dyakov est un de ces jeunes écrivains. Son livre a enthousiasmé aussi bien les lecteurs russes qu’allemands et espagnols.</p>"
+      "description": "<p>Dans les profondeurs du métro de Saint-Pétersbourg, où la mort revêt tant de visages, la puissante Alliance littorale arme une expédition en surface. Des stalkers ont aperçu une lumière qui aurait sa source sur l’île de Kotline, dans la baie de la Neva. Serait-ce le signal de cette Arche de salut qu’espèrent les fidèles de l’Exode, une secte qui prolifère à travers le métropolitain ? Gleb, un jeune adolescent de la station Moskovskaïa, sera du voyage. <br>Mais quels périls guettent les audacieux ? Et quelles révélations les attendent au bout de leur périple ?</p> <p>Vers la lumière appartient à la série « L’univers de Métro 2033 » initiée par Dmitry Glukhovsky suite au succès de Métro 2033 et Métro 2034. Son ambition est d’enrichir le monde imaginé par l’auteur en y faisant participer des romanciers de tous les pays. Andreï Dyakov est un de ces jeunes écrivains. Son livre a enthousiasmé aussi bien les lecteurs russes qu’allemands et espagnols.</p>",
+      "rating": 5,
+      "endDate": "2026-06-30",
+      "comment": "J'avais adoré la saga originelle de Glukhovsky, et Diakov relève brillamment le défi de prolonger cet univers. Là où l'original reste confiné sous terre, il nous fait vite remonter à la surface, et c'est là que le livre prend toute sa force. Ses descriptions de Saint-Pétersbourg en ruines et des créatures qui rôdent à la surface sont saisissantes, presque cinématographiques. Une ambiance exceptionnelle, portée par le voyage initiatique de Gleb et du stalker Taran. J'ai adoré, un vrai coup de cœur."
     },
     {
       "id": "a75cc42e-4e96-49df-8e37-bb7b6321e003",
@@ -2529,7 +2532,7 @@
     {
       "id": "2575ecee-b996-4245-9207-388ba5101def",
       "googleBooksId": "TXKGAQAAQBAJ",
-      "status": "to-read",
+      "status": "reading",
       "rating": null,
       "comment": null,
       "abandoned": false,
