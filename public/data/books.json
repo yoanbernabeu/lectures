@@ -2313,7 +2313,7 @@
       "id": "bef4ae6a-5dd4-4e4f-95b0-695fb9f9ef0d",
       "googleBooksId": "ww9VEQAAQBAJ",
       "babelioBookId": "1851232",
-      "status": "to-read",
+      "status": "reading",
       "genres": [
         "roman"
       ],
@@ -2532,8 +2532,8 @@
     {
       "id": "2575ecee-b996-4245-9207-388ba5101def",
       "googleBooksId": "TXKGAQAAQBAJ",
-      "status": "reading",
-      "rating": null,
+      "status": "finished",
+      "rating": 5,
       "comment": null,
       "abandoned": false,
       "favorite": false,
@@ -2548,7 +2548,8 @@
       ],
       "description": "<p>2033. Golfe de Finlande. Alors qu'ils quittent leur île pour une mission de ravitaillement, les membres d'équipage du Babel assistent, à la destruction de leur havre de paix. <br>Barricadés dans une station inoccupée, les survivants lancent un ultimatum aux stations du métropolitain : ils donnent une semaine pour livrer les responsables de l'éradication de l'île Moshchny ou un gaz mortel sera libéré dans l'ensemble du réseau. <br>Le Conseil du métro décide de confier l'enquête à Taran, un stalker à la réputation sans tâche. Le compte à rebours pour la survie est lancé.</p>",
       "imageUrl": "https://books.google.com/books/publisher/content?id=TXKGAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73TPYgkIDmGjNmZkRVWHy-u8nFJdaGCbHP72obi3K9VsD8qQi3fyJbFcTXKnvWDSvsqnMVkcdjwTmy8uS8AU-cws3Qj3YainPx71jg3u4qYz3MS7WUqI412LHIFMkibwZfGwpGb&source=gbs_api",
-      "babelioBookId": "500828"
+      "babelioBookId": "500828",
+      "endDate": "2026-07-12"
     },
     {
       "id": "c1b9369b-2eb5-4549-84e7-389fda198bc3",
