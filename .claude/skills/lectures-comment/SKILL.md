@@ -3,11 +3,11 @@ name: lectures-comment
 description: "Ajoute, remplace ou affine la critique (`comment`) d'un livre de public/data/books.json (site lectures.yoandev.co), en t'aidant à formaliser une courte critique via quelques questions adaptatives. Utilise cette skill dès que l'utilisateur veut commenter un livre, écrire une critique, noter ce qu'il a pensé d'un bouquin, rédiger un petit avis, raffiner / remplacer une critique existante, ou simplement dire deux mots sur sa lecture — même s'il ne mentionne pas explicitement `comment` ou `books.json`. Peut aussi mettre à jour la note (`rating` 1-5) dans la foulée. À utiliser uniquement depuis le repo ~/YoanDev/lectures."
 ---
 
-# lectures-comment — Rédaction interactive d'une critique courte
+# lectures-comment — Rédaction interactive d'une critique
 
-Cette skill met à jour le champ `comment` (et optionnellement `rating`) d'un livre dans `public/data/books.json`. Elle **aide l'utilisateur à formaliser** une critique courte en posant quelques questions adaptatives, puis propose une rédaction à valider.
+Cette skill met à jour le champ `comment` (et optionnellement `rating`) d'un livre dans `public/data/books.json`. Elle **aide l'utilisateur à formaliser** sa critique en posant quelques questions adaptatives, puis propose une rédaction à valider.
 
-Le champ `comment` est un texte libre (null ou string). Le style maison est **court** (1 à 3 phrases en général), **direct**, pas littéraire, pas ampoulé. Vise le ton d'un ami qui résume sa lecture à table, pas celui d'un critique professionnel.
+Le champ `comment` est un texte libre (null ou string). Le style maison est **direct**, pas littéraire, pas ampoulé, mais **pas télégraphique** : vise un petit paragraphe (souvent 3 à 5 phrases) qui laisse respirer le ressenti, pas une punchline d'une ligne. Le ton est celui d'un ami qui raconte sa lecture à table : il prend le temps de dire ce qui l'a marqué. Une critique très courte reste possible quand l'utilisateur a peu à dire, mais par défaut penche vers le développé plutôt que vers l'expédié.
 
 ## Préconditions
 
@@ -71,13 +71,13 @@ Ensuite, **relance selon la réponse** — pas un questionnaire fixe. Quelques p
 
 ### Étape 4 — Rédiger une proposition
 
-Rédige une critique **courte** (1 à 3 phrases, parfois une seule ligne — regarde les critiques existantes dans `books.json` pour calibrer). Respecte le style :
+Rédige une critique **d'un petit paragraphe** (le plus souvent 3 à 5 phrases ; descends en dessous seulement si l'utilisateur a vraiment donné peu de matière). Regarde les critiques existantes dans `books.json` pour le ton, mais n'imite pas leur brièveté au point de rendre systématiquement une seule ligne : l'utilisateur préfère un avis qui développe. Respecte le style :
 
 - **Direct et concret**, en français courant. Pas de formules toutes faites (« un véritable tour de force », « un incontournable »).
 - **Jamais de tiret cadratin (`—`)** dans le texte de la critique. Interdit. Utilise une virgule, un point, un point-virgule, des parenthèses, ou deux phrases. Cette règle s'applique aussi aux drafts et reformulations que tu proposes à l'utilisateur, pas seulement à la version finale.
 - **Pas de résumé du livre**, c'est une critique, pas un pitch. L'utilisateur sait ce qu'il a lu.
 - **Pas de pronoms à la première personne obligatoires** — les critiques existantes alternent entre neutre (« Un livre dur mais nécessaire ») et "je" léger. Suis le ton des réponses de l'utilisateur : s'il parle à la première personne, garde-la ; s'il est plus descriptif, reste neutre.
-- **Longueur proportionnelle à la matière** : s'il a donné 2 phrases d'avis, ne rends pas un paragraphe. S'il a développé, tu peux aller jusqu'à 3 phrases max.
+- **Longueur proportionnelle à la matière, mais généreuse** : par défaut vise 3 à 5 phrases. Ne raccourcis à 1 ou 2 phrases que si l'utilisateur a été très laconique. S'il a développé, tu peux aller jusqu'à 5 ou 6 phrases : mieux vaut un avis qui respire qu'un résumé expédié. Dans le doute, développe plutôt que de couper.
 
 **Exemples de bon calibrage** (vrais extraits de `books.json`) :
 
@@ -202,6 +202,6 @@ Pas de règle dure — l'utilisateur peut vouloir poser un commentaire à chaud 
 
 - **Un seul point d'entrée pour écrire** : le script. N'édite pas `books.json` à la main — tu casserais le formatage.
 - **Le script préserve** : 2 espaces d'indentation, UTF-8 non échappé, newline final. Ne change pas cette convention.
-- **Tu es un facilitateur, pas un auteur** : la critique doit sonner comme l'utilisateur, pas comme toi. Si tu es tenté d'ajouter des formules, retire-les. Dans le doute, cours plus court.
+- **Tu es un facilitateur, pas un auteur** : la critique doit sonner comme l'utilisateur, pas comme toi. Si tu es tenté d'ajouter des formules toutes faites, retire-les, mais garde le ressenti développé : couper les fioritures ne veut pas dire tout raccourcir à une ligne. Dans le doute sur la longueur, développe plutôt que d'expédier.
 - **N'invente rien** : si l'utilisateur n'a pas dit qu'un personnage était génial, ne l'écris pas. Reformule ses mots, ne les enrichis pas.
 - **Push explicite** : toujours demander avant de push, même pour une modif triviale.
