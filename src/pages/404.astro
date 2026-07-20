@@ -1,0 +1,88 @@
+---
+import Layout from '../layouts/Layout.astro';
+import booksData from '@data/books.json';
+import type { Book } from '../types/book';
+import { slugify } from '../utils/slugify';
+
+// Trois pistes de lecture pour ne pas laisser le visiteur dans une impasse
+const books = booksData.books as Book[];
+const suggestions = books
+  .filter(b => b.favorite && b.imageUrl)
+  .slice(0, 3);
+
+const title = 'Page introuvable — Lectures · YoanDev';
+const description = "Cette page ne figure pas dans la bibliothèque. Retour à l'accueil du journal de lecture.";
+---
+
+<Layout title={title} description={description}>
+  <div class="mx-auto flex min-h-[70vh] max-w-7xl flex-col justify-center px-4 py-20 md:px-6">
+    <p class="mb-6 flex items-center gap-3 text-[11px] uppercase tracking-[0.35em] text-amber/80">
+      <span class="h-px w-8 bg-amber/50"></span>
+      Erreur 404 · Page introuvable
+    </p>
+
+    <h1 class="font-display text-5xl leading-[1.02] tracking-tightest text-ink-50 md:text-7xl">
+      Cette page ne figure pas
+      <span class="block italic text-amber font-display-wonk">dans la bibliothèque.</span>
+    </h1>
+
+    <p class="mt-8 max-w-xl text-lg leading-relaxed text-ink-200">
+      Le rayon que vous cherchez a peut-être été déplacé, ou n'a jamais existé.
+      Le mieux est encore de reprendre au début.
+    </p>
+
+    <div class="mt-10 flex flex-wrap items-center gap-4">
+      <a
+        href="/"
+        class="rounded-full bg-amber px-6 py-2.5 text-xs font-medium uppercase tracking-[0.16em] text-ink-900 transition-colors hover:bg-amber-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-ink-900"
+      >
+        Retour à la bibliothèque
+      </a>
+      <a
+        href="/stats/"
+        class="rounded-full border border-ink-600/60 px-6 py-2.5 text-xs font-medium uppercase tracking-[0.16em] text-ink-200 transition-colors hover:border-amber/60 hover:text-ink-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber/60"
+      >
+        Voir les stats
+      </a>
+    </div>
+
+    {suggestions.length > 0 && (
+      <section class="mt-16">
+        <p class="mb-5 text-[11px] uppercase tracking-[0.22em] text-ink-400">
+          Ou repartez avec un coup de cœur
+        </p>
+        <ul class="flex flex-wrap gap-6">
+          {suggestions.map(book => (
+            <li>
+              <a
+                href={`/book/${slugify(book.title)}/`}
+                data-astro-prefetch="hover"
+                class="group flex items-center gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-ink-900 rounded-sm"
+              >
+                <img
+                  src={book.imageUrl}
+                  alt={`Couverture de ${book.title}`}
+                  width="48"
+                  height="72"
+                  loading="lazy"
+                  decoding="async"
+                  class="h-[72px] w-12 object-cover shadow-book transition-transform duration-300 group-hover:-translate-y-0.5"
+                />
+                <span class="max-w-[180px]">
+                  <span class="block font-display text-base leading-snug text-ink-50 transition-colors group-hover:text-amber">
+                    {book.title}
+                  </span>
+                  {book.authors && book.authors.length > 0 && (
+                    <span class="mt-1 block text-[10px] uppercase tracking-[0.18em] text-ink-400">
+                      {book.authors[0]}
+                    </span>
+                  )}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+  </div>
+</Layout>
