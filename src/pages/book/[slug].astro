@@ -172,6 +172,27 @@ const breadcrumbLd = {
             </dd>
           </div>
 
+          {book.status === 'reading' && typeof book.progress === 'number' && (
+            <div>
+              <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400">Progression</dt>
+              <dd class="mt-2">
+                <div class="flex items-center gap-3">
+                  <div
+                    class="h-1.5 flex-1 overflow-hidden rounded-full bg-ink-700"
+                    role="progressbar"
+                    aria-valuenow={book.progress}
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-label="Progression de lecture"
+                  >
+                    <div class="h-full rounded-full bg-inkblue" style={`width: ${Math.max(0, Math.min(100, book.progress))}%`}></div>
+                  </div>
+                  <span class="text-sm tabular-nums text-inkblue">{book.progress}%</span>
+                </div>
+              </dd>
+            </div>
+          )}
+
           {ratingStars > 0 && (
             <div>
               <dt class="text-[10px] uppercase tracking-[0.2em] text-ink-400">Note</dt>

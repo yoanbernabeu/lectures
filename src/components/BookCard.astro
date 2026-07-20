@@ -50,12 +50,18 @@ const hasCover = Boolean(book.imageUrl);
   data-book-authors={(book.authors || []).join(' · ')}
   data-book-genres={(book.genres || []).join(' · ')}
   data-favorite={book.favorite ? 'true' : 'false'}
+  data-rating={rating ?? ''}
+  data-end-date={book.endDate ?? ''}
 >
+  <!-- Lien principal "étiré" sur toute la carte (les liens genres passent au-dessus) -->
   <a
     href={href}
     data-astro-prefetch="hover"
-    class="relative flex h-full flex-col focus:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-ink-900 rounded-sm"
-  >
+    aria-label={book.title}
+    class="absolute inset-0 z-20 rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-ink-900"
+  ></a>
+
+  <div class="flex h-full flex-col">
     <!-- Cover -->
     <div
       transition:name={`cover-${book.id}`}
@@ -115,20 +121,6 @@ const hasCover = Boolean(book.imageUrl);
           </span>
         </div>
       )}
-
-      <!-- Caption on hover -->
-      <div class="absolute inset-x-0 bottom-0 z-30 p-4 opacity-0 transition-all duration-500 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0">
-        {book.genres && book.genres.length > 0 && (
-          <div class="flex flex-wrap items-center gap-x-1.5 gap-y-0.5">
-            {book.genres.slice(0, 3).map((g, i) => (
-              <>
-                {i > 0 && <span class="text-amber/40" aria-hidden="true">·</span>}
-                <span class="text-[10px] uppercase tracking-[0.15em] text-amber/90">{g}</span>
-              </>
-            ))}
-          </div>
-        )}
-      </div>
     </div>
 
     <!-- Text block -->
@@ -172,5 +164,28 @@ const hasCover = Boolean(book.imageUrl);
         )}
       </div>
     </div>
-  </a>
+  </div>
+
+  <!-- Genres cliquables (au survol, au-dessus du lien principal) -->
+  {book.genres && book.genres.length > 0 && (
+    <div
+      class="pointer-events-none absolute inset-x-0 top-0 z-30 flex items-end p-4 opacity-0 transition-all duration-500 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:translate-y-0"
+      style="aspect-ratio: 2 / 3"
+    >
+      <div class="flex flex-wrap items-center gap-x-1.5 gap-y-0.5">
+        {book.genres.slice(0, 3).map((g, i) => (
+          <>
+            {i > 0 && <span class="text-amber/40" aria-hidden="true">·</span>}
+            <a
+              href={`/genre/${slugify(g)}/`}
+              data-astro-prefetch="hover"
+              class="pointer-events-auto text-[10px] uppercase tracking-[0.15em] text-amber/90 hover:text-amber hover:underline underline-offset-2 focus:outline-none focus-visible:ring-1 focus-visible:ring-amber rounded-sm"
+            >
+              {g}
+            </a>
+          </>
+        ))}
+      </div>
+    </div>
+  )}
 </article>

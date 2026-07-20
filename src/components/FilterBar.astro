@@ -108,7 +108,30 @@ const filters = [
         </div>
       </div>
 
-      <!-- === Search === -->
+      <!-- === Tri + Search === -->
+      <div class="flex flex-col gap-3 md:flex-row md:items-center md:gap-3">
+        <div class="relative flex-shrink-0">
+          <label class="sr-only" for="sort-select">Trier les livres</label>
+          <select
+            id="sort-select"
+            x-model="sortKey"
+            @change="applySort(); apply()"
+            class="w-full appearance-none rounded-full border border-ink-600/60 bg-ink-800/70 py-2.5 pl-4 pr-10 text-sm text-ink-200 outline-none transition-all duration-300 focus:border-amber/60 focus:ring-2 focus:ring-amber/20 cursor-pointer"
+          >
+            <option value="defaut">Tri : par défaut</option>
+            <option value="date">Tri : dernières lectures</option>
+            <option value="note">Tri : meilleures notes</option>
+            <option value="titre">Tri : titre A→Z</option>
+          </select>
+          <svg
+            class="pointer-events-none absolute right-3.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-ink-400"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </div>
+
       <div class="relative flex-shrink-0 w-full md:w-72">
         <div class="relative">
           <svg
@@ -150,6 +173,7 @@ const filters = [
           </button>
         </div>
       </div>
+      </div>
     </div>
   </div>
 </div>
@@ -168,13 +192,26 @@ const filters = [
     return {
       activeFilter: 'all',
       search: '',
+      sortKey: 'defaut',
       scrolled: false,
       counts: {},
       open: false,
       _filters: filters,
+      _initialOrder: [],
 
       init() {
+        this._initialOrder = [...document.querySelectorAll('[data-book-status]')];
+
+        // Restaurer l'état depuis l'URL (?filtre=…&q=…&tri=…)
+        const params = new URLSearchParams(window.location.search);
+        const f = params.get('filtre');
+        if (f && this._filters.some(x => x.id === f)) this.activeFilter = f;
+        this.search = params.get('q') ?? '';
+        const tri = params.get('tri');
+        if (['date', 'note', 'titre'].includes(tri)) this.sortKey = tri;
+
         this.computeCounts();
+        this.applySort();
         this.apply();
         window.addEventListener('scroll', () => {
           this.scrolled = window.scrollY > 16;
@@ -185,6 +222,36 @@ const filters = [
             this.$refs.searchInput?.focus();
           }
         });
+      },
+
+      syncUrl() {
+        const p = new URLSearchParams();
+        if (this.activeFilter !== 'all') p.set('filtre', this.activeFilter);
+        const q = this.search.trim();
+        if (q) p.set('q', q);
+        if (this.sortKey !== 'defaut') p.set('tri', this.sortKey);
+        const qs = p.toString();
+        history.replaceState(null, '', qs ? `?${qs}` : window.location.pathname);
+      },
+
+      applySort() {
+        const cards = this._initialOrder;
+        const container = cards[0]?.parentElement;
+        if (!container) return;
+        let sorted;
+        if (this.sortKey === 'note') {
+          sorted = [...cards].sort((a, b) =>
+            (parseFloat(b.dataset.rating) || 0) - (parseFloat(a.dataset.rating) || 0));
+        } else if (this.sortKey === 'date') {
+          sorted = [...cards].sort((a, b) =>
+            (b.dataset.endDate || '').localeCompare(a.dataset.endDate || ''));
+        } else if (this.sortKey === 'titre') {
+          sorted = [...cards].sort((a, b) =>
+            (a.dataset.bookTitle || '').localeCompare(b.dataset.bookTitle || '', 'fr'));
+        } else {
+          sorted = cards;
+        }
+        sorted.forEach(el => container.appendChild(el));
       },
 
       computeCounts() {
@@ -251,6 +318,8 @@ const filters = [
 
         const empty = document.getElementById('filter-empty-state');
         if (empty) empty.classList.toggle('hidden', visible > 0);
+
+        this.syncUrl();
       },
     };
   }
