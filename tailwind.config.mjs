@@ -52,34 +52,5 @@ export default {
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/line-clamp'),
-    require('daisyui'),
-  ],
-  daisyui: {
-    themes: [
-      {
-        mytheme: {
-          primary: '#E0A168',
-          'primary-content': '#0D0C0B',
-          secondary: '#C0553C',
-          'secondary-content': '#F5F1E8',
-          accent: '#3F5B8A',
-          'accent-content': '#F5F1E8',
-          neutral: '#17140F',
-          'neutral-content': '#F5F1E8',
-          'base-100': '#0D0C0B',
-          'base-200': '#17140F',
-          'base-300': '#24201A',
-          'base-content': '#F5F1E8',
-          info: '#3F5B8A',
-          success: '#7A8F5C',
-          warning: '#E0A168',
-          error: '#C0553C',
-        },
-      },
-    ],
-    darkTheme: 'mytheme',
-    logs: false,
-  },
+  plugins: [],
 };

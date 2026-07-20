@@ -1,7 +1,6 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
@@ -13,11 +12,9 @@ export default defineConfig({
   },
   integrations: [
     tailwind(),
-    react(),
     sitemap({
-      // Exclure /admin et les routes legacy /book/<id>/ (dupliquées par /book/<slug>/)
+      // Exclure les routes legacy /book/<id>/ (dupliquées par /book/<slug>/)
       filter: (page) => {
-        if (page.includes('/admin')) return false;
         // Legacy route: /book/<id>/ où id est numérique ou UUID.
         // On ne garde que les slugs (non-UUID, non-numeric).
         const m = page.match(/\/book\/([^/]+)\/?$/);
