@@ -150,7 +150,7 @@ const hasCover = Boolean(book.imageUrl);
             ))}
           </div>
         ) : (
-          <span class="text-[10px] uppercase tracking-[0.18em] text-ink-500">Non noté</span>
+          <span class="text-[10px] uppercase tracking-[0.18em] text-ink-400">Non noté</span>
         )}
 
         {book.status === 'reading' && typeof book.progress === 'number' && (
@@ -158,7 +158,7 @@ const hasCover = Boolean(book.imageUrl);
         )}
 
         {book.endDate && book.status === 'finished' && (
-          <time datetime={book.endDate} class="text-[10px] uppercase tracking-[0.18em] text-ink-500">
+          <time datetime={book.endDate} class="text-[10px] uppercase tracking-[0.18em] text-ink-400">
             {new Date(book.endDate).toLocaleDateString('fr-FR', { month: 'short', year: 'numeric' })}
           </time>
         )}
