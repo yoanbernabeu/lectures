@@ -4,6 +4,8 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
+    "validate": "node scripts/validate-books.mjs",
+    "prebuild": "node scripts/validate-books.mjs",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
