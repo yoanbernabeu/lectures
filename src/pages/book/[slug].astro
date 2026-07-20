@@ -64,15 +64,21 @@ function fmt(dateStr?: string) {
 const ratingStars = typeof book.rating === 'number' ? Math.max(0, Math.min(5, book.rating)) : 0;
 
 // JSON-LD Book schema
+const canonicalUrl = new URL(Astro.url.pathname, 'https://lectures.yoandev.co').href;
 const jsonLd: any = {
   '@context': 'https://schema.org',
   '@type': 'Book',
   name: book.title,
+  url: canonicalUrl,
   author: (book.authors || []).map(name => ({ '@type': 'Person', name })),
   inLanguage: 'fr',
 };
 if (coverUrl) jsonLd.image = coverUrl;
 if (book.description) jsonLd.description = stripHtml(book.description).slice(0, 500);
+if (googleData?.isbn) jsonLd.isbn = googleData.isbn;
+if (googleData?.publisher) jsonLd.publisher = { '@type': 'Organization', name: googleData.publisher };
+if (googleData?.publishedDate) jsonLd.datePublished = googleData.publishedDate;
+if (googleData?.pageCount) jsonLd.numberOfPages = googleData.pageCount;
 if (ratingStars > 0) {
   jsonLd.review = {
     '@type': 'Review',
@@ -86,10 +92,28 @@ if (ratingStars > 0) {
     ...(book.comment ? { reviewBody: stripHtml(book.comment).slice(0, 1000) } : {}),
   };
 }
+
+// JSON-LD fil d'Ariane
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Lectures', item: 'https://lectures.yoandev.co/' },
+    { '@type': 'ListItem', position: 2, name: book.title, item: canonicalUrl },
+  ],
+};
 ---
 
-<Layout title={title} description={description} type="book" image={coverUrl || undefined}>
+<Layout
+  title={title}
+  description={description}
+  type="book"
+  image={coverUrl || undefined}
+  imageWidth={coverUrl ? 400 : undefined}
+  imageHeight={coverUrl ? 600 : undefined}
+>
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
 
   <article class="relative mx-auto max-w-6xl px-4 pt-10 pb-24 md:px-6">
 

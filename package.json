@@ -9,8 +9,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "cache:refresh": "node scripts/refresh-cache.mjs",
-    "cache:refresh:force": "node scripts/refresh-cache.mjs --force"
+    "cache:refresh": "node --env-file-if-exists=.env scripts/refresh-cache.mjs",
+    "cache:refresh:force": "node --env-file-if-exists=.env scripts/refresh-cache.mjs --force"
   },
   "dependencies": {
     "@alpinejs/collapse": "^3.14.8",

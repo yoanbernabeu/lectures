@@ -13,6 +13,8 @@ interface Props {
   description?: string;
   type?: 'index' | 'book';
   image?: string;
+  imageWidth?: number;
+  imageHeight?: number;
 }
 
 const {
@@ -20,6 +22,8 @@ const {
   description = "Journal de lecture personnel : critiques, notes et recommandations de Yoan Bernabeu.",
   type = 'index',
   image,
+  imageWidth = 1200,
+  imageHeight = 630,
 } = Astro.props;
 
 const { url } = Astro;
@@ -61,9 +65,9 @@ const canonical = new URL(url.pathname, 'https://lectures.yoandev.co').href;
         },
         image: {
           alt: 'Lectures · YoanDev',
-          width: 1200,
-          height: 630,
-          type: 'image/png',
+          width: imageWidth,
+          height: imageHeight,
+          type: image ? undefined : 'image/png',
         },
       }}
       twitter={{

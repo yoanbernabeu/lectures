@@ -53,6 +53,13 @@ function rewriteGoogleImg(url) {
     .replace(/&img=\d/, '&img=1');
 }
 
+function extractIsbn(identifiers) {
+  if (!Array.isArray(identifiers)) return null;
+  const isbn13 = identifiers.find(i => i.type === 'ISBN_13')?.identifier;
+  const isbn10 = identifiers.find(i => i.type === 'ISBN_10')?.identifier;
+  return isbn13 ?? isbn10 ?? null;
+}
+
 function extractGoogleVolume(data) {
   const v = data.volumeInfo || {};
   const imageLinks = {};
@@ -68,6 +75,7 @@ function extractGoogleVolume(data) {
     publisher: v.publisher ?? null,
     publishedDate: v.publishedDate ?? null,
     pageCount: typeof v.pageCount === 'number' ? v.pageCount : null,
+    isbn: extractIsbn(v.industryIdentifiers),
     imageLinks,
   };
 }
@@ -159,6 +167,7 @@ async function fetchFromOpenLibraryKey(key) {
     publisher: null,
     publishedDate: w.first_publish_date ?? null,
     pageCount: null,
+    isbn: null,
     imageLinks,
   };
 }
@@ -189,6 +198,7 @@ async function fetchFromBabelio(bookId, book) {
       publisher: bookData.publisher ?? null,
       publishedDate: null,
       pageCount: typeof bookData.pages === 'number' ? bookData.pages : null,
+      isbn: bookData.isbn ?? null,
       imageLinks: {}, // Babelio cover non exposée par CLI
     };
   } catch {

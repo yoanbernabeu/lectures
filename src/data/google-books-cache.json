@@ -166,7 +166,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=26hsEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71dy7w9ioYTG07c74y4pURk5SGG_YjTJ_loMfHgimSQspy0afHk-0grbHX1xxu_pY3r5DMU5EnmQICBZlbHsKBm-FEj_PBqAhVTieMuQtXsooZTwnkR8IQZ9BlfyS8JM7pMSsYS&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=26hsEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72PSqN3MTNpvMzneTvbEPSkYjUILI2pKfhOfRsX_uW5G8Qip8LKMxrI_Go5pl0f4t0HPchKjPJZQ70MFVySuQLtvvxIpeZSbcr3LIxKxz-QLyBTVSRqaFQ8jpaBbFez6nwa-oF-&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=26hsEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70AVW-YEMtNX4R0N9Y6iiIuH65oTRlOmONSEsAOVJDGnl9V81n0UHJSIdIDGkuPHL4cKJe6Fiyc7nfNp5upoOMMOeka_ewITmuIQ_mwuEczWmM4j8oUmgukkgH6zmXP4_3i_vjE&source=gbs_api"
-        }
+        },
+        "isbn": "9782367935836"
       },
       "fetchedAt": "2026-04-23T13:41:55.032Z"
     },
@@ -187,7 +188,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=6wmCEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72RY735Yf6BFO-ZpOSQ-kwLIbS5qd5rhy8x60RfVCe5XDcs5iwXXZNtMxy_XEu0WJmeHqtf3CKoogQYmOcIUln33pKtGmJyi-5t9H7MPTbXrwR7jUCAPA-ydcHVDW0HIWhi3HEb&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=6wmCEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73q4L2QWOUro9r9pTYrbw_TeLCMAwkWtDogVLEDQ8_ql4e03a3pRVle9crw8k0xFSyPqirC3gUAqeWi3Kzsw555guGONRd7AFNTiB2WOWLA8wbw3lrvxqpO_ne-CK3WJeP2YaOS&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=6wmCEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73X5A1qf0vGx2K0K5Xr7hPEiPU-quZispvHQOhhzhFMI-tpnVs2su6BAnN0CA4kYGR_MvG3EQt5p9_abgCsZUZjPfMzYnKndzS7SvWwLJ1WsRnsCMQxilZJFd6lfe8SwSGoWcCd&source=gbs_api"
-        }
+        },
+        "isbn": "9782367935942"
       },
       "fetchedAt": "2026-04-23T13:58:28.594Z",
       "source": "google"
@@ -210,7 +212,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=yQjUEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70dXUHG4uoOQs5Nq0uhOEvVN06ajEcPmugnL1u-6wDn2XnFvuxoAIjji7nfVwblIKp-Wy47zvEBiQYs-zZqSYvhUM1Yw4QmSfflnJt7hBtvwRcY4jtS8qJx9Be5cHAfZbhlgk0i&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=yQjUEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73aaDIkg-bwLzaHQkmP3wrpffqx-zSCwQUaSlsdlwJSfTxcItCPol4oUiVcaA3WF5LxSyWYIMx4bD8suSn3VDNS1lqdQo2xXlKTrUXl8De0WVm-ng5URg54WUxpOBFd_yCdEcC2&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=yQjUEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71iGJ1hxX6Z11yBrZrEMxz2I_EHQd-LTaAy6JDfQnvlAukKfdocVsggCT23aeQn3mSD8L4B4pf1LH9oCfsXkuwmg2YDa8lqTKwrzpT3slUctwmLruimbTN53VksV2PjFK8znZYX&source=gbs_api"
-        }
+        },
+        "isbn": "9791028121822"
       },
       "fetchedAt": "2026-04-23T13:57:26.564Z",
       "source": "google"
@@ -232,7 +235,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=w_53EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE721koYbbkczBLutzl9U4IH3BYyWS-owoepsg15C71nESoCslaxokaBI5wDHQTlF8WA0CPR2vn9ohi52ZIuEHnZIP4PIA3qWy8fYevoTHLLuZtnt2FJj9qLCrAcmgCzfBLAYFUg4&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=w_53EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70odxU8Dpiv5n9h8Wi_EiIfOyrDVBT_JqfsRKqbqSxY1LB9y9C9tFYDxZwTVlmG0ToTcaHtjoDKbYXpIP31lbqYfq8RaSbQFRAvFWoCU0d3W1w6ygIhym6t0AEtlwOwPCDp2RAR&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=w_53EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70gUT-jJ0O9wAi7xx2KYabmC_88vkBEums6WfEPLK34kyNuBw_4kc8_Uxv7AB6m1gI3DUMURG4LnI-5lEwF3YnW_YkTQDhDvCVQPd8w07iWMS7Z6i0uUDV5wx9HY1uUdKLrsMc_&source=gbs_api"
-        }
+        },
+        "isbn": "9782384541263"
       },
       "fetchedAt": "2026-04-23T13:57:27.434Z",
       "source": "google"
@@ -254,7 +258,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=xvGnEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73bIVUHHboUXR5FBIpqZVv5fYNM3Qw1kMziAI6xNsYmYQ_mVRKnROocMgC5WJSlRPUd4e_NkhPf-im-Y9V-tvNXEgYpM_A5F3W54P1gqT9hti-NEUtsDmIqpddtYfNScMN2oYnr&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=xvGnEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71G6X2CNsNSgtNV97GmKuQtq2_zxQ7Ye5N9uiEOamfylbGoWEHupVYLoaIw3S2ugBiqvZB_TJxJJsMdx3HC8rqpwQ0pmYuFjssdtLsVCALxQ5GgNYnYvJfpgwTeQDvNmmbxcHLP&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=xvGnEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE718QXAxftv3ukzzuoSvETPGI06Nr8Ylm7_w3GxKx94riIWp6PFGTA1cdJcdcbOv6jSyOi-vCz2eV9w2VHK2diSF_5e5cx2BJtuW-1dmYySF0P8oQQEErgtMpcGfcOuX8I7WWqCD&source=gbs_api"
-        }
+        },
+        "isbn": "9782207170212"
       },
       "fetchedAt": "2026-04-23T13:54:38.189Z"
     },
@@ -275,7 +280,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=yPGnEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71w43cg4VQ1AFoyFSnxpoZ2UCiOa4Sw6hET_YwFU1GkZKkqoptZylhBSOipaoAy_obFd9-PCIjWQWQvk4X9NVwpmdLvoPmfB5C9Zrd7Z1ue1ZifAh2sPDpquGs_fl_5HMbBzgWi&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=yPGnEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73H2TcQ_5BjgjAmqvp11IwnypSnR_vwANl_oyanN-heF7a8WO4REatGN6qSqPyU16xiH62KtQhloaYMtsaU_gO4ZNmav8RtV_lcml0yBxdRjfW80q5oTkJCr4MhW6YGGxyAoEFK&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=yPGnEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE707t_OAu77j7Ti_TGX8RqbYQz77DCuyBBER0ygkrUZnNZwmXixg7Z2HTYU5ail_ePKBzaamWGDJWaLrSt2gTp2jAoGGUayuXOsnBs7tRbAgQdETuTW0ibLL2ur-kxZSpVd8RF92&source=gbs_api"
-        }
+        },
+        "isbn": "9782207170267"
       },
       "fetchedAt": "2026-04-23T13:54:31.268Z"
     },
@@ -296,7 +302,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=kPGnEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73XtIa8DoHvgwnPif-h9Dfct1x88zCgNBF8ydm-sL7mNDoT0OwvPP78CDQ0fskjfmitPARAW8ZIzLayW-IQtvHtqyeKwrQ33IqcdBwsrMCp61ScXpQ6UfJSwModT8_DYdcONdo0&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=kPGnEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE718_bXSE91rXCNrbov4IFdhhq1fHNWUSB3tygm5WfTrA9GRj-n2jz9oHoA5n0z6Y3FQvyrqT7zEAOeYDeAzi-V3CPYg9kjD0Xh5aX7HmSPmFFL7AoL1Ia5otatKnb-1QkPJTBuf&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=kPGnEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72i00S5m6VquUxmh3JzRCHn0SKCF6jz96h7N1f_v-rsAuvR4AZE4U-g3iDuikmF-a40lKaxpcEQfaLbuY1l1hYoy11R257gRV_O6X3LASB886p8lBHRi0GI0PpKSuoTw9GQrfBw&source=gbs_api"
-        }
+        },
+        "isbn": "9782207170304"
       },
       "fetchedAt": "2026-04-23T13:54:31.199Z"
     },
@@ -317,7 +324,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=BFZlEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73_ZAvjQT0CSbCGlaZhEUHKNtzDose7Efgc8fe1TT7zjSALYyqX6UGX0vc3k1Y1OHv7NPKMfzz9pHDM0VexVKIhwb0CXo5tGk1Pe8pTWpvrOf4X3MLFFFM3ulZBiROkdRCDHbfW&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=BFZlEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72eVJHgs5JdCU2cE9_RL6d3fBx64IhJ45zaqlXyyBbkStwOr_lerZQAstm8CN2LLO_WtLc30xzPLAsFd9Tm-HCbCkLQZ416mD_6prnhaMPjmUWPF7EIXHZGqukOMDo4EG0hnz9a&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=BFZlEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73lOy5O04y0fTbIh3zfLlTJGjXhSNdaXk_ekFM9mbuKQgokyhWMDG3dBlq5jc5c5AG7u3OynKPWIro1FH_Cu5813r5a05eP4oBNWdwYTMpTu0xNf_51HC5M1_XMJ-kcfRO941MW&source=gbs_api"
-        }
+        },
+        "isbn": "9782035971210"
       },
       "fetchedAt": "2026-04-23T13:57:27.146Z",
       "source": "google"
@@ -335,7 +343,8 @@
         "imageLinks": {
           "smallThumbnail": "https://books.google.com/books/publisher/content?id=2EoFCwAAQBAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE73ImUa6sASu2cxx0BNtyYTNzrdoZKwT01k9ZmJzymQfnKVJT4GNwhkq7Kpn7wpPFTZ9ta4gbPsGGv1lajmUoX8BW5Ze5wyIhDA-Yenn8noXVICAbb7fjDAAWKuEzvRfP40T7lDH&source=gbs_api",
           "thumbnail": "https://books.google.com/books/publisher/content?id=2EoFCwAAQBAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE72Ome4zG5tsN-lj0UKYsRr68JL-mfICbaYGL1rxuxT_sQfa4lNQp3dKBB21PLQUJT7wUyvOkXKTREWSANfjDxNvKcW0WTQw-g9Icyo925u_I8JYrV7_oP4PoeUupP-FlY1s5sfy&source=gbs_api"
-        }
+        },
+        "isbn": "9782350743615"
       },
       "fetchedAt": "2026-04-23T13:54:32.423Z"
     },
@@ -352,7 +361,8 @@
         "imageLinks": {
           "smallThumbnail": "https://books.google.com/books/content?id=L-YbzgEACAAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE735QFT4tV6SWn2OOiacR-xe3AUPWIELwKj2IWE1hsTJAJaUiqvBbkM9py6J7TcWdUHWBBpYmu1efV-P1bsTSM6GFnPgW0RNM_hTkibQPK0wJdP0Ag0GcGrGUSJ-HtXRn7O-7Tor&source=gbs_api",
           "thumbnail": "https://books.google.com/books/content?id=L-YbzgEACAAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE71pLfrpUsv3K5noNEwvT0jIiwM4Ho-1agpaem1A548KDB1lBGkCJbS1wWWhDPvCpZ1mEvfeExPx_OO3905IbZNTR2hQFewjlBIQYsZ9cvCElFOopqZYJcjqGvIpiAFiEzRPxyN4&source=gbs_api"
-        }
+        },
+        "isbn": "9782981953308"
       },
       "fetchedAt": "2026-04-23T13:54:37.427Z"
     },
@@ -373,7 +383,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=RbO5EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72JlenD3-4gXP-AfmHulq-9OZXx-XrhsnbZjQgpmz3RifB8CHDZixiEUCoPKcwKr-vzB3PzZGiR-lpCMDkufZ7kY-ZuMWc5-PTiQud01s1ZJQmgJgfgpuSaDVyKY1iLt2yiBkW6&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=RbO5EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73nSf5yUXkmzy11y6hqLwIq9GbbfS6VgXvNCxaYLe0TBarnobyu5FaPcP0fIZz024iJtM41dRaOxmkTlz-0EzUgrS7YVQOmPebstonvGgmHfwZHNsjWVUGAiMS_g5tMtxv9HT-w&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=RbO5EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE712QOLgGJ-jaQxU50gK3GrVTrhfKJoSrvfu_ZJ9p1QdNShcxsTzusqyPrR7tlaa3a7xN5Pej95_BnuEP9X-N2MeHTpNySJmwZrVeJvJ5Tq_aHLSkKTq4ikW9jWF594tswpzEhXH&source=gbs_api"
-        }
+        },
+        "isbn": "9786197642445"
       },
       "fetchedAt": "2026-04-23T13:58:27.873Z",
       "source": "google"
@@ -391,7 +402,8 @@
         "imageLinks": {
           "smallThumbnail": "https://books.google.com/books/publisher/content?id=0ptFDwAAQBAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE72C4wjcZKdvmx2gCFXVksxiS85iA6m5F5zp9Yx1-_QR9ypkHsvqT4MCQm-GEwmvFfGtdpfahcPHk5SuH1ubNJZMWjpIZF-0uxPBAJzNfgXosgZ07BtdXGgVMABBsq07hk1srtlI&source=gbs_api",
           "thumbnail": "https://books.google.com/books/publisher/content?id=0ptFDwAAQBAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE71lsx69Jk2sXcsMWo-RYG_qEYV-v2yjbOyj0zxbpmEykZSfAKZFyClsqO8xlCAEzQHLdbqHTOaq80ZTadS228KrlYz1p3axDKshA7CcUzpCO93Q76DA79tkjqCuXMEf3m4ojb6-&source=gbs_api"
-        }
+        },
+        "isbn": "9782702163870"
       },
       "fetchedAt": "2026-04-23T13:57:27.784Z",
       "source": "google"
@@ -413,7 +425,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=KLMgEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE734cgv6-cI78qOLA1KLitN-J16sW6VB0hffd66-zjrL4YULiIxdNAIthRyxUGSJ3F7A4oYXMBjn2qGoBHu5uI1aMYwKriOWm1lDVwY2mq9q87-711yhvj9jNsgMInjrXrozGaI6&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=KLMgEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70akopBVqtxM3IoJOSELGdYx0uw4_b1-tocgysvWxziwvvvwIzDzJytho2DjQSXZzsgbn5gJhWUf6h39ecLDybw9Dkru0R0WoRQjOq4IflWhwX6rjnhuAR0lUzlVwZj6dn7nlGz&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=KLMgEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70L3uoFM63KFqw7xZP22Ozxu50cGeeHCHf8hgCRcTk61tH36ITgGVkSSpcAZ5LQIuqunJx75al9W0s76rld0z53hxnSjVTJCZYfty5tnzTaE5x0GogxdZS5WBV9ht2WilfRgani&source=gbs_api"
-        }
+        },
+        "isbn": "9782322249275"
       },
       "fetchedAt": "2026-04-23T13:54:51.021Z"
     },
@@ -430,7 +443,8 @@
         "imageLinks": {
           "smallThumbnail": "https://books.google.com/books/content?id=89LuLAKdUKkC&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE70NkVQZFQNVINcAM6zG6wJgVE2bXyrWnxft2On1zi44XQQ3HhVW9zibN1UdVsLUiSPv-GWuvkbE1jOTcwNjcHBYUZvequIdgcWyTcUIyGa1-r_50yAjVK53ZC8V0WyDhZe4TiIv&source=gbs_api",
           "thumbnail": "https://books.google.com/books/content?id=89LuLAKdUKkC&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE71Gln4SnN82C_49h0XWWBfTrZF7A0Ld_I-zMNKBWqiHmxrVTFtaqvEZoEnsCNkmBAZhOpLMsXx5i977mNxAQAH_idd3DX7VghwjfvJrhtAUCbrflldkfzSyLAMOnm4cQwTxkVPF&source=gbs_api"
-        }
+        },
+        "isbn": "9781558616271"
       },
       "fetchedAt": "2026-04-23T13:57:33.465Z",
       "source": "google"
@@ -452,7 +466,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=_3AlDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE721j8PrgVH8b7Wh2c_XQEuXrVnrT9HXfBWKQIa0plXcOp0Lfb1pc-T2cbN_0-AmkzjHajJEheC8nzQA9utNOnoaoG3-oqwqIau3Hh7at3NG2fVl3HEcyyoJL_ofB2QP35LgYi8d&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=_3AlDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73NZcgB5EOmZFT0p6C38UPl-fbZpZ0zkFsBmEBCyEt36MNpzAX_0pyE5IZOpu-qB2BSt2B3VC2iEYzsd2zVJAsWtaVOTigUlig4jzTBKON-D5pHhBKTJfcFGPEKSlqRUA6-OGXp&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=_3AlDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72xmjAA33s4HQ5u89xiAI23g0k1EnR56SGe4LrYYwiQh5PdWYyez8LlqdXRoa7UUORKJ6pp9lUdG2pLklzkFOcM0jsR_6ls9u87XxB_wpb0r7KbjoECT3vFOEzrWONe3AXRVeoW&source=gbs_api"
-        }
+        },
+        "isbn": "9782707196903"
       },
       "fetchedAt": "2026-04-23T13:57:35.926Z",
       "source": "google"
@@ -475,7 +490,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=9JQ2EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70z-iQ3sLAHEndlJKS4pDE5U2vmAIUSnPBK9S7xGxfUUp-Vf2FMjXFd-ROiV0EdQf0z8idD--O2LSS0uB5cR2FJZ8wc2ZQVjhB6wAT8oSDKiPipaeHxq4z8kTRtfYEpkTdLPd1t&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=9JQ2EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70T5WIffTjmRARUruR4X3aKLrRQ06VS2Mo4UUvX9NaKE99P99o5WAwf3BlzSpctJ0YKP3tBfjz9gQIVBwHKl6O6QRSs_WW1xms21Sx7B4FJuuEKcIyTm4RniK3wBWT89jeKEvir&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=9JQ2EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70FaidBw9PIeTxcG3Kt3Q75-DMVKYCh9CbQ3-Wd6LnBQ05qoWKdAxKkwYLc38SfTprdBYX332ltCgHyrcLvMErFqN7RHYyspyMGRXB7QKN-jOKh0GaKowDYAM8PHMi_XfbY7R0-&source=gbs_api"
-        }
+        },
+        "isbn": "9791028117955"
       },
       "fetchedAt": "2026-04-23T13:42:45.885Z"
     },
@@ -496,7 +512,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=cB9sDAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71finHAON10gKAXSKvplml2L2uv9n2dn5vVaWkIXxnZSeDVtUUKXvwL6H4OetwVdyJEhhdWcrK4GJvxAAxrEs8EFkzW360ZnqOM2R2DmoPRCiOzqNkl0ctE9igEuL_t61dFl0Ks&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=cB9sDAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE711aSLgRa6UUGgF8EdfZ7Mnc6hPESShsGhQrYuU7wDOEXFuAAG9RMCMaW4WzkcjXRUyFrvQZOzy7dnHcHsfwDYqgmPLR168D5ETRzBquAJElm5NHvQbkDSp-X98v7X7hYNW5q5N&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=cB9sDAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72r-5096xbPB14ISlWarE93HdLL0KLExn0nyDvZcxlmC1IoeYE_44lrAaztqWt5g3CTU18E8Mwa5s1t3Q_bePceIl8g2fOt7fX8QWxgJa_9UmOfJ1enzbn1f5qKwmNXZPjdOeLE&source=gbs_api"
-        }
+        },
+        "isbn": "9782743637354"
       },
       "fetchedAt": "2026-04-23T13:42:46.243Z"
     },
@@ -517,7 +534,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=2UqGAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72vPMmShI25_z9WXtMzRdMOuIMO8p5v5eOzVBqxsu1Ai4XKE0or1zOoJZ6293BYzAZCFcwVkJ1XtUXhZSF1afvWFd9OTs-c1xCOyQcJjIyUknWjZTsM1j5zOf5_xGgXG5o2ABCI&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=2UqGAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71nUnTzvs-qO8ybXsnnFLpOlZkAQawuBLUMeGbgX3QKeHUrZ8poISFSxZyJPr8DZZISNWfTs8oOlj_0P_8lzgawUk3_WBcuTSFapNuoMUqAVP4HTC9qCdsFKCtzsvcMGGbA7rt-&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=2UqGAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE721X9X0Y6OTGv9_E63t_1tGK9A2laC_MYrDkS9a8lOY9ZgJJmodKiYUlfOT8Aks8EuhrvTuA_kxHz5WYCMXrjXSGGcMGld28hoPLMTkaU3XaKR42I-2WDk8DBsup9UkeK2oaAPL&source=gbs_api"
-        }
+        },
+        "isbn": "9782367930213"
       },
       "fetchedAt": "2026-04-23T13:42:46.262Z"
     },
@@ -539,7 +557,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=6mlRDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70LYhVr8A25Ac14aOA3KMqqbfiGwRVd4Un_rjTtCCIdVguqgJD_QS7tnEZ4tMXdaBez8Q3OAhUuoScCAgMuF-23sZ8LaNS8EeLb2r5QKWsMXC8XHzyj-X2CELKxlR-KPO-ZMb1P&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=6mlRDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72U5CrF_x4xz0CbbJzFmMA_dJt-Q2Eo_zVEYP5X96VQYbizxW2mOfOx-tlWLSKew4x9BGqwGHBCHCyVuY12VMGt_n8sPBaq_rlawWzYwSMs5StqaR5s6q0MFJzTb-ay2gv9gdlo&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=6mlRDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70oeVApdYZgBu3ov0ByH_10zsbi8qO9KtCgQmpPVpFYL25eTi5NJo6kxt0fnzTQmIRb7aTh-Ixyv-q82D9TbC8s8eJXQW2E5sx0ALAr1kp52RgYe0q8j7iS0fe8VG5HDVp0SZ90&source=gbs_api"
-        }
+        },
+        "isbn": "9791028104832"
       },
       "fetchedAt": "2026-04-23T13:42:46.608Z"
     },
@@ -560,7 +579,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=1F6oEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73_-uY5aRSluiAuobMlsIHPhJTdDjywshyzIh3OuKyA0Kt97aa4ad7MDqykpulIpVY6Jy26r-hWePmWzbdGy8JtLuFCYmbw1tkTq5jUMO0HcXKfWzo3cLC2hF8731aoQCFEzgs0&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=1F6oEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73jUCVZdJmAxVN_ruXQh62L6eZdilgZJhiW4bQS41HS7HXw1KEfmW6mbtfBj-UsNpCx2zrd37MfaAWsZ783PoZMGdVTRryL4JvApeCStndryIdGRFyPdnfaYSXNau_v_UJtQEyy&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=1F6oEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70GS_jr-sxYm5eEhgQqu6vpC1-odM6RtLgb38rw_7NOVcWZIOG5TJVbtwPBIgojfF3mwL14Q8HsDGfiSHIf0_6WaP9SMza9JsW7v74j4EfwiIEM938CrI_F0dn4N1gZKEHdXz0Z&source=gbs_api"
-        }
+        },
+        "isbn": "9782207177136"
       },
       "fetchedAt": "2026-04-23T13:55:01.073Z"
     },
@@ -581,7 +601,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=tObNEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70kKuHMubAFFK5w1esTqWbNVJHOmFcWJkMzn--KpGGLNhltmmBHA8GKQbCaKoWgiEjwX_rWl7zUvBwncLqi2nTroUkrlrZRHi4Tv7yML14nZ18iTTHDJJNfBTBXTAFzz22OO97G&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=tObNEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72PECORGmEhusPBZ2yjiHUoc32rYa47ApaB9ISuVyoLoHH4uUZafMYuazGYM4GjGbShJm5TMxp7x7c2ooehyEOxUhSdkn6CJhOMrDPpH85I3-iCMNeWCCB2z9hstp9iXgPWIApF&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=tObNEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73AExfZXeW3C7Msc1RPbG50yeRdj0Ghc4RpRElXXQSPD6vKniuYjYt_g6aRGqvsRx1_re5SZvZgApf69WWMd5Ulb5Rj_TlU3oWLmhj9sdgZEzaee2iAKwpJJggfbtvQYs37Gfa-&source=gbs_api"
-        }
+        },
+        "isbn": "9782330179793"
       },
       "fetchedAt": "2026-04-23T13:54:57.563Z"
     },
@@ -603,7 +624,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=KMVaDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72Ka7QzSUJ4zT_pJcV8v-MJGE7QYevi1HHnrwhFRJZq8XyCeCzwPK3UDC_0rUVyu5A53_8estHoVOAlutHKbxT4OqQg8hHfKWx4cSyGTwxuFpFDPWGudHmIHe8aOgrH4zlEKBxG&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=KMVaDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71ve2TqzRDfDftJIe1iX55B6_RGcMBL3lbTA3thoqX75O3rhiKGuRphDzUwNsb4TKuT2ABSVO1U2XRUaOuAHXMrIludZt9jQQs3nWIwyGhuMknL_WMQC66Jh7dYjgM1k1_0O-9h&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=KMVaDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72TAwoQj5EyNykEeUKdfwVyEDpzoK0EkzKbtwGUPKjAlbOvtN12C-40Uce268XqcUrJET0x9aruMe-B7kvcaZemPsT92Kjjz9repjadg1ziyCVbGnK5Ez8m1xFqic5pbWj8gXBy&source=gbs_api"
-        }
+        },
+        "isbn": "9791028104726"
       },
       "fetchedAt": "2026-04-23T13:54:58.657Z"
     },
@@ -625,7 +647,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=GxaCDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71a0NPFTdWf_uVaVhGGSuCvIE4LKTSIwBIzdAF2CFZCp87QArJ4reJxh6NY9U5Lzmzx6fErqZUlSQfkEbG4bB7VbN5rA41TZWulD0nHIADwMezcYVX_U3okR6ukJrQHIsugmiOO&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=GxaCDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73TnsHh8U_GY1CXgVVcMtgwJOwD8gMXzmISYxHvpZVGNgsJhJ3ZDSpRkDtN3fnkdyAPVLibvP4aM56Tq7bB0dnR5K5sY0vAh6gnBNUw53R8jYXse9hMxs9yo-qpFU1vJKdnk3Yo&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=GxaCDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73QgOloKRL3ouTedg8C5m8XuQed9pSIbm5DQbJDgTt726cHI5ZVudP-4lxEAfZjtJUpsfAbWx3Ljbhty34L5MYXgbGrJDVYdlxrYZqiFA0dqL9VISXccHsKhW8yIAoQ78OD06eB&source=gbs_api"
-        }
+        },
+        "isbn": "9791028103774"
       },
       "fetchedAt": "2026-04-23T13:57:36.331Z",
       "source": "google"
@@ -647,7 +670,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=BmLwEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73K-bFbpSf0J6gPItZC9iVOIzVVHmw8pRGNeLgbjWt2LHO6f4TrntFWkH8BxclsP3BfDCSBCDc0Za9ge3T_nwIYEhtDygyw_eOVY9TM8mmYrvS6ODYxBZgdhQF-pFibFI2v2lpr&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=BmLwEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70qjlOlyubGXBs0zIR1EItb9XiTz7QQHBJdgOBojFeFkIzKCQyxff4c0AgwP6AKpmqG8-O7kr5_4ou0NBgCQFGvopwHUIXWl7Wi1JJLyrf9SwJwf4Dmrn6qrkeAwSH_g3pot2z7&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=BmLwEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71nFXEP2_0XuFYUGHv0fWX022vZ3yFLwvkAiTSq51Xi3dU1vHeI-xCp_MTGegxuvq3itfVgtZKV6bA_73LdW2-8PmVANTemdr4_HRgJxi7CB_-i-9oWsCIqiGgE1pbM18Gr-8j7&source=gbs_api"
-        }
+        },
+        "isbn": "9782369353874"
       },
       "fetchedAt": "2026-04-23T13:57:36.536Z",
       "source": "google"
@@ -669,7 +693,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=P4jcEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71zPyLhPNPaIX5ng4rVn8NNfylKvTg9t6HYyAIr3xPhVhCRxL420_djspBSlSZP6mOap16ZXU8f6-Sk0k1IB226y62JLlVJuWUAS16FOM07R81U5mtSD1PyHV9HhSxidc6XqT01&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=P4jcEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73otYvi5EOMAohhWq6WV7EhfEFIJpYpvaRm-2X1Xf5p6kjJnX_ubCZDFolX4Ps0kxtTofnyBcmhfC0YstXq1vWpeU0ShLbcrPLsVCUnXMujNbAUr76Oste_12ZCMhnasbXLxsx2&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=P4jcEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72g2tUzlVxVtyTqyx-as42y0Vl2TlHmKSAisuB1r1csFkAFv9qgp-OTRJBiSFzm30Bh1_cxJ1GMWz3VoNGiIxTt9XDccQ1IWUWCsqHAZWX4hhveeiQVSNLk9buwLaP5_402igvS&source=gbs_api"
-        }
+        },
+        "isbn": "9782378763596"
       },
       "fetchedAt": "2026-04-23T13:55:06.081Z"
     },
@@ -690,7 +715,8 @@
           "medium": "https://books.google.com/books/content?id=u-2Tj5X1LAQC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72nz9V65gsNQkOkOs4_nQGF6ntRjDQUnjDSKdQ554u_iNNrKVhDBXdlzja5D3LhJsW5mgDj7s0wYUbVmA6q8n9Q6SRL3KAz5nmkXIhJlTlvW5Ks3qX7gn8kGJzzouXM3KK_7Uag&source=gbs_api",
           "large": "https://books.google.com/books/content?id=u-2Tj5X1LAQC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE724s--H-RBFmMMyokertD7Cu1RaiouoCXuZ4LCCyqvmtew84W9gWlqJIDI15jkS0RxbD5iLSlU9Px4r6kpJNflkjvz99YB0BZDMZwRidGYdR6gMOcMg-aiLMCOXPFc6HNPts5LZ&source=gbs_api",
           "extraLarge": "https://books.google.com/books/content?id=u-2Tj5X1LAQC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72ckKL-iKaRiu_z8jkrVxcDWTRGI8Rxh7RGeA_72Woh-UAMXuPzVgGY7sYJW_K7RD4Mb4J2uGKyQcfyZtfAbEOsa19iIpng6conRxbGlfdbFt6ZJd5tp3c6-qUkKqAs4T3Zoeu4&source=gbs_api"
-        }
+        },
+        "isbn": "9782221128329"
       },
       "fetchedAt": "2026-04-23T13:55:08.510Z"
     },
@@ -711,7 +737,8 @@
           "medium": "https://books.google.com/books/content?id=kn9IRRdzG5IC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70-4eFjZPMcrBtTbePPUeO5hM2d95-s7BePbVYfWa3j0BKLGDPPil6Yvp-rcPhjIjGcRvDhUSr4DaOdGDVW3i9aIqpOpc7X1Uor6mH6yz6_yoO0lpMCUAKkmAGYHzMd-FcCPL2c&source=gbs_api",
           "large": "https://books.google.com/books/content?id=kn9IRRdzG5IC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73BoGTDpN1SxeFN7yZ7yKDmKgRob9Oto-tKND_kw6Tmn4Ou6CoYc9hYU-A0quNPo5NWMZajTCsLYT-6ZzfxSzysNohuTpIdLK-1nBJll-msNKuMy7AIftPGja-CU20nbBCb-Ppo&source=gbs_api",
           "extraLarge": "https://books.google.com/books/content?id=kn9IRRdzG5IC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71s9Nst7E5kMtMQ8CGpOZ2f_tikrFZkEeuBqRtty1H5KybSwfPaRoovv47MY4aIX5y-MSMjy74t17CKl1AoxBwTbW1trDpPatC-91OBUZh6-bAL-wWzvdKrdegVOefizgg4Y71i&source=gbs_api"
-        }
+        },
+        "isbn": "9782221128336"
       },
       "fetchedAt": "2026-04-23T13:57:37.609Z",
       "source": "google"
@@ -733,7 +760,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=kpGwDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71ACp81InNgNRGIGpo0EhiXMLNwPw1wglYPonmbeXHrC2PaonNIOcqtHAjNDRJnsTrMPxS-6bz_4bCk5R1SCTSNAa_RczRoA6VQKHQLH49wIN4cByjfCMyOZ3eX-uX5qrwaq8-G&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=kpGwDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70UGxoZYW6A883YLLwLAMLZG-7SZdpWPmd7b79_ffBPEP83GiTYCUmxAkoWgEze2_b0HsIPGswLu22hPIuRVI1OHbUtN-pqcCNWdfPcXG6qnORTNO3Ij4CtwsdLywQ1-qYHb5jo&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=kpGwDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72cW379xaNrO_K_VluI1WJLJP2ab1VhJE6pn0OSU4I164Gv84HdwbxXGhnfhIm327vlnwBhoVGlnQjEbUquu0IcCs8Eqo7S945K923-QydN2UI2ETRpLbXE9Twn6lVHalw7QYuH&source=gbs_api"
-        }
+        },
+        "isbn": "9782367935287"
       },
       "fetchedAt": "2026-04-23T13:55:13.540Z"
     },
@@ -755,7 +783,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=epDtEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71KUQXnCGG12xhlhyX2KcFowWv8mZ4QBg8Y5UQsGxd4lmTNwYGBmY_rcwuQ-_jw5ODPb8Kh9DHO4Qw6zPDB5NBgGdznDS9BGVIH5dz7yxUZMNqNH0frknQk1eB-cbCB-U_42JKi&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=epDtEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72goIiBhr_0k_XC-opc4vQcOvmbxN4HvKWC-UDRHH9mPwIpUIwJ4Ey6d1SwOI401VKeelGy6JkdnCGWqTUcB4degz2m_J7_scdSYj0l21Fyp4P_PpDqGDClKruD3L6f-uHD0KLj&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=epDtEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71KmcC9gZq3qmdNplbKo_Qfc1aurkIsBR0TFZg5r_DmT2QZqihtsOmsiJtEo_tC6HP-EPh3WejefyuK7_e5IrYrtrigYOoVpJK_EQ4ahHKNuCYXOUZlVW2hOX6n94Tagt0XQtW9&source=gbs_api"
-        }
+        },
+        "isbn": "9782404023359"
       },
       "fetchedAt": "2026-04-23T13:55:18.745Z"
     },
@@ -776,7 +805,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=-a_ZCgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73oU_SRgGkslOkZWKeOfJxZ7cnbZQZrKZLqlrLYvmI5ejNaoL9tddArRywx_NJKmUZ5Y4kH43KdjWz8n4FsDgotuvtAlFaEyppNOWx4pAlcOXhONWLGC5KpWppS2wMLaxV0SqV3&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=-a_ZCgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73uC2aJVdMHTtVsWIi49nn_PPF02tufk6CAq_0jwttg1iG7kXjMQTxyTLRUzpr2UQifv1MBkEMiqU3K2W_PVtyW0mWxghMeBr7-F4qmoDQDJx1300lf_2UWyvcZWLpBH_a2fBQO&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=-a_ZCgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE714nfRy5QuHnGuY8ywluMUvYF0o-HfxE0ANt7_XF90I1rvtZXZT5JQxTO9KJ8hte74EJiercigkLg4Gm7YKhxjy4ShcRfqRwq65bXUnIarQ8-CkQZSVl-UEsMZaoMuY8Eu7W37N&source=gbs_api"
-        }
+        },
+        "isbn": "9782290077658"
       },
       "fetchedAt": "2026-04-23T13:55:18.492Z"
     },
@@ -798,7 +828,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=wCDuEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71pBY9P7U4HlEM5fDL2YyKyNhc6j5UWyxYQ8prU0h9UIpj8RjCHlm_3gNRmrTHfjMbHoTiLsGgjo4junhzC3TdBxLbMTb91fTR840Ods3Pa8C8OC8g5HIAafd76sxNsclYqF96T&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=wCDuEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73Wms1EepobUwG5qMZVMz6YKimrjkH3HLI9qhLLZuWctxE3_E4kJ9935rREfRyR8F4EP_WcVi5TEnGrQGPRpNMCTFwmkV2ZXkHVGsGhjOjzhFWJpv8KpK3YhXfymc14b2Bqjpo9&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=wCDuEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71pGh-t9krNJqlAT_-HCahHwH-WZZhdxMzxD6Z9R9fIrhNI1zipYFavaCbRq6v3iKmSzFHm6fMAiUkJE2Irh1JLJIDpNqpW27RAYb0lNdTqz_p7Z2WUL7h4curLHTh5yyzOkIbJ&source=gbs_api"
-        }
+        },
+        "isbn": "9782404023434"
       },
       "fetchedAt": "2026-04-23T13:55:18.977Z"
     },
@@ -819,7 +850,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=AQdIAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71MUt1ov8a0nC_b6ggxE816Gm9YiwuPrHOfFjB8xFEMHBKZTneCrqFMp_8VnZCDaMzThVMVXYHYRTP7NG1SpyA95o0-BZnzmn70F02DHX2sh_VfhpluBCw3zQocvPjHvXEC_MwC&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=AQdIAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70b_Ghs80NJ8JJcBu1-iiGUg30fttqkbLhXZ-S6VyVyB0kxjtjtXyogZT43lRicoPV8C85wapyF07ZEh2FUyD0TAzNECrcZ0oYS0lCRlR8dLGoiKzLQ7PUGvc61b_pkNe1yzmTX&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=AQdIAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70ab7nsGGx7ZXf1d3FVsTfJkfqyKkATUSmjkoOWkpNGt3sBMjbIBqcynnmx241X36U1JTQ329G0vD1mtl7MBzNonqzLVACqzaNwsHI64j2ft9DrYopf2N7WRYy5P8690foOvnzq&source=gbs_api"
-        }
+        },
+        "isbn": "9782075037488"
       },
       "fetchedAt": "2026-04-23T13:55:23.537Z"
     },
@@ -838,7 +870,8 @@
           "thumbnail": "https://books.google.com/books/content?id=MJNi0uU8kdoC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70kQK1DYz3alZXPvdqVoH374VfO0N0gL6V7GIR8Q15bWZlGiA4GHyBETMQuN9-y4EnKfxXcS8eyg-vc579Xp_TBBKcs8LZ7FvZjyeqidQI3NRWSDYa4YKdq0leyED5vljXqhK6E&source=gbs_api",
           "small": "https://books.google.com/books/content?id=MJNi0uU8kdoC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73qVGwHGcogSI98xa___e0It3ysZu1D5ZnxmB67X1xqUH22T8RmjR4vZhP-AEJuqIguSFvqEQpdho3lJd1o-tYmAMs5hrTJK5hqIOa0uClxzxKwqRzLbVhjM_uIsjiVvJwjcG8H&source=gbs_api",
           "medium": "https://books.google.com/books/content?id=MJNi0uU8kdoC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73xtYdRclfNgLEr3iakXvZZQsFAl6cal1tzhiBn1pSVRf_oTB1KsdoUYIWcTrb-dpIhYZM5ebQn7UJfAVZutPWN-VV-3SUw1x7jcgoVP8fZk3P07YxgqdwnIufqRqQBKywnBrXw&source=gbs_api"
-        }
+        },
+        "isbn": "9781451627305"
       },
       "fetchedAt": "2026-04-23T13:55:19.212Z"
     },
@@ -860,7 +893,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=yKBXEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72D2IjfTUhPM-otw8j5H2JC-bcangr3mqAqXQBW-9zKwfZ1aMg1fImW-rIeyweKdrFLQRGi8WEBAOzmtYj6KxE8iw2706p1Ab1UIT1b2ouPJoFOyYV3lXXgwA4lhwyrJbRhDsai&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=yKBXEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73PFyMLnMYzesrthDcFOlAgmfujuuHjKiy4_jRm-I88EJV9RmlwfKjXFiXFD4E_pbtl56N_KFtGljGHDP8Q48qxKqz521kuoWYYfWf4tqT8xiD78t1yoIwCFv6ctKFhA4xiNhig&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=yKBXEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72FAC6DvYbq0gScIparj0fLQqC_yMT2AvubQDcoG84GgxXAEmu-MT7vVPX7EHUkkfmO2VrW6zTKLgkzPX2z1g0U_iwxJIgRuUTGTD_sB78ZA3gAOhi16yMmOer_fT_swT3MBpFT&source=gbs_api"
-        }
+        },
+        "isbn": "9791028119997"
       },
       "fetchedAt": "2026-04-23T13:55:19.405Z"
     },
@@ -881,7 +915,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=lW4zDQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71t-f2RV97s1O7szH1psXlJMXqgaESQOdx-gljaNILdKtDrkCd5gEA3PCEaUCryxjFWIHl2TcpwVHFsucCn3W4_F05nZhLyRkYQ44iRsx_ujwi44tQW1q2fbkRCkxfsKapKfqcq&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=lW4zDQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE714Wc-CjIxM7ZowEY21fIOGlreVKa_uNt85tYZdPkXuM3qO5vMYiNJIihEF0w1bhVJwTqq6C8E4OpVlaDLI4VJac7tSZsoi3uHnHJFHXYDJzPmJE8QacFu5P-NgyDAosDnxd4eG&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=lW4zDQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70peOwYz8qm5t4PuRW_0RkkvuT-cx6hAv150mqkY5bBKU64_TCVHJvvsrAeGHQh0b5xLGucrasaO303igUJjcwVp1uryEF5VJBmx9hHEeOJ_lS3W1mooueVuNO72Fyj1p_3i103&source=gbs_api"
-        }
+        },
+        "isbn": "9782330071035"
       },
       "fetchedAt": "2026-04-23T13:55:19.575Z"
     },
@@ -902,7 +937,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=nW0mDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70b_BFEZ8JUJpIGUp4hQVpDWw3cnWhs3-OoX0HCfsy359LSEbFYHr2yNSoR6dklzSVtDehIJobhyfRD9oNkALLoQjoCRXV_Hx9P8SOBJTDZSX1pwO4Z0id7LJ0TEj6XTD4TTyNq&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=nW0mDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71hGLLU2TCZrkvCLDSt-YAHG0NijstcD6L6IOKFDxOF8JliWmsbRWDKZQkrMKtXN9wtNm_0ZpZrvut2h_43hns1j1GeGLAw0GgcrSMrX6B5-btWZNyYrcQgJt72Dn-ixp61G8Wz&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=nW0mDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71bvIJEOKLmcxaVpGA0PoS0IyR3gpT5iBMuemo0kB02xAA76PQkgc1LQMygy5J79ZCFksa7Ui8Y-QhRWjXf1vl9seC3ZeIBJQ1iCjQNex877neHRvr-ERb--FBXn_qudhX1iEhf&source=gbs_api"
-        }
+        },
+        "isbn": "9782072733444"
       },
       "fetchedAt": "2026-04-23T13:43:45.207Z"
     },
@@ -923,7 +959,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=diw2DwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72RbzFylmiO30p0QhIf2mQHRCvuNkgwovJCla2xhOQCt6iesJhbbxmQaqZy942C19SEfMdGSn_hDuzG7efDXyq8dbPlPefw5-gerc2NbQNHDhTC07vqFMsbQ5KVM3tDGPnrtMTW&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=diw2DwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72v9QAGw-zdBxxrYkqjLc_ORVXLX1lxNYfRak5T7b8HmhlGlpJdmSIsHLLF2ZtpqJV5ot2TMfG0RwEld5WpdvC75KIomaQ8TKINDSGWlNDUNb3xTbeXsVuIJUQthXE-aTIbjRqs&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=diw2DwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73JPU7SsIiUPM6r-BgnuAgsEuM7BD1YZVYdWtpmNlQOQ0WpWb_FUiGaFgYWJtsQAI4bzqOeG82pCXtwvsWju-sqOnyLdSfrCrw_B-61k4i5hU4_Qd11ciHFQu5ZVyq8Z0P4g71b&source=gbs_api"
-        }
+        },
+        "isbn": "9782330091217"
       },
       "fetchedAt": "2026-04-23T13:55:29.315Z"
     },
@@ -945,7 +982,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=UBl1CQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE727m2tXal6Bb6WbsluUzZKhFTK__I9zErmkSVwlb7JHIrb958fgFTJFzolBJ4IiY388wTi9RdkxOzfJQXRJPOJ-rBxmU0cWcMPb4jhowVhBBhhL3_0RPC38NOkX1i2Q0Hqdh-Xn&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=UBl1CQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71WW5SKtoBMG6reNDEOsXyKlcrTma7AlJBibSg8AffKYhVQ1zQQ1k5Hkatg1DPfrlcYkZ1DHj9qEH6E489PtRvU6NHKfENMlXDxCbv_7gK8RsNiP1DeRCz_BxLm3blJ_hPWx4La&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=UBl1CQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70YiBobXhV28txZ9dXDiVpMZk-RYK15UBLzfxhlpL7_bwPuijhz1pKERkh5ibTlhEjeveMMeJJKL8igy3Mx-mjgSygLRZcEeYL07n0Wde5Oj0ugbowAKenGi3SLVyy-hcZF_YFU&source=gbs_api"
-        }
+        },
+        "isbn": "9782010003691"
       },
       "fetchedAt": "2026-04-23T13:57:36.954Z",
       "source": "google"
@@ -967,7 +1005,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=IPunEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE7081YMjoJH2t8jw8p9aGy6jcfyW4i0ddU8X8AqotPQG9ht4aTyVP3mY-C3j0rRvGDnn8lfjTjvwklRDoBPlE8w1dVUAL8f5TEpLSwl61ihFKuTNuY8Z7JSHgLbkAMH5cmyBX5KC&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=IPunEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71ntNXjPi46fqBb7CyiL_vMEIdgvNwjAuy5fyg-Be9flk5Y5ujEUFHiE-dxA5f2DWQQx6C8BhWpeWja0Q6o01ET2eStN-Ci7IQFjkJdLbk-mM8QegEoI9MUlSBm2fQQ7tf8e3_a&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=IPunEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73q6dtp5BKArVC9Z6ELDISNoCZvYc0yZPvaWvBK1RbQKmW77LP8qyrPicWDXletsSWxl8iM1dsW36NOy2EmYNVYjJm5RMrDEoeNzmZM1GxgcDvzkZVpZFjgSP36-7qWuOuvvB_q&source=gbs_api"
-        }
+        },
+        "isbn": "9782207170557"
       },
       "fetchedAt": "2026-04-23T13:43:47.713Z"
     },
@@ -984,7 +1023,8 @@
         "imageLinks": {
           "smallThumbnail": "https://books.google.com/books/publisher/content?id=8x6bEAAAQBAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE71gQXF02jDaXaXhFUYaxcsY9OsVq6AkvyPH0WsTF5clX0nBLjq6nKl0_SJObUPG05gnS9YvX0rSMmxLFnAf75LOSa60Z4v6eWV8MrcZBxE3EaqLW6E_nn6BZIzHr69g8voB6LkA&source=gbs_api",
           "thumbnail": "https://books.google.com/books/publisher/content?id=8x6bEAAAQBAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE72aUsZMeFb-KSioYN4r_9AcYax_BQGnLLZ941AQhsC7ZRCql5mXds6kuVLcHiJ-s8yYWn6_eDZ1VONjGasGR6WVfRbNNuXH30vYzYUIV-AqonF5KKhQawAA33cOdz4Dpznr1R5M&source=gbs_api"
-        }
+        },
+        "isbn": "9791028111519"
       },
       "fetchedAt": "2026-04-23T13:43:48.081Z"
     },
@@ -1005,7 +1045,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=ZaCgEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70xVJIbC8fKggYcRTO2d9Q-XIs1ESMwdnW1bfaZS8MSS2Mjrw5rioFjkh8xcF6bWpNTiunGGyXql4F2-u0Bjb_8u7ynj14h21yIGN1hIDtmd40BUNOJllLByyKkiXOr2N3hSZbs&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=ZaCgEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72-ubCAs0lD7FoSOBDbhjmwHjFaaDwgeA90R6XQrqKgIBeWlFHqWQWsX7C3Exqe3hl9xF0kSunLxNLyeVN3FrZCrfRyUEb_Swu7oWy5Ysc0UXNOTrgcZ6-2C1aaOpOPe324NR-H&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=ZaCgEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73o7n3VIRhSU_Mv7ApGKPfaMJ2fhGnFDX-yhvlCUG2Dj7MjqtrE_a2SRQ5QS_cCUFVBFS76XnFjTKrPsg2amIjwe8zhyOi3bL0fYBXLrfCPfvzSoEx9mAg2ZyYU10x_6C34ihrC&source=gbs_api"
-        }
+        },
+        "isbn": "9782290389010"
       },
       "fetchedAt": "2026-04-23T13:55:24.713Z"
     },
@@ -1026,7 +1067,8 @@
           "medium": "https://books.google.com/books/content?id=iF5us7PRPFEC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72y2BrOo-438MazjKveY70HWfJqidJWHwCZRcK5CWI3_ioF8cn56DKpCEBRYA7pNTnCjBbsrBlsCMgJagDSAIHBS7bQsKccUr20-2nIdfJcoibDztbIghApOAGruM0QuFBOs-67&source=gbs_api",
           "large": "https://books.google.com/books/content?id=iF5us7PRPFEC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70vOzeaJtyGatrxwRKAzeNsaHMLmkeF6KIQ-xWK0T5pFxImLiW0q9Omr2Fd4EzU6u0KJZiZUVESBW9dK_ic4Q3ocG-DrDz9UII5-8L75iWjCcdX17N68w6WtZZfImBgvVI_r7j3&source=gbs_api",
           "extraLarge": "https://books.google.com/books/content?id=iF5us7PRPFEC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70Bdp8bZ1RfS8Rqz7eqdQnVjrF_P15bAi5rP08z9bamo1NKhLfIDYo7KOFRnubEt4NWPlQBA_zMCPLfn7uDtq71l51tLuL1KVLmRSYcPoXQwCmL66ij_6AJmtSCjzXrpqCWGFYY&source=gbs_api"
-        }
+        },
+        "isbn": "9782265093775"
       },
       "fetchedAt": "2026-04-23T13:55:25.108Z"
     },
@@ -1047,7 +1089,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=5ZuhDAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71yGHdkWRJT6_VbxXYqWofVeuKZeL_TrIxkKkcGzrO1-a8PkWDIdP7WWDlLnfxArhQaW1qBZ9PY8pXHy_x0Nzlg3P0BdZ9e3f1Fj-wyVCjqec-w0kjH1tqumWRerVmND1YH69R1&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=5ZuhDAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE716iyUSvUtli73zF1yR1Mdg8PyPDG5tbjrXbiv89-VMyl4t2AQF6vIvIt7sknM5NinrY9yVZZwUyNFJ4ObCX8BjNovkfhf4b2RGtqkRhB4y7y66KnBUWxYNPxNLNmSFI3Nf82J5&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=5ZuhDAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71zRuSnp9vvMwCpwXbOjGgahh8A1mOxsTjNKybDvROFweIUe40r9pOXqdHwkSqbIbs2owH4yzOFYcBd9octh9hSzr_LKvQVXD05-KrBzZvEF2i-Uskls3XlXFexK6YIjBJfnYUU&source=gbs_api"
-        }
+        },
+        "isbn": "9782367934372"
       },
       "fetchedAt": "2026-04-23T13:55:26.449Z"
     },
@@ -1068,7 +1111,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=ZezVAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72Z0O4Vq7o7Xg0Nvl4K8ABROvbXyzlPX-Wgom14XIrubbIq4r0HgEQK6ijXlGcYS35ARXD3b0GKK31LXjIh43Qc0GmE2EvSDCK_MMzA9ov5v9e3EZvGWTjnXrQmY4930esDCbxK&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=ZezVAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE710HzRJW63ForBCNptftt_UZ1br8CUkrRhVXnJUeSUOWIuqILAdDxuyV7JaSzNcNoXKC-Rw6-2I6aZ6R5GW89LiUtwKu0qQiTbL1KjNg-o1NURQB7NjK4HXkcJ8-5OAImvmF-3p&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=ZezVAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71_Chrx-uEEexAIig_-p_9PE9a6NQlp9tQCwqQeVwJpfd9rDR5oo6dvBFWNugRAJOuPFjezIuRfjVWoi2RlPG5yRat9wq1u0lRIWSITrcIKGDELH8zjnO97K4t96MT-DnqmkHHd&source=gbs_api"
-        }
+        },
+        "isbn": "9781473204317"
       },
       "fetchedAt": "2026-04-23T13:43:59.110Z"
     },
@@ -1089,7 +1133,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=Tvt9DwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE722MU_SGIwGlRSYMRfWzxD2nSiSjuub_e0Ua12vbgxZfR6LGIvazr4VNhkF1XZ_B71n1NEg5p5IenJgIGVWaqvhb-W1WJS9lsqWt_CwCZ9yFm18hgRvCaaohlehsrqWN6mZSZQA&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=Tvt9DwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73YVqUms2lmpwWGsTPLIBBbv294XsVjG-T1wXDx6Eo2U9alUf_P2xnVd7zhVLgPRUX3q7DhRRq0ZQsgA07FHDCdM-UIZRtFGhxil_PNkCVJ9pIsAJPeXiv1DfgUdmeFNa93F1CH&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=Tvt9DwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71j3S-sqhj7XJfwJAi7D5xaZiySq4RdoZQtA1726XdQWkEtO8SVdGd87PuA36lRjfoFc_rPZE8FL6lpS3vbatgyMYEL1_2iybBNMOQrfXwbpBLl6rdsdGvC5MOeuK4AEVVkbNAr&source=gbs_api"
-        }
+        },
+        "isbn": "9782330117924"
       },
       "fetchedAt": "2026-04-23T13:55:27.599Z"
     },
@@ -1106,7 +1151,8 @@
         "imageLinks": {
           "smallThumbnail": "https://books.google.com/books/content?id=or1HPAAACAAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE73KQbWIwaDqA56htslr6nKsZL9LDwjXkAU4P3y8M1yRDrPoBfpf-ijFs78LPxYQx4eeR9KvrfQyVQqlNTwREngefONyOJTryOtGUkRWGSZrZFh3zqTd7C5fPU4ZKab10MWb9I-T&source=gbs_api",
           "thumbnail": "https://books.google.com/books/content?id=or1HPAAACAAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE73vB8BbO4hIrKcVwr3stEzcEGFFWw_rtTyI_TGQxeCl-UxaGapsos64BxIv1YXz96TpALUA1ciWAFjQOKDGk-HMzJb1QhebSCw39z7xJgORtcrJEcjBfZZq6XODcgbUpTIwo_UB&source=gbs_api"
-        }
+        },
+        "isbn": "9782253113157"
       },
       "fetchedAt": "2026-04-23T13:55:28.676Z"
     },
@@ -1127,7 +1173,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=Hkk7EQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE7165o4iS29H18uDdkdS70PKgjy7hqqKcNKMjdUg0zOyee3WErZ7TKN6VPVjpM4zalEc5NGO3W2ujhCO_BIX6-bA7wGpLIMnZtrmLJqu5JDSbkoBbN475708c4XUchNaio7fvcJ4&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=Hkk7EQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70suwTAnBvVf595E3Qe8tVB2zCrCWo1G0HZvzNvD-1hrNpTXndzXbKuG45DUQccDyuEjn0THL4N6JHlNmKKlh-jZXccY4YfQsCfCrggbJRSp4mia5DTnVsvqqPF-7iPZ5-XhCKF&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=Hkk7EQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71FTztT964DUD3SrQu3CqkBiPLEpUcqbh1-O-jDDKoWjieNLulvWDEVgb3npxoG3HAm1YkU4YcIQ5Mh6ZYi0EuL8KvruOKLzRuwfudVuMcr-cc1TFz5Gwhxzjax2rjaZ3kooKt_&source=gbs_api"
-        }
+        },
+        "isbn": "9782404022185"
       },
       "fetchedAt": "2026-04-23T13:55:29.094Z"
     },
@@ -1149,7 +1196,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=ygSmDQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72wtSLziJkrKh-QZBD4-lHrvkeI9cmdVobYBCXRjpyQvQ6q7nfp5CTpb30YIqe-pZylwwiZxmlEuAlhppoJmwyL7uO5ag7QEtagFimlECcytjkbawR6O81j20JD8XUWVnBWWAph&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=ygSmDQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71YeHl8fqILUz9kPa28_m5AXrSpf-XnEsicjPYDH8JvTGo2P2mG7CY1XNr62IgsWTJ-zAOCFK24h5NHO-cIg_GTOg1WZHs8Xm-XCmHAw21OBJEw4yxlfu_DLd9cqkCfKndZwvLD&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=ygSmDQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73ridjWtdGiOpCHY7O5sF7qSUUyZ91Ja7gx1ASiK4Hceur1zMD9GM2QYTz4pT9ztwNEwpUgFQCCefrHWmCMvgnuAoWuam3H4oRDvl115xfRjqQstdRRFKIUZybs8lwW19L4j-sF&source=gbs_api"
-        }
+        },
+        "isbn": "9782404006154"
       },
       "fetchedAt": "2026-04-23T13:55:29.527Z"
     },
@@ -1170,7 +1218,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=YagyEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73b5ESju7yRiIdMtPICGFzbmjlelIADRAg3uNjrMrRJ1Qnu6Ab9mF52rUMjKA1ALBKhKZj1pApda-rzk6j2yqxSeYNah60v6Pv9Ja_iU_qlmLy4nV5MH2Kt8DF5Ya_gi6AAyZcd&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=YagyEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71ANmpfuczE2xrOX3CLLfMluXFw3WC9Adr9W4lt43PY2TTcOMvTrR70Jx4ZV_2w7MFBwCSK3YFOmIp6g0r_Chm87dmhGu1F2KiTLygpW6VmDCaqa9L4C-h0GqyC0IVC3jqxHkyL&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=YagyEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72Jbv-nkxcafvTr_9eY8P8kV0JfiwkVtiN6z45NF0mD9xTAP6FpZdQIl_aoeCEfI04efkrtPJKOzoaK2xqy_ULP4howmVcwnripljeepoecc9nuhtt3633F2EhVsYQCurYaV1uq&source=gbs_api"
-        }
+        },
+        "isbn": "9782375790595"
       },
       "fetchedAt": "2026-04-23T13:57:37.319Z",
       "source": "google"
@@ -1192,7 +1241,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=m6gyEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70ta5NgOOu4AyFPp9RMds_ka-xtEFvqKBW9Crkuy2BXHtJAeU7bqPCLv_dpNn1rF80vM11uQIT5Rlzzl44OHmOjeD6yGz92LivA4GZE_HSMSREBHoA6serI2seUEETAQgWyFV4w&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=m6gyEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70w3ZVwWMIwPATFauIx1HiQehZ-HzkRii1k205MEPiAgjFUvNs4OfcUXDdzJniEImpjh_LsUaTkJ123UZIKpKUEZPNOEE8b8J-nVvy_8lyqbZxroVWFatkJCSnh5SRJ8COODP3y&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=m6gyEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70sCrMVDYWWUV3Hd2cao9EdromL9LzI5TW3NUsTTiCd6vLi6HnZrN00ItWeGG6UHdN5skWdGS6Oytw3RSaaN8oOmyCAYi9vgxuDJCgP5FTo8mvzkif8j3WZ1GTfaMkcBa52Slnx&source=gbs_api"
-        }
+        },
+        "isbn": "9782375792056"
       },
       "fetchedAt": "2026-04-23T13:57:38.206Z",
       "source": "google"
@@ -1214,7 +1264,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=y6gyEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE7107LtkqE04Afp7GXV06m3OVHdLdV05faRWntdrSiRaKYlAyTLNNt3Onk5YvYSr5bni14whAh6wgKgCfa6mRWEl-4HsTjK1I66wlvhPXDZU1PSDKW0Kyy2iM14CeSli8GxosxqQ&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=y6gyEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72IBUopAA_ts2wtMLvK-2fJz-MwDj3q6N71oFLXelJMee795F6peKBprMafNNIk48XnyLXkSL2m4iifdz4PoPwzgPkeGFRSBMUW7agrLqEGOvk10MiJ0_Os0NeJI9K1Ku6zmZZu&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=y6gyEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72vrosAZerQhb1HakkUjZ1w4k3xP3Sq0dEyPEZbL0Uv71LALWup6lUnKSZQEhqfa4UgUaw5qtmddNF1gIL4zNtiSFInRc0LYbi2bZais3C5ZLS1SpRUvDVzbRKVh0k9lp2O_bMN&source=gbs_api"
-        }
+        },
+        "isbn": "9782375792872"
       },
       "fetchedAt": "2026-04-23T13:57:47.321Z",
       "source": "google"
@@ -1236,7 +1287,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=2lBBEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72R0WvIbfP8fCKTBbeDK8s95l6EjP0Q2CODzicDzxjXIsNbYEMifEfp1PBx-3OxFOdjtTbSO-jPxdeH4r5Qz1b5JmRM8C8tfa9DWr8Tc2BcGTivXC38zuRJhyFBaNkcTEcxAggK&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=2lBBEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70sRfTSmF9br84nhjGBZhHfeRlGD04WrN0vRutGHC4uYMBfl7h1kTtt0YKVkttroLVkj-tPfvareeMtt2eoBPyzo-X6I1hUTULs80FJDi6gxHkDqzes09ELLXRd7BmVFEuDV2CH&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=2lBBEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72FNZKiDNTWeVSCk5yUCXIgIk_SJGrW-5jv2VDUr4iGh-hXcExgMfXKwEHbjrd-zK1TkGkWChGlKSJB0CQxrBmz0KKBtbpvsB_bhm0NU64BOcMGWHu6GZiGyGz5H0lFGdi4aPrN&source=gbs_api"
-        }
+        },
+        "isbn": "9782290235812"
       },
       "fetchedAt": "2026-04-23T13:55:39.607Z"
     },
@@ -1257,7 +1309,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=8tRvDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71X3oL43QHqOq_fVjVgzXBhCfWXXTcmH2K-M9ZWArj29OaOf98BlaQP_RAUyyBdpcIr0xUetOOIZQ2x9RUUiho6_wOI3ztK0g2odql5wI_LWc06lcq0CzwE1tm7und-sujXPc0q&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=8tRvDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE728LTpHPhPazw4qe113IHN2O8pMGO3lY6FkFazd7dwGZcOYwVYnDHxVRjfhA2WCHOT0TOe6qIuOUUI9-g9i8gDNJ1XIY-WAH_B3c6Iv2du8Afb7fFftkfZD1mcO9Z52Xm9VMqXC&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=8tRvDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72H9Dq1f_I-63YFbPHf5K_2WChfdh4OWYwMbb-zpuPoW18JFFBOyTlvhpF0uQtSy3xsNFFRGz-aBS4L_LXaFhYtxtgho5cE7LUJoOhDPI7ZqW3qMSHuei8q89Zl5dGBPNPVzVHO&source=gbs_api"
-        }
+        },
+        "isbn": "9782258152854"
       },
       "fetchedAt": "2026-04-23T13:55:40.543Z"
     },
@@ -1278,7 +1331,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=9c7vAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71CJaugSaccus16zKvDVphxbibRCx-TgNz5iBneOKYBPnO7VWWDej0jQCldSoUv9cdp7gq5D3CS-v6svZ4U7Xd33oykaM-WHRVQhY3OSbts-ZYKHX0QnFMCj9J2gfRp94DkqxHY&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=9c7vAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70Pr9mWYaRANL09HfxeOejAdiEMC0WxNXMCGM2J-Mv-5JmQiTBbKg11UVhH2vNzxW5lN-hmtOU7eCxJIPOpq2Zs_54c-iYaDIbavXYsA79nXSCkoFzSQtxFc0w5G2CyEsrwk7Rl&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=9c7vAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE738_5jsHUs_f-nXg62OYVUpaTNzwjIhjDZWclTY7eU1G34_eOM3OpY_26kVLJAh00IGwgkvrgfUkRPagmA5q1YRWbbwQ95-3mJSItZAcArN1sB8dHZoE2jmHxl7nxhl78NzGoHj&source=gbs_api"
-        }
+        },
+        "isbn": "9782809438956"
       },
       "fetchedAt": "2026-04-23T13:55:39.865Z"
     },
@@ -1299,7 +1353,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=QTD7DwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72dHrizXbQsVgwHpkjQw0dhfmhM9EsgxIQp_VhxfR6UHU2HfD1GbzEWHX-dTjHMQIYZ7z1GY5tVww0bvIWtEObcr9_BAo3dEK94EFFsk9XcsMkkyuff-0ULEF-gNjgVtcKQcvxk&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=QTD7DwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73hGUEZoBfF3CI2b0tKbKZys1JSL3wLCodrcIU93j8ODjuoFSMrETgtSGMNS78giLy91CpGCwzQOY_Rb93-wMz0JbkTACUzreLbichwfM7q0V9UF01EuIiJLC5BvCSzB5I-tIp5&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=QTD7DwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73GxRIcRPT4uPbhClRsnMnjUzL-sKEHeU8fi5SKsRSx8bLh925j0UCH0nKzAmj1rBJ6YSSIlCs5M9LHOXyE64Oepq1Hl4fvLRzDThSKl_OrZ8SDj971V7lnJCIRA7nPsHxVUkR5&source=gbs_api"
-        }
+        },
+        "isbn": "9791030703900"
       },
       "fetchedAt": "2026-04-23T13:55:50.094Z"
     },
@@ -1320,7 +1375,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=qnsSEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71ywKylullrr3BXa9yFZ9OiaOYMkBrQfDBSoXO28ZHlVzitjiGScZbU6hG_c4XtebQnhnnzkaJqu0xBhNLBmQBtkNWigOXdR7jN2YaFsq4oOGc2I0RgnPCaBvMwFDEW8HMijjz0&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=qnsSEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73PKO0rOumPF9pBDncW45grQLuaVvV5KbhmD27YxSKVY-gVgNY5HTN6jhIKB7iJeqvCCfXp-E95XmkEsY4e3U8lWuwUozUlgV4KkvJsPyV4dh3byoo-r0hnRQvxHjZnUJ8r68wn&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=qnsSEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73RkqVAKehYS_zaEtjEB4GD5Ub9sPOxqADnHhuBEW1zISuaN_tWPs7uxzorxpfIrSZ11ZZjVUiyoUTsR_G7sxV5nL2cq0Tho4oMdoBkEiBJ--rWYg19DZ0m2vwetpjI7IYbE7Ux&source=gbs_api"
-        }
+        },
+        "isbn": "9791030704150"
       },
       "fetchedAt": "2026-04-23T13:55:41.001Z"
     },
@@ -1342,7 +1398,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=V14FEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73y9M9zr1WsXQdarMXJhMML_Vn3MB8lK5Xvif7epfAI4e2ODfBTbvmtscxkNGE5nY9moL3jd8SeXA9O4608Uiss0dc8-vy7wXeRUYy44ZqKHSv7KVXMTDX2Qrwyo2-73Egr5vvd&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=V14FEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71phVWLdO_rGeUz_mDBYE-_RvxKw9rY79UjTn6WV29He33QYab3v08G0VhpXN7Wr_GqucuDfcuk0yF-r8UM9rzqK5-yYQKaTFi9W7o0umx_8Azlg-rtPiR-csukwB0tdt-9O4iO&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=V14FEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73-Y4N-JRHllcELOKPtw8AQiuO2Bu6QLz7O7v33nfAaKlwj7L9uHKz0dP4a-J30YyiivTS3xY-GM7PIRosLeqzWZo2wyED81pucHi_D_6VawMPEg7_K5DRYwdibZX0Sc6RK7r8i&source=gbs_api"
-        }
+        },
+        "isbn": "9782404027531"
       },
       "fetchedAt": "2026-04-23T13:55:43.027Z"
     },
@@ -1364,7 +1421,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=whuKEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72Kz8v9ltEjGXjRhb2csX-6heVYURbQtzB313pVRliDYDJoIaUeeNNZuRQ_WuxyU9C4zOe9Es0nvRHeI0k4kCxvguZTEoqObmF__sggFcac6omWFZ6PaXCd3F10Zi9OtMF88xbl&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=whuKEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70-3PW5sSN0jKJfOyynJ1Yot_V0HZk5hfyFP6eG3IS_Z-g33oo6HTnrMv26aGw9vf8JfWIcGXfDgsxifoKUaEnjzZDbgSAKXl9UoA-Y9HZff2P9HuBrF1JIDSIZsm-MrGtBrpsn&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=whuKEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73gzWlsJUDxm1qSWUTLNlIzMHHsrat-Mc_Npy6zqFM5SM8KriS0q28dU65nKf8LlHnY2L9nDm8scdGjLkq0d6i47G-kScMeDddl0rmwUwFHDuRjwZo1KPAF_krbxulNu1Q992y6&source=gbs_api"
-        }
+        },
+        "isbn": "9782369357063"
       },
       "fetchedAt": "2026-04-23T13:44:45.821Z"
     },
@@ -1385,7 +1443,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=ZqN-EQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72xmFu7j0SlLFVWKisUMLP6o4EIOSaWwuCj4u4_vAyMVfWsBzUblBZiUrKud9JOO9GWRBDkfb1DuN4PfxnybT2pVndror-IKfwzBfDTyLtNzxLxZe_KuWU36ZG7Vrw9UdPjAs_y&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=ZqN-EQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE720Ll8cYpBaAL_q0q_rMLB0tjI5b2EgOZoyJkCGXdpl0uEolozp4xlC44kJnyvmaWYfe63erIFEERNzrvT12QdE9uOCY-3SRFAe1Z6FgFX-AZGs_zr8BnWc20_QnR-p_75mxtig&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=ZqN-EQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70yADoqDLBwJSYUA33cDHj7ZhOCg7yTdAsfMYun3fwFF_hj97tKfi9yufXWMj0VPsRfw7stCiJ7wGNH022r5E6Endh0pDMrZbXcqA_67QRftqkKuSakz6qLK1s5kLJy_XTD20EE&source=gbs_api"
-        }
+        },
+        "isbn": "9782367936635"
       },
       "fetchedAt": "2026-04-23T13:55:41.351Z"
     },
@@ -1406,7 +1465,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=7YmiEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71_rCtqcnk7Z7iK9H6aWQL4O7uTKeILI-ZkbylroguISrD6HmX1PS-SZ48AcJO1y70j8q9M7tFIgFGIG2KntUKhL7X-7PlxPdDJuP-y66Cm3-drybY-YNFELha4ixCVOSALrwuT&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=7YmiEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71ScprhNbYTuaqRh8QZs81Pi9mC-9QFOJipBlkFrx6gDoRcwdhGIM3NkADcphZEerzkFSAx6XXvfSzRP6LwbFpLA0O5IH0VRhmDU91yMiAewJD2VO057IV_u8vxrj8HUQsd5tXZ&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=7YmiEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73OiVzASFFmdBaxn84kaEdcRw4N5n7bYWGVR787GJujSC9SKYYtLgk0Sh_slhE-RrCC2GEhVzQUknHEaip8aWuQVdqbYUYGy19CQxv785kkUXAL73po9XDERM4mu5tL1VOLHcd8&source=gbs_api"
-        }
+        },
+        "isbn": "9782221279793"
       },
       "fetchedAt": "2026-04-23T13:55:41.752Z"
     },
@@ -1427,7 +1487,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=nytrEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70EroFPIMb9EjxOV5-Gcsln76zeSMFEzOqwCLtmh2Jc8nLDcrrxxSjdEZ-i_cv78nrfg49UgNP1HSRRZ0Wr1WKLlrbNgDpr4nM-tLhNdPFkQ8CvqtgDpIqoycvnAfYsKngZYO6T&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=nytrEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72xWy_rRbYY4wyvpX1xkZBuNoBjbda_3ObLEhNEAhmLENT31fe2lsZY4HB7Bu_5WSPIsoBCREUKRbptliQ1854b7JkwZ_rzyMhKZ6kA3wd_kp6YT3KVmCJ1Ywyng8YvF_FBEe8C&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=nytrEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72A-_e98W6pZLBOdIj7gh13PUBnHidU4-xl9QJxGoyrUoxoxCWaGVEG7s2QgTiQm-szZAiuoS1l773tGI12gSd5A-Lq-nPEtoCOwapE-VgDZ3grmS9XCZIQ2cOb20tuFHeO0v24&source=gbs_api"
-        }
+        },
+        "isbn": "9782382672358"
       },
       "fetchedAt": "2026-04-23T13:55:42.181Z"
     },
@@ -1448,7 +1509,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=mn7pEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73Puji7W8hi0oVqQjKGL7DOY1_VqdA8ltsM3XL9aVNNziCsmUxhEADnR2TDKAwNI9DXP8qIrvWgNi_TggG8fPPevtqVVuvujA6khieBJq4XsuloBXsfD2zE4gh5jfe-Vj39Ewqq&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=mn7pEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE7335GZjEMdCrWTACpJObksRVfeWJx2HkKvakNX6FEuAKW5qTGvlPTE-hOQIFbtcdq0YP3Km6ngv9P1WXoPWrgXjkgt2bCJg2RXKvywYO0M-3dT17VKg62O13ZwiyTGL92bkVwc7&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=mn7pEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71TO0CAet_jEtVTddY2RXLv0lSahnayFeGaH8q5TgoiYOl9vLe7ENtV83xk3OBgBwZRs7FcOuu0iwHvrgDUl7SAnid1wCJaxvEQGTbHnUn41TM9T3JUWO1dCrA1g__zGLKFAF-5&source=gbs_api"
-        }
+        },
+        "isbn": "9782354883027"
       },
       "fetchedAt": "2026-04-23T13:55:43.294Z"
     },
@@ -1469,7 +1531,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=EH_pEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72MQ0tI_0IOkyfLNlicRG6d6uqfEcDlemS0MYbUVmi7rlZoPtGnqc5aLGw5qwUaKlj23Gu0hp4Llmw-ldT9ZLtp7SH58mpvafmiVYp4d7fTp95Rs6s2J5-LlyMGhhL2VhCDa1jC&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=EH_pEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72koe8HRVQlvmisc1jzNnAb-Kp0A_ub2N8pcOJNtpGq3JeA2f1cyjJBSoQ-dpm5_NoyGljPa5xcPtWqblttl-bjj7eyxCNIQszrvhMbWY8rfWgFoa5X8xreoy76plh-9RHYcxuF&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=EH_pEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE734pKA773ASkEH4hGMtAefLFQrd_jJLMFm98YKSPy-uXT7EbeP_qUSNLX6g11JjYvJBSHtdE10_lenyR2mS3rTbmgTARzJ-nHwC9EgOiDgUfFJ1xarttWyZV0MB75Jg_cZFD_QG&source=gbs_api"
-        }
+        },
+        "isbn": "9782354882952"
       },
       "fetchedAt": "2026-04-23T13:55:48.045Z"
     },
@@ -1483,7 +1546,8 @@
         "publisher": "Performance édition",
         "publishedDate": "2015",
         "pageCount": 230,
-        "imageLinks": {}
+        "imageLinks": {},
+        "isbn": "9782924412688"
       },
       "fetchedAt": "2026-04-23T13:55:44.468Z"
     },
@@ -1504,7 +1568,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=Cn_pEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE712KueXTQ_r6ZeR7e4UxiL4gCfL1PIOZ5GiiKDefXKF5vUCnCtJXJ2rnKJiurSHdGLeHA65PTTd9rS5Zgk_E0rGJCtb7k6T2pz45I-BBNpPAv0aKjhmzphKDXVB7IWrOxMfv4_4&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=Cn_pEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE704hTeZ03fNhzhpLkViSz-KkvG8216utycVtJJQVbBvzb04Oc3Q-EXuV3MtsT8BWoPJMHxtM_73tI_dYv5nHtfZQfsrWyXczW3ZH5UZ7S6_zZUyufXNP9E7RdopOwy3k51YRjm9&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=Cn_pEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72XbQ6lImCqZ4OAuqLXbIhz2VmWF2pimpdjR9_msgoNl5ucW9VV_V2gUyVD0RqDG90IkPJVQ6Yx41TC6-B8Z42LfMPXubcf26MIGWbLulfkf7Hyrz7CLUBQyoMGdo4ay3n_NI7i&source=gbs_api"
-        }
+        },
+        "isbn": "9782354882679"
       },
       "fetchedAt": "2026-04-23T13:55:49.530Z"
     },
@@ -1526,7 +1591,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=J-VYEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE710OwLjlvHbXj_HLFCZpNARgAgxy7EHRVyDEZD4EcV71KbPi4TwKN-kxzhxNC11RFD6BMtm1WNqR7htnG-XvQ9nJhO9FmVy1lXkXKGdoQbbCoQ-yFKIhY01xAViF3gSL5YTYsUp&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=J-VYEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71vD8eohIa-tn8AKnah9nMGgJ8qePIjqVFYHoPDpIn0Fao5K3IGEZiTpjXjuPXvrfEpfcTy4kFdVXwuWRhDUDsyjVUue09h4euIShE_zwYTJMRdhDlfxKBd-mdYxn2brAN2k7Wr&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=J-VYEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72sWk1IkUoWpYzp6zcq8AGKvzydv0YY3oy6txn1BmDEFheSklPYXVEXlLHSeIUsUyLb5qM1yPq6-mbqL1zoS2u8las5JUOgLOc9zitOEiHe20pDan5DCgp3RMqWgkVCMuAoEcxD&source=gbs_api"
-        }
+        },
+        "isbn": "9782381631783"
       },
       "fetchedAt": "2026-04-23T13:55:48.444Z"
     },
@@ -1547,7 +1613,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=7nuDEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE701HDfsJGDAOjLbi2kLok6wjXYcAVKsPyPWRk4JfwvcwWrn25o3ZHndnNEcibtNhnJl_4EkEw_7WAMS2BQ0kw4UFr58b3-ladN3nWwXCvHD7OgcRj384-LN_kKnNBrLAhaluT12&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=7nuDEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70l3lrHWs4IlCOi_-qbJfK1Dp_NnpF6lttPT8YoWHBP0eEMgwmVxJtNcNmmC6vhCeHAFgKdX0IsrorCj00FXf3gXDQCJq75sWOVJyumeZhgXr9GfdL347UX1R-agTUK47KxUJ8e&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=7nuDEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70BhTYsDTV0Ejm9m6w_IHg5hI6xECYpkKa-wbx_B5KzKa0t-mT-xA5AUfsne4Ya5w1LUJDiKmSwtSHhQkNZBHsIeCiI3rBOJDZldkNsvPDHOTbs3PwzqwBvNj0cWgqM0zgdNeYb&source=gbs_api"
-        }
+        },
+        "isbn": "9782021591170"
       },
       "fetchedAt": "2026-04-23T13:55:49.585Z"
     },
@@ -1568,7 +1635,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=oWKpDQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70scHYSZuB8z6PWOWxUzQaaWnTK9x3KgdlxPo8afOfuQJm9GxmmCyarqGDY9cRKznyg_ISWAVgXJyo1CNCuz48xeaK4JoPAelPMBwKHUPcr5Zow_1EVfmupSjI2GrtB7lAEAcH2&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=oWKpDQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72_Q8_NFbfsVtKQjK2FCJBnPEExMx2fQuC99tV9AKn_TSIXP2Dm7U26OREZQ4tNyVdbgHcsXx5QGk353_-Dryx3qYxMLO9hYybamK9rfpz-6vX6neCXelKCDuD9CXZIsz7c_c-q&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=oWKpDQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70PraTFU3bbrSw4CY3ZsCBmeeapqYk0YVw8m1oUpgfBUN9owQlq4kXZX4glthoFTxFfjCeDFnR-24Ts1fIoV1OzNEmAOEqsOkFZOlI6cGbNJ3cdHtdn_ah_PWZf-7kofQGRPnfC&source=gbs_api"
-        }
+        },
+        "isbn": "9782367934594"
       },
       "fetchedAt": "2026-04-23T13:57:37.971Z",
       "source": "google"
@@ -1583,7 +1651,8 @@
         "publisher": "Belial'",
         "publishedDate": "2025-03-27",
         "pageCount": 400,
-        "imageLinks": {}
+        "imageLinks": {},
+        "isbn": "9782381631691"
       },
       "fetchedAt": "2026-04-23T13:55:49.998Z"
     },
@@ -1604,7 +1673,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=jsebDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73yNaDrolqAeI61z4-U55HpBRhN5h7pd49Iwtg_g62N_wxNrcQpmxfgcqR6vhl3wYcKqF3TA9dmk_mih23HiwxLmSFfKoz6R_La8CjvThlFD2RvYmKWZRoov_qr2pq3LFcP5Nd1&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=jsebDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE717HPUQdCrQf7_EBO4FZ_U3D7nhbBoSp7UBgY4wgJAgDhhZsXlgjJBiOBQifRNcDnnQLBxI9BN-CE81iOxBavgeOFv7i9P1O96oKTTWdzywpHBCWIjxT4EZh_7XsPv7R2ZjHPA4&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=jsebDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73v0I4NxM_wA7LOwV81mKjAmmY8r8kepn7wZqBxXhBcSbXT8fr3Mq6c_dGS0FpTA_H2-AH_Hgf_0PVcPsyvixF310-TvUeA-wMz3ArgHVePgFNoHiRegcEbVkDGxT0VEzmzIxe-&source=gbs_api"
-        }
+        },
+        "isbn": "9782081481169"
       },
       "fetchedAt": "2026-04-23T13:55:50.335Z"
     },
@@ -1625,7 +1695,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=pB6EDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73wXvN_JNzwHmC8iYKH8BfKav75IGIVLIC568gcDpxwHhP2k31GYE9TkSdwKr9YWqINAX6SxTweB3Aqk_yLMQ9usLk6WTzfZ1-VdC7OclXPTJrFxZnHcZzsw1OOYSBPPr_2Mh0g&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=pB6EDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72L9g5bGi19vigCMSy2QiTD9AOGAqHgQzEjGQ8dtuecA1hSNqG4yrqciTFfAQZu7dMvyNItj8r22ZvIXMGUJMf6Y-ZrIrskFFmYT7bPCQ4kjTjvdiajv7FDuiimMyYgqkEHBqP_&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=pB6EDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70Me2Rmvbs5gmeZt3Zy5LVnjFtadlOwXvHgo48ZNey_tHrxiLszJAjjylbfkow3n1Io9Nh6pY3Yp9QkQQiqGPyN0ZPEjJzyLbt9GSGjiVBeeh38deGnCF3aWCyIotqHAaJUuATq&source=gbs_api"
-        }
+        },
+        "isbn": "9782378910365"
       },
       "fetchedAt": "2026-04-23T13:57:39.058Z",
       "source": "google"
@@ -1647,7 +1718,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=baMtEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73y380T3wnV1tREA7zysFLdNbJm2nuzDDLEaXtlwpFz0lT9d17kt2KjTHzm4QOXuQWRXqHj0iA4MiVkfjVs542KQx98zK1ZHX0U_aeDvnsZtEcr7x_F1E25viaxCJ22Q7ONklXs&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=baMtEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE702aR_uZzbmzw7t4_uye5ThslnyDT1ySK2hr_WER05NJCVwB6Wei_0lBxTgQZyA8Q8bUeLYsOdRSU-0qG6Gj2xEnjh_bkr92tiy5nUFINmfG7VXgEqYBww5L6qHIDmFpyTXhrcx&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=baMtEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE720vn64vP65R_-bEHLmBKcWvyIxacrgQbpWC-s0NJy_YHiYQpj13r-SWF80PUUyDTsko0Nm1-2db7uyY5r1ZFFuP-lJ7FRSVkWQVEuUHzY01Av93c-PYqUq_4qichVnhNI2zstg&source=gbs_api"
-        }
+        },
+        "isbn": "9791020923264"
       },
       "fetchedAt": "2026-04-23T13:55:55.295Z"
     },
@@ -1668,7 +1740,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=XVbADgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70333H9NocbNRPGx98sJ-_EHy0QO1IiNMi5W6ToKVbduzL_uCpBCQ1eE4CynmqMeKuMQ-QkAuolpQ2ft4TN34JZzxgSfKxwvguT8EFoYVk4QD0nGzqi_voWYbweLS7fOdqAMUF0&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=XVbADgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73ZpDhUf4t2ssBqKjOqPe9_6WXH9Kcz0lzMaiSwb6UzmW0Xj1RB4FUKLzKLjSpYsOn8of8cr93medH1PaZ6X8ODInQMFwHL5G_BRmRfprBYA65pteF-ROT6Txj_1ADTxlAZCiWP&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=XVbADgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70gPYwGxKo6Mpxb451PBxnkZecCASIOo8Mb_RBhDtko1jXWCgd-SwUhowFdI8kajk5BI7A7_OjLobY8sQB0wQVMF41Ub6lgz1Qnl-23W2kr7KWCquKktiNJ76djBYMUVkmtJFkM&source=gbs_api"
-        }
+        },
+        "isbn": "9782367934679"
       },
       "fetchedAt": "2026-04-23T13:55:57.935Z"
     },
@@ -1689,7 +1762,8 @@
           "medium": "https://books.google.com/books/content?id=pZTDGCIkdcEC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70QAulujocgceqFT4Y36s-Qn3NpoI8n33xm4--Eaet-Vs8ACWg3M7ixG3ImAD5bw69mLNUNgVjNVwOx1Z5HBTUhyctTxOtant4xYygBArkm9lN3Uhfi9oRDOdf89WaJ5mdxdj0V&source=gbs_api",
           "large": "https://books.google.com/books/content?id=pZTDGCIkdcEC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70Y2fYQh-whzNxOWEeepqd_JmPfPmVVtf9njUUiq52BCpUFeyqqtkXUaQPtk6VlshJMmoBy_hiDfNTeG5XhdPWffWICYRi9XxVbl2P28XaTw7hbkbYl7QlzR3uiT7nMDG7UbDgt&source=gbs_api",
           "extraLarge": "https://books.google.com/books/content?id=pZTDGCIkdcEC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE728Z92bjvVpmj4uyJ5EzwXBfsAZNOx9PGbIDN8GGc4AeKci5mgBMO76bVeozwWkL1I1A1vufxYmZXukqVLURaNzraEumXvQ9SMvrRuDRGxY2GTMS1NnVtyD5LVLKUVQqGUqGtD_&source=gbs_api"
-        }
+        },
+        "isbn": "9782221127551"
       },
       "fetchedAt": "2026-04-23T13:55:59.053Z"
     },
@@ -1710,7 +1784,8 @@
           "medium": "https://books.google.com/books/content?id=Q3WZbrFB8asC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71AKoq7xdjEJJoLKTKljvRVnqlFr34uKVVhw6j5BpdN1B2_J8JrnxFrlFW7TWRuPAWyfhpkpgyAsc6Q7qLxwDjvXiJTjFSmC4sNXD7WL9wWGrLeMKQ7LJJG70Ku53UnKBNRUB2r&source=gbs_api",
           "large": "https://books.google.com/books/content?id=Q3WZbrFB8asC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70A5InJCFCDG9XbuivIRQqjDx4b7cZ6AF3HNySOQCLonVeo42fi29OB3uBHEsfSbF0RkAhXW-t6r3rX6YMuV8GclWB8yuI2mPKgWibWhcWSpZuGrnAB5u_Be4Cfr0sYop8BzM_O&source=gbs_api",
           "extraLarge": "https://books.google.com/books/content?id=Q3WZbrFB8asC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71EOOTWO8LLIRT2ZyFTk2zwQuWnmsU47Tk3K9d-1IT6Hi6uRpzbMGYSyjuup7IyZx9WHojUG-KuMBdr-EuaSUMm4LeDkUMXdi7RM6HITVbNRPciolsIl9ChlSUyes1Hjc__jQLh&source=gbs_api"
-        }
+        },
+        "isbn": "9782221127544"
       },
       "fetchedAt": "2026-04-23T13:56:00.155Z"
     },
@@ -1731,7 +1806,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=2FqVEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE735yhISRQUJnOx_139Voqpm1i8wYddNnzawJ-0wSI5pejl3sOIeUMv5HW0OApwFZBLZzcNZcoGOae7w-0BFLdHeRCSK0sJhMoLr53JZgD6c0dzlFRCTwOiqF-6srAE5IkCrlxLO&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=2FqVEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE7065a7t5UYCNIKNe0paNyHJgK7vlGHH4JUx1EX2TKARJxng-nrYRqOLXP0WjPeRQYPQ9aCWzUW53l5TCOEhxux-huzBfYmSjb5FSwT5wfkFcHwaG4kY-6OhrTOgWAY-63NZjFKf&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=2FqVEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73J5LneDWoK6twyOOGbMIv7abQ8pW3A-iAqE4fMph9lO-f0kXrrn8cLwEjFBniaqVaFyRRxA8nZegIIV_HqNVPTv-VZ7m2eTSWoBPfRSrCUxdH_Z07hWBXtup2NUB9kHlVr358-&source=gbs_api"
-        }
+        },
+        "isbn": "9782253196617"
       },
       "fetchedAt": "2026-04-23T13:56:01.956Z"
     },
@@ -1745,7 +1821,8 @@
         "publisher": "Editions Baudelaire",
         "publishedDate": "2022-10-28",
         "pageCount": 388,
-        "imageLinks": {}
+        "imageLinks": {},
+        "isbn": "9791020353320"
       },
       "fetchedAt": "2026-04-23T13:45:46.655Z"
     },
@@ -1766,7 +1843,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=P5jWEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73YSPxJp7v9Wm6n_CCKalXnIx7Ec16QM6tUcf02Q0hI8X_B34gwf8BmPi_BMVQwwQ1eFciOx1W8_eZJ8QNTdULsfJgg4TTAKqYAC6rLI6OUW-oXz7lP2qokL-328A1fCIhZGD_A&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=P5jWEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71SgxxKb5rCJ5jpPBuJvcSsLhgI_pe2IPs206Iy25mbES9yQHJlYlwdEhzx65B85VaO1gJd8JimQFtgz0xZ4tOcVN16oztZkET8g1qrhLhggPwWImRKtWnbmo8ghRQoBJP6fIw4&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=P5jWEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE723YOZPcrmoG4Vdm6SaYM8QA0oZHZFcGmqaKduxq2KHHll44UqBjRygc-JNskB0R5C9iefs_ngMRMLcoPv5A0HJYCOc9TWxWt0nXQdGO6T9tKMQ39kNuupJIKn-rESwZ9eDtwt3&source=gbs_api"
-        }
+        },
+        "isbn": "9782207178591"
       },
       "fetchedAt": "2026-04-23T13:56:00.306Z"
     },
@@ -1787,7 +1865,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=pVm0EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE709t7TX75mHY-YS1PLq0HZVMBINSPNoFP7_ofIOZMj2s8quyJeeR1TAU8XaAHXCyuA9JOcWr31ttHWcu06xsrXeJc2FLT4VoGldZbdU6oUASFdCPbHD69UTX_qTOAciWLma-mTc&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=pVm0EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73jLbBVsrT627XoW8vBjNTnM5fGizm5ChDA5JqCxVeG-r1RNozTD9hCT7Ae_Z8mjwwDYa4cPHq13_t1z3o4GFoJUaJ_DWYHeqILTbhNRCnMqXEsLMgf57dLQgGmTU3yY01Ia_OK&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=pVm0EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE729y7yz1AaJIOjIyrp8q8tJeViZWgCL92OlnKazL34_-4NNzLudTZaMTRrCzST6_-9SWcpxM6KbW9tzDpN1900ieVVDZpkkh22R911MRiueCwOS0JWBp-PBo6WVu_0EV1inb5tM&source=gbs_api"
-        }
+        },
+        "isbn": "9782382570852"
       },
       "fetchedAt": "2026-04-23T13:45:47.564Z"
     },
@@ -1808,7 +1887,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=Lp8vDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70tPT-rJImuR5POFEEA690CesLygRAHY-o19-uFuy7U5UXBV7N7s3EDVOQdzSTTcRvw2na8DqjXG5fIr7VnLF-wAJxCv0G9RHpakkzEkkaoW4XajIKYf_GmYpT3oynBGq5RHnMz&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=Lp8vDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72KnOOzn8jMQeen1bB8i0XuRq2DHooOJJsJdRwaoVrn8JDs87_obzRMJBuaHCfHUuZk4jdpR8WSFiGfN66GcJ5su3sGXgKSQ-owB7yqmqfVnigb5kodsY96at6JhUAhYkg4qhnK&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=Lp8vDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72PMToLXakxrt3RQfFXjpsOcUUiNCTyvaRTWGHnjta0m1BVtsCKBEfZX8naon2vfkR9qmbWhrSyxxARcc1sN2Pz4qOatkjYVNZGHPC_fqBRfkuiuIxRR9-2jdja7WNtUVUM0QuC&source=gbs_api"
-        }
+        },
+        "isbn": "9782290144244"
       },
       "fetchedAt": "2026-04-23T13:56:01.324Z"
     },
@@ -1829,7 +1909,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=DRfMEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE7137aItqeJscsptO50omNsNrXu0YL5vnQGapIWsI54VRUrwMhSaTubeppRhn0z4MJn8I809QlsQoT3SjJKrgEU5mQSindRKHyj5UFyw9iqFp27C-bTzputQTMSCfTWakKjd0Odk&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=DRfMEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72gR_aXTAdA_gf2EnYUpd8fkn_bqEqxn2Ii3bhM7jA-56AR-W6PXS9TLSjpwfeIFlLc6Q6DJFrftbn1uVMli6qHspYE6H-VrmxqqRjNoINLMSOFF5qNpAZ9iE4VJ-lw0-QOpiPG&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=DRfMEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE713bx-2DT004TrOOGtt0xRCOR4WQ0MKTdUBgbllNfJNpqkPbK5katA5FPBWddx7lBRxOxKz-8NGM7nU5RDt5gvJj4bVvhperEMC5CZwDuM2tGWucAzo90xjLJCQIiGssrnsgWd7&source=gbs_api"
-        }
+        },
+        "isbn": "9782709672467"
       },
       "fetchedAt": "2026-04-23T13:56:03.035Z"
     },
@@ -1850,7 +1931,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=UbbnEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70LOlW7VWbe9gsAUkU3ZfX-GXMZ4-XCN7SCwE7QLecIT-lUatcke_0vyeXvVnDVJfGK_NCWjVd2UbsB5fUpuspvTBEAeaA7kab9Uy2ekdHbGTTlrpW5KQOQaVk9PsNnK2oWilbu&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=UbbnEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE718tiXiVeh0gDrbBEGqu298Jo1F2DEfGsvApV9H6ZBPrNbVL6WOAfmRL-qZm8X3xlRt5Z7AO1XuzqZYgLfowaTusA9I1xqq8Nmsh0-Og9K0F_2p0CrVrmBEXTFplffoY9Py-mDV&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=UbbnEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72Yhbe_nLOqRy_K9DosBsfTl2LagQqy1PxQBU6YQD2K72dqAy9ryctIvOY0-Ei0u4nJz1TbVT4L__Lz84-VC2bh0gi1nIuWw5-YXXzObSGQaJC6qdhpJnYg_VCss3CmXuHnmhFO&source=gbs_api"
-        }
+        },
+        "isbn": "9782818058671"
       },
       "fetchedAt": "2026-04-23T13:56:11.315Z"
     },
@@ -1871,7 +1953,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=5Qr3EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72juTVpiM8MVdgEmHjlp2Ax0hiGRbPwchM2yTdu4FAJyPgg3EnVinQrhClfbtVnV78EkYpxSuAIILE3a_bwk4aiqmLUOT5_0nBqdkrB4eEjaQfUfq0hESd_yjDyhtSPR5g1AORH&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=5Qr3EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72H-z9Y1HuPcQToGM26oOI77R4E6mOZnFU3aukW8ufBwaeu3EVTWe-s4QJG2aE1ldPeR1k6nIdXJhqzeRjxNhBx97obFi3DSk0nRea0V4AFjPWMlmnRFrr-gItAzEh52c79h_go&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=5Qr3EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71mbM_JGtR_n12ygdFVuRJt29f--Ms6AQ0_Px5iRS8J8LjTobzeORsZDuri03TItDXvGNq6ojYVrUoBXIcrRPmho9orTg8kTDAK5QA2DXBxsGU1C07oPlKH7a3A1zU24ggcwlET&source=gbs_api"
-        }
+        },
+        "isbn": "9782381631189"
       },
       "fetchedAt": "2026-04-23T13:57:40.225Z",
       "source": "google"
@@ -1893,7 +1976,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=SJHxEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72qiZyW-yTkn9qhMWfxMbat-Dhwb6TRCFe7veqWKCtVJqS3YXFKck76XMtFCpKT_uYzmVsTQUor6lRmf63MUrqS59bAojiijhmKxFXLmPXmcLX8DC4rRZT1diSsKMJ5SBKTTJ_n&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=SJHxEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71rrtTtXO_Zp1i8z-FXTW4vvB2lBH0zArkjANO79ubn7TCePkAP95sDbXkQpYq_20CTYsHgQNRTlDtxVd1n05KTYdeGGALbbrHxyM8G9XH0xaWaDgyzwtQmXJ9nA6VYhdO1IcSt&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=SJHxEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73Ctp9SIhADuKWelNTzrW6uCiX2Yyrwc-H4nHg5wC_pP4g6jqW7B62ulQDBxllaea3ivF8USEFo4VzrSSfdNsCN_zU936NXWfaKmiEeNUUMDC3Q1iJq95vTtxe7FfpIwv8d4F49&source=gbs_api"
-        }
+        },
+        "isbn": "9782021548556"
       },
       "fetchedAt": "2026-04-23T13:56:03.431Z"
     },
@@ -1914,7 +1998,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=WPu2DwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE720fupqxdie_yTmPc9K-dx_uSim3SmXMyTI_p4AJrKMciJvXtvaKJj_eZJaVVPwRQh7fq6VCj_qSC1cqwql-RSpFxvqXx2TXEkW3mNXUilR0Gf6Uvnvukw7YI95SM39lqn6cprn&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=WPu2DwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72ghdgA-5JIuntiT4kTXLxTbRAKnMz-N0kp69SfvmQ6Jl_TXIdhAG1xGtvvU8y5v4llYPspo3ExUDth8_KHC3R0eXkj3W47UabyVHmRkBfV8_tdkd_5F4WXo3YIzpLkNk4PC90f&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=WPu2DwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE730qSvKkJe7w27Mh5kqXoZD8CLzzVUKS878WbYHoQCEPMy4cFWhKoOney7WJE6wja5Aq_zo5byMp3DQPpvtNJkdAk24ga5XdyC8d8HK7PX_x7_Dk-WxoT7hxHiGVvSd3TVNs2qP&source=gbs_api"
-        }
+        },
+        "isbn": "9780356514772"
       },
       "fetchedAt": "2026-04-23T13:56:03.800Z"
     },
@@ -1935,7 +2020,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=AYUCEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73S3TYLbVYXYmK03vXU-jCQRj1RYr6EcS4eTYPJz-E4FoljryBHdOBd9gIi7u1ddGwobek-hGvcYAzG3DwGg286IYMUMc-bTgOPmbNNu8tvS_uaSqo7vRhCV_ikDcnxc-X22rs7&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=AYUCEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE718caEGhMhnI8KVDtqYV2vmNwmMPigWK61MPsNZF9EhpXnsjODp7-bvv4GWxc3sFs8tu6Zi0ZEjgueq09SqV-dlJhqZu3JE80aUtK-dX2yPJMeBTcszl_84-m9oUzmy_yOrdulu&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=AYUCEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71Qkzd87rEv_-eB6MCMgJlrDH_tkKaB7BSIsL9mugSdyCrMyV_9JfFxZF9rZFhjJbAnBuRPbBuC1uzqavp9emYXjgoYWyPbyuVj4gQ6zFx50KLgurXHin1Ust7qtBuCc0dWAPqt&source=gbs_api"
-        }
+        },
+        "isbn": "9782850612312"
       },
       "fetchedAt": "2026-04-23T13:56:04.922Z"
     },
@@ -1956,7 +2042,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=CMuZDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE703IYLdXagWjgKMCdhz3pqsMYppXJ50r4wpEj41S_CKY04qeILLTegP2g6kLKB8iyKE2Z-dKjMP4pFXWCS5XiEzz-2iq4TQWVXOMG7jFfG_IIykYGo2te5HMDd89yhRdRSDb9R1&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=CMuZDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72GNy2NQG3SWogsCwD7_VuYeSMPtEkvWSoiTd3YYgtJTfve0sl-w00HtKd8hs1n4LGOnavTnyRln6-uN9fNWSsO3s_2xK3tQ4Z8mP_riqZaQk8-367KzFfJeQQQcl6zjvxup7zE&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=CMuZDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73K1pmLEc4G2NjwuvmVfmdBy4wSLtCcIIIwCX2yDMyuwL7YVgFULFWrheGelw35X4XqpWun0DroZi4unmCaGg09GkbG1dEgrJFLFO6A_gcGsp2X5NeIpc8sPfUT-mwvkScAq-y5&source=gbs_api"
-        }
+        },
+        "isbn": "9782823871562"
       },
       "fetchedAt": "2026-04-23T13:56:09.967Z"
     },
@@ -1977,7 +2064,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=G7utDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72scMYzKT02eG5h4oRkrkx7Mlg7aPrqaxbWWKV2sEMiZ4jCpK1AetQ2lHY0bzE5sRPyFjnTWnnuAsJDlnmDrRAhDSaSGwsR4z4fqNMn3m-qJ1riot-FX6xY51JjXPSsasBAafQz&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=G7utDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73TH0OjxGdX00wzJKVB37EFUjN4vUL14CTBro82d2PGDTlOsoGgp9uUw9oi7BB-y_roxYL8kVGYe0HpAkPzQwxeNh6nmj-I5XSksC9m3H5EO95Et1GGTpgGiLvF7UxDlBDccISC&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=G7utDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73Y_xRHPV0303GjavbUyzYHnHS9X23YfgetMat3v0VX_5pqort5SaAr9FsmVRoelCORXF0bSoppPUUrsMw4KR3IRCwXeq5woRN2Cyo0ojdWY5gw57qnmVIITbacnklM28Cgh7v4&source=gbs_api"
-        }
+        },
+        "isbn": "9782072853319"
       },
       "fetchedAt": "2026-04-23T13:57:40.867Z",
       "source": "google"
@@ -1999,7 +2087,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=A1duDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72LNW2PzprtqbZIN8Mq9_7kacyGuBqAlN5v4EcD7Z7icS9S3ZqfCj9Oy7GpUk6obf35b8wN7uT_VtvWQgywpnF0fLjGD-kF0lexRzJrt8_BF9E-Jazt8Ifkc9Bow-pIrgh-ENQ8&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=A1duDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70twTXoGNeF5w2u4qGWdNE4g0sCkGbB9S7c2gJsxMRHiv-VKAnUUsYV9C6vz1fHJoxTZrBGn7-Yd8M-jQswcjnMnR_3xfZAMWQJNS71jYyWQszfCN2rQkO1z-CV0QfAWHWTLzm-&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=A1duDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70eLKsq7EZOm6NuEeisAZRH82gZEQXxIAqtyjMaq_EFkbyk2O9Ua3qR75FuzcS8iyxHExcHt77cMcBwfUJGamqxaatCsMgTZDdjuh6ESewdhlbuSG8iZfS-1sDX7ejI1lyRPlFB&source=gbs_api"
-        }
+        },
+        "isbn": "9782226431271"
       },
       "fetchedAt": "2026-04-23T13:56:12.405Z"
     },
@@ -2020,7 +2109,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=GcGrEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72baxGXXjOfTrv1lv1yR2m8BNjfOnnqKSiqzmbdkX6q_iQs-FFypnSxQjwunFP9cWRU1NPjgDvIqke3EHVraygBIUum4uXDglWlLjTeVAwz-mMxMKGr81OAtm2FJYIuJV6bcBF_&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=GcGrEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72qw2n1BIyb1M-ecKgxpyPDQc38NLNz6Sy5MQJqiPA_gpLclgJ0IRh0oMj405rAB4AsPf3eJZ7asJW1nM5--hkyyzfVIB3P9JR3PGZ3OKsDz5GQXUzr0sx8sSqgpD84Yrxq3BQz&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=GcGrEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE722wSsSxcn0NGhlR-H-p7vP7MRHuICOB9lUlSxn7YwRdVWrcUwJ0XwksDtbcR7vqXGjAGfo8KxClB82kM2QkVCMB0rNhvNUOotrj3nnxtfOOS93z8OVQ6m0MZaQeNB_E9pG8qRd&source=gbs_api"
-        }
+        },
+        "isbn": "9782381630762"
       },
       "fetchedAt": "2026-04-23T13:56:12.222Z"
     },
@@ -2043,7 +2133,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=EXyGAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73tDPQxsYnSTz-09ny5aYMwKh-jUjuJZG40OHgyChmfIduxmzRuTf8mX9Kalm76v-sCNPih_3caCCj2XwidxPrld18F3rAPY6w4NZIdNXF_D0ch-rYGRNRq43S4W1J2fiMbK6Cl&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=EXyGAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70mijoAHfFJeMPOiu9gLfzP6jNl5CN0frQLhU95kdDCNUxH_Wsc4KTyEXuS942YSrwHk92TKtWXCLN4vE2nmfiC6F1UhHXEkcMF71OHi0LISu4UqQAGuVn4B118V92MF-OyjAPD&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=EXyGAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73FFZnldqzf3eMqhbuKd_145jB_wDSrx9imbEsf1ThJwzVG3vikyd-J2UIhCsRVhM-QsZoUcT51XoOMxru-8MxJDJU87SSmrmQv2dfeJHhAb-OMt2D1q-j4JO58zPj6oYKZczi6&source=gbs_api"
-        }
+        },
+        "isbn": "9782820500632"
       },
       "fetchedAt": "2026-04-23T13:56:14.836Z"
     },
@@ -2064,7 +2155,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=XfQyEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73jMHuDnrlQuCSbU1JQsy-ygvVpbyrCKQdkzDQEErBjWH78WOzSt9zdJ0MQCH-eUxLrg38NGbBsXq1niTJbIJQABgWU2RjypnorhYj8jGlQmjTwUzoAg1wbK5RUfacxFbLrmeoD&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=XfQyEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72v_c0lKHCnCgWwCDmlcpsXBxC00vsMlc2cT7AKSl8kfyRm133qW1gKMP6vIDmZTzFNRl_qzTH1T8L2R6f3er6nDlIR_NthM4KxhY1smtALOEo_zrTIxE5_3aKNBOwUOC9x7XS4&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=XfQyEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71IldNtCqRgXToiBBbBYDjPdyesptwDxb64NcynRS9hitHKE2SccFTnPaSS5MnWfx6cidfsFu7cHJ8e1iyC1kwimIuXbR3ao9USCo1PLTivLsG8p6HD5qt6tqLxH1yF5ZGdTQZP&source=gbs_api"
-        }
+        },
+        "isbn": "9782226500625"
       },
       "fetchedAt": "2026-04-23T13:56:12.820Z"
     },
@@ -2078,7 +2170,8 @@
         "publisher": "Au Diable Vauvert",
         "publishedDate": "2025-04-24",
         "pageCount": 175,
-        "imageLinks": {}
+        "imageLinks": {},
+        "isbn": "9791030707250"
       },
       "fetchedAt": "2026-04-23T13:56:17.823Z"
     },
@@ -2099,7 +2192,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=QPEhEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE727ypYguHStQqo-t4USL0l_W8bZs--VSuvNPa_hvcYlNUoRFHHEQXWgsFZcncp-OYfc24ovQPJI0Ds33dLY_bva0B3CFCguc8_z20kSZoB6CMIVDDNhbmuu7Cn9s9XIMsO0MCNS&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=QPEhEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71Kn0q7J6fwpCEjF8tgFvnn-n7F3qdlB4r5t2lFyNHwIiczhWI7aBzGvqQnjXDjZ4Q9k9CommzVTZT7h5RnBRIzlxK0LkSMNe1EQGW_FAWyC-ggsVVEj8IYbdV4WSKO-qXOMstV&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=QPEhEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70ELg-0656tAFm6SK7WIxvMawhitKE3zE32RwF9zZGU8RTmwW6H2mjG_wMo7yr0Sa-9i4Tpc45tbwCIXwsLYZIZ-EYM_X94gkvXed--pJM-E4fKJ-2g8SSaVmZAYYTWZJTCPwK4&source=gbs_api"
-        }
+        },
+        "isbn": "9782221275146"
       },
       "fetchedAt": "2026-04-23T13:56:15.267Z"
     },
@@ -2113,7 +2207,8 @@
         "publisher": "Les éditions L'Alchimiste",
         "publishedDate": "2025-02-25",
         "pageCount": 200,
-        "imageLinks": {}
+        "imageLinks": {},
+        "isbn": "9782379663321"
       },
       "fetchedAt": "2026-04-23T13:56:16.431Z"
     },
@@ -2134,7 +2229,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=r6mJEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70jIH46IqK3qEZ7Kknp1Q4o0fYH6zDsNU4vny9nexuYpbanBhFcYN4qXIufNY_LZxJjnri2H4nIHBDEIYvOq3b2jYCavSbBacadXtjLMDeL7kBeWxGF8fwpxfeqrKkzgrFQCW-t&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=r6mJEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73NNHVYM-Y6lfeOotu8XT88hs4a3rOjpmiA3kjj0rZNcV-XII2LFfCHez_Sfn3UraoAHjg4n38SBELJg4iqd1SUoYQHzQab3VR7r1v7LgA7ZrQFE4fasemHK7sEzFTe6F-7zn-_&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=r6mJEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE720Xl-sSsr6_ZCu1o-ZFIIgZbjRu4leA7dbqVKkHSQtk1vj3VF-riSAGETpgqyiIUNrTqJGbEem7gS520Wh33L-jJHnWj0e38vLZZGCPEJaP46F4bnFZa2cgBtyAc-3xtDIxO7f&source=gbs_api"
-        }
+        },
+        "isbn": "9791030705232"
       },
       "fetchedAt": "2026-04-23T13:46:44.192Z"
     },
@@ -2155,7 +2251,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=3DNNDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70mgq5dn8EeHD4tH9BmB5kOqFUmQ1XVR0pIEzlqxxvyXAq8yhvE6oSGzvAW4AYeOC58F058EuF6Elcm_HdtU9IsC_tbt8bJrRjuriKxFao7iB1Qwikf-xla3kPPL9OCP6lrhwvb&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=3DNNDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72ZyjESw6FX-GJUja5wfaOyn4kZQ1HOGUfqFC3BvWA2wP62MO8BgTPnjhX6ShnSedhKbSkVldUD7QZGwLv9LD5zKZJtObzrFd62uyWVrPwED28YnYjN1Krn5rS5YV3r4IgZYncx&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=3DNNDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71sxjdSqnB6s5VrbqVsZ_I_sE7opAUsHNuKUAsrQyZa0R_6bMtmwgfK1-cwsmMU2DXDsQ0GeRelaHyt6KSYEpKLLfZxTrkXRDPel6wmMBGLchIge1W0oRldkIr1Er_v49ex3e9_&source=gbs_api"
-        }
+        },
+        "isbn": "9782226429544"
       },
       "fetchedAt": "2026-04-23T13:56:17.572Z"
     },
@@ -2176,7 +2273,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=e583EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70M5qcX5-rP6fzlmxRkTV-uZfudeG2a2PMIT1jpWdLRM7GS0QTT-UMQXXJiVy4r9NQ45ZGq6Xt-pGBGG7ncZ0CeS2J5H5LZjHCp2lDO87jd1vknrt5aJV9VA0QAMtAnbPIn780A&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=e583EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70umpptCmZZfs-0DeOVTtDapIZmCJq-NmaEnREf2Xjv79jbxGAYOHskoOUo-kmYQvD5bh1uz7SaI8C7q5uijIaX9XoYjK_CVgmkyhGK4Q7bPftHwZzhh-iwQq3Fx8wLwybH3nmr&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=e583EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73FzkudOSp2hDbZebt3B6QitY7v9dSMGuQOcm61WWDsx1DQM8AguALnUyXvz9zZE0iyD5EgvNU5l8YvGk6cqSTm0BkwGDX0O3a-YLv788s0PEgQHl3o6arC04rEK_9pF97lLAyg&source=gbs_api"
-        }
+        },
+        "isbn": "9782367935652"
       },
       "fetchedAt": "2026-04-23T13:56:27.555Z"
     },
@@ -2197,7 +2295,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=APi7DwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71K7DBLP-hTcEcKrncDr-VY22k1CLy9fSDPFu0zePh9fUetu5L7DLxovcc6gFLR2RuaQj8Z_mzTZ4DolsXucZdFILlnhppG9flylxHv-sKUrs3guOYM_PU9C28NxfXZR-hAVUiL&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=APi7DwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72L3ZNDl57bwvnM3gbrnqqWfXlRI1BeDBrP3tfZt2I1yzv1YsI4Qb5sOt044uLOME9JdKI-bS3qZZbOs-vqJ9z-MzYfvip4ababAOT8ot7pjZe13QHxP5aJ1eaPf7fveNqz_aHS&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=APi7DwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71a9mGzN2_ZhSPGZuNpESP5cVMmT9lXxt1ycDH5cuvmq3AdV5QFyYfdpJGJuoSHK1T4_lZ1jIrfILoR2W6G2DwCdlWvDfCBG_trAT7NX3L41PwtgM8LCF_euCC1x8ROB9wK0M6i&source=gbs_api"
-        }
+        },
+        "isbn": "9782354088118"
       },
       "fetchedAt": "2026-04-23T13:46:47.362Z"
     },
@@ -2218,7 +2317,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=9YPgDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71MVcd0XjTTfaytY1KaIOx1BGYU65yWKVR62pEn5FsjnpIFTzEAomF-96EvqTm2hkaRo6YCVfOTSHDmQI-psUVe-qONer2iwj4tzJaWHNQ3CANGgXbZZKFe72wnFsYsMwS_GMmw&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=9YPgDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71ltE0YLAFU1SZH7r9ojlciKM4FsCRb1vRc0wcxob-ce2jqZFkDYlwSt8yCSM80wjqyOutCZ0QJB23ioLOD1xJwdKdN-S-U6sIV1PzLDl_Wjw_jyrKuoTci4K78bhxo1J0cu_xV&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=9YPgDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE701mrHQQgwah6loJcVs8dK9d3_oSGssBty1qJJNI9WHbym8PPVLrWFr-KCSwl2QkXz-jlwowaBfAUXyIar4RLJsArSj5veC3BFPD_CdmQwMWypg9MPVR-5k6K6xxw7ykTtfhKh4&source=gbs_api"
-        }
+        },
+        "isbn": "9782226453396"
       },
       "fetchedAt": "2026-04-23T13:46:48.275Z"
     },
@@ -2235,7 +2335,8 @@
         "imageLinks": {
           "smallThumbnail": "https://books.google.com/books/content?id=IadFzwEACAAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE72p7-loU9hpl5X8mRMt4j8-W6shO_mdbxFBt1xsoN1DXhQiG-8t25-4jPvsx-PVyN33_4xsHLwfLICicQluYuRVY9IeBUcMzYFuZoHI3W3-jCJuE4C-wLNPpTJHt8ulwwW32Qto&source=gbs_api",
           "thumbnail": "https://books.google.com/books/content?id=IadFzwEACAAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE70_gUlKR2kTpmSBDyF6w9aZxVN-d2Ck2fBGqPvT2qX40skl7w-P4lp4-6pSWerWAKPyvUtrXLWGJWRI2ed000gaM3FN6BKfBbQ5ugQouCNV7Ca8489AxhDTE3Fj6Ulnhw2_C2Sw&source=gbs_api"
-        }
+        },
+        "isbn": "9782958355500"
       },
       "fetchedAt": "2026-04-23T13:46:49.299Z"
     },
@@ -2256,7 +2357,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=7fKIAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE725w8-m5xNTXDnfB0lPJv5TOayJYPoX5KP0FqpiAdYjsdUlvE7NCHZ8cWWzZfDHWhU4Lja74rQYKw_9zBjQaEHgziyJx0WgCmgXauValzq7kRFpAV4AzTfRRNWkKwlqD5Kw1qCB&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=7fKIAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73-XJcAHa-kd47hRa0q8iEvpNkHZesxmwAHoE1-qll2Nfnp4cM7U3nS12q2t-HYWv_DvGrpVOhjE5_V9IcQpL0p2omsvS2aDKukPg_OtODKRtiL7PApCaXCPqOfDjznCH5pimKO&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=7fKIAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73VBs354iL8ojIES5n13qYdmm8ZPo9tOu13L4hjSVcLkUWgjKTc6euceUlyRsPKk1AS1uDsXNuIyD8lNO0opZsRJwg0x9-gz4m8jRWjN6ti9TzcZvvq8PU9vUYXwZ0LiKrug_gz&source=gbs_api"
-        }
+        },
+        "isbn": "9782367931272"
       },
       "fetchedAt": "2026-04-23T13:56:18.969Z"
     },
@@ -2270,7 +2372,8 @@
         "publisher": "Editions Critic",
         "publishedDate": "2025-05-21",
         "pageCount": 312,
-        "imageLinks": {}
+        "imageLinks": {},
+        "isbn": "9782375793312"
       },
       "fetchedAt": "2026-04-23T13:56:19.375Z"
     },
@@ -2287,7 +2390,8 @@
         "imageLinks": {
           "smallThumbnail": "https://books.google.com/books/content?id=CnRp0QEACAAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE701KqmyeBLgMSs6zRc3Lilv_i9sVq1_vqcY_S_j1XWoP54Y_K7ycfglMinYDxY1A0bWWb8XDGrIVztRm__5VQ-hKvQc6Joapvz5fidYQy75bWUsQ1rUfpgdEKsOfrzvaGqEm1EF&source=gbs_api",
           "thumbnail": "https://books.google.com/books/content?id=CnRp0QEACAAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE70yqQ12yDH26rdmCI6btfz6B3bNL3VQcAEWxBoz_QPJtUb6wPRTho4Qb0xFqFbsGQ-8fugKaiFbCQCWm79_Q9JZsXhb8dCv9OuX0DrtFEa47EP9OVdtQ0CLtQAxPt9iOJ4zBEYD&source=gbs_api"
-        }
+        },
+        "isbn": "9791097756116"
       },
       "fetchedAt": "2026-04-23T13:56:19.789Z"
     },
@@ -2308,7 +2412,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=d1GWBwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70_OrNxCn7atXjZJ4pmAj_Owhdt9DSkPATZoLZ9-DmIhb0SVm2tOnDxFyEljnJR8qwXgf11aAOUBfSwjCWlh42xhciXlPX-lLHy5FuwPlYpNMhVUAGtfzv-EaiP2Zop7-bkhnIU&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=d1GWBwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70mGoVkeEkhh7mkLKjz6ZreK4wKY4B-m49ktMmZleBIU0mMLgY7Z-aO6sGE7U-SfqvuGnzE91KYOvYqvoHgs4hukN5YdkhOthsLGQVyvXoCZOvums-IzwE5L-Stu-avUhw9Z51P&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=d1GWBwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73DPwkVcPmQDh_-zsGgp1A3bmBdBrBl4T_H1FGUYo0KM1kfE4TTSh265-s2ZrxEYNPvLiE15LB3gmY5pXjAbikxaurlee_W9ZcJacCEQ31uMr_g811LdamMT6li8kvO_mHPyJ8u&source=gbs_api"
-        }
+        },
+        "isbn": "9782290112168"
       },
       "fetchedAt": "2026-04-23T13:56:24.787Z"
     },
@@ -2329,7 +2434,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=C-DFDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71eL3dWW0M9BMxCatkmHvAZk2f1lK9gDgZ6HAsmK1mQV0c_n3wUUOUn6AhsHSY3CNmxXkyDJ1PTj7N-jCp9ezOl_Qc1BopahCg4x7Wez2awkwY2AGjxA3ReEiHF4OsjHHeHrpUH&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=C-DFDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73pLEFTcH1rXd3W5R8YyA_QrY6QmYIbfLf__zj3vYhcm1UuDl_XxyG8QcjZn19w0hC9AgGQxqu0vORNjlWoDm2yEc2iS80oi9VoPcmQ58akuXgYen5Y8kukxSDWi4QZA4Qe7IxN&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=C-DFDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72ogPBTvViJkxLv0aRPmp47RzcaMUl-8_JRDHDxe8xz6u1GngR4fkaID8O5AzO4B-KOYAQv-p3SmBYqVfyyi1WOmAsCFK3_o6vx0N5zcKrJuD5MMVydy9zJnxpTATmd_xEMBDR7&source=gbs_api"
-        }
+        },
+        "isbn": "9782330130541"
       },
       "fetchedAt": "2026-04-23T13:56:22.425Z"
     },
@@ -2351,7 +2457,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=Gz_rDAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71d6pcuvwFWCVt-MpX9no3t5eJElptoPn2LAg-3wFxBBlCq5K2Phaw2eJczly3XiDUUCFzrqtwsLMHrqvGX1rU4fDLyabiM8wN8CfvwKP2C-uqfrA0SezJ_uQttNycS1FigMRN7&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=Gz_rDAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70yRZmCgE_3UX-fsVJhCwpx-wdRZ99WsD2WApTgf0U1kVDjx5_7hGpEGiZTMtqEHAsghmf-1WIst68te6_ZElQvY1aW7FLCZvjY499PEPDdhEHCuOvoGuk4jNWYzdUhlCif2wHe&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=Gz_rDAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71341H4IZjp05GdB3B8KbZGwO8-GsHB7Rtl1WljTi-kL05RMVJ6XxWJv8T4NsbpLvg7u-pNMt1KSgNdN1FWEvM8ySwWN9VL6umixe1VyX2mKaAJcaJGdGQOeKbqGun-1JLfe9K3&source=gbs_api"
-        }
+        },
+        "isbn": "9782203132290"
       },
       "fetchedAt": "2026-04-23T13:56:23.571Z"
     },
@@ -2372,7 +2479,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=eU9EEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71U_DdK8Hh2j04cjYrFhrAjW10IcLPDk6sFu3xygO1UGDmmNTuQZWOWX-_U-OsK1pmmu8QkV-Xdc4C44mM2GtlPid0axvHcZCW9G6bGoKiSfvK_AHMMiQwY3EGiBMA82BLIAQkm&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=eU9EEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72rqUONbg3cGOvbaDj5DT1w2N1q9Si6hASl4VcWP4QvsEomMXdG2BOqHwUOLl15lvqVMgaX0nkgc7FBsEnOY_1qk8yF3bpNhedHGVJ2hJXXIokiYbHE9jQMvh5Q5YaApbQXAc4X&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=eU9EEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE735Wynp-UeILVf3A7ixIh0HuHg2Vd-6OdfcqJX_xjZkjH6Of8PaGcrtdp5ZY2c9jxqFRDgw2biOaNNeKrSF9GTVBASeP80ckCcoIEuU34O-WCnC0IxS6n4yVgQsyx80IHRuzFee&source=gbs_api"
-        }
+        },
+        "isbn": "9782221258552"
       },
       "fetchedAt": "2026-04-23T13:56:23.977Z"
     },
@@ -2393,7 +2501,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=RpQWDgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70kXhHJ-n-JUGi4LeLTwh4m05pzVbSFAGkFWLlBGccUznPFhhiHap1-n25jo0sb4fjIbXR5A9z-KQv5KbzCTmkuDv5n7hp7Iw2XdvO4IMga6-wr9tl-nYFYXxdxEvVzvIv4dCcP&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=RpQWDgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73kD2hJVeT-f2AEgf0tLiWEBHbvpzny_gG65RLq99Pz7-YNk_3PDNsouHNMMn5axNLK2Vvbds8Nv00L2fp4Kp_qy3yBptDcKsHXgcOq8o6D_rByobX8KkZqMMcwKZkUEAcqdUQO&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=RpQWDgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE711WYfrxL80MrrKudQtPQOyaBB6OVW_c42GfV6Fbu9uhdTiOJ1GvUPBon0KChsHfW9GWozY_OWhXjm38uKVc4TMct-TCcwpFQo67j74uy_8z_CpZg4Wp2U4zGeKu04c1eX-kHHQ&source=gbs_api"
-        }
+        },
+        "isbn": "9782253193449"
       },
       "fetchedAt": "2026-04-23T13:56:24.404Z"
     },
@@ -2414,7 +2523,8 @@
           "medium": "https://books.google.com/books/content?id=RBnEjceV-7YC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71DlKLH6bKfTgbLW6DfnpRdfIRbp1yQNhfrZgHUFcZQvPz9ZXwO1MtKHs_FWrAOGJIpDtZqcgyhD887ZozYf_eRu5_zDge73fha9fCmrkQzQviFFA61PRekRlHQasCQkoImNF_b&source=gbs_api",
           "large": "https://books.google.com/books/content?id=RBnEjceV-7YC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71KBs8d2elCrjYY6EQJ4bQyISpb9HLNBmExOGtggvI8BnETndilDTbKu1A8Wbn2I31O5xsrKgLFJQF6IDkNmCHdWT4rDCYosapo3slnpW2mNNb6ETNVCqfqD-CnJsijvIkJ5O_o&source=gbs_api",
           "extraLarge": "https://books.google.com/books/content?id=RBnEjceV-7YC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE735CsCwH97CJ1if2ycIyHIYiDmUWqu6qd-6NeuV14hOeP_EZKVp0ksDb30Dc77A9RxQPz4I8q0mGBFKpksDkTNkM9Fq3tgOZmFnGRKxjlyJRV93S1Hd6iRrrWDrBCy-vRRku9Ju&source=gbs_api"
-        }
+        },
+        "isbn": "9782846264686"
       },
       "fetchedAt": "2026-04-23T13:56:25.547Z"
     },
@@ -2431,7 +2541,8 @@
         "imageLinks": {
           "smallThumbnail": "https://books.google.com/books/content?id=wWYRB5a7pZ4C&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE736_4bkbSwVgvzFNeYsjGWuIlpmoMk0XAVOeTHMzhUaqFX0gqaMsO5rI24nJ3ARqI44o82hGzudrS7zgfB1lC0IzdYXLHo8Po5BMVCozmCmBOd7m1y0FVBQex_dOgaNaiH5m1zM&source=gbs_api",
           "thumbnail": "https://books.google.com/books/content?id=wWYRB5a7pZ4C&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE73mMIodLrkZiiyYQv8NZowMCbcnHOMjaULU5WZsn9VHnoO6X5g4LvK-GzMEI0vxZcKer777WWC40Q8EDLkmEw84g-V1W0r7kfmq1oZ7zLKJ9C2UFFkfZBBaGKYqEOKrI9lffVaV&source=gbs_api"
-        }
+        },
+        "isbn": "9780061006623"
       },
       "fetchedAt": "2026-04-23T13:56:25.152Z"
     },
@@ -2452,7 +2563,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=UykzCgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70sOWTVUj_ej9tqqcklH8ywqRNZTB5P37_tZc9oi17rQMFPnf5sKcs1jS9Cos1WcOZmN7DaxCDvx1-xmDuleMr0M9p1dwvseXT4vkP4-NpkyDvIKkCdiwX2jDCm_fyjuoQJeoSM&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=UykzCgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73ir7_nIUokI7LV_AO5MuPH4A6ep3kQ1xRcaKStyt0yn2SSZi_R1Q6M1XfQ1fodA1XK-lWHqDhqlEb8U5btXM7xlmVL90DV1sQJ6GG59ANsuEKbH32zWEHvmfNDie3lt8GgqCnw&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=UykzCgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71r68vRC7Gy82bvRcnZ1e2w1IKlNt4f7q1zBJyOz-jDPfCGpIFuYVMBwzArgiF0y-DPKEhOl__lR3DpPsomA6Fi4xtOwPKWIzD8p4tnjZl-5qqUzrVGQ1EQvbbdD66kj756WNTu&source=gbs_api"
-        }
+        },
+        "isbn": "9782211222402"
       },
       "fetchedAt": "2026-04-23T13:56:26.255Z"
     },
@@ -2473,7 +2585,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=L2iyEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70K9YGqtFe4SYfTSt5s6O16fT3gkA2egMXg1_RNbztrlub6CKC3RKbFHiI9lbBCsIevYVG-84XY8c1f0XlAUKj-wCOiNTH3p8b4gqEbIRMmACvcFAGOjNiHER1zFS5cu5BuSret&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=L2iyEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71avAO2FV54zdj9SVpER4MLe1pDEevfPOh79-_-JiownpuQ6rO4rsQVFKSdAR9qRRpcJlNPi22sa2hI6GnzB__bIsWKFWwJ5BCE2JvGmhFKbFYSRD8mmDrAfEYG3fcNVjhaEWjK&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=L2iyEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71c5t7uW1EhlP2I3qeqYsY7g9Jl4FwmusMJSIzFKUqqkOa6_Rl-cG7HTb6-tzrp_7CK6dGXXDK5hEDC8jZmS-9d8WfroLUtmofrAXrt9Kh8V-lQrjQOkkJ93SvbzQlZnkPeT9qb&source=gbs_api"
-        }
+        },
+        "isbn": "9782207115473"
       },
       "fetchedAt": "2026-04-23T13:56:26.669Z"
     },
@@ -2487,7 +2600,8 @@
         "publisher": "Le Passager Clandestin",
         "publishedDate": "2026-01-09",
         "pageCount": 143,
-        "imageLinks": {}
+        "imageLinks": {},
+        "isbn": "9782369357674"
       },
       "fetchedAt": "2026-04-23T13:56:26.897Z"
     },
@@ -2508,7 +2622,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=p6IqDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71pMTnP0KYkeqC4ayVYIU1XvBujwv5c_mNcELUJpWgY-QPTVhdykZYoJPwLzfAcIbRRN__x7TdI9ob60g-aktqW-sSc39IEaIPyUuIvlB-3EesQKSXUEleVf4H2dvYfIO5ORhUQ&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=p6IqDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70KS01zz58YarXITVZmFDOOgbAGgoy_2gNk1i4dFXAXHk3_6ZV7EWitXO9N-V1YMaXMokdiTI9XhmLgpO6ZGO13Zt1Pe5wsssCFQBfshPi0TU48yx8Iky9PKIaMVPKHuXdAEZLL&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=p6IqDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70hlgB4nAUzVV6-SsPKqU-1NoovBK1tLrnX2hvXMSMAGO2AGLtkPNhs85SU03s2u5yjszsdxGYM3mU51G7tzh9tdFQxqHN2dP3-0rSAKyvHi31iyjBsAebHfHNiWUkav2ZLVqu0&source=gbs_api"
-        }
+        },
+        "isbn": "9782290157268"
       },
       "fetchedAt": "2026-04-23T13:56:31.687Z"
     },
@@ -2529,7 +2644,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=gTLYEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72xXBjfYFNft0f-scovpLYYpqtxxMSMg1SPfd-8sL7k95g6_EWEM_qrLjrLo1x6A0WXu98-tkvs8m7jxGGiwfkr6q9Ciwx904fNp8GJHiOyUMY9JmY0ykCnDSBkUeqpBDZpwesC&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=gTLYEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70Le1N9Vx0tduKpW1bEbx77yHieALQ55IBhYXORH4QkCyB03woEW-erbsD9_H-JFej789AnTDnIomFXNRc-QEBtOBfRGrfbXyTL_CBEKbd4A4DQLvqIxgF0si9Lg9gcRPWDV9af&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=gTLYEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73AZ5TIJlINaDXAHYeq2sz0PDYf3Rp_m-VplaPY38ONNYNr_D8O8Uv67TEQ9MTNw4P5M9gF0GoJFrXl1ZT5W1spB-NF8HSYXkqtma9OhC9EOfNYsN955GaBo86X-6R1whQ_Exvi&source=gbs_api"
-        }
+        },
+        "isbn": "9782246831365"
       },
       "fetchedAt": "2026-04-23T13:57:42.559Z",
       "source": "google"
@@ -2551,7 +2667,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=ddx2EQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72Hk47TQ0VgFvE1et1EuVlW4UzohQW4qNuBYRWOK5ZShzNSNO4E_QgEyfURjBRjl5AipVlJlqbl6DlKPa1T8stq9RybLzwjhOq8m6D6nDM6LQZQpRmNFeeAKx5FQ_zjFZqnyF3M&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=ddx2EQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70G-zzA0A-yaYBeQCHoPquIHJsYH8eHKG24zUCuYmFILJ4o-aUCNWaA-lAmX43FE3ZNi5HZAopTyZ8F5_vOFe4zPkxGsQYaesdewiHOV6uSYB1J51tOgZMDBlOvRs5ALA0fFOUP&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=ddx2EQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72cy4G11SfrRMdrzK2TzNV50g3aCkOeXsV6gxxHO-g3rpexMPmErmrLSd0B2kQoS4iycXHn1Ei83jtQs3wQaStpHkBnjAOnHzXXCNWduF3hnLpKvEHGON_uhiGskeq22zLXeFRK&source=gbs_api"
-        }
+        },
+        "isbn": "9782381631905"
       },
       "fetchedAt": "2026-04-23T13:47:42.566Z"
     },
@@ -2572,7 +2689,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=VfIXEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE7039yymW9DrmK56jhpKsVxyBD6qMmsY3V3X0VKnd0H1xCW-nPCkLSRiUHZbTTfpEOyM302banltu-YeYIeQ0JP3a7Zs93--hXCNELWzJVJX_0CAut0uRGVHtXnQMvfKSglKzpPO&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=VfIXEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70ahC4E7MCOMBlgcEOUcS7IHAGx7PexjibmuxFOA2DwxFYIAMhMUk0Rlc6WzRdLz8uh4qKaVf4hxlJstVGtoW_xcJ2AhAbj1GvXRZ-BzH68Jnbvvxv5fTMdkPZQmm5l_uv542yc&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=VfIXEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70SrdjICYmKN-VOhBiFTAbvUECmC2JGXTWGRouBo9rgwVbYZ6jWCjTEjIgPnKpMKQgP8nSLoWsq-_90U8NpseNunIuM7Xm3v7_4J0p6cpdFHZSTz0U3ZvVv2bOIQneo_5WmhlSY&source=gbs_api"
-        }
+        },
+        "isbn": "9782381631509"
       },
       "fetchedAt": "2026-04-23T13:56:30.397Z"
     },
@@ -2589,7 +2707,8 @@
         "imageLinks": {
           "smallThumbnail": "https://books.google.com/books/publisher/content?id=ww9VEQAAQBAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE72fZtZ5U9HFCt31dRRrUs1Jd1nng8YfAn1f8NarJIhV5tETFr4Bs2dB41ICml8tz5Mpj-dkGSVL_PlBVf-oVEyXtYUGq0O2eOdoT-4OLiHVSw6yPUAWVD0bKEkEz3wlyNU-HqZ5&source=gbs_api",
           "thumbnail": "https://books.google.com/books/publisher/content?id=ww9VEQAAQBAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE71x1lUqrAdQXLi-yjrgcrqtcArp_fxfFq6CIn-FGtiquVfiuuEES4u_H-et9gN5qGgRXg0FcXNjrt3WM9yJy9xNxZwfvowuoZw5BxlNJjey8-lM6B728z9i1Ihock_yDk9GWMeN&source=gbs_api"
-        }
+        },
+        "isbn": "9782385298821"
       },
       "fetchedAt": "2026-04-23T13:56:35.438Z"
     },
@@ -2610,7 +2729,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=kZPHEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73QY2b4CGHgje1_EPtb2tfKS22derllz7dL9_JOAGFnLQWqMLDgsLAqNrm_pvlU7ODcgQc09_QUIrT49iac00-1sLY5GDt33nuS2jHzzl0egVjHFg9pMf0yo4UPwssP29JzVn23&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=kZPHEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71L3F2bcUczVxM5gVLBdMJ3Ag-7XsBeLuH2smGt1caF7xIZCl1quk0719IRNmVtKn6eDo_VG0lLjuzZA22PYb4oKB1T_Gr5dawnOk4Em4KgsEbNRIgBAoankR40eJZU1taEFUfO&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=kZPHEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71yWpsmmFoESvGd_Eg86k4T4kt95y3fQjAmZ6yaaDzkMKoPpYFzud6MUZ2WBTBli8jWYLbT4bmRclgYKd1tDMYPpHckrfij7rQ0CsqD1tPKp-6d_mDPGB2Nuo7t2HUuj-Zm-9FU&source=gbs_api"
-        }
+        },
+        "isbn": "9782381632094"
       },
       "fetchedAt": "2026-04-23T13:56:32.126Z"
     },
@@ -2624,7 +2744,8 @@
         "publisher": "Belial'",
         "publishedDate": "2026-01-22",
         "pageCount": 110,
-        "imageLinks": {}
+        "imageLinks": {},
+        "isbn": "9782381632025"
       },
       "fetchedAt": "2026-04-23T13:57:42.674Z",
       "source": "google"
@@ -2646,7 +2767,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=2Bj_EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70RFGDZxnfCEnNRZCcvWhasF7oD-6V94aPwegpC4QnRT9_t5jm-9L8rLRTX6FGJFPvi_zbfxdwMINkN_SLuWG-x9_TiNIteuAthwh7Y1MFJr975F6pxvpDxFjdVqLm-ow8SdEll&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=2Bj_EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70F0uFgJdBQZkGJcUtqAJ1e44efM56m93FsnHnjCSNUBl3GPMRhVN4-_wJzER2-JPxiVO0vCUjYwTj9BBNhPpJvYdLspup67ttwwdih622CpV8VGNtlMdK6FLBgrlT1k9aFP0XF&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=2Bj_EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70-d95ZH57FF-D5bOTE4b9A2b8YLfGRJ-eR8gxSgteNHdIN4mt3auDx1x0xIg5hNXwZZ9u6hBUKJPaKMEftUaekjrCz9a8X06s4lwsFl0C7WY5svRbHyxXnDk9axYkHVbu3ARlE&source=gbs_api"
-        }
+        },
+        "isbn": "9782290176146"
       },
       "fetchedAt": "2026-04-23T13:56:36.733Z"
     },
@@ -2667,7 +2789,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=mfDUDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70MZzNd2VIzL-BS_Yl9mocWeRbkqIUdy0fIE0ZbNZOQtaru8YN-PBCe8anU-MQp8gpMxHe5d8KWn8K6vibSH0PyrX-JmpyKxWOP9QblhzKlVsFeL-WLGoI_rLZPlDpTMhuBAFhM&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=mfDUDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE735PVQW056OUo7Tz4op_1Ja49rZNuyCB8CF9yokU_ftpnD7QCkXsvWfXBM9aCyQhZ9Ya89En0Hsd5Dwkx9vsZGwXENXh_WtB9TsK_MSJLHEevAWjDQuKnsmstmNLP1wyK0KO0Kq&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=mfDUDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70mLLKz3bDrV9AfepTpsuwQ0nB-ztjflkbarGePt2TL58tqjGcoWRFYxT4t1YqC_oN1om9nPMMegrDlfAWQYlcNCPFOnBYRueugrEtRamh0L3iM8Aw8wpq-BX-OcrAVWlj-kpb_&source=gbs_api"
-        }
+        },
+        "isbn": "9782367935423"
       },
       "fetchedAt": "2026-04-23T13:56:37.916Z"
     },
@@ -2688,7 +2811,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=p13KEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73s1XKRSTnc6-YORTgI_IIREi-0pTPXk2p2m1JDNgAGM_p99k2oPlx6_jCkGkDXa_0hQXfxw8FIBzpkbP_fd9_2g1KUA26CQftt5tIn_mnp3OYVNwf8bJMef10WFjyW8kdJK8w1&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=p13KEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE730tOMG60kLaeyytJoQqpTFiNJJEY9LLVQvHxP3SFTbkjaTzaUCXzBs8ir0_zdbIwXWFgyWWkmcRwaBjZjShSoV4cxq_6ZAszNKHALm5dUPE3cinqATimn82Q5h4zkt8GmGbBkX&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=p13KEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72_j9hGEMJ8i4XHGMLax1juMMINdeux0GT23GGWIM6O-9P4mwCYBbzI0AIWd47VSBciirvZ70gi8a_6LuRo72TDKtxMSX4KZftE-8QKbA91tWo4i7wODOt0xwBJ0eTDDS72ceKk&source=gbs_api"
-        }
+        },
+        "isbn": "9782370492920"
       },
       "fetchedAt": "2026-05-03T10:48:53.856Z",
       "source": "google"
@@ -2710,7 +2834,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=28VfEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71TkNY6DJ6KHn3IQuqTPMgR9Qsaq2r_W6Ie4T5t_Be8nGZZwMA8htGxjHh8HaGTHVEb_jy4c7p4hnYfSXiY2khUjh5b01kKqV1zo-Bk5wzItMPKp8bSUImLm48I_yuDI_CHV4Vq&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=28VfEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72PW0lEchDx4aEQ5C206wwJOGzRuOmboqpmTxuj0Fyf8lO7_BC3mOfEFJvctrazV8IWlRBuZQfUCbw-xGu6oXm95CLM6RfZmP877RKbobwOd7DMB6XjaHHqMcuCfgzjUB0ZUFup&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=28VfEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71ACIqsxvKyhJ5w7Zh5wHTFk-a51MB2XAnPBytFvAiCWQanCQbBOgQnj9IAJR0ieBixsKNeL4_BjRePFxWg0FnVwvcvwC_SgEyEPcVovOYphtKyWD-kLVwGgZUK_0ZfyShKW6p6&source=gbs_api"
-        }
+        },
+        "isbn": "9782370491909"
       },
       "fetchedAt": "2026-05-03T10:48:53.904Z",
       "source": "google"
@@ -2766,7 +2891,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=dabNEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70rwpf9ncxgGEju8RW8eK400wAxcqOslpnxvhCrqh-2bWPDN4sFFqZFlOm-5yC5B8tCxBzRf_9s28eZQar6P5ZmAZAIyINHHAbbnd8ouq0fPSbtv9hrSZ14VkrdAHi3nf8fpNYU&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=dabNEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72eeAIIVi66h65HocNxHW7-a27zQ3wynYgKcHVHhNckcz6mIJMxYLwjO2TzAXxl7xtZMRtID3a1tiUGr-jhckMkoK_2NylDPIKn6lypIVdAFdhSLGp0-Jo-jmQF15dhnYbrDhvJ&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=dabNEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70xGFzflNvTH520aDEjtWowb7P5vZUMzm9FjuZYbv-GfMjBvGGgU7UrOixRi0GRLGDNj9LwjEcZy0WVvEHW5vOVZsqbW639nxX9to0_7g9BwiAQbrhmmGmdQWJ8LDUUa-Wteqkx&source=gbs_api"
-        }
+        },
+        "isbn": "9782381632179"
       },
       "fetchedAt": "2026-06-15T21:09:15.238Z",
       "source": "google"
@@ -2788,7 +2914,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=TXKGAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73SKgQcrepC-lJnOBXE-OWaYuZclIM_DBqqdbc00kGmQy98rAg2A0PvtzQ_56hbmUHmsLGHFeujn0N-D5tki9iL6kDWzln2nT-8KKm3J9bfnCK_f51LPK_kqteT-kzZUXN2XoxO&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=TXKGAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE7126peNsjfzRd2qzLP-7-q4FWNh17zfB84leyA_EdORTfROobFDUTjvpdY2bZVHXBs18jMdvnewPBsF2uu9mgJVdB_pjrQMqpQ5eggsdhMIzSx1ORod48uGlN4VQWE2ovAcBWlw&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=TXKGAQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73qrIbPX1Oao_M1plQCheE5nB6A7Aji9pgr-j2PZfB65BJkkSkJ8VD5YmRqakAPm-M3IReTy7AO-sdvIOwnTIu14hgPaXIus4wcxeuTFL5gFfKEHS-YyPZSvnC0NFswTb_fcoHs&source=gbs_api"
-        }
+        },
+        "isbn": "9782367932477"
       },
       "fetchedAt": "2026-06-15T21:13:34.196Z",
       "source": "google"
@@ -2810,7 +2937,8 @@
           "medium": "https://books.google.com/books/publisher/content?id=tN7AEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73I_9qR-Q-TtYGVPwzznPmsyoSYPdbFDcY8RZfYgN1e4CXYb1QwQKdsAwz5o-gvtVu_mO52HyoZS4yyXr-YOs-HllVe2Av2E67Ho-YDUJD81Y-lfLpGLDa3Mk6FT4klQhmlhr44&source=gbs_api",
           "large": "https://books.google.com/books/publisher/content?id=tN7AEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70Yi6488LTt3AiWFlDwKcECz-xI30_bc4MZXdJ1u5bpLHpUrgeTFALyR9UJfuitlg0ErG3cikkw3wDvqDuFo-7XuOaHyFNMldK8pLirKHuhHg-xOStsasvNnU3c6uI8_bDb8Kar&source=gbs_api",
           "extraLarge": "https://books.google.com/books/publisher/content?id=tN7AEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73xn8fNEZF8fpUDyKoid5SjpqqnQjfbWhp99DgMK0k-2DkgnDtkjnw5pQp31idrOGjzQLdV59j1cRE0GD-Wd4-GciMrb6VtbSMlfyXfPmgbhMYMntOenSzMDed4BP51INR7qHgm&source=gbs_api"
-        }
+        },
+        "isbn": "9782381632001"
       },
       "fetchedAt": "2026-06-29T11:50:33.920Z",
       "source": "google"
@@ -2832,7 +2960,8 @@
           "medium": "https://books.google.com/books/content?id=vFuktopfbhAC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73Fdg6__8K80U9yEGi7rEUKrlM5hzXSd0kWDWQxtDCWPfnrbGuEws16UPQrTU9OC3IHsYo0KHayGi6LYfw_A8QfTPsHRfsYR0oZdHZC4YUQZrSLg4REEhwMfUL9E7PG2ZasOfuY&source=gbs_api",
           "large": "https://books.google.com/books/content?id=vFuktopfbhAC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71k0dIfGyegKgsH1aDn-ZuQRD_vnLq_nPWWJn4s3iM-2q8TQCHKi41xT8PjFuWbqR7qtzAtazmvd8oDpLLaJGKGxvdJpDHol_ChSxIp-YEclKVVN9rT4-H9oC6mlfJQNyxIiPNx&source=gbs_api",
           "extraLarge": "https://books.google.com/books/content?id=vFuktopfbhAC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70UBMZq5CWEhbeowRa8gmzgxdECfPN02YrRwdf2xc-Zbly2cR9RhRqSu0H12XZi6jvORlXJqlnhKfp562mJ9DBF7bmm-wkP-qQTc67RuTsrs9dBfZbnyqtq_zNq_BM06dv4LlPm&source=gbs_api"
-        }
+        },
+        "isbn": "9782072477065"
       },
       "fetchedAt": "2026-07-19T08:39:13.340Z",
       "source": "google"

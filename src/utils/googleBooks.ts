@@ -7,6 +7,7 @@ export interface GoogleBookData {
   publisher?: string | null;
   publishedDate?: string | null;
   pageCount?: number | null;
+  isbn?: string | null;
   imageLinks: Record<string, string>;
 }
 
