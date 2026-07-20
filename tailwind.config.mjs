@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ['"Fraunces"', 'ui-serif', 'Georgia', 'serif'],
-        sans: ['"Inter Tight"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['"Fraunces Variable"', 'ui-serif', 'Georgia', 'serif'],
+        sans: ['"Inter Tight Variable"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       colors: {
         ink: {
