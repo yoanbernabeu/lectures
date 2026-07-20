@@ -5,6 +5,7 @@ import sitemap from '@astrojs/sitemap';
 import { readFileSync } from 'node:fs';
 
 // lastmod par fiche livre : date de fin de lecture (les autres pages n'en ont pas)
+/** @param {string} text */
 const slugify = (text) => text
   .normalize('NFD')
   .replace(/[̀-ͯ]/g, '')
@@ -14,6 +15,7 @@ const slugify = (text) => text
   .replace(/-+/g, '-')
   .replace(/^-|-$/g, '');
 
+/** @type {Array<{ id: string, title: string, endDate?: string }>} */
 const books = JSON.parse(readFileSync(new URL('./public/data/books.json', import.meta.url), 'utf8')).books;
 const lastmodBySlug = new Map(
   books
