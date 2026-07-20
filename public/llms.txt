@@ -1,0 +1,32 @@
+# Lectures · YoanDev
+
+> Journal de lecture personnel de Yoan Bernabeu (yoandev.co) : critiques, notes
+> et recommandations de livres, avec une forte dominante science-fiction
+> (dystopies, post-apocalyptique, space opera) et des essais (histoire,
+> politique, technologie). Site statique en français, sans tracking.
+
+L'auteur est développeur et créateur de contenus tech (chaîne YouTube YoanDev),
+et consigne ici ses lectures : statut (terminé, en cours, à lire), note sur 5,
+critique personnelle et métadonnées de chaque livre.
+
+## Pages principales
+
+- [Accueil](https://lectures.yoandev.co/) : toute la bibliothèque, filtrable par statut et recherche
+- [Statistiques](https://lectures.yoandev.co/stats/) : rythme de lecture, top auteurs et genres
+- [Auteurs](https://lectures.yoandev.co/auteurs/) : index des auteurs lus
+- [Genres](https://lectures.yoandev.co/genres/) : index des genres
+- [Éditeurs](https://lectures.yoandev.co/editeurs/) : index des éditeurs
+
+## Flux et données
+
+- [Flux RSS](https://lectures.yoandev.co/rss.xml) : dernières lectures terminées avec critiques
+- [Sitemap](https://lectures.yoandev.co/sitemap-index.xml)
+
+## Contexte
+
+- Chaque livre a une fiche dédiée sous /book/<slug>/ avec critique, note, dates
+  de lecture, genres et liens vers Google Books et Babelio.
+- Les critiques sont personnelles et subjectives ; « Ceci n'est pas une
+  critique, c'est un journal. »
+- Auteur : Yoan Bernabeu, https://yoandev.co, profil Babelio :
+  https://www.babelio.com/monprofil.php?id_user=1747636
