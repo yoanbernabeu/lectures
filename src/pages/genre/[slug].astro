@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import BookCard from '../../components/BookCard.astro';
 import { getGenres } from '../../utils/taxonomies';
+import { ogImageUrl } from '../../utils/ogImage';
 
 export async function getStaticPaths() {
   return getGenres().map((genre) => ({
@@ -26,9 +27,10 @@ const sortedBooks = [...genre.books].sort((a, b) => {
 
 const title = `${genre.name} · Lectures · YoanDev`;
 const description = `${genre.count} livre${genre.count > 1 ? 's' : ''} dans le genre « ${genre.name} ».`;
+const ogImage = ogImageUrl(`genre/${genre.slug}.png`);
 ---
 
-<Layout title={title} description={description} type="index">
+<Layout title={title} description={description} type="index" image={ogImage ?? undefined}>
   <div class="mx-auto max-w-7xl px-4 pb-24 md:px-6">
     <header class="pt-12 pb-12 md:pt-20">
       <a href="/genres/" class="group inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-ink-300 hover:text-terracotta transition-colors">

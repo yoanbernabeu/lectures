@@ -9,6 +9,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "og:generate": "node scripts/generate-og.mjs",
     "cache:refresh": "node --env-file-if-exists=.env scripts/refresh-cache.mjs",
     "cache:refresh:force": "node --env-file-if-exists=.env scripts/refresh-cache.mjs --force"
   },
@@ -26,6 +27,8 @@
   },
   "devDependencies": {
     "@types/alpinejs": "^3.13.11",
-    "@types/node": "^22.13.1"
+    "@types/node": "^22.13.1",
+    "puppeteer-core": "^25.3.0",
+    "sharp": "^0.35.3"
   }
 }

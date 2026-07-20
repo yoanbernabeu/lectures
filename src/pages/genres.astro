@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { ogImageUrl } from '../utils/ogImage';
 import TaxonomyIndexLink from '../components/TaxonomyIndexLink.astro';
 import { getGenres } from '../utils/taxonomies';
 
@@ -10,7 +11,7 @@ const title = 'Genres · Lectures · YoanDev';
 const description = `${genres.length} genres littéraires parcourus.`;
 ---
 
-<Layout title={title} description={description} type="index">
+<Layout title={title} description={description} type="index" image={ogImageUrl('genres.png') ?? undefined}>
   <div class="mx-auto max-w-5xl px-4 pb-24 md:px-6">
     <header class="pt-12 pb-16 md:pt-20">
       <a href="/" class="group inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-ink-300 hover:text-amber transition-colors">

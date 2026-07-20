@@ -5,6 +5,7 @@ import booksData from '@data/books.json';
 import type { Book } from '../../types/book';
 import { slugify } from '../../utils/slugify';
 import { getPublishers } from '../../utils/taxonomies';
+import { ogImageUrl } from '../../utils/ogImage';
 
 export async function getStaticPaths() {
   const books = booksData.books as Book[];
@@ -63,6 +64,10 @@ function fmt(dateStr?: string) {
 
 const ratingStars = typeof book.rating === 'number' ? Math.max(0, Math.min(5, book.rating)) : 0;
 
+// Image OG dédiée (générée par npm run og:generate), sinon couverture distante
+const bookSlug = book.title ? slugify(book.title) : book.id;
+const ogImage = ogImageUrl(`book/${bookSlug}.png`);
+
 // JSON-LD Book schema
 const canonicalUrl = new URL(Astro.url.pathname, 'https://lectures.yoandev.co').href;
 const jsonLd: any = {
@@ -108,9 +113,9 @@ const breadcrumbLd = {
   title={title}
   description={description}
   type="book"
-  image={coverUrl || undefined}
-  imageWidth={coverUrl ? 400 : undefined}
-  imageHeight={coverUrl ? 600 : undefined}
+  image={ogImage ?? coverUrl ?? undefined}
+  imageWidth={ogImage ? 1200 : coverUrl ? 400 : undefined}
+  imageHeight={ogImage ? 630 : coverUrl ? 600 : undefined}
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
