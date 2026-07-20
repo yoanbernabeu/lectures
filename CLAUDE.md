@@ -5,36 +5,51 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 - `npm run dev` — starts the Astro dev server on `localhost:4321`
-- `npm run build` — builds the static site to `./dist/`
+- `npm run build` — builds the static site to `./dist/` (runs `prebuild` data validation first)
 - `npm run preview` — serves the built site locally
-- `npm run astro -- <cmd>` — runs Astro CLI commands (`astro check`, `astro add`, …)
+- `npm run validate` — validates `public/data/books.json` (required fields, status, slug collisions, genre taxonomy, date/progress/rating coherence); also run automatically before every build
+- `npm run cache:refresh` — refreshes `src/data/google-books-cache.json` from Google Books / OpenLibrary / Babelio (only missing entries; `cache:refresh:force` refetches everything). Reads `GOOGLE_BOOKS_API_KEY` from `.env` (gitignored) for a dedicated Google quota
+- `npm run og:generate` — regenerates the OpenGraph images in `public/og/` (only missing/outdated ones, tracked by `public/og/manifest.json`; `-- --force` for all, `-- --only=<pattern>` to filter). Requires local Google Chrome; images are committed
+- `npx astro check` — type/template check (runs in CI)
 
-There is no test suite and no lint/format command configured.
+There is no test suite. CI (`.github/workflows/ci.yml`) runs validate + astro check + build on push/PR.
 
 ## Architecture
 
-Static personal reading journal ("lectures.yoandev.co"), built with **Astro 5 + Tailwind + daisyUI + Alpine.js**, with a React integration available. Output is fully static.
+Static personal reading journal ("lectures.yoandev.co"), built with **Astro 5 + Tailwind + Alpine.js**. Output is fully static; the build performs **no network calls**.
 
 ### Data flow
 
-- The single source of truth is `public/data/books.json` (shape defined by `src/types/book.ts`: `Book` with `googleBooksId`, `status`, `genres`, `progress`, `rating`, `comment`, `abandoned`, `favorite`, …). Each book references a Google Books volume via `googleBooksId`.
-- Pages import it via the `@data/*` path alias (see `tsconfig.json` → `baseUrl: "."` and `paths: { "@data/*": ["public/data/*"] }`). Imports look like `import booksData from '@data/books.json'`.
-- At build time, `src/utils/googleBooks.ts` calls the Google Books API (`https://www.googleapis.com/books/v1/volumes/<id>`) with retries and an in-memory cache. It rewrites image URLs to force highest quality (`zoom=3`, `img=1`, `https://`).
-- Client-side filtering/sorting lives in `src/components/FilterBar.astro` (Alpine.js). `BookCard.astro` renders each book; cards carry `data-book-status`, `data-book-title`, and `data-favorite` attributes that the filter bar reads.
+- Single source of truth: `public/data/books.json` (shape in `src/types/book.ts`; each book references a Google Books volume via `googleBooksId`, plus `babelioBookId`). Imported via the `@data/*` alias.
+- Book metadata (publisher, ISBN, page count, description…) comes from `src/data/google-books-cache.json`, a **committed cache** read by `src/utils/googleBooks.ts` at build time. Never fetched during build — refresh it with `npm run cache:refresh` when adding books. Sources: Google Books, with OpenLibrary and Babelio (via `babeliocli`) as fallbacks (`scripts/refresh-cache.mjs`).
+- Client-side filtering/sorting/search lives in `src/components/FilterBar.astro` (Alpine.js); state is synced to the URL (`?filtre=…&q=…&tri=…`). `BookCard.astro` carries `data-*` attributes the filter bar reads (status, title, authors, genres, favorite, rating, end-date). The card uses a "stretched link" pattern so genre chips remain real links (no nested anchors).
 
 ### Routes
 
-- `src/pages/index.astro` — home grid, shuffles the full book list on every build.
-- `src/pages/book/[slug].astro` — canonical per-book page; `getStaticPaths` fetches Google Books data for each book and uses `slugify(title)` as the URL slug (falling back to `book.id`).
-- `src/pages/book/[id].astro` — legacy/alternate per-book route keyed by `book.id` (no Google Books fetch; uses the embedded Google Books preview iframe).
-- `src/pages/admin.astro` — book management UI. **Guarded by `import.meta.env.PROD` → redirects to `/404` in production.** It is only usable during `npm run dev`; it reads `/data/books.json` client-side and lets the user search Google Books to add/edit entries. Writes are not persisted server-side — the generated JSON must be copied back into `public/data/books.json` manually.
+- `src/pages/index.astro` — home grid (deterministic sort: reading, then finished by date desc, then to-read).
+- `src/pages/book/[slug].astro` — canonical per-book page (`slugify(title)`); rich JSON-LD (`Book` with isbn/publisher/pages + `Review`, `BreadcrumbList`), per-book OG image.
+- `src/pages/book/[id].astro` — legacy redirect route (meta refresh + noindex, excluded from sitemap).
+- `src/pages/{auteurs,genres,editeurs}.astro` + `src/pages/{auteur,genre,editeur}/[slug].astro` — taxonomy indexes and detail pages (`src/utils/taxonomies.ts`).
+- `src/pages/stats.astro` — reading stats (timeline, monthly heatmap, top authors/genres). Books without `endDate` are excluded from time-based stats.
+- `src/pages/404.astro` — custom 404.
+- `src/pages/rss.xml.ts` — RSS feed of finished books (latest first, review as description).
+- `public/llms.txt` — site description for AI crawlers.
+
+### SEO / assets
+
+- `Layout.astro` handles SEO via `astro-seo` (accepts `image`/`imageWidth`/`imageHeight` props), skip link, `<main id="main">` landmark.
+- OpenGraph images: `public/og.png` (home) and `public/og/` (per book/genre/index pages, generated by `scripts/generate-og.mjs`, wired through `src/utils/ogImage.ts` with graceful fallback to the remote cover).
+- Sitemap (`astro.config.mjs`): excludes legacy `/book/<id>/` routes, sets per-book `lastmod` from `endDate`.
+- Fonts are **self-hosted** via `@fontsource-variable/fraunces` (full axes: opsz/SOFT/WONK) and `@fontsource-variable/inter-tight`, imported in `Layout.astro`. No Google Fonts, no third-party requests except book covers (hotlinked from Google Books/OpenLibrary — intentional, do not self-host covers).
 
 ### Styling
 
-- `tailwind.config.mjs` defines a custom daisyUI theme `mytheme` (dark palette with indigo primary `#6366f1` / violet secondary `#8b5cf6`). `darkTheme: "mytheme"` is set and `<html data-theme="mytheme">` is hardcoded in `Layout.astro`. The legacy `@tailwindcss/line-clamp` plugin is registered.
-- `Layout.astro` wires SEO via `astro-seo`, initializes Alpine with the `@alpinejs/collapse` plugin, and loads Inter from Google Fonts.
+- Custom "ink/amber" dark theme in `tailwind.config.mjs`: `ink` palette (warm dark), `amber` `#E0A168`, `terracotta`, `inkblue`; `font-display` = Fraunces Variable (with `.font-display` / `.font-display-wonk` variation-settings classes in `Layout.astro`), `font-sans` = Inter Tight Variable. No daisyUI.
+- Paper grain + radial warmth overlays, `.paper-card`, `.reveal` (IntersectionObserver), view transitions via `<ClientRouter />`.
 
 ### Conventions
 
 - UI copy and comments are in French — keep that.
-- When adding a book, extend `public/data/books.json` (not a TS module) and make sure `googleBooksId` is valid — the build will retry up to 10 times per ID and warn (not fail) on missing data, but a bad ID means no metadata/cover.
+- **Adding/updating books**: use the `lectures-sync` skill (Babelio → books.json) and `lectures-comment` (reviews/ratings). There is no admin UI. After adding a book: `npm run cache:refresh`, `npm run og:generate`, `npm run validate`.
+- Genres must belong to the existing taxonomy (see `GENRES` in `scripts/validate-books.mjs`); the validator fails the build otherwise.
+- `progress` only exists on `reading` books; finished books should have an `endDate` (warning otherwise — they drop out of time-based stats).
